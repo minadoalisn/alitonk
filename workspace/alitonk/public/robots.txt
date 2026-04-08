@@ -1,0 +1,54 @@
+# allow all robots
+User-agent: *
+Allow: /
+
+# sitemaps
+Sitemap: https://alicharity.blog/sitemap.xml
+Sitemap: https://alicharity.blog/blog-sitemap.xml
+
+# AI Crawlers (GEO Optimization)
+User-agent: *
+Disallow:
+
+# ChatGPT
+User-agent: GPTBot
+Disallow:
+
+# Claude
+User-agent: Claude-Web
+Disallow:
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow:
+
+# Google Gemini
+User-agent: Google-Extended
+Disallow:
+
+# Google Generative AI
+User-agent: GoogleOther
+Disallow:
+
+# Other AI Crawlers
+User-agent: ChatGPT-User
+User-agent: anthropic-ai
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: OpenAI
+Disallow:
+
+# Disallow sensitive paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /data/
+Disallow: /logs/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.xml$
+
+# Crawl-delay (optional, reduces server load)
+Crawl-delay: 1
+
+# Host header
+Host: alicharity.blog
