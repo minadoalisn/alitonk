@@ -7,3 +7,5 @@
 !/.coze
 !/.gitignore
 !/alitonk
+# Local Netlify folder
+.netlify
