@@ -841,7 +841,6 @@
 </head>
 <body class="font-sans bg-gradient-hero text-slate-50 min-h-screen">
     <!-- SEO & UI Optimizers -->
-    <script src="js/ip-language-detection.js" defer></script>
     <script src="seo-optimizer.js" defer></script>
     <script src="ui-optimizer.js" defer></script>
     <nav class="fixed top-0 left-0 right-0 z-[1000] bg-bgDark/95 backdrop-blur-xl py-4">
@@ -3243,7 +3242,31 @@ async function addALIToMetaMask() {
 }
 </script>
 
+<script>
+// Check visitor country using IP geolocation API
+</script>
 
+<!-- Ripple Effect Function -->
+<script>
+function createRipple(event, element) {
+    const button = element;
+    const circle = document.createElement('span');
+    const diameter = Math.max(button.clientWidth, button.clientHeight);
+    const radius = diameter / 2;
+    
+    circle.style.width = circle.style.height = diameter + 'px';
+    circle.style.left = event.clientX - button.offsetLeft - radius + 'px';
+    circle.style.top = event.clientY - button.offsetTop - radius + 'px';
+    circle.classList.add('ripple-effect');
+    
+    const ripple = button.getElementsByClassName('ripple-effect')[0];
+    if (ripple) {
+        ripple.remove();
+    }
+    
+    button.appendChild(circle);
+}
+</script>
 
 <!-- Performance Optimization Script -->
 <script>
@@ -3350,7 +3373,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 </html>
 
-<!-- GEO Optimization -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
