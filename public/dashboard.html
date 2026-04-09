@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | ALI Charity</title>
+    <meta name="description" content="ALI Charity administration dashboard">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            background: #0f172a;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .header {
+            background: #1e293b;
+            padding: 20px 30px;
+            border-bottom: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #60a5fa;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+        .stat-label {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            margin-bottom: 5px;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #10b981;
+        }
+        .nav-link {
+            display: inline-block;
+            padding: 8px 16px;
+            color: #94a3b8;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-right: 10px;
+            background: #1e293b;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            background: #60a5fa;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+        <div>
+            <a href="/" class="nav-link">Home</a>
+            <a href="/admin-login.html" class="nav-link">Logout</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-label">Total Donations</div>
+                <div class="stat-value">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Total Amount</div>
+                <div class="stat-value">$1.30</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Verified Causes</div>
+                <div class="stat-value">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Active Users</div>
+                <div class="stat-value">0</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recent Activities</h2>
+            <p style="color: #94a3b8;">No recent activities logged.</p>
+        </div>
+
+        <div class="card">
+            <h2>System Status</h2>
+            <p>Server: Online</p>
+            <p>Database: Connected</p>
+            <p>Blockchain: Connected</p>
+        </div>
+    </div>
+
+    <script>
+    // Load real data from API
+    function loadDashboardData() {
+        fetch('/api/stats')
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('.stat-value:nth-child(1)').textContent = data.totalDonations || 0;
+                document.querySelector('.stat-value:nth-child(2)').textContent = '$' + (data.totalAmount || '0.00');
+                document.querySelector('.stat-value:nth-child(3)').textContent = data.verifiedCauses || 0;
+                document.querySelector('.stat-value:nth-child(4)').textContent = data.activeUsers || 0;
+            })
+            .catch(error => {
+                console.error('Failed to load dashboard data:', error);
+            });
+    }
+
+    // Load data on page load
+    loadDashboardData();
+
+    // Auto-refresh every 30 seconds
+    setInterval(loadDashboardData, 30000);
+    </script>
+</body>
+</html>
