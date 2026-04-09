@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection Test - ALI Charity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0a101f;
+            color: #fff;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #60a5fa;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .status {
+            background: #1e293b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .status.success {
+            border-left: 4px solid #10b981;
+        }
+        .status.error {
+            border-left: 4px solid #ef4444;
+        }
+        .info {
+            color: #94a3b8;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #60a5fa;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALI Charity - Connection Test</h1>
+
+    <div class="status success">
+        <h2>Server Status: ONLINE</h2>
+        <p>Server is responding correctly.</p>
+    </div>
+
+    <div class="status success">
+        <h2>Connection Test</h2>
+        <p>If you can see this page, your connection is working.</p>
+        <p>Time: <span id="time"></span></p>
+    </div>
+
+    <div class="info">
+        <h3>What to do if you see this page:</h3>
+        <ul>
+            <li>1. Your browser can connect to the server</li>
+            <li>2. Your network connection is working</li>
+            <li>3. Try clearing your browser cache (Ctrl+Shift+Delete)</li>
+            <li>4. Try a different browser</li>
+            <li>5. Check if your ISP is blocking the site</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="/" class="btn">Return to Homepage</a>
+        <a href="/admin.html" class="btn">Admin Page</a>
+        <a href="/donate.html" class="btn">Donate Page</a>
+    </div>
+
+    <div class="info">
+        <h3>Technical Information:</h3>
+        <p>Server: Render.com (GCP US West 1)</p>
+        <p>Protocol: HTTPS (TLSv1.3)</p>
+        <p>Status Code: 200 OK</p>
+        <p>Encoding: UTF-8</p>
+    </div>
+
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
