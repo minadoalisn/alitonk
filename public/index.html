@@ -840,13 +840,6 @@
     </script>
 </head>
 <body class="font-sans bg-gradient-hero text-slate-50 min-h-screen">
-    <!-- GEO Blocking Script - Run immediately before any content -->
-    <script src="js/geo-block.js"></script>
-    <script>
-        // Quick GEO check - block China immediately
-        (async function() {
-        })();
-    </script>
     <!-- SEO & UI Optimizers -->
     <script src="js/ip-language-detection.js" defer></script>
     <script src="seo-optimizer.js" defer></script>
@@ -3250,32 +3243,7 @@ async function addALIToMetaMask() {
 }
 </script>
 
-<!-- GEO Blocking Script - Block Chinese IPs for legal compliance -->
-<script>
-// Check visitor country using IP geolocation API
-(async function geoBlock() {
-    try {
-        // Use ipapi.co for geolocation (free, no API key needed)
-        const response = await fetch('https://ipapi.co/json/', { 
-function createRipple(event, element) {
-    const button = element;
-    const circle = document.createElement('span');
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    const radius = diameter / 2;
-    
-    circle.style.width = circle.style.height = diameter + 'px';
-    circle.style.left = event.clientX - button.offsetLeft - radius + 'px';
-    circle.style.top = event.clientY - button.offsetTop - radius + 'px';
-    circle.classList.add('ripple-effect');
-    
-    const ripple = button.getElementsByClassName('ripple-effect')[0];
-    if (ripple) {
-        ripple.remove();
-    }
-    
-    button.appendChild(circle);
-}
-</script>
+
 
 <!-- Performance Optimization Script -->
 <script>
