@@ -1,0 +1,13 @@
+{
+  "name": "ali-charity",
+  "version": "1.0.0",
+  "description": "ALI Charity - Transparent Blockchain Donations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'No build required'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

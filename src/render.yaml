@@ -1,0 +1,18 @@
+# Render.com Static Site Configuration
+# ALI Charity - Blockchain Transparent Donation Platform
+
+services:
+  - type: web
+    name: alitonk
+    env: static
+    buildCommand: echo "No build required for static site"
+    staticPublishPath: public
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+    routes:
+      - path: /
+        destination: /index.html
+    pullRequestPreviewsEnabled: false
+    autoDeploy: true
