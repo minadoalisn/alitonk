@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST PAGE - ALI Charity</title>
+    <meta name="description" content="Test page to verify server update">
+</head>
+<body style="background: #0A101F; color: #fff; padding: 20px; font-family: Arial, sans-serif;">
+    <h1>TEST PAGE</h1>
+    <p>If you can see this, the server is working correctly.</p>
+    <p>Current time: <span id="time"></span></p>
+    <p>Server status: <strong>ONLINE</strong></p>
+    <p>
+        <a href="/" style="color: #60a5fa; text-decoration: underline;">Return to Homepage</a>
+    </p>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
