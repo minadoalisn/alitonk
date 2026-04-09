@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://minadoai.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://minadoai.com/donate.html</loc><priority>0.8</priority></url>
-  <url><loc>https://minadoai.com/blog/</loc><priority>0.9</priority></url>
+  <url><loc>https://minadoai.com/</loc><priority>1.0</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://minadoai.com/donate.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://minadoai.com/blog/</loc><priority>0.9</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://minadoai.com/best-crypto-charity-platforms-2026.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/how-to-donate-cryptocurrency-2026.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/benefits-of-crypto-donations-nonprofits.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/ali-token-use-cases.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/why-donate-cryptocurrency.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/blog/why-i-built-ali-charity.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/blog/how-blockchain-enables-transparent-charity.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://minadoai.com/blog/the-future-of-web3-philanthropy.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 </urlset>
