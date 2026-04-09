@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 3000;
+const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -20,7 +21,7 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
+  let filePath = path.join(PUBLIC_DIR, req.url === '/' ? 'index.html' : req.url);
   
   // Handle directory requests
   if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
@@ -34,7 +35,7 @@ const server = http.createServer((req, res) => {
     if (err) {
       if (err.code === 'ENOENT') {
         // Try index.html for SPA routing
-        fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, content) => {
+        fs.readFile(path.join(PUBLIC_DIR, 'index.html'), (err, content) => {
           if (err) {
             res.writeHead(404);
             res.end('Not Found');
@@ -56,4 +57,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`ALI Charity server running on port ${PORT}`);
+  console.log(`Serving from: ${PUBLIC_DIR}`);
 });
