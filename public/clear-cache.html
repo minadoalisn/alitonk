@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>CLEAR CACHE PAGE</title>
+    <script>
+        // 禁用Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                registrations.forEach(function(registration) {
+                    registration.unregister();
+                });
+            });
+        }
+        // 清除所有缓存
+        if ('caches' in window) {
+            caches.keys().then(function(cacheNames) {
+                cacheNames.forEach(function(cacheName) {
+                    caches.delete(cacheName);
+                });
+            });
+        }
+        // 重定向到首页
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 2000);
+    </script>
+</head>
+<body style="background: #0A101F; color: #fff; text-align: center; padding-top: 200px;">
+    <h1>CLEARING CACHE...</h1>
+    <p>Please wait while we clear your browser cache.</p>
+    <p>You will be redirected to the homepage in 2 seconds.</p>
+</body>
+</html>
