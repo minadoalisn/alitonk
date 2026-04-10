@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI Token Whitepaper | ALI Charity</title>
+    <meta name="description" content="ALI Token Whitepaper - Complete documentation of the ALI Charity ecosystem, tokenomics, governance, and technical architecture.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #10B981, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#0A101F] via-[#111827] to-[#0A101F] text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold gradient-text flex items-center gap-2">
+                    <span class="text-3xl">🏠</span>
+                    ALI Charity
+                </a>
+                <div class="hidden md:flex gap-8">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a>
+                    <a href="token.html" class="text-gray-400 hover:text-white transition-colors">Token</a>
+                    <a href="whitepaper.html" class="text-white font-semibold">Whitepaper</a>
+                    <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6">
+                <span class="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></span>
+                <span class="text-sm text-gray-300">v1.0 - March 2026</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text">📄 ALI Token Whitepaper</h1>
+            <p class="text-xl text-gray-400">Complete documentation of the ALI Charity ecosystem</p>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <div class="glass-card rounded-3xl p-8">
+            <h2 class="text-2xl font-bold mb-4 text-[#10B981]">🎯 Executive Summary</h2>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                ALI Charity is a revolutionary blockchain-based charitable platform that ensures 100% transparency in donations. 
+                Every transaction is recorded on the Binance Smart Chain (BSC), allowing donors to track their funds in real-time.
+            </p>
+            <p class="text-gray-300 leading-relaxed">
+                The ALI Token serves as the platform's native utility token, offering governance rights, profit sharing, 
+                and exclusive benefits to donors. With a fixed 1:1 exchange rate to USDT, ALI tokens provide stability 
+                and immediate utility within the ecosystem.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tokenomics -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">💰 Tokenomics</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card rounded-2xl p-8 text-center">
+                <div class="text-5xl mb-4">📊</div>
+                <p class="text-sm text-gray-400 mb-2">Total Supply</p>
+                <p class="text-3xl font-bold text-[#10B981]">1,000,000,000</p>
+                <p class="text-gray-500 mt-2">ALI Tokens</p>
+            </div>
+            <div class="glass-card rounded-2xl p-8 text-center">
+                <div class="text-5xl mb-4">⚖️</div>
+                <p class="text-sm text-gray-400 mb-2">Exchange Rate</p>
+                <p class="text-3xl font-bold text-[#10B981]">1:1</p>
+                <p class="text-gray-500 mt-2">ALI = 1 USDT</p>
+            </div>
+            <div class="glass-card rounded-2xl p-8 text-center">
+                <div class="text-5xl mb-4">🎁</div>
+                <p class="text-sm text-gray-400 mb-2">Reward Mechanism</p>
+                <p class="text-3xl font-bold text-[#10B981]">Fixed</p>
+                <p class="text-gray-500 mt-2">No inflation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">🎯 Token Utility</h2>
+        <div class="space-y-4">
+            <div class="glass-card rounded-2xl p-6">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🗳️</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Governance Rights</h3>
+                        <p class="text-gray-400">ALI token holders can participate in DAO voting to decide on charity project selection, fund allocation, and platform development priorities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">💎</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Profit Sharing</h3>
+                        <p class="text-gray-400">Token holders receive a share of platform fees generated from transaction processing and partnership integrations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">⭐</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Priority Access</h3>
+                        <p class="text-gray-400">Early access to new charity projects, exclusive events, and premium platform features.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🏆</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Achievement Badges</h3>
+                        <p class="text-gray-400">Collectible NFT badges awarded for donation milestones and community participation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <div class="glass-card rounded-3xl p-8">
+            <h2 class="text-2xl font-bold mb-4 text-[#10B981]">🔗 Technical Architecture</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Blockchain</h3>
+                    <p class="text-gray-400 text-sm">Binance Smart Chain (BSC)</p>
+                    <p class="text-gray-400 text-sm">Fast transactions, low fees</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Smart Contract</h3>
+                    <p class="text-gray-400 text-sm">BEP-20 Standard</p>
+                    <p class="text-gray-400 text-sm">Audited and verified</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Contract Address</h3>
+                    <code class="block bg-[#0A101F] p-2 rounded text-xs break-all text-[#10B981]">
+                        0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+                    </code>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Transparency</h3>
+                    <p class="text-gray-400 text-sm">100% on-chain records</p>
+                    <p class="text-gray-400 text-sm">Real-time tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distribution -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">📈 Token Distribution</h2>
+        <div class="glass-card rounded-3xl p-8">
+            <div class="space-y-4">
+                <div class="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                    <span class="font-semibold">Donor Rewards</span>
+                    <span class="text-[#10B981] font-bold">40%</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                    <span class="font-semibold">Charity Operations</span>
+                    <span class="text-[#10B981] font-bold">30%</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                    <span class="font-semibold">Platform Development</span>
+                    <span class="text-[#10B981] font-bold">15%</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                    <span class="font-semibold">Team & Advisors</span>
+                    <span class="text-[#10B981] font-bold">10%</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                    <span class="font-semibold">Marketing & Partnerships</span>
+                    <span class="text-[#10B981] font-bold">5%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="max-w-5xl mx-auto px-6 pb-16">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">🗺️ Roadmap</h2>
+        <div class="space-y-6">
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-[#10B981]">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="px-3 py-1 bg-[#10B981]/20 text-[#10B981] text-sm rounded-full">Q1 2026</span>
+                    <span class="text-gray-400">Completed</span>
+                </div>
+                <h3 class="text-lg font-bold">Platform Launch</h3>
+                <p class="text-gray-400">Initial release with 12 charity projects and basic donation tracking</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-[#3B82F6]">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="px-3 py-1 bg-[#3B82F6]/20 text-[#3B82F6] text-sm rounded-full">Q2 2026</span>
+                    <span class="text-gray-400">In Progress</span>
+                </div>
+                <h3 class="text-lg font-bold">DAO Governance</h3>
+                <p class="text-gray-400">Launch community voting for project selection and fund allocation</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-gray-600">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">Q3 2026</span>
+                    <span class="text-gray-400">Planned</span>
+                </div>
+                <h3 class="text-lg font-bold">Multi-Chain Support</h3>
+                <p class="text-gray-400">Expand to Ethereum, Polygon, and other major blockchains</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-gray-600">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">Q4 2026</span>
+                    <span class="text-gray-400">Planned</span>
+                </div>
+                <h3 class="text-lg font-bold">Global Partnerships</h3>
+                <p class="text-gray-400">Partner with major NGOs and humanitarian organizations worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="max-w-3xl mx-auto px-6 pb-16">
+        <div class="glass-card rounded-3xl p-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Download Full Whitepaper</h2>
+            <p class="text-gray-400 mb-6">Get the complete technical documentation and detailed tokenomics analysis.</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="ALI_Whitepaper.pdf" class="px-8 py-4 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-xl hover:opacity-90 transition-all">
+                    📥 Download PDF
+                </a>
+                <a href="token.html" class="px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all">
+                    💎 View Token Info
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 px-6">
+        <div class="max-w-7xl mx-auto text-center text-gray-400">
+            <p>© 2026 ALI Charity. 100% Transparent Blockchain Charity.</p>
+            <p class="text-sm mt-2">Contract: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</p>
+        </div>
+    </footer>
+</body>
+</html>

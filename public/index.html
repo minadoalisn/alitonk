@@ -673,16 +673,38 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        /* Mobile nav - language selector */
+        /* Mobile nav - improved compact design */
+        #navLinks.show {
+            top: 60px; /* Reduced from 72px */
+            padding: 0.75rem 1rem;
+            gap: 0.5rem;
+            max-height: calc(100vh - 60px);
+        }
+        
         #navLinks select {
             width: 100%;
-            padding: 0.75rem;
-            font-size: 16px; /* Prevents zoom on iOS */
+            padding: 0.5rem 0.75rem;
+            font-size: 14px;
+            min-height: 36px;
+            border-radius: 6px;
         }
         
         #navLinks button {
             width: 100%;
-            min-height: 48px; /* Better touch target */
+            min-height: 40px;
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        
+        #navLinks li {
+            margin: 0;
+        }
+        
+        #navLinks a {
+            padding: 0.5rem 0.75rem;
+            font-size: 14px;
+            border-radius: 6px;
         }
         
         /* Respect prefers-reduced-motion */
@@ -857,6 +879,7 @@
                 <li><a href="#projects" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="projects">Projects</a></li>
                 <li><a href="token-dashboard.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="tokenDashboard">Token Dashboard</a></li>
                 <li><a href="dao-governance.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="daoGovernance">DAO Governance</a></li>
+                <li><a href="whitepaper.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Whitepaper</a></li>
                 <!-- Mobile only: language select and connect wallet -->
                 <li class="md:hidden">
                     <select class="w-full px-3 py-2 bg-bgLight border border-borderColor rounded-lg text-slate-50 focus-ring-custom cursor-pointer" id="langSelectMobile" aria-label="Select language">
@@ -2488,15 +2511,10 @@ window.addEventListener('load', function() {
     const langSelect = document.getElementById('langSelect');
     const langs = [
         {code: 'en', name: 'English'},
-//        {code: 'zh', name: '中文'}, // CN removed
         {code: 'es', name: 'Español'},
         {code: 'fr', name: 'Français'},
         {code: 'ar', name: 'العربية'},
-        {code: 'ru', name: 'Русский'},
-        {code: 'de', name: 'Deutsch'},
-//        {code: 'ja', name: '日本語'}, // CN removed
-        {code: 'ko', name: '한국어'},
-        {code: 'pt', name: 'Português'}
+        {code: 'ru', name: 'Русский'}
     ];
     langSelect.innerHTML = langs.map(l => `<option value="${l.code}">${l.name}</option>`).join('');
     
@@ -2519,15 +2537,10 @@ window.addEventListener('load', function() {
         // Populate mobile language selector
         const langs = [
             {code: 'en', name: 'English'},
-//            {code: 'zh', name: '中文'}, // CN removed
             {code: 'es', name: 'Español'},
             {code: 'fr', name: 'Français'},
             {code: 'ar', name: 'العربية'},
-            {code: 'ru', name: 'Русский'},
-            {code: 'de', name: 'Deutsch'},
-//            {code: 'ja', name: '日本語'}, // CN removed
-            {code: 'ko', name: '한국어'},
-            {code: 'pt', name: 'Português'}
+            {code: 'ru', name: 'Русский'}
         ];
         mobileLangSelect.innerHTML = langs.map(l => `<option value="${l.code}">${l.name}</option>`).join('');
 
@@ -2536,10 +2549,9 @@ window.addEventListener('load', function() {
             localStorage.setItem('preferred-lang', e.target.value);
             // Sync desktop selector
             langSelect.value = e.target.value;
-            // Close dropdown on mobile by blurring
-            mobileLangSelect.blur();
-            // Also close mobile menu
-            closeMobileMenu();
+            // Immediately close mobile menu
+            navLinks.classList.remove('show');
+            navOverlay.classList.remove('show');
         });
 
         // Close dropdown when clicking outside
