@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Test - ALI Charity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0A101F;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(to right, #10B981, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #999;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .nav a:hover {
+            color: white;
+        }
+        .lightning-btn {
+            background: linear-gradient(to right, #F59E0B, #F97316);
+            color: white !important;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .lightning-btn:hover {
+            opacity: 0.9;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #10B981, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #999;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .test-section {
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        .test-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .test-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .test-btn {
+            padding: 15px 30px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .test-btn-1 { background: #10B981; color: white; }
+        .test-btn-2 { background: #3B82F6; color: white; }
+        .test-btn-3 { background: #F59E0B; color: white; }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(16, 185, 129, 0.2);
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🏠 ALI Charity</div>
+        <div class="nav">
+            <a href="#projects">Projects</a>
+            <a href="donate.html" class="lightning-btn">
+                <span>⚡</span>
+                <span>Lightning Donate</span>
+            </a>
+            <a href="token.html">Token</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>100% Transparent Blockchain Charity</h1>
+        <p>Every donation is tracked on-chain. Support verified charity projects worldwide.</p>
+        <a href="donate.html" class="lightning-btn" style="display: inline-flex; margin: 20px;">
+            <span>⚡</span>
+            <span>Donate Now</span>
+        </a>
+    </div>
+
+    <div class="test-section">
+        <h2>🧪 Test Buttons</h2>
+        <p>Click each button to see which one works:</p>
+        <div class="test-buttons">
+            <button class="test-btn test-btn-1" onclick="window.location.href='donate.html'">
+                Method 1: onclick
+            </button>
+            <button class="test-btn test-btn-2" onclick="testNavigate('donate.html')">
+                Method 2: navigate()
+            </button>
+            <button class="test-btn test-btn-3" id="testBtn3">
+                Method 3: addEventListener
+            </button>
+        </div>
+        <div class="result" id="testResult"></div>
+    </div>
+
+    <script>
+        function testNavigate(url) {
+            document.getElementById('testResult').style.display = 'block';
+            document.getElementById('testResult').innerHTML = 'Navigating to: ' + url;
+            setTimeout(() => {
+                window.location.href = url;
+            }, 1000);
+        }
+
+        document.getElementById('testBtn3').addEventListener('click', function() {
+            document.getElementById('testResult').style.display = 'block';
+            document.getElementById('testResult').innerHTML = 'Using addEventListener to navigate...';
+            setTimeout(() => {
+                window.location.href = 'donate.html';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
