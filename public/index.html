@@ -856,17 +856,10 @@
             <ul class="hidden md:flex gap-5 list-none" id="navLinks" role="navigation">
                 <li><a href="#projects" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="projects">Projects</a></li>
                 <li>
-                    <a href="donate.html" class="lightning-btn relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 font-semibold px-5 py-2.5 rounded-xl cursor-pointer flex items-center gap-2 no-script-only">
+                    <a href="javascript:void(0)" onclick="window.location.href='donate.html'" class="lightning-btn relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 font-semibold px-5 py-2.5 rounded-xl cursor-pointer flex items-center gap-2">
                         <span class="text-lg">⚡</span>
                         <span>Lightning Donate</span>
                     </a>
-                    <!-- Fallback for users with JS disabled - show the button normally -->
-                    <noscript>
-                        <a href="donate.html" class="bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 font-semibold px-5 py-2.5 rounded-xl flex items-center gap-2">
-                            <span class="text-lg">⚡</span>
-                            <span>Lightning Donate</span>
-                        </a>
-                    </noscript>
                 </li>
                 <li><a href="token.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="token">ALI Token</a></li>
                 <li><a href="token-dashboard.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="tokenDashboard">Token Dashboard</a></li>
@@ -3454,49 +3447,30 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 </script>
 
-<!-- Emergency Fix: Ensure donate links work -->
+<!-- Emergency Fix: Force redirect for ALL donate links -->
 <script>
-// DEBUG: Log when this script runs
-window.donateFixApplied = false;
-
-(function() {
-    // Run fix as early as possible
-    function fixDonateLinks() {
-        if (window.donateFixApplied) return;
-        window.donateFixApplied = true;
+// Kill all existing handlers and force redirect
+document.addEventListener('click', function(e) {
+    var target = e.target;
+    // Check if clicked element or its parent is a donate link/button
+    while (target && target !== document) {
+        var href = target.getAttribute ? target.getAttribute('href') : null;
+        var id = target.getAttribute ? target.getAttribute('id') : null;
+        var className = target.getAttribute ? target.getAttribute('class') : null;
         
-        // Fix ALL donate links
-        var donateLinks = document.querySelectorAll('a[href="donate.html"]');
-        donateLinks.forEach(function(link) {
-            link.onclick = function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                window.location.href = 'donate.html';
-                return false;
-            };
-        });
-        
-        // Fix Connect Wallet buttons
-        var connectBtns = document.querySelectorAll('#connectBtn, #connectBtnMobile');
-        connectBtns.forEach(function(btn) {
-            btn.onclick = function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                window.location.href = 'donate.html';
-                return false;
-            };
-        });
+        // If this is a donate-related element
+        if (href === 'donate.html' || 
+            id === 'connectBtn' || 
+            id === 'connectBtnMobile' ||
+            (className && className.indexOf('lightning-btn') !== -1) ||
+            (className && className.indexOf('bottom-6') !== -1)) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            window.location.href = 'donate.html';
+            return;
+        }
+        target = target.parentElement;
     }
-    
-    // Run immediately (inline script)
-    fixDonateLinks();
-    
-    // Run when DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', fixDonateLinks);
-    }
-    
-    // Run again after everything loads
-    window.addEventListener('load', fixDonateLinks);
-})();
+}, true); // Use capture phase to run FIRST
 </script>
