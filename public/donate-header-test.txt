@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0A101F">
+    
+    <!-- Performance Optimization -->
+    <meta name="description" content="Donate with full transparency on ALI Charity - the first 100% blockchain charity platform. Track every donation in real-time and receive ALI token rewards. Support 13 active charity projects worldwide. Join the revolution today!">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin>
+    
+    <title>ALI Charity - 100% Transparent Blockchain Charity Platform | Donate Crypto Now</title>
+    <link rel="alternate" hreflang="en" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="zh" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="es" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="fr" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="ar" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="ru" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="de" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="ja" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="ko" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="pt" href="https://minadoai.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://minadoai.com/" />
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="GR5FXahNkdWvmjMlhMKnmCdtgLML1zXWMK7FN24aNAg" />
+    
+    <!-- SEO Optimization -->
+    <meta name="keywords" content="blockchain charity, crypto donation, transparent charity, donate crypto, charity platform, humanitarian aid, ALI token, BSC charity, Binance Smart Chain, crypto philanthropy, web3 charity, decentralized charity, donation tracking, on-chain charity, crypto giving, charitable cause, crypto rewards, token donation, BSC token, blockchain giving">
+    <meta name="author" content="ALI Charity">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    <meta name="coverage" content="Worldwide">
+    
+    <!-- Additional Verification -->
+    <meta name="msvalidate.01" content="BING_VALIDATION_CODE" />
