@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Donate | ALI Charity</title>
+    <meta name="description" content="Instant crypto donation with ALI Token rewards. 100% transparent blockchain charity.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #10B981, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-green { box-shadow: 0 0 30px rgba(16, 185, 129, 0.3); }
+        .glow-purple { box-shadow: 0 0 30px rgba(139, 92, 246, 0.3); }
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        @keyframes shine {
+            0% { left: -50%; }
+            100% { left: 150%; }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(16, 185, 129, 0.6); }
+        }
+        .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        .crypto-icon { font-size: 1.5rem; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#0A101F] via-[#111827] to-[#0A101F] text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold gradient-text flex items-center gap-2">
+                    <span class="text-3xl">🏠</span>
+                    ALI Charity
+                </a>
+                <div class="hidden md:flex gap-8">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="token.html" class="text-gray-400 hover:text-white transition-colors">ALI Token</a>
+                    <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    <a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-28 pb-8 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6">
+                <span class="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></span>
+                <span class="text-sm text-gray-300">Live on BSC Mainnet</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text">⚡ Lightning Donate</h1>
+            <p class="text-xl text-gray-400 mb-2">Instant • Transparent • Rewarding</p>
+            <p class="text-gray-500">Every donation earns ALI Tokens at 1:1 USDT rate</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 pb-16">
+        <!-- Mode Toggle -->
+        <div class="flex justify-center mb-8">
+            <div class="glass-card rounded-2xl p-2 inline-flex gap-2">
+                <button id="manualModeBtn" onclick="switchMode('manual')" 
+                        class="px-6 py-3 rounded-xl font-semibold transition-all bg-[#10B981] text-white">
+                    📋 Manual Mode
+                </button>
+                <button id="autoModeBtn" onclick="switchMode('auto')" 
+                        class="px-6 py-3 rounded-xl font-semibold transition-all text-gray-400 hover:text-white">
+                    ⚡ Auto Mode
+                </button>
+            </div>
+        </div>
+
+        <!-- Manual Mode -->
+        <div id="manualMode" class="space-y-6">
+            <!-- Donation Calculator -->
+            <div class="glass-card rounded-3xl p-8 glow-green">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-3xl">💎</span>
+                    Donation Calculator
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Amount Input -->
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">Amount</label>
+                        <div class="relative">
+                            <input type="number" id="donationAmount" placeholder="Enter amount" 
+                                   onchange="calculateReward()" oninput="calculateReward()"
+                                   class="w-full bg-[#0A101F] border border-white/10 rounded-xl px-6 py-4 text-2xl font-bold focus:border-[#10B981] focus:outline-none transition-colors">
+                            <span id="currencySymbol" class="absolute right-6 top-1/2 -translate-y-1/2 text-xl text-gray-400">USDT</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Currency Select -->
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">Cryptocurrency</label>
+                        <select id="currencySelect" onchange="updateCurrency()" 
+                                class="w-full bg-[#0A101F] border border-white/10 rounded-xl px-6 py-4 text-lg focus:border-[#10B981] focus:outline-none transition-colors cursor-pointer">
+                            <option value="USDT">💰 USDT (BSC)</option>
+                            <option value="BTC">₿ BTC (Bitcoin)</option>
+                            <option value="ETH">⟠ ETH (BSC)</option>
+                            <option value="BNB">⬡ BNB (BSC)</option>
+                            <option value="SOL">◎ SOL (Solana)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- ALI Reward Display -->
+                <div class="mt-6 bg-gradient-to-r from-[#10B981]/20 to-[#3B82F6]/20 rounded-2xl p-6 border border-[#10B981]/30">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">Your ALI Token Reward</p>
+                            <p class="text-4xl font-bold gradient-text" id="aliReward">0 ALI</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-gray-400 mb-1">Bonus</p>
+                            <p class="text-xl font-semibold text-[#10B981]" id="bonusPercent">+0%</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">
+                        * $10-$99: +10% | $100-$999: +20% | $1000+: +30%
+                    </p>
+                </div>
+            </div>
+
+            <!-- Donation Address -->
+            <div class="glass-card rounded-3xl p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-3xl">📍</span>
+                    Donation Address
+                </h2>
+                
+                <div id="addressDisplay" class="space-y-4">
+                    <!-- Will be populated by JS -->
+                </div>
+
+                <button onclick="copyAddress()" 
+                        class="w-full mt-6 btn-glow bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold py-4 rounded-xl hover:opacity-90 transition-all flex items-center justify-center gap-2">
+                    <span>📋</span>
+                    Copy Address
+                </button>
+            </div>
+
+            <!-- Submit Donation Info -->
+            <div class="glass-card rounded-3xl p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-3xl">📝</span>
+                    Submit Donation Info
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">Your ALI Token Address (BSC)</label>
+                        <input type="text" id="aliAddress" placeholder="0x..." 
+                               class="w-full bg-[#0A101F] border border-white/10 rounded-xl px-6 py-4 focus:border-[#10B981] focus:outline-none transition-colors"
+                               onchange="validateAddress()">
+                        <p id="addressError" class="text-red-400 text-sm mt-1 hidden">Please enter a valid BSC address (0x...)</p>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">Email (Optional)</label>
+                        <input type="email" id="donorEmail" placeholder="your@email.com" 
+                               class="w-full bg-[#0A101F] border border-white/10 rounded-xl px-6 py-4 focus:border-[#10B981] focus:outline-none transition-colors">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">Transaction Hash (After sending)</label>
+                        <input type="text" id="txHash" placeholder="0x..." 
+                               class="w-full bg-[#0A101F] border border-white/10 rounded-xl px-6 py-4 focus:border-[#10B981] focus:outline-none transition-colors">
+                    </div>
+                    
+                    <button onclick="submitDonation()" 
+                            class="w-full btn-glow bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] text-white font-bold py-4 rounded-xl hover:opacity-90 transition-all">
+                        Submit Donation Info
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto Mode (BNB Only) -->
+        <div id="autoMode" class="hidden space-y-6">
+            <div class="glass-card rounded-3xl p-8 glow-purple">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-3xl">⚡</span>
+                    Quick Donate with MetaMask
+                </h2>
+                
+                <p class="text-gray-400 mb-6">
+                    Select amount and donate instantly. Only BNB supported in auto mode.
+                </p>
+
+                <!-- Preset Amounts -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                    <button onclick="selectAmount(50)" 
+                            class="glass-card rounded-xl py-6 text-center hover:bg-white/10 transition-all border-2 border-transparent hover:border-[#10B981]">
+                        <p class="text-3xl font-bold text-white">$50</p>
+                        <p class="text-sm text-gray-400 mt-1">55 ALI</p>
+                    </button>
+                    <button onclick="selectAmount(100)" 
+                            class="glass-card rounded-xl py-6 text-center hover:bg-white/10 transition-all border-2 border-transparent hover:border-[#10B981]">
+                        <p class="text-3xl font-bold text-white">$100</p>
+                        <p class="text-sm text-gray-400 mt-1">120 ALI</p>
+                    </button>
+                    <button onclick="selectAmount(1000)" 
+                            class="glass-card rounded-xl py-6 text-center hover:bg-white/10 transition-all border-2 border-transparent hover:border-[#10B981]">
+                        <p class="text-3xl font-bold text-white">$1K</p>
+                        <p class="text-sm text-gray-400 mt-1">1,300 ALI</p>
+                    </button>
+                    <button onclick="selectAmount(10000)" 
+                            class="glass-card rounded-xl py-6 text-center hover:bg-white/10 transition-all border-2 border-transparent hover:border-[#10B981]">
+                        <p class="text-3xl font-bold text-white">$10K</p>
+                        <p class="text-sm text-gray-400 mt-1">13,000 ALI</p>
+                    </button>
+                </div>
+
+                <!-- Custom Amount -->
+                <div class="mb-6">
+                    <label class="block text-sm text-gray-400 mb-2">Or Enter Custom Amount</label>
+                    <div class="relative">
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 text-xl text-gray-400">$</span>
+                        <input type="number" id="autoAmount" placeholder="Enter amount" 
+                               class="w-full bg-[#0A101F] border border-white/10 rounded-xl pl-12 pr-20 py-4 text-2xl font-bold focus:border-[#10B981] focus:outline-none transition-colors">
+                        <span class="absolute right-6 top-1/2 -translate-y-1/2 text-xl text-gray-400">BNB</span>
+                    </div>
+                </div>
+
+                <!-- BNB Address -->
+                <div class="bg-[#0A101F] rounded-xl p-4 mb-6 border border-white/10">
+                    <p class="text-sm text-gray-400 mb-2">BNB Donation Address</p>
+                    <code class="text-[#F3BA2F] text-sm break-all">
+                        0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+                    </code>
+                </div>
+
+                <!-- Connect Wallet Button -->
+                <button id="connectWalletBtn" onclick="connectWallet()" 
+                        class="w-full btn-glow bg-gradient-to-r from-[#F3BA2F] to-[#F59E0B] text-black font-bold py-4 rounded-xl hover:opacity-90 transition-all flex items-center justify-center gap-2 pulse-glow">
+                    <span>🦊</span>
+                    Connect MetaMask
+                </button>
+                
+                <!-- Donate Button (Hidden until wallet connected) -->
+                <button id="donateBtn" onclick="donateBNB()" 
+                        class="hidden w-full btn-glow bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold py-4 rounded-xl hover:opacity-90 transition-all mt-4 flex items-center justify-center gap-2">
+                    <span>⚡</span>
+                    Donate Now
+                </button>
+                
+                <p id="walletStatus" class="text-center text-gray-400 mt-4 hidden"></p>
+            </div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <div class="glass-card rounded-2xl p-6 text-center">
+                <div class="text-4xl mb-3">🔒</div>
+                <h3 class="font-bold mb-2">100% Secure</h3>
+                <p class="text-sm text-gray-400">All transactions verified on blockchain</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center">
+                <div class="text-4xl mb-3">💎</div>
+                <h3 class="font-bold mb-2">Earn Rewards</h3>
+                <p class="text-sm text-gray-400">Get ALI Tokens for every donation</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center">
+                <div class="text-4xl mb-3">🌍</div>
+                <h3 class="font-bold mb-2">Global Impact</h3>
+                <p class="text-sm text-gray-400">Support verified charity projects worldwide</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">
+                💎 ALI Token Contract: <code class="text-[#10B981]">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code>
+            </p>
+            <p class="text-gray-500 text-sm">Network: BSC (Binance Smart Chain) | © 2026 ALI Charity</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 glass-card px-6 py-3 rounded-xl opacity-0 transition-opacity duration-300 pointer-events-none z-50">
+        <p id="toastMessage" class="text-white font-semibold"></p>
+    </div>
+
+    <script>
+        // Exchange rates (would be fetched from API in production)
+        const EXCHANGE_RATES = {
+            USDT: 1,
+            BTC: 67000,
+            ETH: 3400,
+            BNB: 580,
+            SOL: 150
+        };
+
+        // Donation addresses
+        const DONATION_ADDRESSES = {
+            USDT: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
+            BTC: 'bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq',
+            ETH: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
+            BNB: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
+            SOL: 'HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT'
+        };
+
+        let selectedAmount = 0;
+        let selectedCurrency = 'USDT';
+        let walletAddress = null;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateAddressDisplay();
+            calculateReward();
+        });
+
+        // Mode switching
+        function switchMode(mode) {
+            const manualMode = document.getElementById('manualMode');
+            const autoMode = document.getElementById('autoMode');
+            const manualBtn = document.getElementById('manualModeBtn');
+            const autoBtn = document.getElementById('autoModeBtn');
+
+            if (mode === 'manual') {
+                manualMode.classList.remove('hidden');
+                autoMode.classList.add('hidden');
+                manualBtn.classList.add('bg-[#10B981]', 'text-white');
+                manualBtn.classList.remove('text-gray-400');
+                autoBtn.classList.remove('bg-[#10B981]', 'text-white');
+                autoBtn.classList.add('text-gray-400');
+            } else {
+                manualMode.classList.add('hidden');
+                autoMode.classList.remove('hidden');
+                autoBtn.classList.add('bg-[#10B981]', 'text-white');
+                autoBtn.classList.remove('text-gray-400');
+                manualBtn.classList.remove('bg-[#10B981]', 'text-white');
+                manualBtn.classList.add('text-gray-400');
+            }
+        }
+
+        // Update currency
+        function updateCurrency() {
+            selectedCurrency = document.getElementById('currencySelect').value;
+            document.getElementById('currencySymbol').textContent = selectedCurrency;
+            updateAddressDisplay();
+            calculateReward();
+        }
+
+        // Update address display
+        function updateAddressDisplay() {
+            const address = DONATION_ADDRESSES[selectedCurrency];
+            const display = document.getElementById('addressDisplay');
+            
+            const colors = {
+                USDT: '#10B981',
+                BTC: '#F7931A',
+                ETH: '#627EEA',
+                BNB: '#F3BA2F',
+                SOL: '#9945FF'
+            };
+
+            display.innerHTML = `
+                <div class="bg-[#0A101F] rounded-xl p-4 border border-white/10">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-400">${selectedCurrency} Address</span>
+                        <span class="text-xs px-3 py-1 rounded-full" style="background: ${colors[selectedCurrency]}20; color: ${colors[selectedCurrency]}">
+                            ${selectedCurrency === 'USDT' || selectedCurrency === 'ETH' || selectedCurrency === 'BNB' ? 'BSC' : selectedCurrency === 'BTC' ? 'Bitcoin' : 'Solana'}
+                        </span>
+                    </div>
+                    <code class="text-sm break-all" style="color: ${colors[selectedCurrency]}">
+                        ${address}
+                    </code>
+                </div>
+            `;
+        }
+
+        // Calculate reward
+        function calculateReward() {
+            const amount = parseFloat(document.getElementById('donationAmount').value) || 0;
+            const rate = EXCHANGE_RATES[selectedCurrency];
+            const usdValue = amount * rate;
+            
+            let bonus = 0;
+            if (usdValue >= 1000) {
+                bonus = 0.30;
+            } else if (usdValue >= 100) {
+                bonus = 0.20;
+            } else if (usdValue >= 10) {
+                bonus = 0.10;
+            }
+            
+            const aliReward = usdValue * (1 + bonus);
+            
+            document.getElementById('aliReward').textContent = aliReward.toFixed(2) + ' ALI';
+            document.getElementById('bonusPercent').textContent = bonus > 0 ? '+' + (bonus * 100) + '%' : '+0%';
+            document.getElementById('bonusPercent').style.color = bonus > 0 ? '#10B981' : '#6B7280';
+        }
+
+        // Validate address
+        function validateAddress() {
+            const address = document.getElementById('aliAddress').value;
+            const error = document.getElementById('addressError');
+            
+            if (address && !address.startsWith('0x')) {
+                error.classList.remove('hidden');
+                return false;
+            }
+            error.classList.add('hidden');
+            return true;
+        }
+
+        // Copy address
+        function copyAddress() {
+            const address = DONATION_ADDRESSES[selectedCurrency];
+            navigator.clipboard.writeText(address).then(() => {
+                showToast('✓ Address copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy. Please copy manually.');
+            });
+        }
+
+        // Submit donation
+        function submitDonation() {
+            if (!validateAddress()) {
+                showToast('Please enter a valid ALI address');
+                return;
+            }
+            
+            const amount = document.getElementById('donationAmount').value;
+            const aliAddress = document.getElementById('aliAddress').value;
+            const email = document.getElementById('donorEmail').value;
+            const txHash = document.getElementById('txHash').value;
+            
+            if (!amount || !aliAddress) {
+                showToast('Please fill in required fields');
+                return;
+            }
+            
+            showToast('✓ Donation info submitted! We will process shortly.');
+            
+            // In production, this would send to backend API
+            console.log({
+                amount,
+                currency: selectedCurrency,
+                aliAddress,
+                email,
+                txHash
+            });
+        }
+
+        // Select preset amount
+        function selectAmount(amount) {
+            selectedAmount = amount;
+            document.getElementById('autoAmount').value = amount;
+            document.querySelectorAll('#autoMode .glass-card').forEach(btn => {
+                btn.classList.remove('border-[#10B981]');
+            });
+        }
+
+        // Connect wallet
+        async function connectWallet() {
+            if (typeof window.ethereum === 'undefined') {
+                showToast('Please install MetaMask');
+                window.open('https://metamask.io/download/', '_blank');
+                return;
+            }
+            
+            try {
+                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                walletAddress = accounts[0];
+                
+                document.getElementById('connectWalletBtn').classList.add('hidden');
+                document.getElementById('donateBtn').classList.remove('hidden');
+                document.getElementById('walletStatus').classList.remove('hidden');
+                document.getElementById('walletStatus').textContent = 'Connected: ' + walletAddress.substring(0, 6) + '...' + walletAddress.substring(38);
+                
+                showToast('✓ Wallet connected!');
+            } catch (error) {
+                showToast('Failed to connect wallet');
+            }
+        }
+
+        // Donate BNB
+        async function donateBNB() {
+            const amount = document.getElementById('autoAmount').value;
+            if (!amount || amount <= 0) {
+                showToast('Please enter an amount');
+                return;
+            }
+            
+            const weiValue = '0x' + (amount * 1e18).toString(16);
+            
+            try {
+                const tx = await window.ethereum.request({
+                    method: 'eth_sendTransaction',
+                    params: [{
+                        from: walletAddress,
+                        to: DONATION_ADDRESSES.BNB,
+                        value: weiValue
+                    }]
+                });
+                
+                showToast('✓ Donation sent! TX: ' + tx.substring(0, 10) + '...');
+            } catch (error) {
+                showToast('Transaction failed: ' + error.message);
+            }
+        }
+
+        // Toast notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            
+            toastMessage.textContent = message;
+            toast.style.opacity = '1';
+            
+            setTimeout(() => {
+                toast.style.opacity = '0';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

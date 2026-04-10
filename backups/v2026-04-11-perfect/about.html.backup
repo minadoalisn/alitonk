@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ALI Charity | 100% Transparent Blockchain Charity</title>
+    <meta name="description" content="Learn about ALI Charity - the world's first 100% transparent blockchain charity platform. Every donation tracked on-chain.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #10B981, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#0A101F] via-[#111827] to-[#0A101F] text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold gradient-text flex items-center gap-2">
+                    <span class="text-3xl">🏠</span>
+                    ALI Charity
+                </a>
+                <div class="hidden md:flex gap-8">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a>
+                    <a href="token.html" class="text-gray-400 hover:text-white transition-colors">Token</a>
+                    <a href="about.html" class="text-white font-semibold">About</a>
+                    <a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text">About ALI Charity</h1>
+            <p class="text-xl text-gray-400">Building the Future of Transparent Giving</p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <div class="glass-card rounded-3xl p-8">
+            <h2 class="text-3xl font-bold mb-6 gradient-text">🌍 Our Mission</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                We believe every donation should create real impact. Our mission is to bring complete transparency to charitable giving using blockchain technology.
+            </p>
+            <p class="text-gray-400">
+                Traditional charities often lack visibility into how funds are used. We've built ALI Charity to change that - every transaction is recorded on-chain, every expenditure is trackable, every donor can verify their contribution.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Blockchain -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">🔗 Why Blockchain?</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="glass-card rounded-2xl p-6">
+                <div class="text-4xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold mb-3">100% Transparency</h3>
+                <p class="text-gray-400">Every transaction is recorded on BSC blockchain. Anyone can verify where funds go.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+                <div class="text-4xl mb-4">⚡</div>
+                <h3 class="text-xl font-bold mb-3">Instant Verification</h3>
+                <p class="text-gray-400">No waiting for annual reports. Check your donation status in real-time on BSCScan.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+                <div class="text-4xl mb-4">🔒</div>
+                <h3 class="text-xl font-bold mb-3">Immutable Records</h3>
+                <p class="text-gray-400">Blockchain records cannot be altered. Your donation history is permanent and tamper-proof.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+                <div class="text-4xl mb-4">💎</div>
+                <h3 class="text-xl font-bold mb-3">ALI Token Rewards</h3>
+                <p class="text-gray-400">Earn tokens for every donation. Participate in governance. Get exclusive benefits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">💝 Our Values</h2>
+        <div class="glass-card rounded-3xl p-8">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-5xl mb-3">✓</div>
+                    <p class="font-semibold">100% Transparent</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-3">✓</div>
+                    <p class="font-semibold">Zero Hidden Fees</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-3">✓</div>
+                    <p class="font-semibold">Community Driven</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-3">✓</div>
+                    <p class="font-semibold">Global Access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="max-w-5xl mx-auto px-6 pb-8">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card rounded-2xl p-8 text-center">
+                <p class="text-4xl font-bold text-[#10B981] mb-2">5+</p>
+                <p class="text-gray-400">Cryptocurrencies Accepted</p>
+            </div>
+            <div class="glass-card rounded-2xl p-8 text-center">
+                <p class="text-4xl font-bold text-[#10B981] mb-2">0%</p>
+                <p class="text-gray-400">Platform Fees</p>
+            </div>
+            <div class="glass-card rounded-2xl p-8 text-center">
+                <p class="text-4xl font-bold text-[#10B981] mb-2">100%</p>
+                <p class="text-gray-400">On-Chain Transparency</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-5xl mx-auto px-6 pb-16">
+        <div class="glass-card rounded-3xl p-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Ready to Make a Difference?</h2>
+            <p class="text-gray-400 mb-6">Join thousands of donors who trust ALI Charity for transparent giving.</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="donate.html" class="px-8 py-4 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-xl hover:opacity-90 transition-all">
+                    Donate Now
+                </a>
+                <a href="faq.html" class="px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all">
+                    Read FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">© 2026 ALI Charity. 100% Transparent Blockchain Charity.</p>
+            <div class="flex justify-center gap-6 text-gray-500 text-sm">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <a href="donate.html" class="hover:text-white">Donate</a>
+                <a href="token.html" class="hover:text-white">Token</a>
+                <a href="faq.html" class="hover:text-white">FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
