@@ -871,14 +871,14 @@
                     </select>
                 </li>
                 <li class="md:hidden">
-                    <button class="w-full bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-3 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtnMobile" data-i18n="connectWallet" onclick="window.location.href='donate.html'">Connect Wallet</button>
+                    <button class="w-full bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-3 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtnMobile" data-i18n="connectWallet">Connect Wallet</button>
                 </li>
             </ul>
             <div class="nav-right hidden md:flex items-center gap-4">
                 <select class="px-3 py-2 bg-bgLight border border-borderColor rounded-lg text-slate-50 focus-ring-custom cursor-pointer" id="langSelect" aria-label="Select language">
                     <!-- populated by JS -->
                 </select>
-                <button class="bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-2.5 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtn" data-i18n="connectWallet" onclick="window.location.href='donate.html'">Connect Wallet</button>
+                <button class="bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-2.5 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtn" data-i18n="connectWallet">Connect Wallet</button>
             </div>
         </div>
     </nav>
@@ -2690,10 +2690,15 @@ window.connectWallet = async function() {
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🔄 [初始化] 绑定连接钱包按钮事件...');
     
-    // 桌面端按钮
+    // 桌面端按钮 - 如果MetaMask未安装则跳转捐赠页面
     const connectBtn = document.getElementById('connectBtn');
     if (connectBtn) {
         connectBtn.addEventListener('click', function(e) {
+            if (typeof window.ethereum === 'undefined') {
+                // MetaMask未安装，跳转到捐赠页面
+                window.location.href = 'donate.html';
+                return;
+            }
             e.preventDefault();
             console.log('🖱️ [点击] 桌面端连接钱包按钮');
             window.connectWallet();
@@ -2703,10 +2708,15 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('⚠️ [初始化] 未找到桌面端按钮');
     }
     
-    // 移动端按钮
+    // 移动端按钮 - 如果MetaMask未安装则跳转捐赠页面
     const mobileConnectBtn = document.getElementById('connectBtnMobile');
     if (mobileConnectBtn) {
         mobileConnectBtn.addEventListener('click', function(e) {
+            if (typeof window.ethereum === 'undefined') {
+                // MetaMask未安装，跳转到捐赠页面
+                window.location.href = 'donate.html';
+                return;
+            }
             e.preventDefault();
             console.log('🖱️ [点击] 移动端连接钱包按钮');
             
