@@ -21,17 +21,17 @@ const MIME_TYPES = {
   '.txt': 'text/plain'
 };
 
-// Security headers
+// Security headers - Allow Tailwind CDN and external resources
 const SECURITY_HEADERS = {
   'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
   'X-Content-Type-Options': 'nosniff',
   'X-Download-Options': 'noopen',
   'X-Frame-Options': 'SAMEORIGIN',
   'X-XSS-Protection': '1; mode=block',
-  'Content-Security-Policy': "default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https:; font-src 'self' data: https: fonts.googleapis.com https://fonts.gstatic.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; frame-src 'self' https://www.googletagmanager.com; child-src 'self' blob: data: https:; object-src 'none'; base-uri 'self'; frame-ancestors 'self' blob: data: https: https: www.googletagmanager.com;",
-  'X-Permitted-Cross-Domain-Policies': "camera=(), microphone=(), fullscreen=(self), payment=(self), USB=()",
+  'Content-Security-Policy': "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google-analytics.com https://tagmanager.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://p.typekit.net; font-src 'self' data: https: https://fonts.gstatic.com https://cdn.tailwindcss.com https://p.typekit.net; img-src 'self' data: https: blob:; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.google-analytics.com https://analytics.google.com https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com; frame-src 'self' https://www.googletagmanager.com https://googleads.g.doubleclick.net;",
+  'X-Permitted-Cross-Domain-Policies': "all",
   'Permissions-Policy': 'geolocation=(), microphone=(), camera=()',
-  'Referrer-Policy': 'no-referrer',
+  'Referrer-Policy': 'no-referrer-when-downgrade',
   'Cache-Control': 'public, max-age=0, must-revalidate'
 };
 
@@ -113,7 +113,7 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   console.log(`🚀 ALI Charity Server running on port ${PORT}`);
   console.log(`📁 Serving from: ${PUBLIC_DIR}`);
-  console.log(`🔒 Security Headers: ACTIVE`);
+  console.log(`🔒 Security Headers: ACTIVE (Tailwind CDN allowed)`);
 });
 
 process.on('SIGTERM', () => {
