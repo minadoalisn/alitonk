@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - ALI Charity</title>
+    <meta name="description" content="Donate cryptocurrency to ALI Charity - 100% transparent blockchain charity">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #10B981, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#0A101F] text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0A101F]/95 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold gradient-text">🏠 ALI Charity</a>
+            <div class="flex gap-6">
+                <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+                <a href="token.html" class="text-gray-400 hover:text-white">Token</a>
+                <a href="about.html" class="text-gray-400 hover:text-white">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Make a Donation</h1>
+                <p class="text-gray-400 text-lg">100% transparent blockchain charity</p>
+            </div>
+
+            <!-- Donation Addresses -->
+            <div class="space-y-6">
+                <!-- USDT -->
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-bold text-[#10B981]">💰 USDT (BSC)</h2>
+                        <span class="text-sm text-[#10B981]">Recommended</span>
+                    </div>
+                    <code class="block bg-[#0A101F] p-4 rounded-lg text-sm break-all text-[#10B981] mb-4">
+                        0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+                    </code>
+                    <button onclick="copyToClipboard('0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC')" 
+                            class="w-full bg-[#10B981] hover:bg-[#10B981]/80 text-white font-bold py-3 rounded-lg transition-colors">
+                        Copy Address
+                    </button>
+                </div>
+
+                <!-- BTC -->
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <h2 class="text-xl font-bold text-[#F7931A] mb-4">₿ BTC (Bitcoin)</h2>
+                    <code class="block bg-[#0A101F] p-4 rounded-lg text-sm break-all mb-4">
+                        bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+                    </code>
+                    <button onclick="copyToClipboard('bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq')" 
+                        class="w-full bg-[#F7931A] hover:bg-[#F7931A]/80 text-white font-bold py-3 rounded-lg transition-colors">
+                        Copy Address
+                    </button>
+                </div>
+
+                <!-- ETH -->
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <h2 class="text-xl font-bold text-[#627EEA] mb-4">⟠ ETH (BSC)</h2>
+                    <code class="block bg-[#0A101F] p-4 rounded-lg text-sm break-all mb-4">
+                        0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+                    </code>
+                    <button onclick="copyToClipboard('0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC')" 
+                        class="w-full bg-[#627EEA] hover:bg-[#627EEA]/80 text-white font-bold py-3 rounded-lg transition-colors">
+                        Copy Address
+                    </button>
+                </div>
+
+                <!-- BNB -->
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <h2 class="text-xl font-bold text-[#F3BA2F] mb-4">⬡ BNB (BSC)</h2>
+                    <code class="block bg-[#0A101F] p-4 rounded-lg text-sm break-all mb-4">
+                        0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+                    </code>
+                    <button onclick="copyToClipboard('0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC')" 
+                        class="w-full bg-[#F3BA2F] hover:bg-[#F3BA2F]/80 text-black font-bold py-3 rounded-lg transition-colors">
+                        Copy Address
+                    </button>
+                </div>
+
+                <!-- SOL -->
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <h2 class="text-xl font-bold text-[#9945FF] mb-4">◎ SOL (Solana)</h2>
+                    <code class="block bg-[#0A101F] p-4 rounded-lg text-sm break-all mb-4">
+                        HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+                    </code>
+                    <button onclick="copyToClipboard('HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT')" 
+                        class="w-full bg-[#9945FF] hover:bg-[#9945FF]/80 text-white font-bold py-3 rounded-lg transition-colors">
+                        Copy Address
+                    </button>
+                </div>
+            </div>
+
+            <!-- How to Donate -->
+            <div class="mt-8 bg-white/5 rounded-2xl p-6 border border-white/10">
+                <h3 class="text-lg font-bold mb-4">💡 How to Donate</h3>
+                <ol class="list-decimal list-inside space-y-2 text-gray-300">
+                    <li>Choose your preferred cryptocurrency above</li>
+                    <li>Click "Copy Address" button</li>
+                    <li>Send your donation from your crypto wallet</li>
+                    <li>Your donation will be tracked on blockchain</li>
+                    <li>You'll receive ALI Tokens as reward (1 ALI = 1 USDT)</li>
+                </ol>
+            </div>
+
+            <!-- ALI Token Info -->
+            <div class="mt-6 bg-gradient-to-r from-[#10B981]/20 to-[#3B82F6]/20 rounded-2xl p-6 border border-white/10">
+                <h3 class="text-lg font-bold mb-4">💎 ALI Token Rewards</h3>
+                <p class="text-gray-300 mb-4">Every donation earns ALI Tokens at 1:1 USDT rate. ALI Token gives you:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300">
+                    <li>Governance rights in DAO</li>
+                    <li>Future platform benefits</li>
+                    <li>Community voting power</li>
+                </ul>
+                <div class="mt-4 text-sm text-gray-400">
+                    <p>Contract: <code class="text-[#10B981]">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code></p>
+                    <p>Network: BSC (Binance Smart Chain)</p>
+                </div>
+            </div>
+
+            <!-- Copy Success Message -->
+            <div id="copyMessage" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-[#10B981] text-white px-6 py-3 rounded-lg shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none">
+                ✓ Address copied to clipboard!
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-white/10">
+        <div class="max-w-6xl mx-auto text-center text-gray-400">
+            <p>&copy; 2026 ALI Charity. 100% Transparent Blockchain Charity.</p>
+            <div class="mt-4 flex justify-center gap-6">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <a href="about.html" class="hover:text-white">About</a>
+                <a href="faq.html" class="hover:text-white">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                var msg = document.getElementById('copyMessage');
+                msg.style.opacity = '1';
+                setTimeout(function() {
+                    msg.style.opacity = '0';
+                }, 2000);
+            }).catch(function(err) {
+                alert('Failed to copy. Please copy manually: ' + text);
+            });
+        }
+    </script>
+</body>
+</html>
