@@ -1,0 +1,17 @@
+🚀 初始化自动监听服务...
+✅ 已连接BSC: https://bsc.publicnode.com/
+✅ 流动性钱包: 0x61cE82ab856Ff1A7006b3f33485F604b963e77c3
+💰 ALI余额: 200000000.0 ALI
+
+👂 开始监听链上交易...
+
+✅ 监听中... (按Ctrl+C停止)
+/workspace/projects/alitonk/backend/services/autoMonitor.js:79
+    for (const txHash of block.transactions) {
+                               ^
+
+TypeError: Cannot read properties of null (reading 'transactions')
+    at JsonRpcProvider.<anonymous> (/workspace/projects/alitonk/backend/services/autoMonitor.js:79:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+Node.js v24.13.1
