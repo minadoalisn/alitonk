@@ -2604,6 +2604,13 @@ window.addEventListener('load', function() {
     }
 
     // Initialize language with auto-detection
+    async function initAutoLanguage() {
+        // Auto-detect language from browser
+        const browserLang = navigator.language || navigator.userLanguage || 'en';
+        // Return first part (e.g., 'en' from 'en-US')
+        return browserLang.split('-')[0];
+    }
+
     async function initLanguage() {
         // First, try to auto-detect language from IP
         const autoDetectedLang = await initAutoLanguage();
