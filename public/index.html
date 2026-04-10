@@ -856,10 +856,17 @@
             <ul class="hidden md:flex gap-5 list-none" id="navLinks" role="navigation">
                 <li><a href="#projects" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="projects">Projects</a></li>
                 <li>
-                    <a href="donate.html" class="lightning-btn relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 font-semibold px-5 py-2.5 rounded-xl cursor-pointer flex items-center gap-2">
+                    <a href="donate.html" class="lightning-btn relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 font-semibold px-5 py-2.5 rounded-xl cursor-pointer flex items-center gap-2 no-script-only">
                         <span class="text-lg">⚡</span>
                         <span>Lightning Donate</span>
                     </a>
+                    <!-- Fallback for users with JS disabled - show the button normally -->
+                    <noscript>
+                        <a href="donate.html" class="bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 font-semibold px-5 py-2.5 rounded-xl flex items-center gap-2">
+                            <span class="text-lg">⚡</span>
+                            <span>Lightning Donate</span>
+                        </a>
+                    </noscript>
                 </li>
                 <li><a href="token.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="token">ALI Token</a></li>
                 <li><a href="token-dashboard.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="tokenDashboard">Token Dashboard</a></li>
@@ -3449,40 +3456,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Emergency Fix: Ensure donate links work -->
 <script>
+// DEBUG: Log when this script runs
+window.donateFixApplied = false;
+
 (function() {
-    // Override ALL donate buttons and links to redirect to donate.html
+    // Run fix as early as possible
     function fixDonateLinks() {
-        // Connect wallet buttons
-        document.querySelectorAll('#connectBtn, #connectBtnMobile').forEach(function(btn) {
-            btn.removeAttribute('onclick');
-            btn.onclick = function() {
+        if (window.donateFixApplied) return;
+        window.donateFixApplied = true;
+        
+        // Fix ALL donate links
+        var donateLinks = document.querySelectorAll('a[href="donate.html"]');
+        donateLinks.forEach(function(link) {
+            link.onclick = function(e) {
+                e.preventDefault();
+                e.stopPropagation();
                 window.location.href = 'donate.html';
+                return false;
             };
         });
         
-        // Lightning Donate buttons in navigation
-        document.querySelectorAll('.lightning-btn, a[href="donate.html"]').forEach(function(link) {
-            link.removeAttribute('onclick');
-            link.onclick = function(e) {
+        // Fix Connect Wallet buttons
+        var connectBtns = document.querySelectorAll('#connectBtn, #connectBtnMobile');
+        connectBtns.forEach(function(btn) {
+            btn.onclick = function(e) {
                 e.preventDefault();
+                e.stopPropagation();
                 window.location.href = 'donate.html';
-            };
-        });
-        
-        // Floating donate button (mobile)
-        document.querySelectorAll('.fixed.bottom-6 a[href="donate.html"]').forEach(function(link) {
-            link.removeAttribute('onclick');
-            link.onclick = function(e) {
-                e.preventDefault();
-                window.location.href = 'donate.html';
+                return false;
             };
         });
     }
     
-    // Run immediately and after DOM is ready
+    // Run immediately (inline script)
     fixDonateLinks();
-    document.addEventListener('DOMContentLoaded', fixDonateLinks);
     
-    console.log('[ALIC] Donate link fix applied');
+    // Run when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fixDonateLinks);
+    }
+    
+    // Run again after everything loads
+    window.addEventListener('load', fixDonateLinks);
 })();
 </script>
