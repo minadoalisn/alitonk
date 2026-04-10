@@ -3446,3 +3446,43 @@ document.addEventListener('DOMContentLoaded', function() {
     }]
 }
 </script>
+
+<!-- Emergency Fix: Ensure donate links work -->
+<script>
+(function() {
+    // Override ALL donate buttons and links to redirect to donate.html
+    function fixDonateLinks() {
+        // Connect wallet buttons
+        document.querySelectorAll('#connectBtn, #connectBtnMobile').forEach(function(btn) {
+            btn.removeAttribute('onclick');
+            btn.onclick = function() {
+                window.location.href = 'donate.html';
+            };
+        });
+        
+        // Lightning Donate buttons in navigation
+        document.querySelectorAll('.lightning-btn, a[href="donate.html"]').forEach(function(link) {
+            link.removeAttribute('onclick');
+            link.onclick = function(e) {
+                e.preventDefault();
+                window.location.href = 'donate.html';
+            };
+        });
+        
+        // Floating donate button (mobile)
+        document.querySelectorAll('.fixed.bottom-6 a[href="donate.html"]').forEach(function(link) {
+            link.removeAttribute('onclick');
+            link.onclick = function(e) {
+                e.preventDefault();
+                window.location.href = 'donate.html';
+            };
+        });
+    }
+    
+    // Run immediately and after DOM is ready
+    fixDonateLinks();
+    document.addEventListener('DOMContentLoaded', fixDonateLinks);
+    
+    console.log('[ALIC] Donate link fix applied');
+})();
+</script>
