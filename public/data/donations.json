@@ -1,0 +1,18 @@
+{
+  "donations": [
+    {
+      "id": 1,
+      "txHash": "0x1234...5678",
+      "currency": "USDT",
+      "amount": "0.3",
+      "timestamp": "2026-04-10T10:00:00Z",
+      "status": "confirmed"
+    }
+  ],
+  "stats": {
+    "totalDonations": 2,
+    "totalAmount": 0.3,
+    "pendingAmount": 0,
+    "aliTokensIssued": 0
+  }
+}

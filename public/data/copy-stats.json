@@ -1,0 +1,28 @@
+{
+  "today": {
+    "total": 0,
+    "BTC": 0,
+    "ETH": 0,
+    "USDT": 0,
+    "BNB": 0,
+    "SOL": 0
+  },
+  "yesterday": {
+    "total": 0,
+    "BTC": 0,
+    "ETH": 0,
+    "USDT": 0,
+    "BNB": 0,
+    "SOL": 0
+  },
+  "thisMonth": {
+    "total": 0,
+    "BTC": 0,
+    "ETH": 0,
+    "USDT": 0,
+    "BNB": 0,
+    "SOL": 0
+  },
+  "totalRecords": 0,
+  "lastUpdated": "2026-04-11T13:00:00Z"
+}
