@@ -883,7 +883,11 @@
                 <!-- Mobile only: language select and connect wallet -->
                 <li class="md:hidden">
                     <select class="w-full px-3 py-2 bg-bgLight border border-borderColor rounded-lg text-slate-50 focus-ring-custom cursor-pointer" id="langSelectMobile" aria-label="Select language">
-                        <!-- populated by JS -->
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                        <option value="ru">Русский</option>
                     </select>
                 </li>
                 <li class="md:hidden">
@@ -891,8 +895,12 @@
                 </li>
             </ul>
             <div class="nav-right hidden md:flex items-center gap-4">
-                <select class="px-3 py-2 bg-bgLight border border-borderColor rounded-lg text-slate-50 focus-ring-custom cursor-pointer" id="langSelect" aria-label="Select language">
-                    <!-- populated by JS -->
+                <select class="px-3 py-2 bg-bgLight border border-borderColor rounded-lg text-slate-50 focus-ring-custom cursor-pointer min-w-[120px]" id="langSelect" aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ar">العربية</option>
+                    <option value="ru">Русский</option>
                 </select>
                 <button class="bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-2.5 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtn" data-i18n="connectWallet">Connect Wallet</button>
             </div>
@@ -3287,10 +3295,20 @@ preloadLinks.forEach(link => {
 
 <!-- Mobile Floating Lightning Donate Button -->
 <div class="fixed bottom-6 right-6 z-[999] md:hidden">
-    <a href="donate.html" 
+    <a href="donate.html"
        class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 shadow-lg shadow-amber-500/30 animate-pulse hover:scale-110 transition-transform"
        aria-label="Lightning Donate">
         <span class="text-2xl">⚡</span>
+    </a>
+</div>
+
+<!-- Desktop Floating Lightning Donate Button -->
+<div class="fixed bottom-8 right-8 z-[999] hidden md:block">
+    <a href="donate.html"
+       class="floating-lightning-btn flex items-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold shadow-lg shadow-amber-500/40 hover:scale-105 transition-all"
+       aria-label="Lightning Donate">
+        <span class="text-2xl">⚡</span>
+        <span>闪电捐赠</span>
     </a>
 </div>
 
