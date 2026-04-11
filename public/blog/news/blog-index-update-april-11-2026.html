@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI Charity Blog - Latest Blockchain Charity News & Insights</title>
+    <meta name="description" content="Stay updated with the latest blockchain charity news, cryptocurrency donation guides, and humanitarian insights. Expert analysis on transparent giving and Web3 philanthropy.">
+    <meta name="keywords" content="blockchain charity blog, crypto donation news, humanitarian insights, ALI Charity blog, transparent giving news">
+    <meta name="author" content="ALI Charity">
+    <meta name="published" content="2026-04-11T15:35:00+08:00">
+    <meta name="modified" content="2026-04-11T15:35:00+08:00">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ALI Charity Blog - Blockchain Charity News">
+    <meta property="og:description" content="Latest blockchain charity news, crypto donation guides, and humanitarian insights from ALI Charity experts.">
+    <meta property="og:url" content="https://alicharity.blog/blog-index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://minadoai.com/images/og-image.jpg">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ALI Charity Blog">
+    <meta name="twitter:description" content="Latest blockchain charity news, crypto donation guides, and humanitarian insights.">
+    <meta name="twitter:image" content="https://minadoai.com/images/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alicharity.blog/blog-index.html">
+
+    <!-- Style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .featured-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #333;
+        }
+
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .article-title a:hover {
+            color: #667eea;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-excerpt {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .latest-list {
+            list-style: none;
+        }
+
+        .latest-item {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: border-left-color 0.2s;
+        }
+
+        .latest-item:hover {
+            border-left-color: #764ba2;
+        }
+
+        .latest-item a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .latest-item-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .latest-item-meta {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            margin-top: 1rem;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-tag {
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .category-tag:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .category-tag.active {
+            background: #667eea;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤝 ALI Charity Blog</h1>
+            <p class="subtitle">Blockchain Philanthropy Insights • Transparent Giving • Web3 Impact</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Expert Articles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Transparent</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Real-Time Tracking</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Global Impact</div>
+                </div>
+            </div>
+        </header>
+
+        <section class="featured-section">
+            <h2 class="section-title">🔥 Breaking News Today</h2>
+
+            <div class="featured-grid">
+                <div class="article-card">
+                    <div class="article-image">🌍</div>
+                    <div class="article-content">
+                        <span class="article-tag">BREAKING NEWS</span>
+                        <h3 class="article-title">
+                            <a href="https://alicharity.blog/middle-east-humanitarian-crisis-blockchain-solution-april-11-2026">Middle East Humanitarian Crisis: How Blockchain Can Save Millions as Aid Corridors Choke</a>
+                        </h3>
+                        <div class="article-meta">📅 April 11, 2026 • ⏱️ 8 min read</div>
+                        <p class="article-excerpt">Breaking: Middle East war chokes aid corridors, millions face crisis. Discover how blockchain charity technology can bypass blocked aid routes and deliver help directly to victims.</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">📈</div>
+                    <div class="article-content">
+                        <span class="article-tag">MARKET UPDATE</span>
+                        <h3 class="article-title">
+                            <a href="https://alicharity.blog/bitcoin-price-surge-charity-impact-april-11-2026">Bitcoin Price Surge Ignites Wave of Crypto Donations: April 2026 Market Update</a>
+                        </h3>
+                        <div class="article-meta">📅 April 11, 2026 • ⏱️ 7 min read</div>
+                        <p class="article-excerpt">Breaking: Bitcoin price rally triggers massive surge in cryptocurrency donations. How rising crypto prices are driving a new era of blockchain charity.</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">🚀</div>
+                    <div class="article-content">
+                        <span class="article-tag">INDUSTRY REPORT</span>
+                        <h3 class="article-title">
+                            <a href="https://alicharity.blog/blockchain-charity-revolution-2026-april-11">The Blockchain Charity Revolution: 2026 Year of Transparency and Accountability</a>
+                        </h3>
+                        <div class="article-meta">📅 April 11, 2026 • ⏱️ 10 min read</div>
+                        <p class="article-excerpt">2026 marks the year blockchain charity goes mainstream. How transparent, traceable donations are revolutionizing philanthropy and why traditional charity is being disrupted.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2 class="section-title">📚 Featured Stories</h2>
+            <p style="margin-bottom: 1.5rem; color: #666;">Expert analysis on how blockchain technology is transforming humanitarian aid in 2026</p>
+
+            <div class="featured-grid">
+                <div class="article-card">
+                    <div class="article-image">🛡️</div>
+                    <div class="article-content">
+                        <span class="article-tag">HUMANITARIAN AID</span>
+                        <h3 class="article-title">
+                            <a href="https://alicharity.blog/humanitarian-aid-guide-2026">How Blockchain Charity Can Help War Victims - 2026 Humanitarian Crisis Guide</a>
+                        </h3>
+                        <div class="article-meta">📅 April 7, 2026 • ⏱️ 9 min read</div>
+                        <p class="article-excerpt">Explore how cryptocurrency and blockchain technology are revolutionizing humanitarian response during global conflicts and crises.</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">💎</div>
+                    <div class="article-content">
+                        <span class="article-tag">TRANSPARENCY</span>
+                        <h3 class="article-title">
+                            <a href="https://alicharity.blog/blockchain-transparency-revolution">How Blockchain is Revolutionizing Charity Transparency</a>
+                        </h3>
+                        <div class="article-meta">📅 April 7, 2026 • ⏱️ 11 min read</div>
+                        <p class="article-excerpt">Discover how blockchain technology is creating a new standard for charity transparency with 100% verifiable donations and real-time tracking.</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">💰</div>
+                    <div class="article-content">
+                        <span class="article-tag">CRYPTO GUIDE</span>
+                        <h3 class="article-title">
+                            <a href="https://alicharity.blog/crypto-donation-guide-2026">Complete Guide to Crypto Donations 2026</a>
+                        </h3>
+                        <div class="article-meta">📅 April 7, 2026 • ⏱️ 8 min read</div>
+                        <p class="article-excerpt">Step-by-step guide to donating cryptocurrency to charity. Learn how to donate BTC, ETH, USDT safely and maximize your impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2 class="section-title">📝 Latest Articles</h2>
+
+            <div class="categories">
+                <span class="category-tag active">All</span>
+                <span class="category-tag">Blockchain Charity</span>
+                <span class="category-tag">Crypto Donations</span>
+                <span class="category-tag">Humanitarian</span>
+                <span class="category-tag">SEO</span>
+                <span class="category-tag">Token Economics</span>
+            </div>
+
+            <ul class="latest-list">
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/web3-philanthropy-future">
+                        <div class="latest-item-title">The Future of Web3 Philanthropy</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 10 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/ali-token-economics">
+                        <div class="latest-item-title">Understanding ALI Token Economics</div>
+                        <div class="latest-item-meta">📅 April 4, 2026 • ⏱️ 7 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/charity-transparency-crisis">
+                        <div class="latest-item-title">The Charity Transparency Crisis: By the Numbers</div>
+                        <div class="latest-item-meta">📅 April 3, 2026 • ⏱️ 6 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/global-crypto-charity">
+                        <div class="latest-item-title">How Crypto Enables Global Charitable Giving</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 10 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/how-to-donate-cryptocurrency-to-charity-2026">
+                        <div class="latest-item-title">How to Donate Cryptocurrency to Charity 2026</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 8 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/best-transparent-charity-platform">
+                        <div class="latest-item-title">Best Transparent Charity Platform 2026</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 9 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/blockchain-charity-donation-benefits">
+                        <div class="latest-item-title">Blockchain Charity Donation Benefits</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 12 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/crypto-philanthropy-guide-for-beginners">
+                        <div class="latest-item-title">Crypto Philanthropy Guide for Beginners</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 7 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/why-donate-to-blockchain-charity">
+                        <div class="latest-item-title">Why Donate to Blockchain Charity?</div>
+                        <div class="latest-item-meta">📅 April 7, 2026 • ⏱️ 8 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/best-crypto-charity-platforms">
+                        <div class="latest-item-title">Best Crypto Charity Platforms 2026</div>
+                        <div class="latest-item-meta">📅 April 5, 2026 • ⏱️ 6 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/blockchain-charity-tax-benefits">
+                        <div class="latest-item-title">Blockchain Charity Tax Benefits 2026</div>
+                        <div class="latest-item-meta">📅 April 1, 2026 • ⏱️ 8 min read</div>
+                    </a>
+                </li>
+                <li class="latest-item">
+                    <a href="https://alicharity.blog/future-of-giving-2026">
+                        <div class="latest-item-title">The Future of Giving 2026</div>
+                        <div class="latest-item-meta">📅 April 1, 2026 • ⏱️ 8 min read</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <div class="cta-section">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Experience 100% transparent charitable giving on the blockchain. Every donation tracked, every impact verified.</p>
+            <a href="https://minadoai.com/donate.html" class="cta-button">Start Donating →</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Accepts: BTC, ETH, USDT, BNB, SOL • Get ALI Token Rewards</p>
+        </div>
+
+        <section class="featured-section">
+            <h2 class="section-title">🔍 Popular Topics</h2>
+            <div class="categories">
+                <span class="category-tag">Blockchain Charity</span>
+                <span class="category-tag">Crypto Donations</span>
+                <span class="category-tag">Transparency</span>
+                <span class="category-tag">Humanitarian Aid</span>
+                <span class="category-tag">ALI Token</span>
+                <span class="category-tag">Web3 Philanthropy</span>
+                <span class="category-tag">DeFi for Good</span>
+                <span class="category-tag">Smart Contracts</span>
+                <span class="category-tag">Tax Benefits</span>
+                <span class="category-tag">Global Impact</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "ALI Charity Blog",
+        "description": "Blockchain Philanthropy Insights - Expert analysis on crypto charity, transparent donations, and the future of Web3 philanthropy",
+        "url": "https://alicharity.blog/blog-index.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "ALI Charity",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://minadoai.com/images/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "Middle East Humanitarian Crisis: How Blockchain Can Save Millions as Aid Corridors Choke",
+                "url": "https://alicharity.blog/middle-east-humanitarian-crisis-blockchain-solution-april-11-2026",
+                "datePublished": "2026-04-11",
+                "author": {
+                    "@type": "Organization",
+                    "name": "ALI Charity"
+                }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Bitcoin Price Surge Ignites Wave of Crypto Donations",
+                "url": "https://alicharity.blog/bitcoin-price-surge-charity-impact-april-11-2026",
+                "datePublished": "2026-04-11",
+                "author": {
+                    "@type": "Organization",
+                    "name": "ALI Charity"
+                }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "The Blockchain Charity Revolution: 2026 Year of Transparency and Accountability",
+                "url": "https://alicharity.blog/blockchain-charity-revolution-2026-april-11",
+                "datePublished": "2026-04-11",
+                "author": {
+                    "@type": "Organization",
+                    "name": "ALI Charity"
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
