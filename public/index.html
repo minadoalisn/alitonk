@@ -866,6 +866,8 @@
       ]
     }
     </script>
+    <!-- API Performance Optimizer -->
+    <script src="/js/api-optimizer.js" defer></script>
 </head>
 <body class="font-sans bg-gradient-hero text-slate-50 min-h-screen">
     <!-- SEO & UI Optimizers -->
@@ -971,7 +973,7 @@ async function updateCryptoPrices() {
             const { data, timestamp } = JSON.parse(cached);
             if (Date.now() - timestamp < CACHE_DURATION) {
                 displayCryptoPrices(data);
-                console.log('✅ Using cached prices');
+                // Using cached prices
                 return;
             }
         }
@@ -985,10 +987,10 @@ async function updateCryptoPrices() {
                 data,
                 timestamp: Date.now()
             }));
-            console.log('✅ Prices updated from API');
+            // Prices updated
         }
     } catch (error) {
-        console.log('Price update error:', error);
+        console.warn('Price error');
         const cached = localStorage.getItem(PRICE_CACHE_KEY);
         if (cached) {
             const { data } = JSON.parse(cached);
@@ -1059,7 +1061,7 @@ function formatPrice(price) {
                     return;
                 }
             } catch (e) {
-                console.log('Backend API failed:', e);
+                // API failed
             }
             
             // Fallback to CoinGecko if backend fails
@@ -1075,7 +1077,7 @@ function formatPrice(price) {
                     document.getElementById('aliPrice').textContent = '$1.00'; // Fixed: 1 ALI = 1 USDT donation rate
                 }
             } catch (e2) {
-                console.log('CoinGecko also failed:', e2);
+                // Fallback failed
                 // Use hardcoded fallback prices
                 document.getElementById('btcPrice').textContent = '$66,300';
                 document.getElementById('ethPrice').textContent = '$1,990';
@@ -2311,7 +2313,7 @@ async function initDefaultProjects() {
             }
         }
     } catch (e) {
-        console.log('Failed to fetch from API, using defaults:', e.message);
+        // Using defaults
     }
     
     // Default projects - all 12 predefined projects plus general
@@ -2332,7 +2334,7 @@ async function initDefaultProjects() {
     ];
 
     localStorage.setItem('charityProjects', JSON.stringify(defaultProjects));
-    console.log('Initialized default projects:', defaultProjects.length);
+    // Projects init
     return defaultProjects;
 }
 
@@ -2448,7 +2450,7 @@ function renderActiveProjects() {
                     description: p.description || ''
                 }));
                 localStorage.setItem('charityProjects', JSON.stringify(newProjects));
-                console.log('Updated projects from API:', newProjects.length);
+                // Projects updated
                 // Re-render with updated data
                 // renderActiveProjects(); // Disabled for performance - using static HTML
             }
@@ -3376,8 +3378,15 @@ document.addEventListener('DOMContentLoaded', function() {
             page_location: window.location.href
         });
     }
+    <!-- Ralph-Loop Pattern -->
+    <script src="/js/ralph-loop.js" defer></script>
+    <!-- Production Optimizer -->
+    <script src="/js/production.js" defer></script>
+    <script src="/js/crypto-prices.js" defer></script>
     console.log('[ALI Charity] Page loaded:', new Date().toISOString());
 </script>
+    <!-- Performance Optimizer -->
+    <script src="/js/performance-optimizer.js" defer></script>
 </body>
 </html>
 
