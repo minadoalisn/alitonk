@@ -3366,30 +3366,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-//<!-- 性能优化和返回首页功能 --> // CN removed
 <script src="/js/optimizations.js"></script>
 
 <!-- Page View Tracking -->
 <script>
-    // Send page view to Google Analytics 4
     if (typeof gtag === 'function') {
         gtag('event', 'page_view', {
             page_title: document.title,
             page_location: window.location.href
         });
     }
-    <!-- Ralph-Loop Pattern -->
-    <script src="/js/ralph-loop.js" defer></script>
-    <!-- Production Optimizer -->
-    <script src="/js/production.js" defer></script>
-    <script src="/js/crypto-prices.js" defer></script>
-    console.log('[ALI Charity] Page loaded:', new Date().toISOString());
 </script>
-    <!-- Performance Optimizer -->
-    <script src="/js/performance-optimizer.js" defer></script>
-</body>
-</html>
 
+<!-- Ralph-Loop Pattern -->
+<script src="/js/ralph-loop.js" defer></script>
+<!-- Production Optimizer -->
+<script src="/js/production.js" defer></script>
+<script src="/js/crypto-prices.js" defer></script>
+<!-- Performance Optimizer -->
+<script src="/js/performance-optimizer.js" defer></script>
+
+<!-- SEO Schema -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -3477,3 +3474,5 @@ document.addEventListener('click', function(e) {
     }
 }, true); // Use capture phase to run FIRST
 </script>
+</body>
+</html>
