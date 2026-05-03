@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0A101F">
+    <meta name="description" content="ALI Charity Terms of Service - Terms and conditions for using our blockchain-based transparent charity platform and ALI Token services.">
+    <title>Terms of Service - ALI Charity</title>
+    <link rel="canonical" href="https://minadoai.com/terms.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#0A101F',
+                        bgLight: '#1a1a2e',
+                        primary: '#60a5fa',
+                        cta: '#f97316',
+                        textSecondary: '#94a3b8',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { font-family: 'Inter', system-ui, sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background: #0A101F; color: #e2e8f0; min-height: 100vh; }
+        .text-gradient { background: linear-gradient(135deg, #60a5fa, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        a { color: #60a5fa; }
+        a:hover { text-decoration: underline; }
+        .legal-content h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #fff; }
+        .legal-content h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #e2e8f0; }
+        .legal-content p { margin-bottom: 1rem; line-height: 1.75; color: #94a3b8; }
+        .legal-content ul { margin-bottom: 1rem; padding-left: 1.5rem; color: #94a3b8; line-height: 1.75; }
+        .legal-content ul li { margin-bottom: 0.5rem; }
+        .legal-content strong { color: #e2e8f0; }
+        .last-updated { color: #60a5fa; font-size: 0.875rem; }
+        .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); opacity: 0; pointer-events: none; transition: opacity 0.3s; z-index: 999; }
+        .nav-overlay.show { opacity: 1; pointer-events: auto; }
+        #navLinks { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
+        #navLinks a { color: #94a3b8; transition: color 0.2s; padding: 0.25rem 0.5rem; border-radius: 0.25rem; }
+        #navLinks a:hover { color: #60a5fa; text-decoration: none; }
+        @media (max-width: 768px) {
+            #navLinks { display: none; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: #1a1a2e; padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); z-index: 1000; }
+            #navLinks.show { display: flex; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 left-0 right-0 z-[1000] bg-bgDark/95 backdrop-blur-xl py-4">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gradient font-display">ALI Charity</a>
+            <button class="md:hidden text-slate-50 text-2xl" id="menuToggle" aria-label="Toggle menu">☰</button>
+            <ul class="hidden md:flex gap-5" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="token.html">Token</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main class="pt-28 pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-4">Terms of Service</h1>
+                <p class="last-updated">Last Updated: May 3, 2026</p>
+            </div>
+
+            <div class="legal-content bg-bgLight rounded-2xl p-8 md:p-12 border border-borderColor">
+                <p>Welcome to ALI Charity. These Terms of Service ("Terms") govern your use of the ALI Charity website at <a href="https://minadoai.com">https://minadoai.com</a> (the "Site"), the ALI Token, our blockchain-based charity platform, and all related services (collectively, the "Services").</p>
+                <p>By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, do not use our Services.</p>
+
+                <h2>1. About ALI Charity</h2>
+                <p>ALI Charity is a blockchain-based charitable giving platform built on the Binance Smart Chain (BSC). Our platform enables transparent, on-chain donations to verified humanitarian projects worldwide. Donors receive ALI Tokens as rewards for their contributions.</p>
+                <p><strong>Key Contract Addresses:</strong></p>
+                <ul>
+                    <li><strong>ALI Token Contract (BSC):</strong> <code class="bg-bgDark px-2 py-1 rounded text-green-400 text-sm break-all">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code></li>
+                    <li><strong>Donation Treasury (BSC):</strong> <code class="bg-bgDark px-2 py-1 rounded text-green-400 text-sm break-all">0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC</code></li>
+                </ul>
+
+                <h2>2. Acceptance of Terms</h2>
+                <p>By using our Services, you represent that:</p>
+                <ul>
+                    <li>You are at least 18 years of age</li>
+                    <li>You have the legal capacity to enter into these Terms</li>
+                    <li>You are not prohibited from using cryptocurrency services in your jurisdiction</li>
+                    <li>All information you provide is accurate and truthful</li>
+                </ul>
+
+                <h2>3. Donations</h2>
+
+                <h3>3.1 Donation Process</h3>
+                <p>Donations on our platform are processed through smart contracts on the Binance Smart Chain. When you donate:</p>
+                <ul>
+                    <li>Your cryptocurrency is transferred directly to our donation treasury wallet</li>
+                    <li>All transactions are recorded on-chain and are publicly verifiable</li>
+                    <li>You may receive ALI Tokens based on the donation amount and bonus tier applicable</li>
+                </ul>
+
+                <h3>3.2 Donation Bonus Tiers</h3>
+                <ul>
+                    <li><strong>$10 - $99:</strong> +10% bonus ALI Tokens</li>
+                    <li><strong>$100 - $999:</strong> +20% bonus ALI Tokens</li>
+                    <li><strong>$1,000+:</strong> +30% bonus ALI Tokens</li>
+                </ul>
+                <p>Bonus rates are applied at our sole discretion and may be modified with notice.</p>
+
+                <h3>3.3 No Refund Policy</h3>
+                <p><strong>All donations are final and non-refundable.</strong> Cryptocurrency transactions on the blockchain are irreversible. By making a donation, you acknowledge that you understand and accept this condition. Please ensure you are donating the correct amount and to the correct wallet address before confirming any transaction.</p>
+
+                <h3>3.4 Fund Allocation</h3>
+                <p>Donations are allocated to verified charity projects based on our transparent allocation framework. All fund movements are recorded on-chain and publicly accessible. However, ALI Charity does not guarantee that 100% of donations will reach recipients due to blockchain fees, operational costs, or project feasibility.</p>
+
+                <h2>4. ALI Token</h2>
+
+                <h3>4.1 Token Description</h3>
+                <p>The ALI Token is a reward token issued on the Binance Smart Chain. Each ALI Token is pegged at a 1:1 rate with USDT for donation reward purposes.</p>
+                <ul>
+                    <li><strong>Total Supply:</strong> 1,000,000,000 ALI</li>
+                    <li><strong>Exchange Rate:</strong> 1 ALI = 1 USDT (fixed for donations)</li>
+                    <li><strong>Standard:</strong> BEP-20 (Binance Smart Chain)</li>
+                </ul>
+
+                <h3>4.2 Token Utilities</h3>
+                <p>ALI Token holders may be entitled to:</p>
+                <ul>
+                    <li><strong>Governance Rights:</strong> Participation in DAO voting on charity projects and platform decisions</li>
+                    <li><strong>Profit Sharing:</strong> Platform fee dividends (when applicable)</li>
+                    <li><strong>Priority Access:</strong> Priority allocation for new charity projects</li>
+                    <li><strong>Achievement Badges:</strong> NFT badges for milestones</li>
+                    <li><strong>Community Access:</strong> Exclusive community features and events</li>
+                </ul>
+                <p><strong>Important:</strong> Token utilities are subject to change. ALI Tokens are not investment securities. Holding ALI Tokens does not guarantee profits or returns.</p>
+
+                <h3>4.3 Token Risks</h3>
+                <p>Cryptocurrency values are highly volatile. The value of ALI Tokens may fluctuate significantly. You acknowledge that:</p>
+                <ul>
+                    <li>Cryptocurrency investments carry inherent market risks</li>
+                    <li>Past performance does not guarantee future results</li>
+                    <li>You should only invest what you can afford to lose</li>
+                    <li>ALI Charity is not a financial advisor and does not provide investment advice</li>
+                </ul>
+
+                <h2>5. Prohibited Uses</h2>
+                <p>You agree NOT to use our Services:</p>
+                <ul>
+                    <li>For any unlawful purpose or in violation of applicable laws</li>
+                    <li>To fund terrorism, money laundering, or other illegal activities</li>
+                    <li>To exploit, harm, or attempt to harm minors in any way</li>
+                    <li>To interfere with or disrupt our blockchain infrastructure</li>
+                    <li>To attempt to reverse-engineer, hack, or exploit smart contracts</li>
+                    <li>To engage in fraudulent donation schemes or wash trading</li>
+                    <li>To impersonate ALI Charity or its team members</li>
+                    <li>In any jurisdiction where cryptocurrency or charitable giving is prohibited</li>
+                </ul>
+
+                <h2>6. User Responsibilities</h2>
+                <ul>
+                    <li><strong>Wallet Security:</strong> You are solely responsible for the security of your cryptocurrency wallet and private keys. ALI Charity never asks for your private keys.</li>
+                    <li><strong>Tax Compliance:</strong> You are responsible for determining and paying all applicable taxes on donations and token rewards in your jurisdiction.</li>
+                    <li><strong>Due Diligence:</strong> You should conduct your own research before making any donation or cryptocurrency transaction.</li>
+                    <li><strong>Accurate Information:</strong> You must provide accurate information when interacting with our platform.</li>
+                </ul>
+
+                <h2>7. Transparency & Immutability</h2>
+                <p>ALI Charity is built on the principle of complete transparency:</p>
+                <ul>
+                    <li>All donations are recorded on the Binance Smart Chain and are publicly verifiable</li>
+                    <li>Smart contract code is publicly accessible on BSCScan</li>
+                    <li>All transactions are immutable once confirmed on-chain</li>
+                    <li>We commit to publishing regular financial reports on fund allocation</li>
+                </ul>
+                <p>However, blockchain transparency also means that wallet addresses and transaction amounts are permanently recorded and publicly visible.</p>
+
+                <h2>8. Disclaimer of Warranties</h2>
+                <p>OUR SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                <ul>
+                    <li>Implied warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+                    <li>Accuracy, reliability, or completeness of blockchain data or third-party information</li>
+                    <li>Uninterrupted, error-free, or secure service operation</li>
+                    <li>Smart contract security (despite our efforts to audit and secure contracts)</li>
+                </ul>
+                <p>We do not guarantee that our Services will meet your specific requirements or that errors will be corrected.</p>
+
+                <h2>9. Limitation of Liability</h2>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, ALI CHARITY AND ITS TEAM SHALL NOT BE LIABLE FOR:</p>
+                <ul>
+                    <li>Any direct, indirect, incidental, special, consequential, or punitive damages arising from your use of our Services</li>
+                    <li>Loss of cryptocurrency, wallet access, or digital assets</li>
+                    <li>Loss of profits, data, or goodwill</li>
+                    <li>Actions of third parties, including blockchain network failures or hacks</li>
+                    <li>Smart contract vulnerabilities (despite security audits)</li>
+                    <li>Regulatory changes affecting cryptocurrency or charity operations</li>
+                </ul>
+                <p>IN NO EVENT SHALL OUR TOTAL LIABILITY EXCEED THE AMOUNT OF DONATIONS YOU HAVE MADE TO OUR PLATFORM.</p>
+
+                <h2>10. Indemnification</h2>
+                <p>You agree to indemnify, defend, and hold harmless ALI Charity, its team members, contractors, and affiliates from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
+                <ul>
+                    <li>Your violation of these Terms</li>
+                    <li>Your misuse of our Services</li>
+                    <li>Your illegal activities</li>
+                    <li>Any false or inaccurate information you provide</li>
+                </ul>
+
+                <h2>11. Intellectual Property</h2>
+                <p>The ALI Charity name, logo, branding, website design, and content are our intellectual property. You may not use, copy, reproduce, or distribute our materials without written permission.</p>
+
+                <h2>12. Modifications to Services & Terms</h2>
+                <p>ALI Charity reserves the right to:</p>
+                <ul>
+                    <li>Modify, suspend, or discontinue any part of our Services at any time</li>
+                    <li>Update these Terms from time to time</li>
+                    <li>Change token economics, bonus rates, or utility features</li>
+                    <li>Update smart contracts (note: on-chain changes may have limitations)</li>
+                </ul>
+                <p>Significant changes will be communicated via our website or blog. Continued use of our Services after changes constitutes acceptance of the modified Terms.</p>
+
+                <h2>13. Charity Compliance</h2>
+                <p>ALI Charity is a technology platform that facilitates charitable giving. We are not a registered charity in all jurisdictions. We do not guarantee tax deductibility of donations in your jurisdiction. You should consult a tax professional regarding the deductibility of your donations.</p>
+
+                <h2>14. Dispute Resolution</h2>
+                <p>These Terms are governed by applicable laws. Any disputes shall first be attempted to be resolved through good-faith negotiation. If unresolved, disputes may be submitted to binding arbitration or the courts of competent jurisdiction.</p>
+
+                <h2>15. Severability</h2>
+                <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+                <h2>16. Entire Agreement</h2>
+                <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and ALI Charity regarding your use of our Services and supersede all prior agreements.</p>
+
+                <h2>17. Contact</h2>
+                <p>For questions about these Terms of Service:</p>
+                <ul>
+                    <li><strong>Email:</strong> legal@minadoai.com</li>
+                    <li><strong>Website:</strong> <a href="https://minadoai.com">https://minadoai.com</a></li>
+                    <li><strong>Blog:</strong> <a href="https://alicharity.blog" target="_blank">https://alicharity.blog</a></li>
+                </ul>
+
+                <div class="mt-12 pt-8 border-t border-borderColor text-center text-sm text-textSecondary">
+                    <p>ALI Charity — 100% Transparent Blockchain Charity Platform</p>
+                    <p class="mt-2"><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="donate.html">Donate</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-textSecondary text-sm py-8 px-6 border-t border-borderColor">
+        <p>© 2026 ALI Charity. All donations are fully transparent on-chain.</p>
+        <p class="mt-2">
+            <a href="index.html" class="text-primary hover:underline">ALI Charity</a> •
+            <a href="https://alicharity.blog" class="text-primary hover:underline" target="_blank">Blog</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('show');
+            document.getElementById('navOverlay').classList.toggle('show');
+        });
+        document.getElementById('navOverlay').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('show');
+            document.getElementById('navOverlay').classList.remove('show');
+        });
+    </script>
+</body>
+</html>
