@@ -21,22 +21,27 @@ const CHECKS = [
     ]
   },
   {
-    name: 'Blog home',
-    url: 'https://alicharity.blog/',
+    name: 'Main-site blog home',
+    url: 'https://minadoai.com/blog/',
     mustContain: ['ALI', 'Charity']
   },
   {
-    name: 'Blog sitemap',
-    url: 'https://alicharity.blog/sitemap.xml',
-    mustContain: ['https://alicharity.blog/']
+    name: 'Main-site blog sitemap',
+    url: 'https://minadoai.com/blog/sitemap.xml',
+    mustContain: ['https://minadoai.com/blog/']
   }
 ];
 
 const OPTIONAL_CHECKS = [
   {
-    name: 'Latest generated promotion on blog domain',
-    url: 'https://alicharity.blog/news/2026-05-06-web3-philanthropy-donor-rewards.html',
+    name: 'Latest generated promotion on main site',
+    url: 'https://minadoai.com/blog/news/2026-05-06-web3-philanthropy-donor-rewards.html',
     mustContain: ['Web3 Philanthropy', 'ALI Charity']
+  },
+  {
+    name: 'Legacy standalone blog domain',
+    url: 'https://alicharity.blog/',
+    mustContain: ['ALI', 'Charity']
   }
 ];
 

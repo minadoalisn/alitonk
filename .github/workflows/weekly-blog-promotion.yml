@@ -1,9 +1,9 @@
-name: Weekly Blog Promotion
+name: Daily Main-Site Blog Promotion
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 2 * * 1"
+    - cron: "30 2 * * *"
 
 permissions:
   contents: write
@@ -23,12 +23,12 @@ jobs:
       - name: Generate promotion article
         run: npm run blog:promotion
         env:
-          BLOG_BASE_URL: https://alicharity.blog
+          BLOG_BASE_URL: https://minadoai.com
 
       - name: Commit generated article
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/blog/news/*.html public/blog/news.html public/blog/sitemap.xml
-          git diff --cached --quiet || git commit -m "Publish weekly blog promotion"
+          git diff --cached --quiet || git commit -m "Publish daily blog promotion"
           git push

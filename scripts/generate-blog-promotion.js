@@ -6,7 +6,7 @@ const PUBLIC_DIR = path.join(ROOT, 'public');
 const NEWS_DIR = path.join(PUBLIC_DIR, 'blog', 'news');
 const BLOG_INDEX = path.join(PUBLIC_DIR, 'blog', 'news.html');
 const BLOG_SITEMAP = path.join(PUBLIC_DIR, 'blog', 'sitemap.xml');
-const BASE_URL = process.env.BLOG_BASE_URL || 'https://alicharity.blog';
+const BASE_URL = process.env.BLOG_BASE_URL || 'https://minadoai.com';
 
 const topics = [
   {

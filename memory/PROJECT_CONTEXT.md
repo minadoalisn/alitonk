@@ -7,11 +7,11 @@ Last updated: 2026-05-06
 - Main site: https://minadoai.com
 - Main site deployment: Render.com
 - Main repository: https://github.com/minadoalisn/alitonk
-- Blog site: https://alicharity.blog
-- Blog deployment: Netlify
-- Blog repository: git@github.com:minadoalisn/alicharity.blog.git
-- Blog repository HTTPS: https://github.com/minadoalisn/alicharity.blog
-- Netlify Site ID: 9f6beac0-9ef6-4aaa-a766-680ce5dd71e8
+- Primary promotion hub: https://minadoai.com/blog/
+- Legacy blog site, paused: https://alicharity.blog
+- Legacy blog deployment: Netlify
+- Legacy blog repository: https://github.com/minadoalisn/alicharity.blog
+- Netlify Site ID, legacy only: 9f6beac0-9ef6-4aaa-a766-680ce5dd71e8
 - Local workspace: D:\ALI币慈善项目\alitonk
 
 ## Token And Donation Addresses
@@ -38,12 +38,13 @@ Last updated: 2026-05-06
 
 ## Automation
 
-- Weekly blog promotion workflow: .github/workflows/weekly-blog-promotion.yml
+- Daily main-site blog promotion workflow: .github/workflows/weekly-blog-promotion.yml
 - Blog promotion script: scripts/generate-blog-promotion.js
 - Command: npm run blog:promotion
-- Dedicated blog repo initialized at D:\ALI币慈善项目\alicharity.blog
-- Dedicated blog repo workflow: .github/workflows/daily-blog-promotion.yml
-- Dedicated blog canonical article path: /news/<slug>.html
+- Legacy standalone blog repo initialized at D:\ALI币慈善项目\alicharity.blog but paused for promotion work.
+- Legacy standalone blog repo workflow: .github/workflows/daily-blog-promotion.yml
+- Canonical promotion article path: https://minadoai.com/blog/news/<slug>.html
+- Standalone Netlify blog is no longer the primary promotion path.
 - Deployment health workflow: .github/workflows/deployment-health.yml
 - Deployment health command: npm run deploy:check
 - Codex scheduled check: weekly-blog-promotion-check
@@ -54,10 +55,11 @@ Last updated: 2026-05-06
 - Added root render.yaml and netlify.toml.
 - Added contact page, 404 page, logo.png, and og-image.jpg.
 - Improved homepage UI with public/css/site-polish.css.
-- Added automated weekly blog promotion article generation.
+- Added automated daily main-site blog promotion article generation.
 - Centralized ALI Token and donation addresses in public/js/site-config.js.
-- Added automated deployment health checks for minadoai.com and alicharity.blog.
+- Added automated deployment health checks for minadoai.com, main-site blog pages, and legacy alicharity.blog.
 - Created and initialized minadoalisn/alicharity.blog as a standalone Netlify-ready static blog repository.
+- Pivoted promotion strategy away from Netlify blog complexity to the main-site blog under minadoai.com/blog/.
 
 ## Operating Rules For Future Codex Work
 
