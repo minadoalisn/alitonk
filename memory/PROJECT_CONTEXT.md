@@ -35,6 +35,8 @@ Last updated: 2026-05-06
 - Weekly blog promotion workflow: .github/workflows/weekly-blog-promotion.yml
 - Blog promotion script: scripts/generate-blog-promotion.js
 - Command: npm run blog:promotion
+- Deployment health workflow: .github/workflows/deployment-health.yml
+- Deployment health command: npm run deploy:check
 - Codex scheduled check: weekly-blog-promotion-check
 
 ## Recent Work
@@ -45,6 +47,7 @@ Last updated: 2026-05-06
 - Improved homepage UI with public/css/site-polish.css.
 - Added automated weekly blog promotion article generation.
 - Centralized ALI Token and donation addresses in public/js/site-config.js.
+- Added automated deployment health checks for minadoai.com and alicharity.blog.
 
 ## Operating Rules For Future Codex Work
 
@@ -53,6 +56,7 @@ Last updated: 2026-05-06
 - Do not commit .netlify/state.json or environment files.
 - Keep public/js/site-config.js as the single source of truth for token and donation addresses.
 - Run npm run build after meaningful changes.
+- Run npm run deploy:check after deployment or promotion-flow changes.
 - For UI changes, verify the affected pages locally through server.js.
 - Commit and push to origin/main after user-approved production changes.
 
