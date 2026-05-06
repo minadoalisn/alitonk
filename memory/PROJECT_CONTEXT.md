@@ -10,6 +10,7 @@ Last updated: 2026-05-06
 - Blog site: https://alicharity.blog
 - Blog deployment: Netlify
 - Blog repository: git@github.com:minadoalisn/alicharity.blog.git
+- Blog repository HTTPS: https://github.com/minadoalisn/alicharity.blog
 - Netlify Site ID: 9f6beac0-9ef6-4aaa-a766-680ce5dd71e8
 - Local workspace: D:\ALI币慈善项目\alitonk
 
@@ -40,6 +41,9 @@ Last updated: 2026-05-06
 - Weekly blog promotion workflow: .github/workflows/weekly-blog-promotion.yml
 - Blog promotion script: scripts/generate-blog-promotion.js
 - Command: npm run blog:promotion
+- Dedicated blog repo initialized at D:\ALI币慈善项目\alicharity.blog
+- Dedicated blog repo workflow: .github/workflows/daily-blog-promotion.yml
+- Dedicated blog canonical article path: /news/<slug>.html
 - Deployment health workflow: .github/workflows/deployment-health.yml
 - Deployment health command: npm run deploy:check
 - Codex scheduled check: weekly-blog-promotion-check
@@ -53,6 +57,7 @@ Last updated: 2026-05-06
 - Added automated weekly blog promotion article generation.
 - Centralized ALI Token and donation addresses in public/js/site-config.js.
 - Added automated deployment health checks for minadoai.com and alicharity.blog.
+- Created and initialized minadoalisn/alicharity.blog as a standalone Netlify-ready static blog repository.
 
 ## Operating Rules For Future Codex Work
 
@@ -85,6 +90,23 @@ Last updated: 2026-05-06
 
 
 ## Memory Snapshot 2026-05-06T15:23:06.363Z
+
+- Branch: unavailable in current sandbox
+- Head: unavailable in current sandbox
+- Latest commit: unavailable in current sandbox
+- Working tree: unavailable in current sandbox
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-06T15:53:30.941Z
 
 - Branch: unavailable in current sandbox
 - Head: unavailable in current sandbox

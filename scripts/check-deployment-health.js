@@ -35,7 +35,7 @@ const CHECKS = [
 const OPTIONAL_CHECKS = [
   {
     name: 'Latest generated promotion on blog domain',
-    url: 'https://alicharity.blog/blog/news/2026-05-06-web3-philanthropy-donor-rewards.html',
+    url: 'https://alicharity.blog/news/2026-05-06-web3-philanthropy-donor-rewards.html',
     mustContain: ['Web3 Philanthropy', 'ALI Charity']
   }
 ];
