@@ -867,6 +867,7 @@
     }
     </script>
     <!-- API Performance Optimizer -->
+    <script src="/js/site-config.js"></script>
     <script src="/js/api-optimizer.js" defer></script>
     <link rel="stylesheet" href="/css/site-polish.css">
 </head>
@@ -2837,10 +2838,11 @@ function showAdminDashboard() {
 
     // Get stored donation addresses
     const addresses = JSON.parse(localStorage.getItem('donation_addresses') || JSON.stringify({
-        usdt_trc20: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-        eth: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-        btc: 'bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq',
-        bnb: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC'
+        usdt_trc20: window.ALI_SITE_CONFIG.donations.USDT.address,
+        eth: window.ALI_SITE_CONFIG.donations.ETH.address,
+        btc: window.ALI_SITE_CONFIG.donations.BTC.address,
+        bnb: window.ALI_SITE_CONFIG.donations.BNB.address,
+        sol: window.ALI_SITE_CONFIG.donations.SOL.address
     }));
 
     // Get admin credentials
@@ -3213,9 +3215,9 @@ function copyToClipboard(text) {
 
 // Add ALI Token to MetaMask
 async function addALIToMetaMask() {
-    const tokenAddress = '0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79';
-    const tokenSymbol = 'ALI';
-    const tokenDecimals = 18;
+    const tokenAddress = window.ALI_SITE_CONFIG.token.contractAddress;
+    const tokenSymbol = window.ALI_SITE_CONFIG.token.symbol;
+    const tokenDecimals = window.ALI_SITE_CONFIG.token.decimals;
     const tokenImage = 'https://minadoai.com/ali-token-logo.png'; // Optional
 
     try {

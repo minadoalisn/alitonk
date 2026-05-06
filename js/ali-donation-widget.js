@@ -6,13 +6,15 @@
 
   // 配置
   const CONFIG = {
-    ADDRESSES: {
-      USDT: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-      BTC: 'bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq',
-      ETH: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-      BNB: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-      SOL: 'HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT'
-    },
+    ADDRESSES: window.ALI_SITE_CONFIG
+      ? Object.fromEntries(Object.entries(window.ALI_SITE_CONFIG.donations).map(([symbol, details]) => [symbol, details.address]))
+      : {
+        USDT: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
+        BTC: 'bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq',
+        ETH: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
+        BNB: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
+        SOL: 'HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT'
+      },
     COPY_FEEDBACK_DURATION: 2000
   };
 

@@ -312,6 +312,7 @@
         <p id="toastMessage" class="text-white font-semibold"></p>
     </div>
 
+    <script src="/js/site-config.js"></script>
     <script>
         // Exchange rates (would be fetched from API in production)
         const EXCHANGE_RATES = {
@@ -323,13 +324,9 @@
         };
 
         // Donation addresses
-        const DONATION_ADDRESSES = {
-            USDT: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-            BTC: 'bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq',
-            ETH: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-            BNB: '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-            SOL: 'HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT'
-        };
+        const DONATION_ADDRESSES = Object.fromEntries(
+            Object.entries(window.ALI_SITE_CONFIG.donations).map(([symbol, details]) => [symbol, details.address])
+        );
 
         let selectedAmount = 0;
         let selectedCurrency = 'USDT';
@@ -391,7 +388,7 @@
                     <div class="flex justify-between items-center mb-2">
                         <span class="text-sm text-gray-400">${selectedCurrency} Address</span>
                         <span class="text-xs px-3 py-1 rounded-full" style="background: ${colors[selectedCurrency]}20; color: ${colors[selectedCurrency]}">
-                            ${selectedCurrency === 'USDT' || selectedCurrency === 'ETH' || selectedCurrency === 'BNB' ? 'BSC' : selectedCurrency === 'BTC' ? 'Bitcoin' : 'Solana'}
+                            ${window.ALI_SITE_CONFIG.donations[selectedCurrency].network}
                         </span>
                     </div>
                     <code class="text-sm break-all" style="color: ${colors[selectedCurrency]}">
