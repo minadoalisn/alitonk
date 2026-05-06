@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "build": "echo 'No build required'",
-    "blog:promotion": "node scripts/generate-blog-promotion.js"
+    "blog:promotion": "node scripts/generate-blog-promotion.js",
+    "memory:save": "node scripts/save-project-memory.js"
   },
   "engines": {
     "node": ">=18.0.0"
