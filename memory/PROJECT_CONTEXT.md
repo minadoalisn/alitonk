@@ -29,6 +29,11 @@ Last updated: 2026-05-06
 - Build command: npm run build
 - Start command: npm start
 - Static publish directory: public
+- ALI Charity server IP: 43.160.238.228
+- ALI Charity server SSH user: ubuntu
+- ALI Charity server SSH port: 22
+- Local SSH identity path, if configured: ~/.ssh/alitonk_key
+- Do not store server private keys in this repository or memory file.
 
 ## Automation
 
@@ -57,6 +62,7 @@ Last updated: 2026-05-06
 - Keep public/js/site-config.js as the single source of truth for token and donation addresses.
 - Run npm run build after meaningful changes.
 - Run npm run deploy:check after deployment or promotion-flow changes.
+- For server work, use SSH only if the private key already exists locally at ~/.ssh/alitonk_key or is provided through a secure secret manager.
 - For UI changes, verify the affected pages locally through server.js.
 - Commit and push to origin/main after user-approved production changes.
 

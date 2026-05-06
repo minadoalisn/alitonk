@@ -1,4 +1,5 @@
 const https = require('https');
+const net = require('net');
 
 const CHECKS = [
   {
@@ -39,13 +40,29 @@ const OPTIONAL_CHECKS = [
   }
 ];
 
+const TCP_CHECKS = [
+  {
+    name: 'ALI server SSH',
+    host: '43.160.238.228',
+    port: 22
+  }
+];
+
+const OPTIONAL_TCP_CHECKS = [
+  {
+    name: 'ALI server API candidate',
+    host: '43.160.238.228',
+    port: 3333
+  }
+];
+
 function fetchText(url) {
   return new Promise((resolve, reject) => {
     const request = https.get(url, {
       headers: {
         'User-Agent': 'ALI-Charity-Deployment-Health/1.0'
       },
-      timeout: 15000
+      timeout: 30000
     }, (response) => {
       let body = '';
       response.setEncoding('utf8');
@@ -68,8 +85,44 @@ function fetchText(url) {
   });
 }
 
+async function fetchTextWithRetry(url, attempts = 2) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await fetchText(url);
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) {
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+      }
+    }
+  }
+
+  throw lastError;
+}
+
+function checkTcp({ host, port }) {
+  return new Promise((resolve, reject) => {
+    const socket = new net.Socket();
+    const timeoutMs = 10000;
+
+    socket.setTimeout(timeoutMs);
+    socket.once('connect', () => {
+      socket.destroy();
+      resolve();
+    });
+    socket.once('timeout', () => {
+      socket.destroy();
+      reject(new Error(`Timed out connecting to ${host}:${port}`));
+    });
+    socket.once('error', reject);
+    socket.connect(port, host);
+  });
+}
+
 async function runCheck(check, optional = false) {
-  const result = await fetchText(check.url);
+  const result = await fetchTextWithRetry(check.url);
   const statusOk = result.statusCode >= 200 && result.statusCode < 300;
   const missing = (check.mustContain || []).filter((text) => !result.body.includes(text));
   const ok = statusOk && missing.length === 0;
@@ -86,6 +139,24 @@ async function runCheck(check, optional = false) {
 
   if (!ok && !optional) {
     throw new Error(`${check.name} failed`);
+  }
+}
+
+async function runTcpCheck(check, optional = false) {
+  const prefix = optional ? 'OPTIONAL TCP' : 'TCP';
+
+  try {
+    await checkTcp(check);
+    console.log(`PASS ${prefix}: ${check.name}`);
+    console.log(`  Target: ${check.host}:${check.port}`);
+  } catch (error) {
+    console.log(`${optional ? 'WARN' : 'FAIL'} ${prefix}: ${check.name}`);
+    console.log(`  Target: ${check.host}:${check.port}`);
+    console.log(`  ${error.message}`);
+
+    if (!optional) {
+      throw error;
+    }
   }
 }
 
@@ -107,6 +178,18 @@ async function main() {
       console.log(`WARN OPTIONAL: ${check.name}`);
       console.log(`  ${error.message}`);
     }
+  }
+
+  for (const check of TCP_CHECKS) {
+    try {
+      await runTcpCheck(check);
+    } catch (error) {
+      failures.push(`${check.name} failed`);
+    }
+  }
+
+  for (const check of OPTIONAL_TCP_CHECKS) {
+    await runTcpCheck(check, true);
   }
 
   if (failures.length) {
