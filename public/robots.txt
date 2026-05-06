@@ -15,3 +15,4 @@ User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://minadoai.com/sitemap.xml
+Sitemap: https://minadoai.com/blog/sitemap.xml
