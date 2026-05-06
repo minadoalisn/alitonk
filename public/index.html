@@ -868,8 +868,10 @@
     </script>
     <!-- API Performance Optimizer -->
     <script src="/js/api-optimizer.js" defer></script>
+    <link rel="stylesheet" href="/css/site-polish.css">
 </head>
-<body class="font-sans bg-gradient-hero text-slate-50 min-h-screen">
+<body class="font-sans bg-gradient-hero text-slate-50 min-h-screen ali-polished">
+    <a href="#projects" class="skip-link">Skip to projects</a>
     <!-- SEO & UI Optimizers -->
     <script src="seo-optimizer.js" defer></script>
     <script src="ui-optimizer.js" defer></script>
@@ -910,13 +912,23 @@
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
 
-    <section class="hero min-h-screen flex items-center justify-center py-[100px] bg-gradient-hero relative overflow-hidden pt-32">
+    <section class="hero min-h-screen flex items-center justify-center py-[100px] bg-gradient-hero relative overflow-hidden pt-32 ali-hero">
         <div class="hero-radial absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-float pointer-events-none"></div>
         <div class="absolute w-full h-full left-0 top-0 text-3xl tracking-[80px] opacity-5 animate-drift pointer-events-none">💙 🧡 💜 💙 🧡 💜</div>
         <div class="max-w-3xl mx-auto text-center relative z-10 px-6">
+            <p class="ali-kicker">Verified giving across blockchain and humanitarian aid</p>
             <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4 font-display text-gradient" data-i18n="heroTitle">Transparent Charity On-Chain</h1>
-            <p class="text-xl text-textSecondary mb-8 leading-relaxed" data-i18n="heroSubtitle">ALI Charity uses blockchain technology to ensure 100% transparency for every donation. Track your funds in real-time as they support 12 verified projects worldwide. We accept BTC, ETH, USDT, BNB, and SOL with zero fees, and reward donors with ALI tokens at a fixed 1:1 USDT rate.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 perspective-[800px]">
+            <p class="text-xl text-textSecondary mb-8 leading-relaxed ali-hero-copy" data-i18n="heroSubtitle">ALI Charity uses blockchain technology to make every donation traceable from wallet to project. Support verified humanitarian work, review public records, and receive ALI token rewards at a fixed 1:1 USDT donation rate.</p>
+            <div class="ali-hero-actions">
+                <a href="donate.html" class="ali-primary-action">Donate Crypto</a>
+                <a href="#expenditure" class="ali-secondary-action">View Transparency</a>
+            </div>
+            <div class="ali-trust-row" aria-label="Platform trust signals">
+                <span>Zero platform fees</span>
+                <span>On-chain records</span>
+                <span>12 active projects</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 perspective-[800px] ali-stat-grid">
                 <div class="bg-bgLight shadow-xl shadow-black/30 rounded-2xl p-6 relative overflow-hidden transition-all duration-300 transform-3d hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-primary/20 min-h-[88px] flex flex-col justify-center">
                     <div class="text-3xl md:text-4xl font-bold text-primary relative z-10 translate-z-10 saturate-13" id="totalDonations">2</div>
                     <div class="text-sm text-textSecondary relative z-10" data-i18n="totalDonations">Total Donations</div>
