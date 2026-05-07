@@ -263,3 +263,20 @@ Last updated: 2026-05-06
 - address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
 - address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
 - address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T16:48:33.225Z
+
+- Branch: main
+- Head: da84f72
+- Latest commit: da84f72 Add autonomous promotion hub and briefing
+- Working tree: M public/blog/index.html;  M public/blog/sitemap.xml;  M public/index.html;  M public/llms.txt;  M public/promotion.html;  M public/sitemap.xml;  M public/token-dashboard.html; ?? public/blog/ali-token-dex-launch-preparation.html; ?? public/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html; ?? public/dex-launch.html
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
