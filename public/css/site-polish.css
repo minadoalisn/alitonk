@@ -65,14 +65,49 @@ body.ali-polished nav .text-gradient {
 
 .ali-hero-copy {
   max-width: 54rem;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.ali-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+  gap: clamp(1.4rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.ali-hero-content {
+  text-align: left;
+}
+
+.ali-hero-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ali-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(7, 17, 31, 0.04), rgba(7, 17, 31, 0.16));
+  pointer-events: none;
+}
+
+.ali-hero-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ali-hero-actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.9rem;
   margin: 1.75rem 0 1.2rem;
 }
@@ -110,7 +145,7 @@ body.ali-polished nav .text-gradient {
 .ali-trust-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.65rem;
   margin-bottom: 1.6rem;
 }
@@ -132,6 +167,51 @@ body.ali-polished nav .text-gradient {
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
 }
 
+.ali-hero-proof {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.ali-hero-proof span {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.055);
+  padding: 0.75rem 0.85rem;
+  color: #dbeafe;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ali-stat-grid,
+.ali-browse-action,
+.ali-hero .bg-bgLight\/50 {
+  grid-column: 1 / -1;
+}
+
+.ali-browse-action {
+  justify-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #f8b84e, #21d19f);
+  color: #07111f;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.ali-browse-action:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
 footer a {
   text-underline-offset: 3px;
 }
@@ -140,6 +220,33 @@ footer a {
   .ali-hero {
     min-height: auto;
     padding-top: 7.75rem;
+  }
+
+  .ali-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .ali-hero-content {
+    text-align: center;
+  }
+
+  .ali-hero-copy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ali-hero-actions,
+  .ali-trust-row {
+    justify-content: center;
+  }
+
+  .ali-hero-media {
+    order: -1;
+    border-radius: 0.65rem;
+  }
+
+  .ali-hero-proof {
+    grid-template-columns: 1fr;
   }
 
   .ali-hero-actions a {

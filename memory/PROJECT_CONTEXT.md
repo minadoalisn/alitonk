@@ -60,6 +60,10 @@ Last updated: 2026-05-06
 - Added automated deployment health checks for minadoai.com, main-site blog pages, and legacy alicharity.blog.
 - Created and initialized minadoalisn/alicharity.blog as a standalone Netlify-ready static blog repository.
 - Pivoted promotion strategy away from Netlify blog complexity to the main-site blog under minadoai.com/blog/.
+- Added original generated local homepage and blog images under public/assets/images and public/blog/assets to avoid stock-photo hotlinks.
+- Updated homepage UI toward global donor habits for US/EU trust scanning, Middle East cross-border aid context, and Southeast Asia mobile-first access.
+- Added blog-index.css and daily article image defaults so generated promotion posts include compressed illustrations, Open Graph images, and lazy-loaded thumbnails.
+- Added public/llms.txt for AI-readable GEO context.
 
 ## Operating Rules For Future Codex Work
 
@@ -109,6 +113,23 @@ Last updated: 2026-05-06
 
 
 ## Memory Snapshot 2026-05-06T15:53:30.941Z
+
+- Branch: unavailable in current sandbox
+- Head: unavailable in current sandbox
+- Latest commit: unavailable in current sandbox
+- Working tree: unavailable in current sandbox
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T01:46:11.387Z
 
 - Branch: unavailable in current sandbox
 - Head: unavailable in current sandbox
