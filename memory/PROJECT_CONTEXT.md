@@ -75,7 +75,7 @@ Last updated: 2026-05-06
 - Run npm run deploy:check after deployment or promotion-flow changes.
 - For server work, use SSH only if the private key already exists locally at ~/.ssh/alitonk_key or is provided through a secure secret manager.
 - For UI changes, verify the affected pages locally through server.js.
-- Commit and push to origin/main after user-approved production changes.
+- User has pre-approved automatic deployment for future website updates, optimizations, UI changes, and feature work. After local verification passes, commit and push to origin/main, then run npm run deploy:check without asking for separate deployment approval each time.
 
 
 ## Memory Snapshot 2026-05-06T15:22:10.215Z
