@@ -64,6 +64,9 @@ Last updated: 2026-05-06
 - Updated homepage UI toward global donor habits for US/EU trust scanning, Middle East cross-border aid context, and Southeast Asia mobile-first access.
 - Added blog-index.css and daily article image defaults so generated promotion posts include compressed illustrations, Open Graph images, and lazy-loaded thumbnails.
 - Added public/llms.txt for AI-readable GEO context.
+- Added DEX launch preparation package for ALI Token, including /dex-launch.html, ALI/USDT PancakeSwap readiness guidance, risk disclosure, token dashboard entry, promotion hub entry, blog announcement, sitemap updates, and AI-readable llms.txt context.
+- Current DEX status: preparation package is complete and deployed. Actual ALI/USDT PancakeSwap liquidity pool creation is paused until the project wallet owner manually signs the on-chain transaction and shares the pool or pair link.
+- Current operating focus: Codex should primarily optimize and promote the website until the wallet owner is ready to create the PancakeSwap ALI/USDT liquidity pool.
 
 ## Operating Rules For Future Codex Work
 
@@ -76,6 +79,7 @@ Last updated: 2026-05-06
 - For server work, use SSH only if the private key already exists locally at ~/.ssh/alitonk_key or is provided through a secure secret manager.
 - For UI changes, verify the affected pages locally through server.js.
 - User has pre-approved automatic deployment for future website updates, optimizations, UI changes, and feature work. After local verification passes, commit and push to origin/main, then run npm run deploy:check without asking for separate deployment approval each time.
+- Do not attempt to create DEX liquidity, sign wallet transactions, handle private keys, or simulate trading volume. For ALI/USDT PancakeSwap launch work, keep actions limited to website preparation, documentation, promotion, and post-launch updates after the user provides the live pool or pair link.
 
 
 ## Memory Snapshot 2026-05-06T15:22:10.215Z
