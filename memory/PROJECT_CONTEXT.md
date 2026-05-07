@@ -246,3 +246,20 @@ Last updated: 2026-05-06
 - address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
 - address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
 - address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T15:26:07.851Z
+
+- Branch: main
+- Head: 1bd238f
+- Latest commit: 1bd238f Record automatic deployment preference
+- Working tree: M public/blog/news.html;  M public/blog/sitemap.xml;  M public/index.html;  M public/llms.txt;  M public/sitemap.xml; ?? public/blog/news/2026-05-07-kraken-parent-payward-to-buy-reap-in-600m-stablecoin-payments-push-charity-transparency.html; ?? public/promotion.html
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
