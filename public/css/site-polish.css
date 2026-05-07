@@ -216,6 +216,36 @@ footer a {
   text-underline-offset: 3px;
 }
 
+.ali-project-thumb {
+  display: block;
+  background: #102033;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+}
+
+.expenditure-photo-wrap {
+  min-height: 13rem;
+  background: rgba(15, 23, 42, 0.45);
+  overflow: hidden;
+}
+
+.expenditure-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 13rem;
+  object-fit: cover;
+}
+
+.ali-floating-donate-wrap {
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.ali-floating-donate {
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.32);
+}
+
 @media (max-width: 768px) {
   .ali-hero {
     min-height: auto;
@@ -256,5 +286,10 @@ footer a {
 
   .ali-trust-row span {
     flex: 1 1 9rem;
+  }
+
+  .expenditure-photo-wrap,
+  .expenditure-photo {
+    min-height: 11.5rem;
   }
 }

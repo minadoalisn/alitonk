@@ -885,6 +885,7 @@
             <button class="md:hidden text-slate-50 text-2xl focus-ring-custom rounded-lg px-2 cursor-pointer" id="menuToggle" aria-label="Toggle menu">☰</button>
             <ul class="hidden md:flex gap-5 list-none" id="navLinks" role="navigation">
                 <li><a href="#projects" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="projects">Projects</a></li>
+                <li><a href="/blog/" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Blog</a></li>
                 <li><a href="token-dashboard.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="tokenDashboard">Token Dashboard</a></li>
                 <li><a href="dao-governance.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="daoGovernance">DAO Governance</a></li>
                 <li><a href="whitepaper.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Whitepaper</a></li>
@@ -987,178 +988,20 @@
         </div>
     </section>
 
-    <!-- Crypto Prices Ticker - Moved to below projects -->
+    <!-- Crypto Prices Ticker - fast Binance primary, CoinGecko fallback -->
     <script>
-        // Fetch real-time crypto prices from our backend API (more reliable)
-        const PRICE_CACHE_KEY = 'ali_crypto_prices';
-const CACHE_DURATION = 300000;
-
-async function updateCryptoPrices() {
-    try {
-        const cached = localStorage.getItem(PRICE_CACHE_KEY);
-        if (cached) {
-            const { data, timestamp } = JSON.parse(cached);
-            if (Date.now() - timestamp < CACHE_DURATION) {
-                displayCryptoPrices(data);
-                // Using cached prices
-                return;
-            }
-        }
-        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana,tether&vs_currencies=usd', {
-            signal: AbortSignal.timeout(3000)
-        });
-        const data = await response.json();
-        if (data) {
-            displayCryptoPrices(data);
-            localStorage.setItem(PRICE_CACHE_KEY, JSON.stringify({
-                data,
-                timestamp: Date.now()
-            }));
-            // Prices updated
-        }
-    } catch (error) {
-        console.warn('Price error');
-        const cached = localStorage.getItem(PRICE_CACHE_KEY);
-        if (cached) {
-            const { data } = JSON.parse(cached);
-            displayCryptoPrices(data);
-        }
-    }
-}
-
-function displayCryptoPrices(data) {
-    const btcPrice = data.bitcoin?.usd || 0;
-    const ethPrice = data.ethereum?.usd || 0;
-    const bnbPrice = data.binancecoin?.usd || 0;
-    const solPrice = data.solana?.usd || 0;
-    const usdtPrice = data.tether?.usd || 1;
-    const aliPrice = usdtPrice;
-    
-    const btcEl = document.getElementById('btcPrice');
-    const ethEl = document.getElementById('ethPrice');
-    const bnbEl = document.getElementById('bnbPrice');
-    const solEl = document.getElementById('solPrice');
-    const usdtEl = document.getElementById('usdtPrice');
-    const aliEl = document.getElementById('aliPrice');
-    
-    if (btcEl) btcEl.textContent = formatPrice(btcPrice);
-    if (ethEl) ethEl.textContent = formatPrice(ethPrice);
-    if (bnbEl) bnbEl.textContent = formatPrice(bnbPrice);
-    if (solEl) solEl.textContent = formatPrice(solPrice);
-    if (usdtEl) usdtEl.textContent = formatPrice(usdtPrice);
-    if (aliEl) aliEl.textContent = formatPrice(aliPrice);
-    hidePriceLoader();
-}
-
-function formatPrice(price) {
-    if (price >= 1) {
-        return '$' + price.toLocaleString('en-US', {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2
-        });
-    } else if (price >= 0.01) {
-        return '$' + price.toFixed(4);
-    } else {
-        return '$' + price.toFixed(6);
-    }
-}
-);
-                const data = await response.json();
-                if (data) {
-                    const btcEl = document.getElementById('btcPrice');
-                    const ethEl = document.getElementById('ethPrice');
-                    const bnbEl = document.getElementById('bnbPrice');
-                    const solEl = document.getElementById('solPrice');
-                    const usdtEl = document.getElementById('usdtPrice');
-                    const aliEl = document.getElementById('aliPrice');
-                    
-                    if (btcEl) btcEl.textContent = '$' + Math.round(data.bitcoin?.usd || 0).toLocaleString();
-                    if (ethEl) ethEl.textContent = '$' + Math.round(data.ethereum?.usd || 0).toLocaleString();
-                    if (bnbEl) bnbEl.textContent = '$' + Math.round(data.binancecoin?.usd || 0).toLocaleString();
-                    if (solEl) solEl.textContent = '$' + Math.round(data.solana?.usd || 0).toLocaleString();
-                    if (usdtEl) usdtEl.textContent = '$' + (data.tether?.usd || 1).toFixed(2);
-                    if (aliEl) aliEl.textContent = '$1.00'; // Fixed: 1 ALI = 1 USDT donation rate
-                    
-                    // ALI price: 1 ALI = 1 USDT (fixed donation rate)
-                    document.getElementById('aliPrice').textContent = '$1.00';
-                    
-                    // Fetch ALI price from our trading system API
-                    fetchALIPrice();
-                    
-                    return;
-                }
-            } catch (e) {
-                // API failed
-            }
-            
-            // Fallback to CoinGecko if backend fails
-            try {
-                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana,tether&vs_currencies=usd');
-                const data = await response.json();
-                if (data) {
-                    document.getElementById('btcPrice').textContent = '$' + Math.round(data.bitcoin?.usd || 0).toLocaleString();
-                    document.getElementById('ethPrice').textContent = '$' + Math.round(data.ethereum?.usd || 0).toLocaleString();
-                    document.getElementById('bnbPrice').textContent = '$' + Math.round(data.binancecoin?.usd || 0).toLocaleString();
-                    document.getElementById('solPrice').textContent = '$' + Math.round(data.solana?.usd || 0).toLocaleString();
-                    document.getElementById('usdtPrice').textContent = '$' + (data.tether?.usd || 1).toFixed(4);
-                    document.getElementById('aliPrice').textContent = '$1.00'; // Fixed: 1 ALI = 1 USDT donation rate
-                }
-            } catch (e2) {
-                // Fallback failed
-                // Use hardcoded fallback prices
-                document.getElementById('btcPrice').textContent = '$66,300';
-                document.getElementById('ethPrice').textContent = '$1,990';
-                document.getElementById('bnbPrice').textContent = '$610';
-                document.getElementById('solPrice').textContent = '$83';
-                document.getElementById('usdtPrice').textContent = '$1.00';
-                document.getElementById('aliPrice').textContent = '$1.00'; // Fixed: 1 ALI = 1 USDT
-            }
-        }
-        // Update prices on load and every 60 seconds
-        
-function showPriceLoader() {
-  const loader = document.getElementById('price-loader');
-  const prices = document.getElementById('cryptoPrices');
-  if(loader && prices) { prices.style.opacity='0.3'; loader.style.display='flex'; }
-}
-function hidePriceLoader() {
-  const loader = document.getElementById('price-loader');
-  const prices = document.getElementById('cryptoPrices');
-  if(loader) { loader.style.display='none'; }
-  if(prices) { prices.style.opacity='1'; }
-}
-showPriceLoader();
-
-updateCryptoPrices();
-        setInterval(updateCryptoPrices, 300000); // Update every 2 minutes for performance
-        
-        // Fetch ALI price from trading system API (for reference)
-        async function fetchALIPrice() {
-            try {
-                // Try to fetch from backend API
-                let response;
-                try {
-                    response = await fetch('https://43.160.238.228:3333/api/ali/price', { mode: 'cors' });
-                } catch (httpsError) {
-                    response = await fetch('http://43.160.238.228:3333/api/ali/price');
-                }
-                
-                const data = await response.json();
-                if (data.success && data.price) {
-                    // Show donation rate: 1 ALI = 1 USDT
-                    document.getElementById('aliPrice').textContent = '$1.00';
-                    console.log('ALI price (donation rate): $1.00, trading price: $' + data.price.usd);
-                }
-            } catch (e) {
-                console.log('Failed to fetch ALI price:', e);
-                // Use fallback price - donation rate is 1:1
-                document.getElementById('aliPrice').textContent = '$1.00';
-            }
-        }
-        
-        // Also fetch ALI price periodically
-        fetchALIPrice();
-        setInterval(fetchALIPrice, 60000); // Update ALI price every 60 seconds
+        const PRICE_CACHE_KEY = 'ali_crypto_prices_fast_v2';
+        const CACHE_DURATION = 60000;
+        const BINANCE_SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT'];
+        function showPriceLoader() { const loader = document.getElementById('price-loader'); const prices = document.getElementById('cryptoPrices'); if (loader) loader.style.display = 'flex'; if (prices) prices.style.opacity = '0.45'; }
+        function hidePriceLoader() { const loader = document.getElementById('price-loader'); const prices = document.getElementById('cryptoPrices'); if (loader) loader.style.display = 'none'; if (prices) prices.style.opacity = '1'; }
+        function formatPrice(price) { const value = Number(price || 0); if (value >= 1000) return '$' + value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); if (value >= 0.01) return '$' + value.toFixed(4); return '$' + value.toFixed(6); }
+        function normalizePriceData(rows) { const bySymbol = Object.fromEntries(rows.map(item => [item.symbol, Number(item.price)])); return { bitcoin: { usd: bySymbol.BTCUSDT || 0 }, ethereum: { usd: bySymbol.ETHUSDT || 0 }, binancecoin: { usd: bySymbol.BNBUSDT || 0 }, solana: { usd: bySymbol.SOLUSDT || 0 }, tether: { usd: 1 }, ali: { usd: 1 } }; }
+        function displayCryptoPrices(data) { const values = { btcPrice: data.bitcoin?.usd || 0, ethPrice: data.ethereum?.usd || 0, bnbPrice: data.binancecoin?.usd || 0, solPrice: data.solana?.usd || 0, usdtPrice: data.tether?.usd || 1, aliPrice: data.ali?.usd || 1 }; Object.entries(values).forEach(([id, value]) => { const el = document.getElementById(id); if (el) el.textContent = formatPrice(value); }); hidePriceLoader(); }
+        async function fetchJson(url, timeoutMs) { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), timeoutMs); try { const response = await fetch(url, { signal: controller.signal, cache: 'no-store' }); if (!response.ok) throw new Error('Price API failed: ' + response.status); return await response.json(); } finally { clearTimeout(timer); } }
+        async function updateCryptoPrices() { showPriceLoader(); try { const cached = localStorage.getItem(PRICE_CACHE_KEY); if (cached) { const { data, timestamp } = JSON.parse(cached); if (Date.now() - timestamp < CACHE_DURATION) { displayCryptoPrices(data); return; } } const encodedSymbols = encodeURIComponent(JSON.stringify(BINANCE_SYMBOLS)); const rows = await fetchJson('https://api.binance.com/api/v3/ticker/price?symbols=' + encodedSymbols, 1800); const data = normalizePriceData(rows); localStorage.setItem(PRICE_CACHE_KEY, JSON.stringify({ data, timestamp: Date.now() })); displayCryptoPrices(data); } catch (primaryError) { try { const data = await fetchJson('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana,tether&vs_currencies=usd', 3000); data.ali = { usd: 1 }; localStorage.setItem(PRICE_CACHE_KEY, JSON.stringify({ data, timestamp: Date.now() })); displayCryptoPrices(data); } catch (fallbackError) { const cached = localStorage.getItem(PRICE_CACHE_KEY); if (cached) { displayCryptoPrices(JSON.parse(cached).data); } else { displayCryptoPrices({ bitcoin: { usd: 66300 }, ethereum: { usd: 1990 }, binancecoin: { usd: 610 }, solana: { usd: 83 }, tether: { usd: 1 }, ali: { usd: 1 } }); } } } }
+        updateCryptoPrices();
+        setInterval(updateCryptoPrices, 60000);
     </script>
 
     <section class="projects py-20 bg-bgDark particle-bg relative overflow-hidden perspective-[1200px]" id="projects">
@@ -1168,7 +1011,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/war-zone-aid.jpg" width="80" height="80" alt="War Zone Aid project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_general_name">War Zone Aid</h3>
@@ -1191,7 +1034,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/earthquake-relief.jpg" width="80" height="80" alt="Earthquake Relief project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_1_name">Earthquake Relief</h3>
@@ -1214,7 +1057,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/children-education.jpg" width="80" height="80" alt="Children Education project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_2_name">Children Education</h3>
@@ -1237,7 +1080,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/medical-infrastructure.jpg" width="80" height="80" alt="Medical Infrastructure project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_3_name">Medical Infrastructure</h3>
@@ -1260,7 +1103,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/disaster-emergency.jpg" width="80" height="80" alt="Disaster Emergency project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_4_name">Disaster Emergency</h3>
@@ -1283,7 +1126,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/orphan-support.jpg" width="80" height="80" alt="Orphan Support project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_5_name">Orphan Support</h3>
@@ -1306,7 +1149,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/hospice-care.jpg" width="80" height="80" alt="Hospice Care project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_6_name">Hospice Care</h3>
@@ -1329,7 +1172,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/clean-water.jpg" width="80" height="80" alt="Clean Water project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_7_name">Clean Water</h3>
@@ -1352,7 +1195,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">
+                        <img loading="lazy" src="/assets/images/projects/stray-animal-support.jpg" width="80" height="80" alt="Stray Animal Support project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_8_name">Stray Animal</h3>
@@ -1375,7 +1218,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">                  </div>
+                        <img loading="lazy" src="/assets/images/projects/public-healthcare.jpg" width="80" height="80" alt="Public Healthcare project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">                  </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_9_name">Public Healthcare</h3>
                 <p class="text-textSecondary text-sm mb-5 leading-relaxed text-center" data-i18n="proj_9_desc">Improve public healthcare systems</p>
@@ -1397,7 +1240,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">               </div>
+                        <img loading="lazy" src="/assets/images/projects/disaster-prevention.jpg" width="80" height="80" alt="Disaster Prevention project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">               </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_10_name">Disaster Prevention</h3>
                 <p class="text-textSecondary text-sm mb-5 leading-relaxed text-center" data-i18n="proj_10_desc">Engineering solutions for disaster prevention</p>
@@ -1419,7 +1262,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">               </div>
+                        <img loading="lazy" src="/assets/images/projects/sanitation-hygiene.jpg" width="80" height="80" alt="Sanitation Hygiene project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">               </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_11_name">Sanitation</h3>
                 <p class="text-textSecondary text-sm mb-5 leading-relaxed text-center" data-i18n="proj_11_desc">Promote public sanitation and hygiene</p>
@@ -1441,7 +1284,7 @@ updateCryptoPrices();
             <div class="project-card bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <img loading="lazy" src="/assets/images/hero-global-aid-blockchain-sm.jpg" width="80" height="80" alt="Transparent humanitarian aid project" class="w-20 h-20 object-cover rounded-2xl">               </div>
+                        <img loading="lazy" src="/assets/images/projects/children-rescue.jpg" width="80" height="80" alt="Children Rescue project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">               </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center" data-i18n="proj_12_name">Children Rescue</h3>
                 <p class="text-textSecondary text-sm mb-5 leading-relaxed text-center" data-i18n="proj_12_desc">Rescue and support children in conflict zones</p>
@@ -1603,8 +1446,8 @@ updateCryptoPrices();
         <div class="max-w-4xl mx-auto px-6" id="expenditureList">
             <div class="bg-bgLight rounded-xl mb-6 overflow-hidden border border-borderColor shadow-xl shadow-black/30 transition hover:border-primary/50 hover:translate-y-[-2px]">
                 <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/3 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-6">
-                        <span class="text-6xl">🍞</span>
+                    <div class="md:w-1/3 expenditure-photo-wrap">
+                        <img src="/assets/images/projects/emergency-food-gaza.jpg" width="360" height="360" alt="Emergency food supply packages for Gaza" loading="lazy" decoding="async" class="expenditure-photo">
                     </div>
                     <div class="md:w-2/3 p-6">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-2">
@@ -1621,8 +1464,8 @@ updateCryptoPrices();
             </div>
             <div class="bg-bgLight rounded-xl mb-6 overflow-hidden border border-borderColor shadow-xl shadow-black/30 transition hover:border-primary/50 hover:translate-y-[-2px]">
                 <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/3 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-6">
-                        <span class="text-6xl">💉</span>
+                    <div class="md:w-1/3 expenditure-photo-wrap">
+                        <img src="/assets/images/projects/medical-kits-turkey.jpg" width="360" height="360" alt="Emergency medical kits for Turkey earthquake response" loading="lazy" decoding="async" class="expenditure-photo">
                     </div>
                     <div class="md:w-2/3 p-6">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-2">
@@ -1639,8 +1482,8 @@ updateCryptoPrices();
             </div>
             <div class="bg-bgLight rounded-xl mb-6 overflow-hidden border border-borderColor shadow-xl shadow-black/30 transition hover:border-primary/50 hover:translate-y-[-2px]">
                 <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/3 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-6">
-                        <span class="text-6xl">🏕️</span>
+                    <div class="md:w-1/3 expenditure-photo-wrap">
+                        <img src="/assets/images/projects/temporary-shelter.jpg" width="360" height="360" alt="Temporary shelter tents and blankets for Syria and Turkey" loading="lazy" decoding="async" class="expenditure-photo">
                     </div>
                     <div class="md:w-2/3 p-6">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-2">
@@ -1657,8 +1500,8 @@ updateCryptoPrices();
             </div>
             <div class="bg-bgLight rounded-xl mb-4 overflow-hidden border border-borderColor shadow-xl shadow-black/30 transition hover:border-primary/50 hover:translate-y-[-2px]">
                 <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/3 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-6">
-                        <span class="text-6xl">🎒</span>
+                    <div class="md:w-1/3 expenditure-photo-wrap">
+                        <img src="/assets/images/projects/children-education.jpg" width="360" height="360" alt="School supply kits for children in Syria and Turkey" loading="lazy" decoding="async" class="expenditure-photo">
                     </div>
                     <div class="md:w-2/3 p-6">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-2">
@@ -1702,7 +1545,7 @@ updateCryptoPrices();
         <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm">
             <a href="#expenditure" class="text-textSecondary hover:text-primary transition-colors" data-i18n="expenditure">Expenditure</a>
             <span class="text-slate-600">•</span>
-            <a href="blog/why-i-built-ali-charity.html" class="text-textSecondary hover:text-primary transition-colors">Blog</a>
+            <a href="/blog/" class="text-textSecondary hover:text-primary transition-colors">Blog</a>
             <span class="text-slate-600">•</span>
             <a href="faq.html" class="text-textSecondary hover:text-primary transition-colors">FAQ</a>
             <span class="text-slate-600">•</span>
@@ -1713,7 +1556,7 @@ updateCryptoPrices();
             <p>&copy; 2026 ALI Charity. All donations are transparent on-chain.</p>
             <p class="mt-2">
                 <a href="index.html" class="text-primary hover:underline focus-ring-custom rounded px-1">ALI Charity</a> • 
-                <a href="https://alicharity.blog" class="text-primary hover:underline focus-ring-custom rounded px-1" target="_blank">Blog</a> • 
+                <a href="/blog/" class="text-primary hover:underline focus-ring-custom rounded px-1">Blog</a> •
                 Built with ❤️ by open source community
             </p>
         </footer>
@@ -2432,7 +2275,7 @@ function renderActiveProjects() {
             <div class="bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
                 <div class="flex items-center justify-center mb-4">
                     <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                        <span class="text-5xl filter drop-shadow-md">${p.emoji || '🎁'}</span>
+                        <img loading="lazy" src="${getProjectImage(p.id, index)}" width="80" height="80" alt="${p.name || 'Project'} project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                     </div>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-center">${p.name || 'Project Name'}</h3>
@@ -2488,6 +2331,12 @@ function renderActiveProjects() {
 }
 
 // Fallback render if API fails
+function getProjectImage(projectId, index) {
+    const images = { proj_general: 'war-zone-aid.jpg', proj_1: 'earthquake-relief.jpg', proj_2: 'children-education.jpg', proj_3: 'medical-infrastructure.jpg', proj_4: 'disaster-emergency.jpg', proj_5: 'orphan-support.jpg', proj_6: 'hospice-care.jpg', proj_7: 'clean-water.jpg', proj_8: 'stray-animal-support.jpg', proj_9: 'public-healthcare.jpg', proj_10: 'disaster-prevention.jpg', proj_11: 'sanitation-hygiene.jpg', proj_12: 'children-rescue.jpg' };
+    const fallback = ['war-zone-aid.jpg', 'earthquake-relief.jpg', 'children-education.jpg', 'medical-infrastructure.jpg', 'disaster-emergency.jpg', 'orphan-support.jpg', 'hospice-care.jpg', 'clean-water.jpg', 'stray-animal-support.jpg', 'public-healthcare.jpg', 'disaster-prevention.jpg', 'sanitation-hygiene.jpg', 'children-rescue.jpg'];
+    return '/assets/images/projects/' + (images[projectId] || fallback[index] || 'blockchain-aid-records.jpg');
+}
+
 function renderFallbackProjects(projects) {
     const grid = document.getElementById('projectsGrid');
     grid.innerHTML = '';
@@ -2498,7 +2347,7 @@ function renderFallbackProjects(projects) {
         <div class="bg-bgLight rounded-2xl overflow-hidden shadow-xl shadow-black/30 p-6 transition-all duration-300 transform-3d will-change-transform hover:translate-y-[-8px] hover:scale-[1.02] hover:shadow-primary/25 border border-borderColor hover:border-primary/40">
             <div class="flex items-center justify-center mb-4">
                 <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-                    <span class="text-5xl filter drop-shadow-md">${p.emoji || '🎁'}</span>
+                    <img loading="lazy" src="${getProjectImage(p.id, index)}" width="80" height="80" alt="${getProjectName(p.id)} project photo" class="w-20 h-20 object-cover rounded-2xl ali-project-thumb">
                 </div>
             </div>
             <h3 class="text-xl font-bold mb-3 text-center">${getProjectName(p.id)}</h3>
@@ -3333,9 +3182,9 @@ preloadLinks.forEach(link => {
 </script>
 
 <!-- Mobile Floating Lightning Donate Button -->
-<div class="fixed bottom-6 right-6 z-[999] md:hidden">
+<div class="fixed bottom-6 right-6 z-[999] md:hidden ali-floating-donate-wrap">
     <a href="donate.html"
-       class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 shadow-lg shadow-amber-500/30 animate-pulse hover:scale-110 transition-transform"
+       class="ali-floating-donate flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold hover:scale-110 transition-transform"
        aria-label="Lightning Donate">
         <span class="text-2xl">⚡</span>
     </a>
@@ -3344,7 +3193,7 @@ preloadLinks.forEach(link => {
 <!-- Desktop Floating Lightning Donate Button -->
 <div class="fixed bottom-8 right-8 z-[999] hidden md:block">
     <a href="donate.html"
-       class="floating-lightning-btn flex items-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold shadow-lg shadow-amber-500/40 hover:scale-105 transition-all"
+       class="floating-lightning-btn ali-floating-donate flex items-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold hover:scale-105 transition-all"
        aria-label="Lightning Donate">
         <span class="text-2xl">⚡</span>
         <span data-i18n="lightningDonate">Lightning Donate</span>
@@ -3387,7 +3236,7 @@ preloadLinks.forEach(link => {
 <script>
 // Add animation to floating button
 document.addEventListener('DOMContentLoaded', function() {
-    const floatingBtn = document.querySelector('.fixed.bottom-6.right-6');
+    const floatingBtn = document.querySelector('.ali-floating-donate');
     if (floatingBtn) {
         floatingBtn.classList.add('floating-lightning-btn');
     }
