@@ -6,13 +6,17 @@
       "currency": "USDT",
       "amount": "0.3",
       "timestamp": "2026-04-10T10:00:00Z",
-      "status": "confirmed"
+      "status": "confirmed",
+      "projectId": "proj_general"
     }
   ],
   "stats": {
-    "totalDonations": 2,
+    "totalDonations": 1,
+    "confirmedDonations": 1,
+    "pendingDonations": 0,
+    "rejectedDonations": 0,
     "totalAmount": 0.3,
     "pendingAmount": 0,
-    "aliTokensIssued": 0
+    "aliTokensIssued": 0.3
   }
 }

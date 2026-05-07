@@ -178,3 +178,71 @@ Last updated: 2026-05-06
 - address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
 - address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
 - address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T14:43:26.272Z
+
+- Branch: main
+- Head: 160d00d
+- Latest commit: 160d00d Refresh homepage project imagery
+- Working tree: M public/admin-login.html;  M public/dashboard.html
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T14:54:33.997Z
+
+- Branch: main
+- Head: 160d00d
+- Latest commit: 160d00d Refresh homepage project imagery
+- Working tree: M .gitignore;  M memory/PROJECT_CONTEXT.md;  M public/admin-login.html;  M public/dashboard.html;  M server.js
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T15:09:41.041Z
+
+- Branch: main
+- Head: 160d00d
+- Latest commit: 160d00d Refresh homepage project imagery
+- Working tree: M .gitignore;  M memory/PROJECT_CONTEXT.md;  M public/admin-login.html;  M public/dashboard.html;  M public/data/donations.json;  M server.js
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-07T15:13:31.381Z
+
+- Branch: main
+- Head: 160d00d
+- Latest commit: 160d00d Refresh homepage project imagery
+- Working tree: M .gitignore;  M memory/PROJECT_CONTEXT.md;  M public/admin-login.html;  M public/dashboard.html;  M public/data/donations.json;  M server.js
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
