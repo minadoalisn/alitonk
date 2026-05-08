@@ -191,21 +191,6 @@ body.ali-polished nav .text-gradient {
   grid-column: 1 / -1;
 }
 
-.ali-stats-source {
-  grid-column: 1 / -1;
-  justify-self: center;
-  margin: -0.35rem 0 0.35rem;
-  max-width: 42rem;
-  border: 1px solid rgba(96, 165, 250, 0.22);
-  border-radius: 999px;
-  background: rgba(96, 165, 250, 0.08);
-  color: #bfdbfe;
-  padding: 0.45rem 0.8rem;
-  text-align: center;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
 .ali-browse-action {
   justify-self: center;
   display: inline-flex;
