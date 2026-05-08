@@ -162,7 +162,7 @@
           "name": "What are ALI tokens?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ALI tokens are reward tokens given to donors at a 1:1 ratio with USDT donations. They provide governance rights, profit sharing, and access to exclusive community features."
+            "text": "ALI tokens are reward tokens given to donors at a 1:1 USDT-equivalent accounting ratio for recognition. They can support future governance experiments, participation records, and access to community features."
           }
         }
       ]
@@ -408,7 +408,7 @@
           "name": "How do ALI token rewards work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ALI Charity rewards donors with ALI tokens at a fixed 1:1 USDT rate. For every USDT equivalent donated, you receive 1 ALI token. These tokens are ERC20 standard and can be traded, held, or used within our ecosystem. The fixed rate provides predictable rewards regardless of market fluctuations, and tokens are distributed immediately upon donation confirmation on the blockchain."
+            "text": "ALI Charity can recognize donors with ALI tokens at a 1:1 USDT-equivalent accounting rate. For every USDT equivalent donated, the donor can be recorded for 1 ALI recognition token. ALI is configured for BNB Smart Chain and should not be treated as a guaranteed market price or return product."
           }
         },
         {
@@ -956,7 +956,7 @@
                     <div class="text-sm text-textSecondary relative z-10" data-i18n="totalRaised">Total Raised (USDT)</div>
                 </div>
                 <div class="bg-bgLight shadow-xl shadow-black/30 rounded-2xl p-6 relative overflow-hidden transition-all duration-300 transform-3d hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-primary/20 min-h-[88px] flex flex-col justify-center">
-                    <div class="text-3xl md:text-4xl font-bold text-primary relative z-10 translate-z-10 saturate-13" id="projectsActive">12</div>
+                    <div class="text-3xl md:text-4xl font-bold text-primary relative z-10 translate-z-10 saturate-13" id="projectsActive">13</div>
                     <div class="text-sm text-textSecondary relative z-10" data-i18n="activeProjects">Active Projects</div>
                 </div>
             </div>
@@ -986,6 +986,79 @@
                         Add to MetaMask
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ali-donor-lab py-20 bg-[#091525]" id="donor-lab" aria-labelledby="donorLabTitle">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="ali-donor-lab-heading">
+                <p class="ali-section-kicker">Interactive donor tools</p>
+                <h2 id="donorLabTitle" class="text-[clamp(1.6rem,4vw,2.7rem)] font-bold font-display">Find the donation path that fits your values</h2>
+                <p class="text-textSecondary max-w-3xl">Explore practical impact scenarios, match with a cause, and review the transparency steps before you donate. No wallet connection is required for this preview.</p>
+            </div>
+
+            <div class="ali-donor-lab-grid">
+                <article class="ali-impact-panel" aria-labelledby="impactCalcTitle">
+                    <div class="ali-panel-topline">
+                        <span>Impact simulator</span>
+                        <strong id="impactAmountLabel">$50 USDT</strong>
+                    </div>
+                    <h3 id="impactCalcTitle">What could my crypto donation unlock?</h3>
+                    <label for="impactAmount" class="ali-range-label">Donation amount</label>
+                    <input id="impactAmount" class="ali-impact-range" type="range" min="10" max="1000" value="50" step="10">
+                    <div class="ali-impact-results" aria-live="polite">
+                        <div>
+                            <strong id="impactMeals">120</strong>
+                            <span>emergency meal equivalents</span>
+                        </div>
+                        <div>
+                            <strong id="impactKits">8</strong>
+                            <span>basic medical kit equivalents</span>
+                        </div>
+                        <div>
+                            <strong id="impactAli">50</strong>
+                            <span>ALI recognition tokens by donation accounting</span>
+                        </div>
+                    </div>
+                    <p class="ali-small-note">Figures are illustrative planning estimates for donor education, not a guaranteed delivery promise.</p>
+                </article>
+
+                <article class="ali-cause-panel" aria-labelledby="causeMatchTitle">
+                    <div class="ali-panel-topline">
+                        <span>Cause matcher</span>
+                        <strong id="causeMatchScore">Humanitarian Aid</strong>
+                    </div>
+                    <h3 id="causeMatchTitle">Pick the value that matters most today</h3>
+                    <div class="ali-cause-options" role="group" aria-label="Choose donation priority">
+                        <button type="button" class="ali-cause-option is-active" data-cause="relief">Urgent relief</button>
+                        <button type="button" class="ali-cause-option" data-cause="children">Children first</button>
+                        <button type="button" class="ali-cause-option" data-cause="health">Healthcare access</button>
+                        <button type="button" class="ali-cause-option" data-cause="resilience">Long-term resilience</button>
+                    </div>
+                    <div class="ali-cause-result">
+                        <p class="ali-result-label">Suggested project route</p>
+                        <h4 id="causeMatchTitleResult">War Zone Aid</h4>
+                        <p id="causeMatchCopy">Fast support for conflict-affected families, emergency supplies, and cross-border humanitarian response.</p>
+                        <a id="causeMatchLink" href="donate.html?project=war-zone-aid" class="ali-mini-action">Donate to this route</a>
+                    </div>
+                </article>
+
+                <article class="ali-trust-panel" aria-labelledby="trustChecklistTitle">
+                    <div class="ali-panel-topline">
+                        <span>Transparency checklist</span>
+                        <strong id="trustProgress">0/4 ready</strong>
+                    </div>
+                    <h3 id="trustChecklistTitle">Build donor confidence before sending funds</h3>
+                    <div class="ali-trust-checks">
+                        <label><input type="checkbox" data-trust-check> I checked the donation asset and network.</label>
+                        <label><input type="checkbox" data-trust-check> I copied the address from the official site.</label>
+                        <label><input type="checkbox" data-trust-check> I understand blockchain transfers are irreversible.</label>
+                        <label><input type="checkbox" data-trust-check> I will keep the transaction hash for review.</label>
+                    </div>
+                    <div class="ali-trust-status" id="trustStatus">Start with the network check, then continue through the list.</div>
+                    <a href="whitepaper.html" class="ali-mini-action ali-secondary-mini">Read transparency model</a>
+                </article>
             </div>
         </div>
     </section>
@@ -1405,8 +1478,8 @@
                     </div>
                     <div>
                         <div class="text-2xl mb-2">💰</div>
-                        <div class="font-bold text-sm text-slate-100">Profit Sharing</div>
-                        <div class="text-xs text-textSecondary">Platform fee dividends</div>
+                        <div class="font-bold text-sm text-slate-100">Impact Records</div>
+                        <div class="text-xs text-textSecondary">Transparent donor participation</div>
                     </div>
                     <div>
                         <div class="text-2xl mb-2">⭐</div>
@@ -1594,7 +1667,7 @@ const translations = {
         
         // Hero Section
         heroTitle: '100% Transparent Charity on Blockchain',
-        heroSubtitle: 'ALI Charity leverages blockchain technology to ensure complete transparency for every donation. Track your contributions in real-time as they support 12 verified humanitarian projects worldwide. Accepting BTC, ETH, USDT, BNB, and SOL with zero platform fees.',
+        heroSubtitle: 'ALI Charity leverages blockchain technology to make every donation easier to verify as it supports 13 humanitarian project routes worldwide. Accepting BTC, ETH, USDT, BNB, and SOL with public records.',
         
         // Stats
         totalDonations: 'Total Donations',
@@ -1676,7 +1749,7 @@ const translations = {
         trading: 'Trading',
         connectWallet: 'Connect Wallet',
         heroTitle: 'Transparent Charity On-Chain',
-        heroSubtitle: 'ALI Charity uses blockchain technology to ensure 100% transparency for every donation. Track your funds in real-time as they support 12 verified projects worldwide. We accept BTC, ETH, USDT, BNB, and SOL with zero fees, and reward donors with ALI tokens at a fixed 1:1 USDT rate.',
+        heroSubtitle: 'ALI Charity uses blockchain technology to make every donation traceable as it supports 13 project routes worldwide. We accept BTC, ETH, USDT, BNB, and SOL, and use ALI tokens as a donor recognition layer by USDT-equivalent accounting.',
         totalDonations: 'Total Donations',
         totalRaised: 'Total Raised (USDT)',
         activeProjects: 'Active Projects',
@@ -3196,6 +3269,100 @@ preloadLinks.forEach(link => {
     el.rel = 'prefetch';
     el.href = link.href;
     document.head.appendChild(el);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const amountInput = document.getElementById('impactAmount');
+    const amountLabel = document.getElementById('impactAmountLabel');
+    const mealsEl = document.getElementById('impactMeals');
+    const kitsEl = document.getElementById('impactKits');
+    const aliEl = document.getElementById('impactAli');
+
+    function updateImpactPreview() {
+        if (!amountInput || !amountLabel || !mealsEl || !kitsEl || !aliEl) return;
+        const amount = Number(amountInput.value || 0);
+        amountLabel.textContent = '$' + amount.toLocaleString('en-US') + ' USDT';
+        mealsEl.textContent = Math.max(1, Math.round(amount * 2.4)).toLocaleString('en-US');
+        kitsEl.textContent = Math.max(1, Math.round(amount / 6)).toLocaleString('en-US');
+        aliEl.textContent = Math.round(amount).toLocaleString('en-US');
+    }
+
+    if (amountInput) {
+        amountInput.addEventListener('input', updateImpactPreview);
+        updateImpactPreview();
+    }
+
+    const causeRoutes = {
+        relief: {
+            label: 'Humanitarian Aid',
+            title: 'War Zone Aid',
+            copy: 'Fast support for conflict-affected families, emergency supplies, and cross-border humanitarian response.',
+            href: 'donate.html?project=war-zone-aid'
+        },
+        children: {
+            label: 'Child Protection',
+            title: 'Children Rescue',
+            copy: 'Support school access, safe shelter, and urgent relief for children affected by conflict or poverty.',
+            href: 'donate.html?project=children-rescue'
+        },
+        health: {
+            label: 'Medical Access',
+            title: 'Medical Infrastructure',
+            copy: 'Help strengthen basic healthcare capacity, public medicine access, and frontline medical support.',
+            href: 'donate.html?project=medical-infrastructure'
+        },
+        resilience: {
+            label: 'Resilience Building',
+            title: 'Disaster Prevention',
+            copy: 'Back long-term infrastructure, sanitation, and preparedness work that reduces future emergency losses.',
+            href: 'donate.html?project=disaster-prevention'
+        }
+    };
+
+    const causeButtons = document.querySelectorAll('.ali-cause-option');
+    const causeScore = document.getElementById('causeMatchScore');
+    const causeTitle = document.getElementById('causeMatchTitleResult');
+    const causeCopy = document.getElementById('causeMatchCopy');
+    const causeLink = document.getElementById('causeMatchLink');
+
+    function setCauseRoute(key) {
+        const route = causeRoutes[key] || causeRoutes.relief;
+        if (causeScore) causeScore.textContent = route.label;
+        if (causeTitle) causeTitle.textContent = route.title;
+        if (causeCopy) causeCopy.textContent = route.copy;
+        if (causeLink) causeLink.href = route.href;
+        causeButtons.forEach(button => {
+            button.classList.toggle('is-active', button.dataset.cause === key);
+        });
+    }
+
+    causeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            setCauseRoute(button.dataset.cause);
+        });
+    });
+
+    const trustChecks = document.querySelectorAll('[data-trust-check]');
+    const trustProgress = document.getElementById('trustProgress');
+    const trustStatus = document.getElementById('trustStatus');
+
+    function updateTrustProgress() {
+        const checked = Array.from(trustChecks).filter(input => input.checked).length;
+        if (trustProgress) trustProgress.textContent = checked + '/' + trustChecks.length + ' ready';
+        if (!trustStatus) return;
+        if (checked === 0) {
+            trustStatus.textContent = 'Start with the network check, then continue through the list.';
+        } else if (checked < trustChecks.length) {
+            trustStatus.textContent = 'Good progress. Complete every check before sending a live transaction.';
+        } else {
+            trustStatus.textContent = 'Ready for the donation page. Keep your transaction hash after sending.';
+        }
+    }
+
+    trustChecks.forEach(input => input.addEventListener('change', updateTrustProgress));
+    updateTrustProgress();
 });
 </script>
 
