@@ -55,7 +55,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold gradient-text flex items-center gap-2">
-                    <span class="text-3xl">馃彔</span>
+                    <span class="text-sm px-2 py-1 rounded-lg border border-[#10B981]/40 text-[#10B981]">ALI</span>
                     ALI Charity
                 </a>
                 <div class="hidden md:flex gap-8">
@@ -105,11 +105,11 @@
             <div class="glass-card rounded-2xl p-2 inline-flex gap-2">
                 <button id="manualModeBtn" onclick="switchMode('manual')" 
                         class="px-6 py-3 rounded-xl font-semibold transition-all bg-[#10B981] text-white">
-                    馃搵 Manual Mode
+                    Manual Mode
                 </button>
                 <button id="autoModeBtn" onclick="switchMode('auto')" 
                         class="px-6 py-3 rounded-xl font-semibold transition-all text-gray-400 hover:text-white">
-                    鈿?Auto Mode
+                    Auto Mode
                 </button>
             </div>
         </div>
@@ -119,7 +119,7 @@
             <!-- Donation Calculator -->
             <div class="glass-card rounded-3xl p-8 glow-green">
                 <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <span class="text-3xl">馃拵</span>
+                    <span class="text-sm px-2 py-1 rounded-lg border border-[#10B981]/40 text-[#10B981]">CALC</span>
                     Donation Calculator
                 </h2>
                 
@@ -140,11 +140,11 @@
                         <label class="block text-sm text-gray-400 mb-2">Cryptocurrency</label>
                         <select id="currencySelect" onchange="updateCurrency()" 
                                 class="w-full bg-[#0A101F] border border-white/10 rounded-xl px-6 py-4 text-lg focus:border-[#10B981] focus:outline-none transition-colors cursor-pointer">
-                            <option value="USDT">馃挵 USDT (BSC)</option>
-                            <option value="BTC">鈧?BTC (Bitcoin)</option>
-                            <option value="ETH">鉄?ETH (BSC)</option>
-                            <option value="BNB">猬?BNB (BSC)</option>
-                            <option value="SOL">鈼?SOL (Solana)</option>
+                            <option value="USDT">USDT (BSC)</option>
+                            <option value="BTC">BTC (Bitcoin)</option>
+                            <option value="ETH">ETH (BSC)</option>
+                            <option value="BNB">BNB (BSC)</option>
+                            <option value="SOL">SOL (Solana)</option>
                         </select>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
             <!-- Donation Address -->
             <div class="glass-card rounded-3xl p-8">
                 <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <span class="text-3xl">馃搷</span>
+                    <span class="text-sm px-2 py-1 rounded-lg border border-[#3B82F6]/40 text-[#93C5FD]">ADDR</span>
                     Donation Address
                 </h2>
                 
@@ -180,7 +180,6 @@
 
                 <button onclick="copyAddress()" 
                         class="w-full mt-6 btn-glow bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold py-4 rounded-xl hover:opacity-90 transition-all flex items-center justify-center gap-2">
-                    <span>馃搵</span>
                     Copy Address
                 </button>
             </div>
@@ -188,7 +187,7 @@
             <!-- Submit Donation Info -->
             <div class="glass-card rounded-3xl p-8">
                 <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <span class="text-3xl">馃摑</span>
+                    <span class="text-sm px-2 py-1 rounded-lg border border-[#8B5CF6]/40 text-[#C4B5FD]">REVIEW</span>
                     Submit Donation Info For Manual Review
                 </h2>
                 
@@ -225,7 +224,7 @@
         <div id="autoMode" class="hidden space-y-6">
             <div class="glass-card rounded-3xl p-8 glow-purple">
                 <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <span class="text-3xl">鈿?/span>
+                    <span class="text-sm px-2 py-1 rounded-lg border border-[#F3BA2F]/40 text-[#FDE68A]">BNB</span>
                     Quick Donate with MetaMask
                 </h2>
                 
@@ -279,14 +278,12 @@
                 <!-- Connect Wallet Button -->
                 <button id="connectWalletBtn" onclick="connectWallet()" 
                         class="w-full btn-glow bg-gradient-to-r from-[#F3BA2F] to-[#F59E0B] text-black font-bold py-4 rounded-xl hover:opacity-90 transition-all flex items-center justify-center gap-2 pulse-glow">
-                    <span>馃</span>
                     Connect MetaMask
                 </button>
                 
                 <!-- Donate Button (Hidden until wallet connected) -->
                 <button id="donateBtn" onclick="donateBNB()" 
                         class="hidden w-full btn-glow bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold py-4 rounded-xl hover:opacity-90 transition-all mt-4 flex items-center justify-center gap-2">
-                    <span>鈿?/span>
                     Donate Now
                 </button>
                 
@@ -297,17 +294,17 @@
         <!-- Info Cards -->
         <div class="grid md:grid-cols-3 gap-6 mt-8">
             <div class="glass-card rounded-2xl p-6 text-center">
-                <div class="text-4xl mb-3">馃敀</div>
+                <div class="text-xs tracking-[0.2em] text-[#10B981] mb-3">VERIFY</div>
                 <h3 class="font-bold mb-2">Public Records</h3>
                 <p class="text-sm text-gray-400">Use blockchain explorers and your transaction hash to verify transfers</p>
             </div>
             <div class="glass-card rounded-2xl p-6 text-center">
-                <div class="text-4xl mb-3">馃拵</div>
+                <div class="text-xs tracking-[0.2em] text-[#3B82F6] mb-3">REVIEW</div>
                 <h3 class="font-bold mb-2">Manual Review</h3>
                 <p class="text-sm text-gray-400">Submitted transactions can be reviewed before they become confirmed records</p>
             </div>
             <div class="glass-card rounded-2xl p-6 text-center">
-                <div class="text-4xl mb-3">馃實</div>
+                <div class="text-xs tracking-[0.2em] text-[#8B5CF6] mb-3">GLOBAL</div>
                 <h3 class="font-bold mb-2">Global Impact</h3>
                 <p class="text-sm text-gray-400">Support humanitarian project routes with clearer reporting context</p>
             </div>
@@ -318,9 +315,9 @@
     <footer class="border-t border-white/10 py-8 px-6">
         <div class="max-w-7xl mx-auto text-center">
             <p class="text-gray-400 mb-4">
-                馃拵 ALI Token Contract: <code class="text-[#10B981]">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code>
+                ALI Token Contract: <code class="text-[#10B981]">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code>
             </p>
-            <p class="text-gray-500 text-sm">Network: BSC (Binance Smart Chain) | 漏 2026 ALI Charity</p>
+            <p class="text-gray-500 text-sm">Network: BSC (Binance Smart Chain) | &copy; 2026 ALI Charity</p>
         </div>
     </footer>
 
