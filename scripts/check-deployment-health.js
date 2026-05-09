@@ -34,11 +34,6 @@ const CHECKS = [
 
 const OPTIONAL_CHECKS = [
   {
-    name: 'Latest generated promotion on main site',
-    url: 'https://minadoai.com/blog/news/2026-05-06-web3-philanthropy-donor-rewards.html',
-    mustContain: ['Web3 Philanthropy', 'ALI Charity']
-  },
-  {
     name: 'Legacy standalone blog domain',
     url: 'https://alicharity.blog/',
     mustContain: ['ALI', 'Charity']
@@ -147,6 +142,23 @@ async function runCheck(check, optional = false) {
   }
 }
 
+async function runLatestBlogCheck() {
+  const index = await fetchTextWithRetry('https://minadoai.com/blog/news.html');
+  const match = index.body.match(/href="(\/blog\/news\/[^"]+\.html)"/);
+
+  if (!match) {
+    console.log('WARN OPTIONAL: Latest generated promotion on main site');
+    console.log('  No latest news link found on blog news index');
+    return;
+  }
+
+  await runCheck({
+    name: 'Latest generated promotion on main site',
+    url: `https://minadoai.com${match[1]}`,
+    mustContain: ['ALI Charity', 'FAQPage']
+  }, true);
+}
+
 async function runTcpCheck(check, optional = false) {
   const prefix = optional ? 'OPTIONAL TCP' : 'TCP';
 
@@ -183,6 +195,13 @@ async function main() {
       console.log(`WARN OPTIONAL: ${check.name}`);
       console.log(`  ${error.message}`);
     }
+  }
+
+  try {
+    await runLatestBlogCheck();
+  } catch (error) {
+    console.log('WARN OPTIONAL: Latest generated promotion on main site');
+    console.log(`  ${error.message}`);
   }
 
   for (const check of TCP_CHECKS) {
