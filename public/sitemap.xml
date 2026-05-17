@@ -56,9 +56,15 @@
   </url>
   <url>
     <loc>https://minadoai.com/blog/</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://minadoai.com/blog/news.html</loc>

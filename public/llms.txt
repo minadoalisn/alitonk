@@ -9,6 +9,7 @@
 - Blog: https://minadoai.com/blog/
 - Daily briefings: https://minadoai.com/blog/news.html
 - 2026 donor brief: https://minadoai.com/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html
+- Donor safety checklist (2026): https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html
 - Promotion hub and share kit: https://minadoai.com/promotion.html
 - ALI Token DEX preparation page: https://minadoai.com/dex-launch.html
 - ALI Token contract: https://bscscan.com/token/0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
