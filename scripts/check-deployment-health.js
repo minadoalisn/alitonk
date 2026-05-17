@@ -10,25 +10,42 @@ const CHECKS = [
   {
     name: 'Main site sitemap',
     url: 'https://minadoai.com/sitemap.xml',
-    mustContain: ['https://minadoai.com/', 'donate.html']
+    mustContain: [
+      'https://minadoai.com/',
+      'donate.html',
+      'crypto-donation-safety-checklist-2026.html'
+    ]
   },
   {
     name: 'Main donate page',
     url: 'https://minadoai.com/donate.html',
     mustContain: [
       '0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC',
-      '0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79'
+      '0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79',
+      'Open Safety Checklist'
     ]
   },
   {
     name: 'Main-site blog home',
     url: 'https://minadoai.com/blog/',
-    mustContain: ['ALI', 'Charity']
+    mustContain: ['ALI', 'Charity', 'Crypto Donation Safety Checklist']
   },
   {
     name: 'Main-site blog sitemap',
     url: 'https://minadoai.com/blog/sitemap.xml',
-    mustContain: ['https://minadoai.com/blog/']
+    mustContain: [
+      'https://minadoai.com/blog/',
+      'crypto-donation-safety-checklist-2026.html'
+    ]
+  },
+  {
+    name: 'Crypto donation safety guide',
+    url: 'https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html',
+    mustContain: [
+      'Crypto Donation Safety Checklist (2026)',
+      'FAQPage',
+      'FTC: What To Know About Cryptocurrency and Scams'
+    ]
   }
 ];
 
