@@ -880,17 +880,15 @@
     <script src="seo-optimizer.js" defer></script>
     <script src="ui-optimizer.js" defer></script>
     <nav class="fixed top-0 left-0 right-0 z-[1000] bg-bgDark/95 backdrop-blur-xl py-4">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gradient font-display">ALI Charity</div>
-            <button class="md:hidden text-slate-50 text-2xl focus-ring-custom rounded-lg px-2 cursor-pointer" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gradient font-display">ALI Charity</a>
+            <button class="md:hidden text-slate-50 text-sm font-bold focus-ring-custom rounded-lg px-3 py-2 cursor-pointer" id="menuToggle" aria-label="Toggle menu">Menu</button>
             <ul class="hidden md:flex gap-5 list-none" id="navLinks" role="navigation">
+                <li><a href="donate.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Donate</a></li>
+                <li><a href="#expenditure" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Transparency</a></li>
                 <li><a href="#projects" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="projects">Projects</a></li>
+                <li><a href="token.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Token</a></li>
                 <li><a href="/blog/" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Blog</a></li>
-                <li><a href="/promotion.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Promote</a></li>
-                <li><a href="/dex-launch.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">DEX Prep</a></li>
-                <li><a href="token-dashboard.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="tokenDashboard">Token Dashboard</a></li>
-                <li><a href="dao-governance.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1" data-i18n="daoGovernance">DAO Governance</a></li>
-                <li><a href="whitepaper.html" class="text-textSecondary hover:text-primary transition-colors focus-ring-custom rounded px-2 py-1">Whitepaper</a></li>
                 <!-- Mobile only: language select and connect wallet -->
                 <li class="md:hidden">
                     <select class="w-full px-3 py-2 bg-bgLight border border-borderColor rounded-lg text-slate-50 focus-ring-custom cursor-pointer" id="langSelectMobile" aria-label="Select language">
@@ -902,7 +900,7 @@
                     </select>
                 </li>
                 <li class="md:hidden">
-                    <button class="w-full bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-3 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtnMobile" data-i18n="connectWallet">Connect Wallet</button>
+                    <a href="donate.html" class="w-full bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-3 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px] inline-flex justify-center">Donate</a>
                 </li>
             </ul>
             <div class="nav-right hidden md:flex items-center gap-4">
@@ -913,7 +911,7 @@
                     <option value="ar">العربية</option>
                     <option value="ru">Русский</option>
                 </select>
-                <button class="bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-2.5 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]" id="connectBtn" data-i18n="connectWallet">Connect Wallet</button>
+                <a href="donate.html" class="bg-gradient-to-r from-cta to-orange-600 text-slate-900 border-none px-6 py-2.5 rounded-xl font-semibold cursor-pointer whitespace-nowrap hover:opacity-90 hover:translate-y-[-2px] transition-all focus-ring-custom min-h-[44px]">Donate</a>
             </div>
         </div>
     </nav>
@@ -921,7 +919,7 @@
 
     <section class="hero min-h-screen flex items-center justify-center py-[100px] bg-gradient-hero relative overflow-hidden pt-32 ali-hero">
         <div class="hero-radial absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-float pointer-events-none"></div>
-        <div class="absolute w-full h-full left-0 top-0 text-3xl tracking-[80px] opacity-5 animate-drift pointer-events-none">💙 🧡 💜 💙 🧡 💜</div>
+        <div class="absolute w-full h-full left-0 top-0 opacity-0 pointer-events-none" aria-hidden="true"></div>
         <div class="max-w-6xl mx-auto relative z-10 px-6 ali-hero-layout">
             <div class="ali-hero-content">
             <p class="ali-kicker">Global crypto giving for transparent humanitarian aid</p>
@@ -964,7 +962,7 @@
             
             <!-- ALI Token Contract Info -->
             <div class="mt-8 bg-bgLight/50 backdrop-blur-sm rounded-2xl p-6 border border-borderColor max-w-2xl mx-auto">
-                <h3 class="text-lg font-bold text-primary mb-4">💎 ALI Token Contract</h3>
+                <h3 class="text-lg font-bold text-primary mb-4">ALI Token Contract</h3>
                 <div class="bg-bgDark rounded-lg p-4 mb-4">
                     <div class="text-xs text-textSecondary mb-1">Contract Address (BSC Mainnet)</div>
                     <div class="flex items-center gap-2">
