@@ -1,3 +1,4 @@
+const { execSync } = require('child_process');
 const https = require('https');
 const net = require('net');
 
@@ -102,6 +103,14 @@ function fetchText(url) {
   });
 }
 
+function currentCommit() {
+  try {
+    return execSync('git rev-parse HEAD', { encoding: 'utf8' }).trim();
+  } catch (error) {
+    return null;
+  }
+}
+
 async function fetchTextWithRetry(url, attempts = 2) {
   let lastError;
 
@@ -176,6 +185,43 @@ async function runLatestBlogCheck() {
   }, true);
 }
 
+async function runDeployVersionCheck() {
+  const expectedCommit = currentCommit();
+
+  if (!expectedCommit) {
+    console.log('WARN CHECK: Deployment version');
+    console.log('  Could not resolve local Git commit.');
+    return;
+  }
+
+  const result = await fetchTextWithRetry('https://minadoai.com/deploy-version.json');
+  const statusOk = result.statusCode >= 200 && result.statusCode < 300;
+  let deployed = null;
+
+  try {
+    deployed = JSON.parse(result.body);
+  } catch (error) {
+    console.log('FAIL CHECK: Deployment version');
+    console.log('  URL: https://minadoai.com/deploy-version.json');
+    console.log(`  Status: ${result.statusCode}`);
+    console.log('  Missing valid deploy-version.json payload');
+    throw new Error('Deployment version failed');
+  }
+
+  const deployedCommit = deployed && deployed.commit;
+  const ok = statusOk && deployedCommit === expectedCommit;
+
+  console.log(`${ok ? 'PASS' : 'FAIL'} CHECK: Deployment version`);
+  console.log('  URL: https://minadoai.com/deploy-version.json');
+  console.log(`  Status: ${result.statusCode}`);
+  console.log(`  Expected commit: ${expectedCommit}`);
+  console.log(`  Deployed commit: ${deployedCommit || 'unknown'}`);
+
+  if (!ok) {
+    throw new Error('Deployment version failed');
+  }
+}
+
 async function runTcpCheck(check, optional = false) {
   const prefix = optional ? 'OPTIONAL TCP' : 'TCP';
 
@@ -219,6 +265,12 @@ async function main() {
   } catch (error) {
     console.log('WARN OPTIONAL: Latest generated promotion on main site');
     console.log(`  ${error.message}`);
+  }
+
+  try {
+    await runDeployVersionCheck();
+  } catch (error) {
+    failures.push(error.message);
   }
 
   for (const check of TCP_CHECKS) {
