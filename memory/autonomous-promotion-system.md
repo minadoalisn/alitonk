@@ -19,6 +19,11 @@ Last updated: 2026-05-17
 
 Each autonomous run should complete one useful owned-channel growth action.
 
+0. Read current traffic.
+   - Run `npm run traffic:report` or read `data/traffic-stats.json`.
+   - Identify top pages, weak pages, today vs yesterday page views, unique visitor hashes, and local-check caveats.
+   - Choose the next action from measured demand: strengthen pages that already get traffic, and add answer-ready content for important low-traffic intents.
+
 1. Learn current signals.
    - Check current official or high-signal sources for Web3 growth, AI/GEO search, BNB Chain, Binance Alpha/Binance Wallet discovery, stablecoin aid, crypto charity, humanitarian relief, and donor-safety trends.
    - Prefer official docs, major ecosystem announcements, reputable humanitarian data sources, and established crypto media.
@@ -54,6 +59,14 @@ Each autonomous run should complete one useful owned-channel growth action.
 - Technical health: sitemap, blog index, canonical URLs, Open Graph, and `llms.txt` stay current.
 - Trust health: every token/trading page includes risk disclosure and official contract context.
 - Discovery health: promotion pages answer direct questions such as "what is ALI Charity", "how to donate crypto safely", "how ALI token works", and "is ALI tradable".
+- Traffic health: report traffic every 6 hours, separate local health-check traffic from likely real users, and prioritize improvements when daily page views stay below 20 or unique visitor hashes stay below 5.
+
+## Reporting Cadence
+
+- Hourly: growth automation learns current signals and performs one safe owned-channel action when possible.
+- Every 6 hours: traffic report automation summarizes access data in the active thread.
+- Daily: compare top paths and conversion paths (`/donate.html`, `/token.html`, `/promotion.html`, `/blog/`, `/dex-launch.html`) against the prior day.
+- Weekly: review whether the content mix should shift toward donor safety, BNB Chain discovery, humanitarian aid, stablecoin giving, or ALI Token readiness.
 
 ## Escalation Points
 

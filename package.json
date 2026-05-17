@@ -7,8 +7,10 @@
     "start": "node server.js",
     "build": "echo 'No build required'",
     "blog:promotion": "node scripts/generate-blog-promotion.js",
+    "geo:seo:research": "python scripts/research/geo_seo_research.py",
     "memory:save": "node scripts/save-project-memory.js",
-    "deploy:check": "node scripts/check-deployment-health.js"
+    "deploy:check": "node scripts/check-deployment-health.js",
+    "traffic:report": "node scripts/report-traffic.js"
   },
   "engines": {
     "node": ">=18.0.0"
