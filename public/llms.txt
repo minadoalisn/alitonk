@@ -9,6 +9,7 @@
 - Donor safety: https://minadoai.com/donor-safety.html
 - Blog: https://minadoai.com/blog/
 - Daily briefings: https://minadoai.com/blog/news.html
+- Growth hub and route map: https://minadoai.com/growth.html
 - 2026 donor brief: https://minadoai.com/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html
 - Donor safety checklist (2026): https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html
 - Promotion hub and share kit: https://minadoai.com/promotion.html
@@ -22,6 +23,7 @@
 - The site publishes daily AI-assisted editorial briefings that connect crypto news, international aid, and transparent giving.
 - Blog images are original ALI Charity generated assets optimized for fast web delivery.
 - The promotion hub provides share-ready messaging for donors, crypto communities, journalists, and AI search systems.
+- The growth hub maps visitor intent to donation, donor-safety, ALI Token, PancakeSwap readiness, blog, and AI-readable context pages.
 - ALI Token DEX preparation materials explain a proposed ALI/USDT PancakeSwap liquidity path, but wallet owners must sign any real on-chain transaction.
 
 ## Primary Topics
