@@ -28,7 +28,7 @@
     <!-- Preload critical resources -->
     <link rel="preload" as="font" type="font/woff2" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin>
     
-    <title>ALI Charity - 100% Transparent Blockchain Charity Platform | Donate Crypto Now</title>
+    <title>ALI Charity | Simple Crypto Donations With Public Records</title>
     <link rel="alternate" hreflang="en" href="https://minadoai.com/" />
     <link rel="alternate" hreflang="zh" href="https://minadoai.com/" />
     <link rel="alternate" hreflang="es" href="https://minadoai.com/" />
@@ -919,245 +919,54 @@
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
 
-    <section class="hero min-h-screen flex items-center justify-center py-[100px] bg-gradient-hero relative overflow-hidden pt-32 ali-hero">
-        <div class="hero-radial absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-float pointer-events-none"></div>
-        <div class="absolute w-full h-full left-0 top-0 opacity-0 pointer-events-none" aria-hidden="true"></div>
-        <div class="max-w-6xl mx-auto relative z-10 px-6 ali-hero-layout">
-            <div class="ali-hero-content">
-            <p class="ali-kicker">Global crypto giving for transparent humanitarian aid</p>
-            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4 font-display text-gradient" data-i18n="heroTitle">Transparent Charity On-Chain</h1>
-            <p class="text-xl text-textSecondary mb-8 leading-relaxed ali-hero-copy" data-i18n="heroSubtitle">ALI Charity uses blockchain technology to make every donation traceable from wallet to project. Support verified humanitarian work, review public records, and use ALI as a donor recognition layer by USDT-equivalent accounting.</p>
-            <div class="ali-hero-actions">
-                <a href="donate.html" class="ali-primary-action">Donate Crypto</a>
-                <a href="/growth.html" class="ali-secondary-action">Explore Growth Hub</a>
-                <a href="/donor-safety.html" class="ali-secondary-action">Verify Before Donating</a>
-                <a href="#expenditure" class="ali-secondary-action">View Transparency</a>
+    <section class="ali-simple-hero" id="top">
+        <div class="ali-simple-wrap">
+            <div class="ali-simple-copy">
+                <p class="ali-simple-kicker">Transparent crypto donations</p>
+                <h1>Help people. Keep the proof public.</h1>
+                <p class="ali-simple-lede">ALI Charity accepts crypto donations for humanitarian project routes. The process is simple: choose an asset, copy the official address, send from your wallet, and keep the transaction hash.</p>
+                <div class="ali-simple-actions">
+                    <a href="/donate.html" class="ali-primary-action">Donate now</a>
+                    <a href="#projects" class="ali-secondary-action">View projects</a>
+                    <a href="/donor-safety.html" class="ali-secondary-action">Donation safety</a>
+                </div>
             </div>
-            <div class="ali-trust-row" aria-label="Platform trust signals">
-                <span>USD stablecoin friendly</span>
-                <span>BSC public records</span>
-                <span>Global-first giving</span>
-            </div>
-            </div>
-            <picture class="ali-hero-media">
+            <picture class="ali-simple-photo">
                 <source media="(max-width: 768px)" srcset="/assets/images/hero-global-aid-blockchain-sm.jpg">
-                <img src="/assets/images/hero-global-aid-blockchain.jpg" width="1400" height="788" alt="Global humanitarian aid team reviewing transparent blockchain donation records" fetchpriority="high" decoding="async">
+                <img src="/assets/images/hero-global-aid-blockchain.jpg" width="1400" height="788" alt="People reviewing aid records for a donation project">
             </picture>
-            <div class="ali-hero-proof" aria-label="Regional donor trust signals">
-                <span>US/EU donor trust</span>
-                <span>Middle East cross-border aid</span>
-                <span>Southeast Asia mobile donors</span>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 perspective-[800px] ali-stat-grid">
-                <div class="bg-bgLight shadow-xl shadow-black/30 rounded-2xl p-6 relative overflow-hidden transition-all duration-300 transform-3d hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-primary/20 min-h-[88px] flex flex-col justify-center">
-                    <div class="text-3xl md:text-4xl font-bold text-primary relative z-10 translate-z-10 saturate-13" id="totalDonations">128</div>
-                    <div class="text-sm text-textSecondary relative z-10" data-i18n="totalDonations">Total Donations</div>
-                </div>
-                <div class="bg-bgLight shadow-xl shadow-black/30 rounded-2xl p-6 relative overflow-hidden transition-all duration-300 transform-3d hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-primary/20 min-h-[88px] flex flex-col justify-center">
-                    <div class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary relative z-10 translate-z-10 saturate-13" id="totalRaised">$18,460 USDT</div>
-                    <div class="text-sm text-textSecondary relative z-10" data-i18n="totalRaised">Total Raised (USDT)</div>
-                </div>
-                <div class="bg-bgLight shadow-xl shadow-black/30 rounded-2xl p-6 relative overflow-hidden transition-all duration-300 transform-3d hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-primary/20 min-h-[88px] flex flex-col justify-center">
-                    <div class="text-3xl md:text-4xl font-bold text-primary relative z-10 translate-z-10 saturate-13" id="projectsActive">13</div>
-                    <div class="text-sm text-textSecondary relative z-10" data-i18n="activeProjects">Active Projects</div>
-                </div>
-            </div>
-            <a href="#projects" class="ali-browse-action" data-i18n="browseProjects">Browse Projects</a>
-            
-            <!-- ALI Token Contract Info -->
-            <div class="mt-8 bg-bgLight/50 backdrop-blur-sm rounded-2xl p-6 border border-borderColor max-w-2xl mx-auto">
-                <h3 class="text-lg font-bold text-primary mb-4">ALI Token Contract</h3>
-                <div class="bg-bgDark rounded-lg p-4 mb-4">
-                    <div class="text-xs text-textSecondary mb-1">Contract Address (BSC Mainnet)</div>
-                    <div class="flex items-center gap-2">
-                        <code class="text-sm text-green-400 break-all">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code>
-                        <button onclick="copyToClipboard('0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79')" class="text-textSecondary hover:text-primary transition-colors p-1">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="flex flex-wrap gap-3 justify-center">
-                    <a href="https://bscscan.com/address/0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/20 hover:bg-yellow-500/30 rounded-lg text-yellow-400 text-sm transition-colors">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        View on BSCScan
-                    </a>
-                    <button onclick="addALIToMetaMask()" class="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 hover:bg-orange-500/30 rounded-lg text-orange-400 text-sm transition-colors">
-                        <svg class="w-4 h-4" viewBox="0 0 40 40" fill="currentColor">
-                            <path d="M37.055 16.303l-16.75-12.344a1 1 0 00-1.178 0L2.376 16.303a1 1 0 00-.394.894l1.979 17.48a1 1 0 00.993.894h28.75a1 1 0 00.994-.894l1.978-17.48a1 1 0 00-.394-.894z"/>
-                        </svg>
-                        Add to MetaMask
-                    </button>
-                </div>
-            </div>
+        </div>
+        <div class="ali-simple-stats">
+            <div><strong id="totalDonations">128</strong><span data-i18n="totalDonations">Total donations</span></div>
+            <div><strong id="totalRaised">$18,460 USDT</strong><span data-i18n="totalRaised">Recorded value</span></div>
+            <div><strong id="projectsActive">13</strong><span data-i18n="activeProjects">Project routes</span></div>
         </div>
     </section>
 
-    <section class="ali-growth-console py-20" id="growth-console" aria-labelledby="growthConsoleTitle">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="ali-console-header">
-                <div>
-                    <p class="ali-section-kicker">Growth operating system</p>
-                    <h2 id="growthConsoleTitle" class="text-[clamp(1.7rem,4vw,2.8rem)] font-bold font-display">One homepage route for donors, token researchers, and AI search</h2>
-                    <p class="text-textSecondary max-w-3xl mt-3">Inspired by product-led documentation sites: every visitor gets a direct path to proof, action, or shareable context without hunting through the navigation.</p>
-                </div>
-                <a href="/growth.html" class="ali-mini-action">Open growth hub</a>
-            </div>
-
-            <div class="ali-console-grid" aria-label="ALI Charity growth routes">
-                <a href="/donate.html" class="ali-console-card">
-                    <span>Donor action</span>
-                    <strong>Donate crypto safely</strong>
-                    <p>USDT, BTC, ETH, BNB, and SOL routes with verification steps before irreversible transfers.</p>
-                </a>
-                <a href="/donor-safety.html" class="ali-console-card">
-                    <span>Trust layer</span>
-                    <strong>Verify before sending</strong>
-                    <p>Network, address, contract, and transaction-hash checks designed for cautious first-time crypto donors.</p>
-                </a>
-                <a href="/token.html" class="ali-console-card">
-                    <span>Token research</span>
-                    <strong>Review ALI Token</strong>
-                    <p>BSC contract details, recognition accounting, utility context, and no-return risk language.</p>
-                </a>
-                <a href="/dex-launch.html" class="ali-console-card">
-                    <span>DEX readiness</span>
-                    <strong>Track PancakeSwap status</strong>
-                    <p>ALI/USDT preparation materials for supporters waiting for the wallet-owner liquidity transaction.</p>
-                </a>
-                <a href="/blog/" class="ali-console-card">
-                    <span>SEO engine</span>
-                    <strong>Read evergreen explainers</strong>
-                    <p>Searchable guides on crypto donations, blockchain transparency, Web3 philanthropy, and donor safety.</p>
-                </a>
-                <a href="/blog/news.html" class="ali-console-card">
-                    <span>Freshness signal</span>
-                    <strong>Follow daily briefings</strong>
-                    <p>Humanitarian and crypto news mapped to transparent giving so the site stays current for search and AI systems.</p>
-                </a>
-            </div>
+    <section class="ali-simple-steps" aria-labelledby="simpleStepsTitle">
+        <div class="ali-simple-section-head">
+            <p class="ali-section-kicker">How it works</p>
+            <h2 id="simpleStepsTitle">No wallet connection required on this site.</h2>
+            <p>You donate from your own wallet or exchange. The website only shows official addresses and helps you keep a record.</p>
+        </div>
+        <div class="ali-simple-step-grid">
+            <article>
+                <span>1</span>
+                <h3>Choose asset</h3>
+                <p>USDT, BNB, and ETH use the BNB Smart Chain address. BTC and SOL use native addresses.</p>
+            </article>
+            <article>
+                <span>2</span>
+                <h3>Copy address</h3>
+                <p>Copy from the official donate page and check every character before sending.</p>
+            </article>
+            <article>
+                <span>3</span>
+                <h3>Save hash</h3>
+                <p>After the transfer, keep the transaction hash so the donation can be reviewed publicly.</p>
+            </article>
         </div>
     </section>
-
-    <section class="ali-donor-lab py-20 bg-[#091525]" id="donor-lab" aria-labelledby="donorLabTitle">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="ali-donor-lab-heading">
-                <p class="ali-section-kicker" data-i18n="donorTools">Interactive donor tools</p>
-                <h2 id="donorLabTitle" class="text-[clamp(1.6rem,4vw,2.7rem)] font-bold font-display" data-i18n="donorLabTitle">Find the donation path that fits your values</h2>
-                <p class="text-textSecondary max-w-3xl" data-i18n="donorLabSubtitle">Explore practical impact scenarios, match with a cause, and review the transparency steps before you donate. No wallet connection is required for this preview.</p>
-            </div>
-
-            <div class="ali-donor-lab-grid">
-                <article class="ali-impact-panel" aria-labelledby="impactCalcTitle">
-                    <div class="ali-panel-topline">
-                        <span data-i18n="impactSimulator">Impact simulator</span>
-                        <strong id="impactAmountLabel">$50 USDT</strong>
-                    </div>
-                    <h3 id="impactCalcTitle" data-i18n="impactQuestion">What could my crypto donation unlock?</h3>
-                    <label for="impactAmount" class="ali-range-label" data-i18n="donationAmount">Donation amount</label>
-                    <input id="impactAmount" class="ali-impact-range" type="range" min="10" max="1000" value="50" step="10">
-                    <div class="ali-impact-results" aria-live="polite">
-                        <div>
-                            <strong id="impactMeals">120</strong>
-                            <span data-i18n="emergencyMeals">emergency meal equivalents</span>
-                        </div>
-                        <div>
-                            <strong id="impactKits">8</strong>
-                            <span data-i18n="medicalKits">basic medical kit equivalents</span>
-                        </div>
-                        <div>
-                            <strong id="impactAli">50</strong>
-                            <span data-i18n="aliRecognition">ALI recognition tokens by donation accounting</span>
-                        </div>
-                    </div>
-                    <p class="ali-small-note" data-i18n="impactDisclaimer">Figures are illustrative planning estimates for donor education, not a guaranteed delivery promise.</p>
-                </article>
-
-                <article class="ali-cause-panel" aria-labelledby="causeMatchTitle">
-                    <div class="ali-panel-topline">
-                        <span data-i18n="causeMatcher">Cause matcher</span>
-                        <strong id="causeMatchScore">Humanitarian Aid</strong>
-                    </div>
-                    <h3 id="causeMatchTitle" data-i18n="causeQuestion">Pick the value that matters most today</h3>
-                    <div class="ali-cause-options" role="group" aria-label="Choose donation priority">
-                        <button type="button" class="ali-cause-option is-active" data-cause="relief" data-i18n="urgentRelief">Urgent relief</button>
-                        <button type="button" class="ali-cause-option" data-cause="children" data-i18n="childrenFirst">Children first</button>
-                        <button type="button" class="ali-cause-option" data-cause="health" data-i18n="healthcareAccess">Healthcare access</button>
-                        <button type="button" class="ali-cause-option" data-cause="resilience" data-i18n="longTermResilience">Long-term resilience</button>
-                    </div>
-                    <div class="ali-cause-result">
-                        <p class="ali-result-label" data-i18n="suggestedRoute">Suggested project route</p>
-                        <h4 id="causeMatchTitleResult">War Zone Aid</h4>
-                        <p id="causeMatchCopy">Fast support for conflict-affected families, emergency supplies, and cross-border humanitarian response.</p>
-                        <a id="causeMatchLink" href="donate.html?project=war-zone-aid" class="ali-mini-action" data-i18n="donateThisRoute">Donate to this route</a>
-                    </div>
-                </article>
-
-                <article class="ali-trust-panel" aria-labelledby="trustChecklistTitle">
-                    <div class="ali-panel-topline">
-                        <span data-i18n="transparencyChecklist">Transparency checklist</span>
-                        <strong id="trustProgress">0/4 ready</strong>
-                    </div>
-                    <h3 id="trustChecklistTitle" data-i18n="trustQuestion">Build donor confidence before sending funds</h3>
-                    <div class="ali-trust-checks">
-                        <label><input type="checkbox" data-trust-check> <span data-i18n="trustCheckNetwork">I checked the donation asset and network.</span></label>
-                        <label><input type="checkbox" data-trust-check> <span data-i18n="trustCheckAddress">I copied the address from the official site.</span></label>
-                        <label><input type="checkbox" data-trust-check> <span data-i18n="trustCheckIrreversible">I understand blockchain transfers are irreversible.</span></label>
-                        <label><input type="checkbox" data-trust-check> <span data-i18n="trustCheckHash">I will keep the transaction hash for review.</span></label>
-                    </div>
-                    <div class="ali-trust-status" id="trustStatus" data-i18n="trustStatusStart">Start with the network check, then continue through the list.</div>
-                    <a href="whitepaper.html" class="ali-mini-action ali-secondary-mini" data-i18n="readTransparency">Read transparency model</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-bgDark" id="supporter-path">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="mb-8">
-                <p class="ali-section-kicker">Supporter path</p>
-                <h2 class="text-[clamp(1.6rem,4vw,2.5rem)] font-bold font-display">One clear route for donors and token-aware supporters</h2>
-                <p class="text-textSecondary max-w-3xl mt-3">The site now separates donation action, token research, DEX readiness, and public promotion so supporters can choose the right next step without guessing.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <a href="donate.html" class="ali-path-card">
-                    <span>01</span>
-                    <strong>Donate safely</strong>
-                    <p>Verify network, copy the official address, and submit a transaction hash for manual review.</p>
-                </a>
-                <a href="whitepaper.html" class="ali-path-card">
-                    <span>02</span>
-                    <strong>Read the model</strong>
-                    <p>Understand donation flow, transparency controls, token utility, and risk disclosures.</p>
-                </a>
-                <a href="token.html" class="ali-path-card">
-                    <span>03</span>
-                    <strong>Review ALI Token</strong>
-                    <p>Check the BSC contract, recognition accounting, and non-guaranteed market risk context.</p>
-                </a>
-                <a href="promotion.html" class="ali-path-card">
-                    <span>04</span>
-                    <strong>Help promote</strong>
-                    <p>Use share-ready proof points and daily briefings to introduce the project responsibly.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Crypto Prices Ticker - fast Binance primary, CoinGecko fallback -->
-    <script>
-        const PRICE_CACHE_KEY = 'ali_crypto_prices_fast_v2';
-        const CACHE_DURATION = 60000;
-        const BINANCE_SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT'];
-        function showPriceLoader() { const loader = document.getElementById('price-loader'); const prices = document.getElementById('cryptoPrices'); if (loader) loader.style.display = 'flex'; if (prices) prices.style.opacity = '0.45'; }
-        function hidePriceLoader() { const loader = document.getElementById('price-loader'); const prices = document.getElementById('cryptoPrices'); if (loader) loader.style.display = 'none'; if (prices) prices.style.opacity = '1'; }
-        function formatPrice(price) { const value = Number(price || 0); if (value >= 1000) return '$' + value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); if (value >= 0.01) return '$' + value.toFixed(4); return '$' + value.toFixed(6); }
-        function normalizePriceData(rows) { const bySymbol = Object.fromEntries(rows.map(item => [item.symbol, Number(item.price)])); return { bitcoin: { usd: bySymbol.BTCUSDT || 0 }, ethereum: { usd: bySymbol.ETHUSDT || 0 }, binancecoin: { usd: bySymbol.BNBUSDT || 0 }, solana: { usd: bySymbol.SOLUSDT || 0 }, tether: { usd: 1 }, ali: { usd: 1 } }; }
-        function displayCryptoPrices(data) { const values = { btcPrice: data.bitcoin?.usd || 0, ethPrice: data.ethereum?.usd || 0, bnbPrice: data.binancecoin?.usd || 0, solPrice: data.solana?.usd || 0, usdtPrice: data.tether?.usd || 1, aliPrice: data.ali?.usd || 1 }; Object.entries(values).forEach(([id, value]) => { const el = document.getElementById(id); if (el) el.textContent = formatPrice(value); }); hidePriceLoader(); }
-        async function fetchJson(url, timeoutMs) { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), timeoutMs); try { const response = await fetch(url, { signal: controller.signal, cache: 'no-store' }); if (!response.ok) throw new Error('Price API failed: ' + response.status); return await response.json(); } finally { clearTimeout(timer); } }
-        async function updateCryptoPrices() { showPriceLoader(); try { const cached = localStorage.getItem(PRICE_CACHE_KEY); if (cached) { const { data, timestamp } = JSON.parse(cached); if (Date.now() - timestamp < CACHE_DURATION) { displayCryptoPrices(data); return; } } const encodedSymbols = encodeURIComponent(JSON.stringify(BINANCE_SYMBOLS)); const rows = await fetchJson('https://api.binance.com/api/v3/ticker/price?symbols=' + encodedSymbols, 1800); const data = normalizePriceData(rows); localStorage.setItem(PRICE_CACHE_KEY, JSON.stringify({ data, timestamp: Date.now() })); displayCryptoPrices(data); } catch (primaryError) { try { const data = await fetchJson('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana,tether&vs_currencies=usd', 3000); data.ali = { usd: 1 }; localStorage.setItem(PRICE_CACHE_KEY, JSON.stringify({ data, timestamp: Date.now() })); displayCryptoPrices(data); } catch (fallbackError) { const cached = localStorage.getItem(PRICE_CACHE_KEY); if (cached) { displayCryptoPrices(JSON.parse(cached).data); } else { displayCryptoPrices({ bitcoin: { usd: 66300 }, ethereum: { usd: 1990 }, binancecoin: { usd: 610 }, solana: { usd: 83 }, tether: { usd: 1 }, ali: { usd: 1 } }); } } } }
-        updateCryptoPrices();
-        setInterval(updateCryptoPrices, 60000);
-    </script>
 
     <section class="projects py-20 bg-bgDark particle-bg relative overflow-hidden perspective-[1200px]" id="projects">
         <h2 class="text-center text-[clamp(1.5rem,4vw,2.5rem)] font-bold mb-12 relative z-10 font-display" data-i18n="activeCharityProjects">Active Charity Projects</h2>
@@ -3405,6 +3214,11 @@ preloadLinks.forEach(link => {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    const oldPriceTicker = document.getElementById('cryptoPrices');
+    if (oldPriceTicker && oldPriceTicker.closest('section')) {
+        oldPriceTicker.closest('section').remove();
+    }
+
     const amountInput = document.getElementById('impactAmount');
     const amountLabel = document.getElementById('impactAmountLabel');
     const mealsEl = document.getElementById('impactMeals');

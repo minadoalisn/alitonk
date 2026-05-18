@@ -319,3 +319,20 @@ Last updated: 2026-05-06
 - address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
 - address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
 - address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+
+## Memory Snapshot 2026-05-18T16:12:04.455Z
+
+- Branch: main
+- Head: 049e154
+- Latest commit: 049e154 Add growth hub for ALI Charity
+- Working tree: M public/admin-login.html;  M public/admin.html;  M public/blog/ali-token-economics-guide.html;  M public/blog/ali-token-incentivizing-charitable-giving.html;  M public/blog/best-crypto-charity-donate-2026.html;  M public/blog/best-cryptocurrency-charity-platforms-2026.html;  M public/blog/blockchain-charity-transparency-revolution-2026.html;  M public/blog/blockchain-donation-tracking-transparency.html;  M public/blog/crypto-donation-platform-2026-guide.html;  M public/blog/cryptocurrency-donation-tax-benefits-2026.html;  M public/blog/decentralized-charity-platform-guide.html;  M public/blog/global-cryptocurrency-charity-worldwide.html;  M public/blog/how-blockchain-enables-transparent-charity.html;  M public/blog/how-to-donate-cryptocurrency-guide-2026.html;  M public/blog/index.html;  M public/blog/news.html;  M public/blog/the-future-of-web3-philanthropy.html;  M public/blog/web3-philanthropy-future-2026.html;  M public/blog/why-i-built-ali-charity.html;  M public/css/site-polish.css;  M public/dashboard.html;  M public/donate.html;  M public/index.html;  M public/promotion.html;  M scripts/check-deployment-health.js;  M scripts/generate-blog-promotion.js; ?? memory/research/geo-seo/; ?? public/blog/assets/2026-05-14-stablecoin-aid-onchain-proof.svg; ?? public/blog/news/2026-05-14-stablecoin-donations-global-aid.html; ?? public/blog/news/2026-05-17-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html
+
+### Address Config Snapshot
+
+- contractAddress: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
+- address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
+- address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
