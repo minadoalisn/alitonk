@@ -1,0 +1,3434 @@
+{
+  "generatedAt": "2026-05-18T14:12:40.881Z",
+  "pages": [
+    {
+      "file": "public/google6f5c8e7b3f5f8c1a.html",
+      "url": "https://minadoai.com/google6f5c8e7b3f5f8c1a.html",
+      "title": "",
+      "metaDescription": "",
+      "score": 0,
+      "dimensions": {
+        "answerFirst50": 0,
+        "parameterDensity": 0,
+        "schema": 0,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 2,
+        "numbers": 0,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 0,
+        "canonical": false
+      },
+      "reasons": [
+        "Opening copy does not answer the target query within the first 50 visible characters.",
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers."
+      ],
+      "direction": [
+        "Rewrite the first sentence as a direct answer.",
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/404.html",
+      "url": "https://minadoai.com/404.html",
+      "title": "Page Not Found | ALI Charity",
+      "metaDescription": "",
+      "score": 4,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 0,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 30,
+        "numbers": 1,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 1,
+        "canonical": false
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/bitcoin-price-surge-charity-impact-april-11-2026.html",
+      "url": "https://minadoai.com/blog/news/bitcoin-price-surge-charity-impact-april-11-2026.html",
+      "title": "Bitcoin Price Surge Ignites Wave of Crypto Donations: April 2026 Market Update",
+      "metaDescription": "Breaking: Bitcoin price rally in April 2026 triggers massive surge in cryptocurrency donations. Learn how rising crypto prices are driving a new era of blockchain charity.",
+      "score": 4,
+      "dimensions": {
+        "answerFirst50": 0,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 761,
+        "numbers": 24,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 20,
+        "canonical": true
+      },
+      "reasons": [
+        "Opening copy does not answer the target query within the first 50 visible characters.",
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Rewrite the first sentence as a direct answer.",
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/about-v2.html",
+      "url": "https://minadoai.com/about-v2.html",
+      "title": "About ALI Charity | 100% Transparent Blockchain Charity",
+      "metaDescription": "Learn about ALI Charity - the world",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 204,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 9,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/about.html",
+      "url": "https://minadoai.com/about.html",
+      "title": "About ALI Charity | 100% Transparent Blockchain Charity",
+      "metaDescription": "Learn about ALI Charity - the world",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 203,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 9,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blockchain-charity-transparency-revolution-2026.html",
+      "url": "https://minadoai.com/blockchain-charity-transparency-revolution-2026.html",
+      "title": "Blockchain Charity Transparency: The 2026 Revolution in Transparent Giving",
+      "metaDescription": "Discover how blockchain technology is revolutionizing charity transparency in 2026. Learn about transparent giving, crypto donations, and the future of philanthropy.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1365,
+        "numbers": 37,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 31,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/blockchain-charity-transparency-revolution-2026.html",
+      "url": "https://minadoai.com/blog/blockchain-charity-transparency-revolution-2026.html",
+      "title": "Blockchain Charity Transparency: The 2026 Revolution in Transparent Giving",
+      "metaDescription": "Discover how blockchain technology is revolutionizing charity transparency in 2026. Learn about transparent giving, crypto donations, and the future of philanthropy.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1364,
+        "numbers": 37,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 31,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/crypto-donation-platform-2026-guide.html",
+      "url": "https://minadoai.com/blog/crypto-donation-platform-2026-guide.html",
+      "title": "Crypto Donation Platform 2026: Complete Guide to Cryptocurrency Giving",
+      "metaDescription": "Explore the best crypto donation platforms in 2026. Learn how to donate cryptocurrency, compare features, and discover transparent blockchain charity solutions.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1565,
+        "numbers": 43,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 43,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/global-cryptocurrency-charity-worldwide.html",
+      "url": "https://minadoai.com/blog/global-cryptocurrency-charity-worldwide.html",
+      "title": "Global Cryptocurrency Charity: Donate to Causes Worldwide in 2026",
+      "metaDescription": "Explore global cryptocurrency charity options. Donate to international causes worldwide using crypto. Discover how blockchain enables borderless charitable giving.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 598,
+        "numbers": 28,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 2,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "url": "https://minadoai.com/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "title": "How to Donate Cryptocurrency in 2026: Complete Step-by-Step Guide",
+      "metaDescription": "Learn how to donate cryptocurrency step-by-step. This complete guide covers wallet setup, choosing a platform, tax benefits, and best practices for crypto giving in 2026.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1929,
+        "numbers": 57,
+        "addresses": 9,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 50,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/news.html",
+      "url": "https://minadoai.com/blog/news.html",
+      "title": "Daily Crypto News - ALI Charity",
+      "metaDescription": "Stay updated with daily cryptocurrency and blockchain news from ALI Charity. Real-time crypto news, market trends, and charity insights.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1119,
+        "numbers": 58,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 29,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-06-web3-philanthropy-donor-rewards.html",
+      "url": "https://minadoai.com/blog/news/2026-05-06-web3-philanthropy-donor-rewards.html",
+      "title": "Web3 Philanthropy and Donor Rewards: Why Utility Matters | ALI Charity Blog",
+      "metaDescription": "A soft promotion article explaining how donor rewards can support community participation without hiding the core charity mission.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 0,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 228,
+        "numbers": 3,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 1,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-07-on-chain-donation-tracking-guide.html",
+      "url": "https://minadoai.com/blog/news/2026-05-07-on-chain-donation-tracking-guide.html",
+      "title": "On-Chain Donation Tracking: What Donors Should Look For | ALI Charity Blog",
+      "metaDescription": "A practical article for crypto donors who want to verify donation flows, project accountability, and public charity records.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 0,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 229,
+        "numbers": 3,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 1,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/blockchain-charity-revolution-2026-april-11.html",
+      "url": "https://minadoai.com/blog/news/blockchain-charity-revolution-2026-april-11.html",
+      "title": "The Blockchain Charity Revolution: 2026 Year of Transparency and Accountability",
+      "metaDescription": "2026 marks the year blockchain charity goes mainstream. Discover how transparent, traceable donations are revolutionizing philanthropy and why traditional charity is being disrupted.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 865,
+        "numbers": 42,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 27,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/news/middle-east-humanitarian-crisis-blockchain-solution-april-11-2026.html",
+      "url": "https://minadoai.com/blog/news/middle-east-humanitarian-crisis-blockchain-solution-april-11-2026.html",
+      "title": "Middle East Humanitarian Crisis: How Blockchain Can Save Millions as Aid Corridors Choke",
+      "metaDescription": "Breaking: Middle East war chokes aid corridors, millions face crisis. Discover how blockchain charity technology can bypass blocked aid routes and deliver help directly to victims.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 777,
+        "numbers": 13,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/crypto-donation-platform-2026-guide.html",
+      "url": "https://minadoai.com/crypto-donation-platform-2026-guide.html",
+      "title": "Crypto Donation Platform 2026: Complete Guide to Cryptocurrency Giving",
+      "metaDescription": "Explore the best crypto donation platforms in 2026. Learn how to donate cryptocurrency, compare features, and discover transparent blockchain charity solutions.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1568,
+        "numbers": 43,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 43,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/dao-governance.html",
+      "url": "https://minadoai.com/dao-governance.html",
+      "title": "DAO Governance - ALI Charity",
+      "metaDescription": "Participate in ALI Charity",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 91,
+        "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/donate-new.html",
+      "url": "https://minadoai.com/donate-new.html",
+      "title": "Donate - ALI Charity",
+      "metaDescription": "Donate cryptocurrency to ALI Charity - 100% transparent blockchain charity",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 136,
+        "numbers": 7,
+        "addresses": 6,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/donate-v2-20260411-011733.html",
+      "url": "https://minadoai.com/donate-v2-20260411-011733.html",
+      "title": "Donate - ALI Charity",
+      "metaDescription": "Donate cryptocurrency to ALI Charity - 100% transparent blockchain charity platform.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 92,
+        "numbers": 4,
+        "addresses": 5,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 3,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/donate-v2-backup.html",
+      "url": "https://minadoai.com/donate-v2-backup.html",
+      "title": "Lightning Donate | ALI Charity",
+      "metaDescription": "Instant crypto donation with ALI Token rewards. 100% transparent blockchain charity.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 193,
+        "numbers": 20,
+        "addresses": 2,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/donate-v2.html",
+      "url": "https://minadoai.com/donate-v2.html",
+      "title": "Lightning Donate | ALI Charity",
+      "metaDescription": "Instant crypto donation with ALI Token rewards. 100% transparent blockchain charity.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 193,
+        "numbers": 20,
+        "addresses": 2,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/faq-v2.html",
+      "url": "https://minadoai.com/faq-v2.html",
+      "title": "FAQ | ALI Charity",
+      "metaDescription": "Frequently asked questions about ALI Charity - 100% transparent blockchain charity platform.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 269,
+        "numbers": 16,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 2,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/faq.html",
+      "url": "https://minadoai.com/faq.html",
+      "title": "FAQ | ALI Charity",
+      "metaDescription": "Frequently asked questions about ALI Charity - 100% transparent blockchain charity platform.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 268,
+        "numbers": 16,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 2,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/how-to-donate-cryptocurrency-guide-2026.html",
+      "url": "https://minadoai.com/how-to-donate-cryptocurrency-guide-2026.html",
+      "title": "How to Donate Cryptocurrency in 2026: Complete Step-by-Step Guide",
+      "metaDescription": "Learn how to donate cryptocurrency step-by-step. This complete guide covers wallet setup, choosing a platform, tax benefits, and best practices for crypto giving in 2026.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1929,
+        "numbers": 57,
+        "addresses": 9,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 50,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/team-v2.html",
+      "url": "https://minadoai.com/team-v2.html",
+      "title": "Our Team - ALI Charity",
+      "metaDescription": "Meet the team behind ALI Charity - visionaries, engineers, and humanitarians united to revolutionize charitable giving.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 185,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/team.html",
+      "url": "https://minadoai.com/team.html",
+      "title": "Our Team - ALI Charity",
+      "metaDescription": "Meet the team behind ALI Charity - visionaries, engineers, and humanitarians united to revolutionize charitable giving.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 185,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/token-v2.html",
+      "url": "https://minadoai.com/token-v2.html",
+      "title": "ALI Token | Blockchain Charity Rewards",
+      "metaDescription": "Earn ALI Tokens for every donation. 1 ALI = 1 USDT. Governance rights and exclusive benefits.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 0,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 189,
+        "numbers": 29,
+        "addresses": 1,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 10,
+        "canonical": false
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/ali-token-incentivizing-charitable-giving.html",
+      "url": "https://minadoai.com/ali-token-incentivizing-charitable-giving.html",
+      "title": "ALI Token: Incentivizing Charitable Giving - ALI Charity",
+      "metaDescription": "Learn how ALI Token revolutionizes charitable giving by rewarding donors with governance rights, creating a sustainable incentive ecosystem.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 379,
+        "numbers": 22,
+        "addresses": 1,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/ali-token-use-cases.html",
+      "url": "https://minadoai.com/ali-token-use-cases.html",
+      "title": "ALI Token Use Cases: How ALI Powers Transparent Philanthropy",
+      "metaDescription": "Discover the practical use cases of ALI token in the blockchain charity ecosystem. From governance to rewards, learn how ALI incentivizes transparent giving and creates sustainable impact.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 900,
+        "numbers": 18,
+        "addresses": 1,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/benefits-of-crypto-donations-nonprofits.html",
+      "url": "https://minadoai.com/benefits-of-crypto-donations-nonprofits.html",
+      "title": "The Benefits of Cryptocurrency Donations for Non-Profits",
+      "metaDescription": "Discover how cryptocurrency donations are revolutionizing non-profit fundraising with faster transactions, lower fees, and global accessibility. Learn why ALI Charity makes crypto giving seamless for organizations and donors alike.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 733,
+        "numbers": 20,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 15,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/ali-token-incentivizing-charitable-giving.html",
+      "url": "https://minadoai.com/blog/ali-token-incentivizing-charitable-giving.html",
+      "title": "ALI Token: Incentivizing Charitable Giving - ALI Charity",
+      "metaDescription": "Learn how ALI Token revolutionizes charitable giving by rewarding donors with governance rights, creating a sustainable incentive ecosystem.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 379,
+        "numbers": 22,
+        "addresses": 1,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/best-cryptocurrency-charity-platforms-2026.html",
+      "url": "https://minadoai.com/blog/best-cryptocurrency-charity-platforms-2026.html",
+      "title": "Best Cryptocurrency Charity Platforms 2026: Complete Comparison",
+      "metaDescription": "Compare the best cryptocurrency charity platforms in 2026. Discover transparent blockchain giving options, tax benefits, and how to donate crypto to verified causes.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 0
+      },
+      "stats": {
+        "words": 816,
+        "numbers": 30,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 29,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/blockchain-donation-tracking-transparency.html",
+      "url": "https://minadoai.com/blog/blockchain-donation-tracking-transparency.html",
+      "title": "Blockchain Donation Tracking: How On-Chain Transparency Works",
+      "metaDescription": "Learn how blockchain donation tracking provides 100% transparency for charitable giving. Discover how on-chain verification builds trust and enables real-time impact measurement.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 0
+      },
+      "stats": {
+        "words": 759,
+        "numbers": 14,
+        "addresses": 6,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 30,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/crypto-donation-safety-checklist-2026.html",
+      "url": "https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html",
+      "title": "Crypto Donation Safety Checklist (2026): Verify Addresses, Avoid Scams, Keep Proof",
+      "metaDescription": "A practical 2026 checklist for safe crypto donations: confirm official URLs, verify wallet addresses, check on-chain transparency, avoid impersonation scams, and keep tax-ready proof.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 0
+      },
+      "stats": {
+        "words": 460,
+        "numbers": 10,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 10,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/cryptocurrency-donation-tax-benefits-2026.html",
+      "url": "https://minadoai.com/blog/cryptocurrency-donation-tax-benefits-2026.html",
+      "title": "Cryptocurrency Donation Tax Benefits 2026: Complete Tax Guide",
+      "metaDescription": "Learn about cryptocurrency donation tax benefits in 2026. Discover how to reduce taxes while making impactful donations through blockchain platforms.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 0
+      },
+      "stats": {
+        "words": 1054,
+        "numbers": 54,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 37,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/decentralized-charity-platform-guide.html",
+      "url": "https://minadoai.com/blog/decentralized-charity-platform-guide.html",
+      "title": "Decentralized Charity Platform: The Future of Transparent Giving",
+      "metaDescription": "Explore how decentralized charity platforms are transforming philanthropy with blockchain technology. Learn about DAO governance, transparent donations, and the future of charitable giving.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 0
+      },
+      "stats": {
+        "words": 740,
+        "numbers": 26,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 36,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/how-blockchain-enables-transparent-charity.html",
+      "url": "https://minadoai.com/blog/how-blockchain-enables-transparent-charity.html",
+      "title": "How Blockchain Enables Transparent Charity - ALI Charity",
+      "metaDescription": "Discover how blockchain technology revolutionizes charitable giving with 100% transparency, real-time tracking, and reduced overhead costs.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 644,
+        "numbers": 52,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/how-to-donate-cryptocurrency-to-charity.html",
+      "url": "https://minadoai.com/blog/how-to-donate-cryptocurrency-to-charity.html",
+      "title": "How to Donate Cryptocurrency to Charity: A Complete Guide for 2026 | ALI Charity",
+      "metaDescription": "Learn how to donate cryptocurrency to charity in 2026. Discover the step-by-step process, tax benefits, and best platforms for making crypto donations safely and securely.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 502,
+        "numbers": 9,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/index.html",
+      "url": "https://minadoai.com/blog/index.html",
+      "title": "ALI Charity Blog - Transparent Blockchain Philanthropy",
+      "metaDescription": "Daily briefings and guides on blockchain charity, crypto donations, humanitarian aid, and transparent giving from ALI Charity.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 259,
+        "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 11,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-07-here-s-what-happened-in-crypto-today-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-07-here-s-what-happened-in-crypto-today-charity-transparency.html",
+      "title": "Here’s what happened in crypto today: Why Transparent Crypto Giving Matters | ALI Charity Blog",
+      "metaDescription": "A daily ALI Charity briefing connecting Cointelegraph headlines with transparent crypto donations, international giving, and on-chain accountability.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 1,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 365,
+        "numbers": 3,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 3,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-07-kraken-parent-payward-to-buy-reap-in-600m-stablecoin-payments-push-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-07-kraken-parent-payward-to-buy-reap-in-600m-stablecoin-payments-push-charity-transparency.html",
+      "title": "Kraken parent Payward to buy Reap in $600M stablecoin payments push: Why Transparent Crypto Giving Matters | ALI Charity Blog",
+      "metaDescription": "A daily ALI Charity briefing connecting Cointelegraph headlines with transparent crypto donations, international giving, and on-chain accountability.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 1,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 384,
+        "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 3,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/the-future-of-web3-philanthropy.html",
+      "url": "https://minadoai.com/blog/the-future-of-web3-philanthropy.html",
+      "title": "The Future of Web3 Philanthropy - ALI Charity",
+      "metaDescription": "Explore how blockchain technology and Web3 are revolutionizing charitable giving with DAO governance, token incentives, and on-chain transparency.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 365,
+        "numbers": 22,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 12,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/web3-philanthropy-future-2026.html",
+      "url": "https://minadoai.com/blog/web3-philanthropy-future-2026.html",
+      "title": "Web3 Philanthropy 2026: The Future of Charitable Giving on Blockchain",
+      "metaDescription": "Discover how Web3 philanthropy is revolutionizing charitable giving in 2026. Explore blockchain transparency, decentralized governance, and the future of transparent donations.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 0
+      },
+      "stats": {
+        "words": 861,
+        "numbers": 29,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 34,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs.",
+        "Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers.",
+        "Use complete subjects instead of pronouns in the opening section."
+      ]
+    },
+    {
+      "file": "public/blog/why-i-built-ali-charity.html",
+      "url": "https://minadoai.com/blog/why-i-built-ali-charity.html",
+      "title": "Why I Built ALI Charity: A CEO's Vision for Transparent Giving - ALI Charity",
+      "metaDescription": "Discover the personal journey behind ALI Charity, the first 100% transparent blockchain platform. Learn about CEO",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 883,
+        "numbers": 34,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 22,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/contact.html",
+      "url": "https://minadoai.com/contact.html",
+      "title": "Contact ALI Charity | Donor Support and Partnerships",
+      "metaDescription": "Contact ALI Charity for donor support, transparency questions, partnership inquiries, and media requests for the blockchain charity platform.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 1,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 96,
+        "numbers": 1,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/how-blockchain-enables-transparent-charity.html",
+      "url": "https://minadoai.com/how-blockchain-enables-transparent-charity.html",
+      "title": "How Blockchain Enables Transparent Charity - ALI Charity",
+      "metaDescription": "Discover how blockchain technology revolutionizes charitable giving with 100% transparency, real-time tracking, and reduced overhead costs.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 644,
+        "numbers": 52,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/how-to-donate-cryptocurrency-to-charity.html",
+      "url": "https://minadoai.com/how-to-donate-cryptocurrency-to-charity.html",
+      "title": "How to Donate Cryptocurrency to Charity: A Complete Guide for 2026 | ALI Charity",
+      "metaDescription": "Learn how to donate cryptocurrency to charity in 2026. Discover the step-by-step process, tax benefits, and best platforms for making crypto donations safely and securely.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 502,
+        "numbers": 9,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/humanitarian-aid-guide-2026.html",
+      "url": "https://minadoai.com/humanitarian-aid-guide-2026.html",
+      "title": "How Blockchain Charity Can Help War Victims - 2026 Humanitarian Crisis Guide",
+      "metaDescription": "Discover how blockchain technology is revolutionizing humanitarian aid delivery to war victims in Gaza, Ukraine, Sudan, and conflict zones worldwide. Learn about transparent donations, crypto-based relief, and how you can make a difference.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1819,
+        "numbers": 33,
+        "addresses": 1,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 29,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/privacy.html",
+      "url": "https://minadoai.com/privacy.html",
+      "title": "Privacy Policy - ALI Charity",
+      "metaDescription": "ALI Charity Privacy Policy - Learn how we collect, use, and protect your personal information. Blockchain-based transparent charity platform.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 676,
+        "numbers": 21,
+        "addresses": 2,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 16,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/terms.html",
+      "url": "https://minadoai.com/terms.html",
+      "title": "Terms of Service - ALI Charity",
+      "metaDescription": "ALI Charity Terms of Service - Terms and conditions for using our blockchain-based transparent charity platform and ALI Token services.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1284,
+        "numbers": 45,
+        "addresses": 2,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 25,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/the-future-of-web3-philanthropy.html",
+      "url": "https://minadoai.com/the-future-of-web3-philanthropy.html",
+      "title": "The Future of Web3 Philanthropy - ALI Charity",
+      "metaDescription": "Explore how blockchain technology and Web3 are revolutionizing charitable giving with DAO governance, token incentives, and on-chain transparency.",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 365,
+        "numbers": 22,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 12,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/why-i-built-ali-charity.html",
+      "url": "https://minadoai.com/why-i-built-ali-charity.html",
+      "title": "Why I Built ALI Charity: A CEO's Vision for Transparent Giving - ALI Charity",
+      "metaDescription": "Discover the personal journey behind ALI Charity, the first 100% transparent blockchain platform. Learn about CEO",
+      "score": 7,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 883,
+        "numbers": 34,
+        "addresses": 0,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 22,
+        "canonical": true
+      },
+      "reasons": [
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blockchain-charity-tax-benefits.html",
+      "url": "https://minadoai.com/blockchain-charity-tax-benefits.html",
+      "title": "Blockchain Charity Tax Benefits 2026 - ALI Charity Blog",
+      "metaDescription": "Maximize your tax savings by donating cryptocurrency. Learn how crypto charity donations provide significant tax advantages in 2026.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 30,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 13,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/ali-token-dex-launch-preparation.html",
+      "url": "https://minadoai.com/blog/ali-token-dex-launch-preparation.html",
+      "title": "ALI Token DEX Launch Preparation: PancakeSwap Liquidity Plan",
+      "metaDescription": "ALI Charity is preparing an ALI Token DEX launch package for PancakeSwap: ALI/USDT pair planning, liquidity checklist, risk disclosure, and transparent launch steps.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 235,
+        "numbers": 5,
+        "addresses": 1,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 4,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html",
+      "url": "https://minadoai.com/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html",
+      "title": "Crypto Philanthropy Trends 2026: Stablecoin Aid & Transparent Giving",
+      "metaDescription": "A 2026 donor brief on crypto philanthropy: stablecoin-powered aid, rising transparency expectations, and what donors can verify on-chain before they give.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 477,
+        "numbers": 12,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-10-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "url": "https://minadoai.com/blog/news/2026-04-10-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "title": "Bitcoin ETF Approval Marks Historic Milestone for Institutional Adoption - ALI Charity Daily News",
+      "metaDescription": "The approval of spot Bitcoin ETFs represents a significant milestone for cryptocurrency institutional adoption, opening doors for traditional finance to invest in digital assets. This development could influence how nonprofits and charitable organizations approach cryptocurrency donations in the future.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 335,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-10-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "url": "https://minadoai.com/blog/news/2026-04-10-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "title": "Ethereum 2.0 Upgrade Progress: What It Means for DeFi and Users - ALI Charity Daily News",
+      "metaDescription": "Ethereum",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-10-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "url": "https://minadoai.com/blog/news/2026-04-10-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "title": "Global Cryptocurrency Regulation: New Frameworks Emerge in 2026 - ALI Charity Daily News",
+      "metaDescription": "Countries worldwide are developing comprehensive cryptocurrency regulatory frameworks for 2026, focusing on consumer protection, tax compliance, and innovation. Clear regulations could increase trust in crypto charity platforms and encourage more donors to give transparently.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 328,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-11-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "url": "https://minadoai.com/blog/news/2026-04-11-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "title": "Bitcoin ETF Approval Marks Historic Milestone for Institutional Adoption - ALI Charity Daily News",
+      "metaDescription": "The approval of spot Bitcoin ETFs represents a significant milestone for cryptocurrency institutional adoption, opening doors for traditional finance to invest in digital assets. This development could influence how nonprofits and charitable organizations approach cryptocurrency donations in the future.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 335,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-11-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "url": "https://minadoai.com/blog/news/2026-04-11-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "title": "Ethereum 2.0 Upgrade Progress: What It Means for DeFi and Users - ALI Charity Daily News",
+      "metaDescription": "Ethereum",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-11-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "url": "https://minadoai.com/blog/news/2026-04-11-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "title": "Global Cryptocurrency Regulation: New Frameworks Emerge in 2026 - ALI Charity Daily News",
+      "metaDescription": "Countries worldwide are developing comprehensive cryptocurrency regulatory frameworks for 2026, focusing on consumer protection, tax compliance, and innovation. Clear regulations could increase trust in crypto charity platforms and encourage more donors to give transparently.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 328,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-12-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "url": "https://minadoai.com/blog/news/2026-04-12-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "title": "Bitcoin ETF Approval Marks Historic Milestone for Institutional Adoption - ALI Charity Daily News",
+      "metaDescription": "The approval of spot Bitcoin ETFs represents a significant milestone for cryptocurrency institutional adoption, opening doors for traditional finance to invest in digital assets. This development could influence how nonprofits and charitable organizations approach cryptocurrency donations in the future.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 335,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-12-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "url": "https://minadoai.com/blog/news/2026-04-12-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "title": "Ethereum 2.0 Upgrade Progress: What It Means for DeFi and Users - ALI Charity Daily News",
+      "metaDescription": "Ethereum",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-12-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "url": "https://minadoai.com/blog/news/2026-04-12-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "title": "Global Cryptocurrency Regulation: New Frameworks Emerge in 2026 - ALI Charity Daily News",
+      "metaDescription": "Countries worldwide are developing comprehensive cryptocurrency regulatory frameworks for 2026, focusing on consumer protection, tax compliance, and innovation. Clear regulations could increase trust in crypto charity platforms and encourage more donors to give transparently.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 328,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-13-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "url": "https://minadoai.com/blog/news/2026-04-13-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "title": "Bitcoin ETF Approval Marks Historic Milestone for Institutional Adoption - ALI Charity Daily News",
+      "metaDescription": "The approval of spot Bitcoin ETFs represents a significant milestone for cryptocurrency institutional adoption, opening doors for traditional finance to invest in digital assets. This development could influence how nonprofits and charitable organizations approach cryptocurrency donations in the future.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 335,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-13-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "url": "https://minadoai.com/blog/news/2026-04-13-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "title": "Ethereum 2.0 Upgrade Progress: What It Means for DeFi and Users - ALI Charity Daily News",
+      "metaDescription": "Ethereum",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-13-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "url": "https://minadoai.com/blog/news/2026-04-13-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "title": "Global Cryptocurrency Regulation: New Frameworks Emerge in 2026 - ALI Charity Daily News",
+      "metaDescription": "Countries worldwide are developing comprehensive cryptocurrency regulatory frameworks for 2026, focusing on consumer protection, tax compliance, and innovation. Clear regulations could increase trust in crypto charity platforms and encourage more donors to give transparently.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 328,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-27-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "url": "https://minadoai.com/blog/news/2026-04-27-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "title": "Bitcoin ETF Approval Marks Historic Milestone for Institutional Adoption - ALI Charity Daily News",
+      "metaDescription": "The approval of spot Bitcoin ETFs represents a significant milestone for cryptocurrency institutional adoption, opening doors for traditional finance to invest in digital assets. This development could influence how nonprofits and charitable organizations approach cryptocurrency donations in the future.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 335,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-27-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "url": "https://minadoai.com/blog/news/2026-04-27-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "title": "Ethereum 2.0 Upgrade Progress: What It Means for DeFi and Users - ALI Charity Daily News",
+      "metaDescription": "Ethereum",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-27-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "url": "https://minadoai.com/blog/news/2026-04-27-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "title": "Global Cryptocurrency Regulation: New Frameworks Emerge in 2026 - ALI Charity Daily News",
+      "metaDescription": "Countries worldwide are developing comprehensive cryptocurrency regulatory frameworks for 2026, focusing on consumer protection, tax compliance, and innovation. Clear regulations could increase trust in crypto charity platforms and encourage more donors to give transparently.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 328,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-28-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "url": "https://minadoai.com/blog/news/2026-04-28-bitcoin-etf-approval-marks-historic-milestone-for-institutional-adoption.html",
+      "title": "Bitcoin ETF Approval Marks Historic Milestone for Institutional Adoption - ALI Charity Daily News",
+      "metaDescription": "The approval of spot Bitcoin ETFs represents a significant milestone for cryptocurrency institutional adoption, opening doors for traditional finance to invest in digital assets. This development could influence how nonprofits and charitable organizations approach cryptocurrency donations in the future.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 335,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-28-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "url": "https://minadoai.com/blog/news/2026-04-28-ethereum-2-0-upgrade-progress-what-it-means-for-defi-and-users.html",
+      "title": "Ethereum 2.0 Upgrade Progress: What It Means for DeFi and Users - ALI Charity Daily News",
+      "metaDescription": "Ethereum",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 332,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-28-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "url": "https://minadoai.com/blog/news/2026-04-28-global-cryptocurrency-regulation-new-frameworks-emerge-in-2026.html",
+      "title": "Global Cryptocurrency Regulation: New Frameworks Emerge in 2026 - ALI Charity Daily News",
+      "metaDescription": "Countries worldwide are developing comprehensive cryptocurrency regulatory frameworks for 2026, focusing on consumer protection, tax compliance, and innovation. Clear regulations could increase trust in crypto charity platforms and encourage more donors to give transparently.. ALI Charity provides transparent blockchain donations for verified global causes.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 328,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 7,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-08-here-s-what-happened-in-crypto-today-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-08-here-s-what-happened-in-crypto-today-charity-transparency.html",
+      "title": "Here’s what happened in crypto today: Why Transparent Crypto Giving Matters | ALI Charity Blog",
+      "metaDescription": "A daily ALI Charity briefing connecting Cointelegraph headlines with transparent crypto donations, international giving, and on-chain accountability.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 383,
+        "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 3,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-08-policy-signals-stablecoin-aid-transparent-giving.html",
+      "url": "https://minadoai.com/blog/news/2026-05-08-policy-signals-stablecoin-aid-transparent-giving.html",
+      "title": "May 8, 2026: Policy Signals for Stablecoin Aid and Transparent Crypto Giving | ALI Charity Blog",
+      "metaDescription": "A daily ALI Charity briefing connecting crypto policy signals with humanitarian relief needs, stablecoin donation rails, and on-chain transparency donors can verify.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 316,
+        "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 4,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/blog-index-update-april-11-2026.html",
+      "url": "https://minadoai.com/blog/news/blog-index-update-april-11-2026.html",
+      "title": "ALI Charity Blog - Latest Blockchain Charity News & Insights",
+      "metaDescription": "Stay updated with the latest blockchain charity news, cryptocurrency donation guides, and humanitarian insights. Expert analysis on transparent giving and Web3 philanthropy.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 524,
+        "numbers": 71,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 12,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/dex-launch.html",
+      "url": "https://minadoai.com/dex-launch.html",
+      "title": "ALI Token DEX Launch Preparation | BNB Chain and PancakeSwap",
+      "metaDescription": "ALI Token DEX launch preparation page for BNB Chain: PancakeSwap liquidity checklist, contract address, ALI/USDT trading pair plan, wallet signing steps, and risk disclosure.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 496,
+        "numbers": 2,
+        "addresses": 3,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 13,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/future-of-giving-2026.html",
+      "url": "https://minadoai.com/future-of-giving-2026.html",
+      "title": "The Future of Giving 2026 - ALI Charity Blog",
+      "metaDescription": "From blockchain to AI: Discover how technology is revolutionizing philanthropy. The future of charitable giving is transparent, efficient, and global.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 280,
+        "numbers": 25,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 15,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/promotion.html",
+      "url": "https://minadoai.com/promotion.html",
+      "title": "ALI Charity Promotion Hub | Share Transparent Crypto Giving",
+      "metaDescription": "Share ALI Charity with donors, crypto communities, journalists, and AI search engines. Copy clear proof points about transparent blockchain donations, stablecoin-friendly giving, and humanitarian aid.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 489,
+        "numbers": 0,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 19,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/token.html",
+      "url": "https://minadoai.com/token.html",
+      "title": "ALI Token | Donor Recognition and Transparency Layer",
+      "metaDescription": "ALI Token is the donor recognition and transparency layer for ALI Charity on BNB Smart Chain. Review utility, contract details, DEX preparation status, and risk disclosures.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 248,
+        "numbers": 3,
+        "addresses": 1,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 8,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/whitepaper.html",
+      "url": "https://minadoai.com/whitepaper.html",
+      "title": "ALI Charity Whitepaper | Transparent Crypto Giving",
+      "metaDescription": "ALI Charity whitepaper: mission, donation flow, ALI Token utility, transparency model, DEX launch status, and risk disclosures for blockchain-based charitable giving.",
+      "score": 8,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 655,
+        "numbers": 18,
+        "addresses": 4,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 19,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/best-crypto-charity-platforms-2026.html",
+      "url": "https://minadoai.com/best-crypto-charity-platforms-2026.html",
+      "title": "Best Crypto Charity Platforms 2026: Compare Top Blockchain Donation Sites | ALI Charity",
+      "metaDescription": "Compare the best crypto charity platforms of 2026. ALI Charity leads with 100% transparency, 0% fees, and real-time blockchain tracking. See how we compare to The Giving Block, Kindly Coin, and more.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 888,
+        "numbers": 49,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 26,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/ali-token-economics-guide.html",
+      "url": "https://minadoai.com/blog/ali-token-economics-guide.html",
+      "title": "ALI Token Economics: Complete Guide to ALI Charity's Token System",
+      "metaDescription": "Learn about ALI Token economics, utility, and governance. Discover how ALI Token powers transparent charitable giving on the ALI Charity blockchain platform.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 821,
+        "numbers": 29,
+        "addresses": 2,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 35,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/best-crypto-charity-donate-2026.html",
+      "url": "https://minadoai.com/blog/best-crypto-charity-donate-2026.html",
+      "title": "Best Crypto Charity to Donate 2026: Top Transparent Platforms Compared",
+      "metaDescription": "Discover the best crypto charity platforms to donate in 2026. Compare transparent blockchain giving options, fees, and impact. Make informed decisions about cryptocurrency donations.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 636,
+        "numbers": 36,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-04-11-sudan-refugee-crisis-blockchain-aid.html",
+      "url": "https://minadoai.com/blog/news/2026-04-11-sudan-refugee-crisis-blockchain-aid.html",
+      "title": "Sudan Refugee Crisis: How Blockchain Technology is Revolutionizing Emergency Aid Distribution | ALI Charity",
+      "metaDescription": "With over 1 million Sudanese refugees facing crisis in Chad, blockchain technology offers a transparent solution for emergency aid distribution. Learn how ALI Charity ensures 100% fund transparency.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 731,
+        "numbers": 20,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 15,
+        "canonical": false
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-09-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-09-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "title": "Central African Republic: Funding cuts put humanitarian support at risk: What Donors Can Learn From Today's Global Headlines | ALI Charity B",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 722,
+        "numbers": 9,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-10-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-10-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "title": "Central African Republic: Funding cuts put humanitarian support at risk: What Donors Can Learn From Today's Global Headlines | ALI Charity B",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 717,
+        "numbers": 12,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-11-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-11-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "title": "Central African Republic: Funding cuts put humanitarian support at risk: What Donors Can Learn From Today's Global Headlines | ALI Charity B",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News - Humanitarian Aid and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 730,
+        "numbers": 3,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-12-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-12-central-african-republic-funding-cuts-put-humanitarian-support-at-risk-charity-transparency.html",
+      "title": "Central African Republic: Funding cuts put humanitarian support at risk: What Donors Can Learn From Today's Global Headlines | ALI Charity B",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 716,
+        "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-13-privacy-emerges-as-crypto-s-next-killer-app-with-arc-canton-and-tempo-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-13-privacy-emerges-as-crypto-s-next-killer-app-with-arc-canton-and-tempo-charity-transparency.html",
+      "title": "Privacy emerges as crypto's next 'killer app,' with Arc, Canton and Tempo...: What Donors Can Learn From Today's Global Headlines | ALI Char",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting CoinDesk and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 716,
+        "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-14-stablecoin-donations-global-aid.html",
+      "url": "https://minadoai.com/blog/news/2026-05-14-stablecoin-donations-global-aid.html",
+      "title": "Stablecoin Donations and Global Aid: Why Transparent Giving Matters | ALI Charity Blog",
+      "metaDescription": "A practical ALI Charity briefing on stablecoin donations, cross-border aid, and donor verification.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 632,
+        "numbers": 15,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 11,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-14-world-news-in-brief-mounting-waste-in-gaza-drone-attacks-in-sudan-aid-tr-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-14-world-news-in-brief-mounting-waste-in-gaza-drone-attacks-in-sudan-aid-tr-charity-transparency.html",
+      "title": "World News in Brief: Mounting waste in Gaza, drone attacks in Sudan, aid truck...: What Donors Can Learn From Today's Global Headlines | ALI",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 733,
+        "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-15-world-news-in-brief-mounting-waste-in-gaza-drone-attacks-in-sudan-aid-tr-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-15-world-news-in-brief-mounting-waste-in-gaza-drone-attacks-in-sudan-aid-tr-charity-transparency.html",
+      "title": "World News in Brief: Mounting waste in Gaza, drone attacks in Sudan, aid truck...: What Donors Can Learn From Today's Global Headlines | ALI",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 723,
+        "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-16-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-16-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
+      "title": "Afghan mothers and children face worsening hunger crisis, WFP warns: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 727,
+        "numbers": 4,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-17-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-17-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
+      "title": "Afghan mothers and children face worsening hunger crisis, WFP warns: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 940,
+        "numbers": 17,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 14,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-17-risk-of-famine-persists-as-nearly-19-5-million-people-face-acute-food-in-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-17-risk-of-famine-persists-as-nearly-19-5-million-people-face-acute-food-in-charity-transparency.html",
+      "title": "Risk of Famine persists as nearly 19.5 million people face acute food insecurity...: What Donors Can Learn From Today's Global Headlines | A",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting ReliefWeb Updates and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 756,
+        "numbers": 13,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/donor-safety.html",
+      "url": "https://minadoai.com/donor-safety.html",
+      "title": "Crypto Donor Safety Guide | ALI Charity",
+      "metaDescription": "Verify ALI Charity crypto donation addresses, BNB Smart Chain contract details, transaction hashes, and donor records before sending irreversible funds.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 455,
+        "numbers": 3,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 17,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/token-dashboard.html",
+      "url": "https://minadoai.com/token-dashboard.html",
+      "title": "Token Dashboard - ALI Charity",
+      "metaDescription": "ALI Token Dashboard explains donor recognition status, BNB Smart Chain contract details, ALI/USDT DEX preparation, and no-return risk boundaries for ALI Charity supporters.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 1,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 150,
+        "numbers": 2,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 6,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details."
+      ]
+    },
+    {
+      "file": "public/ali-token-economics.html",
+      "url": "https://minadoai.com/ali-token-economics.html",
+      "title": "ALI Token Economics: Understanding the ALI Token Value Model | ALI Charity Blog",
+      "metaDescription": "Explore ALI Token economics, utility, and value model. Learn how ALI Token powers transparent governance, staking rewards, and charitable treasury management on the ALI Charity platform.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1727,
+        "numbers": 24,
+        "addresses": 5,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 20,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/best-crypto-charity-platforms.html",
+      "url": "https://minadoai.com/best-crypto-charity-platforms.html",
+      "title": "Best Crypto Charity Platforms 2026: Top 10 Blockchain Philanthropy Sites | ALI Charity Blog",
+      "metaDescription": "Compare the best crypto charity platforms of 2026. Our comprehensive review covers transparency scores, supported cryptocurrencies, fees, governance models, and which platform delivers the most verifiable impact.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1739,
+        "numbers": 75,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/best-transparent-charity-platform.html",
+      "url": "https://minadoai.com/best-transparent-charity-platform.html",
+      "title": "Best Transparent Charity Platform 2026 | Blockchain Verification Guide",
+      "metaDescription": "Find the best transparent charity platform in 2026. We compare blockchain-based platforms on real-time tracking, on-chain verification, and governance accountability.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 2138,
+        "numbers": 38,
+        "addresses": 2,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 6,
+        "headings": 17,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blockchain-charity-donation-benefits.html",
+      "url": "https://minadoai.com/blockchain-charity-donation-benefits.html",
+      "title": "Blockchain Charity Donation Benefits 2026 | Why Donors Are Switching",
+      "metaDescription": "Discover the blockchain charity donation benefits that are transforming philanthropy. From tax savings to real-time impact tracking, here",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 2039,
+        "numbers": 82,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 6,
+        "headings": 17,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blockchain-revolutionizing-humanitarian-aid-2026.html",
+      "url": "https://minadoai.com/blockchain-revolutionizing-humanitarian-aid-2026.html",
+      "title": "How Blockchain Technology is Revolutionizing Humanitarian Aid in 2026 | ALI Charity",
+      "metaDescription": "Discover how blockchain technology is revolutionizing humanitarian aid and social justice in 2026. Learn about transparent crypto donations, smart contracts in charity, and how platforms like ALI Charity are making a real difference in global poverty alleviation.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1430,
+        "numbers": 42,
+        "addresses": 4,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 18,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blockchain-transparency-revolution.html",
+      "url": "https://minadoai.com/blockchain-transparency-revolution.html",
+      "title": "How Blockchain is Revolutionizing Charity Transparency | ALI Charity Blog",
+      "metaDescription": "Discover how blockchain technology is transforming charity transparency. Learn how transparent giving through blockchain charity platforms creates 100% verifiable donations and rebuilds donor trust.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1388,
+        "numbers": 12,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 19,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/charity-transparency-crisis.html",
+      "url": "https://minadoai.com/charity-transparency-crisis.html",
+      "title": "The Charity Transparency Crisis: Why 60% of Donations Remain Untraceable | ALI Charity Blog",
+      "metaDescription": "The charity transparency crisis is eroding donor trust globally. Discover why traditional charities struggle with financial transparency and how blockchain charity platforms like ALI Charity offer a verifiable solution.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1696,
+        "numbers": 28,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/crypto-donation-guide-2026.html",
+      "url": "https://minadoai.com/crypto-donation-guide-2026.html",
+      "title": "Complete Guide to Crypto Donations in 2026 | ALI Charity Blog",
+      "metaDescription": "Learn how to donate cryptocurrency to charity in 2026. Step-by-step guide covering tax benefits, wallet setup, platform selection, and maximizing your charitable impact through crypto.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1403,
+        "numbers": 44,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 26,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/crypto-philanthropy-guide-for-beginners.html",
+      "url": "https://minadoai.com/crypto-philanthropy-guide-for-beginners.html",
+      "title": "Crypto Philanthropy Guide for Beginners 2026 | Start Your Giving Journey",
+      "metaDescription": "Complete crypto philanthropy guide for beginners. Learn how blockchain charitable giving works, from setting up wallets to making your first donation and understanding tax benefits.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 2213,
+        "numbers": 41,
+        "addresses": 2,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 6,
+        "headings": 17,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/donate.html",
+      "url": "https://minadoai.com/donate.html",
+      "title": "Donate Crypto Safely | ALI Charity",
+      "metaDescription": "Donate BTC, ETH, USDT, BNB, or SOL to ALI Charity with public wallet addresses, transaction hash review, and transparent donor recognition records.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 299,
+        "numbers": 8,
+        "addresses": 2,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 12,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/global-crypto-charity.html",
+      "url": "https://minadoai.com/global-crypto-charity.html",
+      "title": "Global Crypto Charity: Reaching Every Corner of the World with Blockchain | ALI Charity Blog",
+      "metaDescription": "Global crypto charity is transforming international philanthropy by eliminating borders and intermediaries. Learn how crypto donations reach underserved communities faster and more cost-effectively than traditional methods.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1803,
+        "numbers": 49,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 25,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/how-to-donate-cryptocurrency-2026.html",
+      "url": "https://minadoai.com/how-to-donate-cryptocurrency-2026.html",
+      "title": "How to Donate Cryptocurrency to Charity: Complete 2026 Guide | ALI Charity",
+      "metaDescription": "Learn how to donate cryptocurrency to charity in 2026. Step-by-step guide covering wallet setup, choosing causes, tax benefits, and tracking your donation on the blockchain.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1001,
+        "numbers": 40,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 26,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/how-to-donate-cryptocurrency-to-charity-2026.html",
+      "url": "https://minadoai.com/how-to-donate-cryptocurrency-to-charity-2026.html",
+      "title": "How to Donate Cryptocurrency to Charity in 2026 | Step-by-Step Guide",
+      "metaDescription": "Learn how to donate cryptocurrency to charity in 2026. This complete guide covers wallets, platforms, tax benefits, and step-by-step instructions for making your first crypto donation.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1908,
+        "numbers": 51,
+        "addresses": 2,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 6,
+        "headings": 20,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/index-backup-20260410-230746.html",
+      "url": "https://minadoai.com/index-backup-20260410-230746.html",
+      "title": "ALI Charity - 100% Transparent Blockchain Charity Platform | Donate Crypto Now",
+      "metaDescription": "Donate with full transparency on ALI Charity - the first 100% blockchain charity platform. Track every donation in real-time and receive ALI token rewards. Support 13 active charity projects worldwide. Join the revolution today!",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 491,
+        "numbers": 41,
+        "addresses": 1,
+        "jsonLdBlocks": 13,
+        "faqQuestions": 14,
+        "headings": 28,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/index.html",
+      "url": "https://minadoai.com/",
+      "title": "ALI Charity - 100% Transparent Blockchain Charity Platform | Donate Crypto Now",
+      "metaDescription": "Donate with full transparency on ALI Charity - the first 100% blockchain charity platform. Track every donation in real-time and receive ALI token rewards. Support 13 active charity projects worldwide. Join the revolution today!",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 888,
+        "numbers": 47,
+        "addresses": 1,
+        "jsonLdBlocks": 13,
+        "faqQuestions": 14,
+        "headings": 33,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/sudan-humanitarian-crisis-blockchain-aid.html",
+      "url": "https://minadoai.com/sudan-humanitarian-crisis-blockchain-aid.html",
+      "title": "Sudan's 33.7 Million: The World's Largest Humanitarian Crisis and How Blockchain Charity Is Rising to Meet It | ALI Charity",
+      "metaDescription": "Sudan",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1665,
+        "numbers": 15,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 17,
+        "canonical": false
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/web3-philanthropy-future.html",
+      "url": "https://minadoai.com/web3-philanthropy-future.html",
+      "title": "The Future of Web3 Philanthropy | ALI Charity Blog",
+      "metaDescription": "Explore the future of Web3 philanthropy in 2026 and beyond. Discover how blockchain, DAOs, NFTs, and decentralized governance are reshaping charitable giving for a $100B+ market.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 1366,
+        "numbers": 30,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 23,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/why-donate-cryptocurrency.html",
+      "url": "https://minadoai.com/why-donate-cryptocurrency.html",
+      "title": "Why Donate Cryptocurrency to ALI Charity? Transparent Crypto Giving Guide",
+      "metaDescription": "ALI Charity explains why donors use BTC, ETH, USDT, BNB, and SOL for transparent giving: public transaction hashes, global access, donor safety, and no-return risk boundaries.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 950,
+        "numbers": 26,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 5,
+        "headings": 17,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/why-donate-to-blockchain-charity.html",
+      "url": "https://minadoai.com/why-donate-to-blockchain-charity.html",
+      "title": "Why Donate to Blockchain Charity? 7 Compelling Reasons for 2026",
+      "metaDescription": "Why donate to blockchain charity? Discover the compelling reasons donors are switching to blockchain philanthropy: transparency, tax benefits, global impact, and verifiable giving.",
+      "score": 10,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 2,
+        "subject": 2
+      },
+      "stats": {
+        "words": 2161,
+        "numbers": 59,
+        "addresses": 1,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 6,
+        "headings": 19,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    }
+  ]
+}

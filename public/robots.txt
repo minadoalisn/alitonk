@@ -1,18 +1,58 @@
 User-agent: *
 Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /dashboard.html
+Disallow: /cache-buster.html
+Disallow: /clear-cache.html
+Disallow: /test-connection.html
+Disallow: /test-donate.html
+Disallow: /test-v2.html
 
 # AI Crawlers
 User-agent: GPTBot
 Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /dashboard.html
+Disallow: /cache-buster.html
+Disallow: /clear-cache.html
+Disallow: /test-connection.html
+Disallow: /test-donate.html
+Disallow: /test-v2.html
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /dashboard.html
+Disallow: /cache-buster.html
+Disallow: /clear-cache.html
+Disallow: /test-connection.html
+Disallow: /test-donate.html
+Disallow: /test-v2.html
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /dashboard.html
+Disallow: /cache-buster.html
+Disallow: /clear-cache.html
+Disallow: /test-connection.html
+Disallow: /test-donate.html
+Disallow: /test-v2.html
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /dashboard.html
+Disallow: /cache-buster.html
+Disallow: /clear-cache.html
+Disallow: /test-connection.html
+Disallow: /test-donate.html
+Disallow: /test-v2.html
 
 Sitemap: https://minadoai.com/sitemap.xml
 Sitemap: https://minadoai.com/blog/sitemap.xml

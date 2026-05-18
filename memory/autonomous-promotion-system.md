@@ -1,6 +1,6 @@
 # ALI Charity Autonomous Promotion System
 
-Last updated: 2026-05-17
+Last updated: 2026-05-18
 
 ## Current Progress
 
@@ -10,6 +10,8 @@ Last updated: 2026-05-17
 - Owned promotion hub: `public/promotion.html`.
 - Main content engine: `scripts/generate-blog-promotion.js`.
 - GEO/SEO research engine: `scripts/research/geo_seo_research.py`.
+- GEO health audit: `npm run geo:audit`.
+- IndexNow submission helper: `npm run geo:indexnow` after deployment, with `INDEXNOW_KEY` configured. Render build writes the required `/<INDEXNOW_KEY>.txt` verification file when the same environment variable exists.
 - AI-readable context: `public/llms.txt`.
 - Deployment health check: `npm run deploy:check`.
 - GitHub Actions promotion workflow: `.github/workflows/weekly-blog-promotion.yml`.
@@ -32,10 +34,18 @@ Each autonomous run should complete one useful owned-channel growth action.
    - Improve an owned page, blog post, FAQ block, structured data, sitemap, `llms.txt`, internal link, donor-safety explanation, DEX readiness explanation, or promotion copy.
    - Do not create off-site spam or artificial engagement.
 
+2a. Run the GEO audit loop for page improvements.
+   - Run `npm run geo:audit`.
+   - Review `memory/research/geo-audit/latest.md`.
+   - Prioritize low-scoring pages that can influence conversion or AI answers: `/`, `/donate.html`, `/donor-safety.html`, `/promotion.html`, `/token.html`, `/token-dashboard.html`, `/dex-launch.html`, `/blog/`.
+   - Improve the five dimensions: first-50-character answer, parameter density, Schema/canonical structure, FAQ coverage, and complete subject usage.
+   - Do not prioritize verification files or 404 pages as growth pages.
+
 3. Publish or prepare.
    - If content changes are made, update relevant indexes and sitemap files.
    - Keep new claims source-linked and avoid investment language.
    - Keep ALI framed as donor recognition / transparency utility unless a verified live market page exists.
+   - If `INDEXNOW_KEY` is configured, run `npm run geo:indexnow` after the updated pages are deployed and the key file is publicly reachable.
 
 4. Verify.
    - Run `npm run build`.
@@ -49,6 +59,7 @@ Each autonomous run should complete one useful owned-channel growth action.
 
 - Owned SEO: homepage, promotion hub, blog guides, news briefings, token/DEX readiness pages.
 - GEO / AI search: `llms.txt`, concise FAQ schema, answer-ready headings, source-backed summaries, internal links.
+- GEO page scoring: target 8+/10 for every conversion or explainer page, and 10/10 for the homepage and donate page.
 - BNB Chain discoverability: BscScan contract references, PancakeSwap readiness content, DexScreener/GeckoTerminal preparation copy after a live pool exists.
 - Donor trust: public wallet addresses, transaction-hash review, risk disclosure, no-return language, humanitarian proof pages.
 - Community content: share-ready copy blocks for X, Telegram, Discord, Reddit, LinkedIn, and donor communities, but only for manual or approved posting.
@@ -59,6 +70,7 @@ Each autonomous run should complete one useful owned-channel growth action.
 - Technical health: sitemap, blog index, canonical URLs, Open Graph, and `llms.txt` stay current.
 - Trust health: every token/trading page includes risk disclosure and official contract context.
 - Discovery health: promotion pages answer direct questions such as "what is ALI Charity", "how to donate crypto safely", "how ALI token works", and "is ALI tradable".
+- AI referral health: when GA4/Search Console data is available, track AI referral and direct traffic changes weekly; if the ratio is flat after 30 days, rerun `geo:audit` and strengthen parameter density plus complete-subject openings.
 - Traffic health: report traffic every 6 hours, separate local health-check traffic from likely real users, and prioritize improvements when daily page views stay below 20 or unique visitor hashes stay below 5.
 
 ## Reporting Cadence

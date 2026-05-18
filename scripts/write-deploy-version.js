@@ -21,3 +21,10 @@ const payload = {
 
 fs.writeFileSync(outFile, `${JSON.stringify(payload, null, 2)}\n`);
 console.log(`Wrote public/deploy-version.json for ${payload.commit}`);
+
+if (process.env.INDEXNOW_KEY) {
+  const key = String(process.env.INDEXNOW_KEY).trim();
+  const keyFile = path.join(root, 'public', `${key}.txt`);
+  fs.writeFileSync(keyFile, `${key}\n`);
+  console.log(`Wrote public/${key}.txt for IndexNow verification`);
+}

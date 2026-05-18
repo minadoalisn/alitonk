@@ -20,6 +20,20 @@ jobs:
         with:
           node-version: 20
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install GEO/SEO research dependencies
+        run: python -m pip install -r scripts/requirements-geo-seo.txt
+
+      - name: Run GEO/SEO research
+        run: npm run geo:seo:research
+
+      - name: Run GEO health audit
+        run: npm run geo:audit
+
       - name: Generate promotion article
         run: npm run blog:promotion
         env:
@@ -29,6 +43,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/blog/news/*.html public/blog/news.html public/blog/sitemap.xml
+          git add memory/research/geo-audit/*.json memory/research/geo-audit/*.md memory/research/geo-seo/*.jsonl memory/research/geo-seo/*.md public/blog/news/*.html public/blog/news.html public/blog/sitemap.xml public/sitemap.xml
           git diff --cached --quiet || git commit -m "Publish daily blog promotion"
           git push

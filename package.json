@@ -7,6 +7,8 @@
     "start": "node server.js",
     "build": "node scripts/write-deploy-version.js",
     "blog:promotion": "node scripts/generate-blog-promotion.js",
+    "geo:audit": "node scripts/geo-audit.js",
+    "geo:indexnow": "node scripts/submit-indexnow.js",
     "geo:seo:research": "python scripts/research/geo_seo_research.py",
     "memory:save": "node scripts/save-project-memory.js",
     "deploy:check": "node scripts/check-deployment-health.js",
