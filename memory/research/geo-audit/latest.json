@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T14:12:40.881Z",
+  "generatedAt": "2026-05-19T06:31:39.059Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 1119,
-        "numbers": 58,
+        "words": 1094,
+        "numbers": 56,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 29,
+        "headings": 28,
         "canonical": false
       },
       "reasons": [
@@ -661,6 +661,39 @@
       ]
     },
     {
+      "file": "public/donate.html",
+      "url": "https://minadoai.com/donate.html",
+      "title": "Donate | ALI Charity",
+      "metaDescription": "Donate crypto to ALI Charity using official public wallet addresses. Choose an asset, copy the address, send from your wallet, and keep the transaction hash.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 1,
+        "schema": 1,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 210,
+        "numbers": 3,
+        "addresses": 1,
+        "jsonLdBlocks": 0,
+        "faqQuestions": 0,
+        "headings": 4,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "Missing or thin canonical/JSON-LD structure for AI and search parsers.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
+        "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
       "file": "public/faq-v2.html",
       "url": "https://minadoai.com/faq-v2.html",
       "title": "FAQ | ALI Charity",
@@ -719,6 +752,37 @@
       ],
       "direction": [
         "Add WebPage/Article/Product-style JSON-LD and canonical URL.",
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/growth.html",
+      "url": "https://minadoai.com/growth.html",
+      "title": "ALI Charity Growth Hub | Crypto Charity Traffic and Trust Routes",
+      "metaDescription": "ALI Charity growth hub: donor routes, token research, PancakeSwap readiness, blog promotion, AI-readable context, and transparent crypto charity proof links.",
+      "score": 6,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 0,
+        "schema": 2,
+        "faq": 0,
+        "subject": 2
+      },
+      "stats": {
+        "words": 232,
+        "numbers": 0,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "faqQuestions": 0,
+        "headings": 3,
+        "canonical": true
+      },
+      "reasons": [
+        "Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.",
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add concrete chain, asset, address, count, date, and risk details.",
         "Add 5-8 FAQPage questions with donor-facing answers."
       ]
     },
@@ -1201,12 +1265,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 259,
+        "words": 231,
         "numbers": 6,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 11,
+        "headings": 10,
         "canonical": true
       },
       "reasons": [
@@ -2389,7 +2453,7 @@
         "subject": 2
       },
       "stats": {
-        "words": 489,
+        "words": 474,
         "numbers": 0,
         "addresses": 0,
         "jsonLdBlocks": 1,
@@ -2724,35 +2788,6 @@
       ]
     },
     {
-      "file": "public/blog/news/2026-05-14-stablecoin-donations-global-aid.html",
-      "url": "https://minadoai.com/blog/news/2026-05-14-stablecoin-donations-global-aid.html",
-      "title": "Stablecoin Donations and Global Aid: Why Transparent Giving Matters | ALI Charity Blog",
-      "metaDescription": "A practical ALI Charity briefing on stablecoin donations, cross-border aid, and donor verification.",
-      "score": 9,
-      "dimensions": {
-        "answerFirst50": 2,
-        "parameterDensity": 2,
-        "schema": 2,
-        "faq": 1,
-        "subject": 2
-      },
-      "stats": {
-        "words": 632,
-        "numbers": 15,
-        "addresses": 0,
-        "jsonLdBlocks": 2,
-        "faqQuestions": 3,
-        "headings": 11,
-        "canonical": true
-      },
-      "reasons": [
-        "FAQ coverage is below 5 question-answer pairs."
-      ],
-      "direction": [
-        "Add 5-8 FAQPage questions with donor-facing answers."
-      ]
-    },
-    {
       "file": "public/blog/news/2026-05-14-world-news-in-brief-mounting-waste-in-gaza-drone-attacks-in-sudan-aid-tr-charity-transparency.html",
       "url": "https://minadoai.com/blog/news/2026-05-14-world-news-in-brief-mounting-waste-in-gaza-drone-attacks-in-sudan-aid-tr-charity-transparency.html",
       "title": "World News in Brief: Mounting waste in Gaza, drone attacks in Sudan, aid truck...: What Donors Can Learn From Today's Global Headlines | ALI",
@@ -2840,35 +2875,6 @@
       ]
     },
     {
-      "file": "public/blog/news/2026-05-17-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
-      "url": "https://minadoai.com/blog/news/2026-05-17-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
-      "title": "Afghan mothers and children face worsening hunger crisis, WFP warns: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
-      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
-      "score": 9,
-      "dimensions": {
-        "answerFirst50": 2,
-        "parameterDensity": 2,
-        "schema": 2,
-        "faq": 1,
-        "subject": 2
-      },
-      "stats": {
-        "words": 940,
-        "numbers": 17,
-        "addresses": 0,
-        "jsonLdBlocks": 2,
-        "faqQuestions": 3,
-        "headings": 14,
-        "canonical": true
-      },
-      "reasons": [
-        "FAQ coverage is below 5 question-answer pairs."
-      ],
-      "direction": [
-        "Add 5-8 FAQPage questions with donor-facing answers."
-      ]
-    },
-    {
       "file": "public/blog/news/2026-05-17-risk-of-famine-persists-as-nearly-19-5-million-people-face-acute-food-in-charity-transparency.html",
       "url": "https://minadoai.com/blog/news/2026-05-17-risk-of-famine-persists-as-nearly-19-5-million-people-face-acute-food-in-charity-transparency.html",
       "title": "Risk of Famine persists as nearly 19.5 million people face acute food insecurity...: What Donors Can Learn From Today's Global Headlines | A",
@@ -2884,6 +2890,35 @@
       "stats": {
         "words": 756,
         "numbers": 13,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-18-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-18-afghan-mothers-and-children-face-worsening-hunger-crisis-wfp-warns-charity-transparency.html",
+      "title": "Afghan mothers and children face worsening hunger crisis, WFP warns: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 729,
+        "numbers": 4,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
@@ -3181,31 +3216,6 @@
       "direction": []
     },
     {
-      "file": "public/donate.html",
-      "url": "https://minadoai.com/donate.html",
-      "title": "Donate Crypto Safely | ALI Charity",
-      "metaDescription": "Donate BTC, ETH, USDT, BNB, or SOL to ALI Charity with public wallet addresses, transaction hash review, and transparent donor recognition records.",
-      "score": 10,
-      "dimensions": {
-        "answerFirst50": 2,
-        "parameterDensity": 2,
-        "schema": 2,
-        "faq": 2,
-        "subject": 2
-      },
-      "stats": {
-        "words": 299,
-        "numbers": 8,
-        "addresses": 2,
-        "jsonLdBlocks": 2,
-        "faqQuestions": 5,
-        "headings": 12,
-        "canonical": true
-      },
-      "reasons": [],
-      "direction": []
-    },
-    {
       "file": "public/global-crypto-charity.html",
       "url": "https://minadoai.com/global-crypto-charity.html",
       "title": "Global Crypto Charity: Reaching Every Corner of the World with Blockchain | ALI Charity Blog",
@@ -3308,8 +3318,8 @@
     {
       "file": "public/index.html",
       "url": "https://minadoai.com/",
-      "title": "ALI Charity - 100% Transparent Blockchain Charity Platform | Donate Crypto Now",
-      "metaDescription": "Donate with full transparency on ALI Charity - the first 100% blockchain charity platform. Track every donation in real-time and receive ALI token rewards. Support 13 active charity projects worldwide. Join the revolution today!",
+      "title": "ALI Charity | Simple Crypto Donations With Public Records",
+      "metaDescription": "ALI Charity is a transparent crypto charity platform for on-chain donations, donor safety, ALI Token research, PancakeSwap launch readiness, and humanitarian aid proof.",
       "score": 10,
       "dimensions": {
         "answerFirst50": 2,
@@ -3319,12 +3329,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 888,
-        "numbers": 47,
-        "addresses": 1,
+        "words": 664,
+        "numbers": 39,
+        "addresses": 0,
         "jsonLdBlocks": 13,
         "faqQuestions": 14,
-        "headings": 33,
+        "headings": 31,
         "canonical": true
       },
       "reasons": [],

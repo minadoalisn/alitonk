@@ -1,6 +1,6 @@
 # ALI Charity GEO Health Audit
 
-Generated: 2026-05-18T14:12:40.884Z
+Generated: 2026-05-19T06:31:39.061Z
 
 Scoring model: 10 points across five dimensions: direct answer in first 50 visible characters, parameter density, Schema/canonical structure, FAQ coverage, and complete subject usage.
 
@@ -29,15 +29,15 @@ Scoring model: 10 points across five dimensions: direct answer in first 50 visib
 | 19 | 6/10 | public/donate-v2-20260411-011733.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
 | 20 | 6/10 | public/donate-v2-backup.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
 | 21 | 6/10 | public/donate-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 22 | 6/10 | public/faq-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 23 | 6/10 | public/faq.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 24 | 6/10 | public/how-to-donate-cryptocurrency-guide-2026.html | answerFirst50:2, parameterDensity:2, schema:2, faq:0, subject:0 | FAQ coverage is below 5 question-answer pairs. Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly. |
-| 25 | 6/10 | public/team-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 26 | 6/10 | public/team.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 27 | 6/10 | public/token-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 28 | 7/10 | public/ali-token-incentivizing-charitable-giving.html | answerFirst50:2, parameterDensity:2, schema:1, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 29 | 7/10 | public/ali-token-use-cases.html | answerFirst50:2, parameterDensity:2, schema:1, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
-| 30 | 7/10 | public/benefits-of-crypto-donations-nonprofits.html | answerFirst50:2, parameterDensity:2, schema:1, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 22 | 6/10 | public/donate.html | answerFirst50:2, parameterDensity:1, schema:1, faq:0, subject:2 | Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps. Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 23 | 6/10 | public/faq-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 24 | 6/10 | public/faq.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 25 | 6/10 | public/growth.html | answerFirst50:2, parameterDensity:0, schema:2, faq:0, subject:2 | Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps. FAQ coverage is below 5 question-answer pairs. |
+| 26 | 6/10 | public/how-to-donate-cryptocurrency-guide-2026.html | answerFirst50:2, parameterDensity:2, schema:2, faq:0, subject:0 | FAQ coverage is below 5 question-answer pairs. Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly. |
+| 27 | 6/10 | public/team-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 28 | 6/10 | public/team.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 29 | 6/10 | public/token-v2.html | answerFirst50:2, parameterDensity:2, schema:0, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
+| 30 | 7/10 | public/ali-token-incentivizing-charitable-giving.html | answerFirst50:2, parameterDensity:2, schema:1, faq:0, subject:2 | Missing or thin canonical/JSON-LD structure for AI and search parsers. FAQ coverage is below 5 question-answer pairs. |
 
 ## Recommended Batch Fix Pattern
 
