@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T06:50:46.218Z",
+  "generatedAt": "2026-05-26T06:29:51.726Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 1423,
-        "numbers": 68,
+        "words": 1480,
+        "numbers": 70,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 34,
+        "headings": 35,
         "canonical": false
       },
       "reasons": [
@@ -3093,6 +3093,35 @@
       "stats": {
         "words": 773,
         "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-25-world-news-in-brief-lives-lost-and-aid-destroyed-in-ukraine-rainfall-ale-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-25-world-news-in-brief-lives-lost-and-aid-destroyed-in-ukraine-rainfall-ale-charity-transparency.html",
+      "title": "World News in Brief: Lives lost and aid destroyed in Ukraine, rainfall alert for...: What Donors Can Learn From Today's Global Headlines | A",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News - Humanitarian Aid and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 760,
+        "numbers": 11,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
