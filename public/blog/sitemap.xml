@@ -198,4 +198,10 @@
         <changefreq>daily</changefreq>
         <priority>0.75</priority>
     </url>
+    <url>
+        <loc>https://minadoai.com/blog/news/2026-05-29-world-news-in-brief-lives-lost-and-aid-destroyed-in-ukraine-rainfall-ale-charity-transparency.html</loc>
+        <lastmod>2026-05-29</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>

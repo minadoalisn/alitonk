@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T06:35:29.647Z",
+  "generatedAt": "2026-05-29T06:35:37.072Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 1594,
-        "numbers": 74,
+        "words": 1645,
+        "numbers": 76,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 37,
+        "headings": 38,
         "canonical": false
       },
       "reasons": [
@@ -3180,6 +3180,35 @@
       "stats": {
         "words": 767,
         "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-05-28-ebola-hit-dr-congo-faces-catastrophic-collision-of-disease-and-conflict--charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-05-28-ebola-hit-dr-congo-faces-catastrophic-collision-of-disease-and-conflict--charity-transparency.html",
+      "title": "Ebola-hit DR Congo faces 'catastrophic collision' of disease and conflict, WHO...: What Donors Can Learn From Today's Global Headlines | ALI",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting BBC World and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 722,
+        "numbers": 9,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
