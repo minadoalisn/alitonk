@@ -1,6 +1,6 @@
 # ALI Charity GEO Health Audit
 
-Generated: 2026-05-29T06:35:37.074Z
+Generated: 2026-05-30T05:59:20.167Z
 
 Scoring model: 10 points across five dimensions: direct answer in first 50 visible characters, parameter density, Schema/canonical structure, FAQ coverage, and complete subject usage.
 
