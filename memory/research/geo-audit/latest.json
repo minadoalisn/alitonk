@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T07:04:31.418Z",
+  "generatedAt": "2026-06-03T07:19:31.950Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 1837,
-        "numbers": 84,
+        "words": 1887,
+        "numbers": 89,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 42,
+        "headings": 43,
         "canonical": false
       },
       "reasons": [
@@ -3325,6 +3325,35 @@
       "stats": {
         "words": 703,
         "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-02-unicef-afghanistan-humanitarian-situation-report-no-4-30-april-2026-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-02-unicef-afghanistan-humanitarian-situation-report-no-4-30-april-2026-charity-transparency.html",
+      "title": "UNICEF Afghanistan Humanitarian Situation Report No. 4, 30 April 2026: What Donors Can Learn From Today's Global Headlines | ALI Charity Blo",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting ReliefWeb Updates and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 745,
+        "numbers": 23,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
