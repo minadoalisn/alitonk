@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T07:19:31.950Z",
+  "generatedAt": "2026-06-04T06:59:28.081Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 1887,
-        "numbers": 89,
+        "words": 1941,
+        "numbers": 91,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 43,
+        "headings": 44,
         "canonical": false
       },
       "reasons": [
@@ -3354,6 +3354,35 @@
       "stats": {
         "words": 745,
         "numbers": 23,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-03-un-urges-world-not-to-forget-rohingya-refugees-as-aid-cuts-threaten-vita-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-03-un-urges-world-not-to-forget-rohingya-refugees-as-aid-cuts-threaten-vita-charity-transparency.html",
+      "title": "UN urges world not to forget Rohingya refugees as aid cuts threaten vital support: What Donors Can Learn From Today's Global Headlines | ALI",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 741,
+        "numbers": 4,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
