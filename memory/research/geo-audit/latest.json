@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T06:06:24.405Z",
+  "generatedAt": "2026-06-07T06:46:24.263Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 2040,
-        "numbers": 95,
+        "words": 2085,
+        "numbers": 97,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 46,
+        "headings": 47,
         "canonical": false
       },
       "reasons": [
@@ -3441,6 +3441,35 @@
       "stats": {
         "words": 706,
         "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-06-here-s-what-happened-in-crypto-today-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-06-here-s-what-happened-in-crypto-today-charity-transparency.html",
+      "title": "Here's what happened in crypto today: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting Cointelegraph and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 717,
+        "numbers": 7,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
