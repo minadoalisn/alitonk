@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T07:12:37.710Z",
+  "generatedAt": "2026-06-12T06:59:18.825Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 2299,
-        "numbers": 106,
+        "words": 2348,
+        "numbers": 108,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 51,
+        "headings": 52,
         "canonical": false
       },
       "reasons": [
@@ -3586,6 +3586,35 @@
       "stats": {
         "words": 724,
         "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-11-crypto-outflows-are-sentiment-shock-not-structural-crisis-coinshares-but-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-11-crypto-outflows-are-sentiment-shock-not-structural-crisis-coinshares-but-charity-transparency.html",
+      "title": "Crypto outflows are sentiment shock, not structural crisis: CoinShares' Butterfill: What Donors Can Learn From Today's Global Headlines | AL",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting Cointelegraph and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 710,
+        "numbers": 6,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
