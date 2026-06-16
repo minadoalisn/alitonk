@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T07:42:56.138Z",
+  "generatedAt": "2026-06-16T08:24:17.276Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 2513,
-        "numbers": 114,
+        "words": 2565,
+        "numbers": 116,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 55,
+        "headings": 56,
         "canonical": false
       },
       "reasons": [
@@ -3702,6 +3702,35 @@
       "stats": {
         "words": 743,
         "numbers": 5,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-15-instability-war-and-closed-borders-how-aid-workers-get-emergency-food-to-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-15-instability-war-and-closed-borders-how-aid-workers-get-emergency-food-to-charity-transparency.html",
+      "title": "Instability, war and closed borders: How aid workers get emergency food to...: What Donors Can Learn From Today's Global Headlines | ALI Cha",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 731,
+        "numbers": 6,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
