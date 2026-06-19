@@ -324,4 +324,10 @@
         <changefreq>daily</changefreq>
         <priority>0.75</priority>
     </url>
+    <url>
+        <loc>https://minadoai.com/blog/news/2026-06-19-security-council-live-gaza-in-the-spotlight-as-dire-conditions-continue-charity-transparency.html</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>
