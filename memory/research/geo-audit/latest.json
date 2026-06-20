@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T07:34:43.577Z",
+  "generatedAt": "2026-06-20T06:44:46.388Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 2726,
-        "numbers": 122,
+        "words": 2780,
+        "numbers": 124,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 59,
+        "headings": 60,
         "canonical": false
       },
       "reasons": [
@@ -3818,6 +3818,35 @@
       "stats": {
         "words": 726,
         "numbers": 4,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-19-security-council-live-gaza-in-the-spotlight-as-dire-conditions-continue-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-19-security-council-live-gaza-in-the-spotlight-as-dire-conditions-continue-charity-transparency.html",
+      "title": "Security Council LIVE: Gaza in the spotlight as dire conditions continue: What Donors Can Learn From Today's Global Headlines | ALI Charity ",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News - Humanitarian Aid and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 741,
+        "numbers": 6,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
