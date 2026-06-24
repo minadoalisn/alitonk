@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T06:30:42.240Z",
+  "generatedAt": "2026-06-24T06:27:26.877Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 2939,
-        "numbers": 130,
+        "words": 2992,
+        "numbers": 132,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 63,
+        "headings": 64,
         "canonical": false
       },
       "reasons": [
@@ -3934,6 +3934,35 @@
       "stats": {
         "words": 752,
         "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-23-ms-edem-wosornu-director-crisis-response-division-ocha-on-behalf-of-mr-t-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-23-ms-edem-wosornu-director-crisis-response-division-ocha-on-behalf-of-mr-t-charity-transparency.html",
+      "title": "Ms. Edem Wosornu, Director, Crisis Response Division, OCHA, on behalf of Mr. Tom...: What Donors Can Learn From Today's Global Headlines | A",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting ReliefWeb Updates and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 754,
+        "numbers": 14,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
