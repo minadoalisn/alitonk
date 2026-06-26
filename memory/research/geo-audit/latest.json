@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T06:30:12.038Z",
+  "generatedAt": "2026-06-26T06:33:14.215Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 3042,
-        "numbers": 134,
+        "words": 3092,
+        "numbers": 136,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 65,
+        "headings": 66,
         "canonical": false
       },
       "reasons": [
@@ -3992,6 +3992,35 @@
       "stats": {
         "words": 715,
         "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-25-clean-sweep-for-mamdani-backed-candidates-in-new-york-s-democratic-prima-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-25-clean-sweep-for-mamdani-backed-candidates-in-new-york-s-democratic-prima-charity-transparency.html",
+      "title": "Clean sweep for Mamdani-backed candidates in New York's Democratic primary: What Donors Can Learn From Today's Global Headlines | ALI Charit",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting BBC World and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 710,
+        "numbers": 5,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
