@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T07:10:53.959Z",
+  "generatedAt": "2026-06-30T06:36:23.649Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 3242,
-        "numbers": 142,
+        "words": 3289,
+        "numbers": 144,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 69,
+        "headings": 70,
         "canonical": false
       },
       "reasons": [
@@ -4108,6 +4108,35 @@
       "stats": {
         "words": 701,
         "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-06-29-bis-warns-stablecoins-risk-fragmenting-global-financial-system-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-06-29-bis-warns-stablecoins-risk-fragmenting-global-financial-system-charity-transparency.html",
+      "title": "BIS warns stablecoins risk fragmenting global financial system: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting Cointelegraph and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 721,
+        "numbers": 8,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
