@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T06:49:24.184Z",
+  "generatedAt": "2026-07-02T06:13:22.932Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 3334,
-        "numbers": 146,
+        "words": 3391,
+        "numbers": 149,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 71,
+        "headings": 73,
         "canonical": false
       },
       "reasons": [
@@ -4166,6 +4166,35 @@
       "stats": {
         "words": 706,
         "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-07-01-despite-record-100-million-shortfall-palestine-relief-agency-still-a-cri-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-07-01-despite-record-100-million-shortfall-palestine-relief-agency-still-a-cri-charity-transparency.html",
+      "title": "Despite record $100 million shortfall, Palestine relief agency still 'a critical...: What Donors Can Learn From Today's Global Headlines | A",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News - Humanitarian Aid and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 743,
+        "numbers": 12,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
