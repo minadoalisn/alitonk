@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T06:27:41.143Z",
+  "generatedAt": "2026-07-08T05:34:16.696Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 3639,
-        "numbers": 159,
+        "words": 3691,
+        "numbers": 161,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 78,
+        "headings": 79,
         "canonical": false
       },
       "reasons": [
@@ -4339,6 +4339,35 @@
       },
       "stats": {
         "words": 736,
+        "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-07-07-occupied-palestinian-territory-aid-restrictions-in-gaza-senseless-infant-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-07-07-occupied-palestinian-territory-aid-restrictions-in-gaza-senseless-infant-charity-transparency.html",
+      "title": "Occupied Palestinian Territory: Aid restrictions in Gaza, 'senseless' infant...: What Donors Can Learn From Today's Global Headlines | ALI C",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News - Humanitarian Aid and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 742,
         "numbers": 6,
         "addresses": 0,
         "jsonLdBlocks": 2,
