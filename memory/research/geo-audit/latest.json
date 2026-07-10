@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T06:25:01.732Z",
+  "generatedAt": "2026-07-10T06:23:47.617Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 3740,
-        "numbers": 163,
+        "words": 3791,
+        "numbers": 165,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 80,
+        "headings": 81,
         "canonical": false
       },
       "reasons": [
@@ -4398,6 +4398,35 @@
       "stats": {
         "words": 754,
         "numbers": 15,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-07-09-mozambique-food-security-outlook-conflict-slow-recovery-from-floods-and--charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-07-09-mozambique-food-security-outlook-conflict-slow-recovery-from-floods-and--charity-transparency.html",
+      "title": "Mozambique Food Security Outlook: Conflict, slow recovery from floods, and dry...: What Donors Can Learn From Today's Global Headlines | ALI",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting ReliefWeb Updates and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 739,
+        "numbers": 13,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
