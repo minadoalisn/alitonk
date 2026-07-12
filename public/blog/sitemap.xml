@@ -462,4 +462,10 @@
         <changefreq>daily</changefreq>
         <priority>0.75</priority>
     </url>
+    <url>
+        <loc>https://minadoai.com/blog/news/2026-07-12-crypto-biz-how-stablecoins-found-their-niche-charity-transparency.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>
