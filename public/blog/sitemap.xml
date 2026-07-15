@@ -480,4 +480,10 @@
         <changefreq>daily</changefreq>
         <priority>0.75</priority>
     </url>
+    <url>
+        <loc>https://minadoai.com/blog/news/2026-07-15-world-news-in-brief-aid-deliveries-to-gaza-restricted-un-prepares-el-nin-charity-transparency.html</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>
