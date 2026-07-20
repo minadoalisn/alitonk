@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T05:34:29.927Z",
+  "generatedAt": "2026-07-20T05:51:53.131Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 4248,
-        "numbers": 184,
+        "words": 4304,
+        "numbers": 186,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 91,
+        "headings": 92,
         "canonical": false
       },
       "reasons": [
@@ -4688,6 +4688,35 @@
       "stats": {
         "words": 719,
         "numbers": 8,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-07-19-world-news-in-brief-gaza-aid-challenges-persist-renewed-push-for-clean-e-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-07-19-world-news-in-brief-gaza-aid-challenges-persist-renewed-push-for-clean-e-charity-transparency.html",
+      "title": "World News in Brief: Gaza aid challenges persist, renewed push for clean energy,...: What Donors Can Learn From Today's Global Headlines | A",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting UN News - Humanitarian Aid and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 746,
+        "numbers": 4,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
