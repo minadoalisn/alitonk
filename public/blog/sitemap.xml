@@ -522,4 +522,10 @@
         <changefreq>daily</changefreq>
         <priority>0.75</priority>
     </url>
+    <url>
+        <loc>https://minadoai.com/blog/news/2026-07-22-ukraine-deadly-russian-attacks-severely-damage-aid-warehouses-charity-transparency.html</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>
