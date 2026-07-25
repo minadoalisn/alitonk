@@ -540,4 +540,10 @@
         <changefreq>daily</changefreq>
         <priority>0.75</priority>
     </url>
+    <url>
+        <loc>https://minadoai.com/blog/news/2026-07-25-gaza-s-food-gains-could-unravel-without-sustained-aid-un-warns-charity-transparency.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>
