@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T05:27:38.692Z",
+  "generatedAt": "2026-07-29T05:34:33.048Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 4702,
-        "numbers": 204,
+        "words": 4753,
+        "numbers": 207,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 101,
+        "headings": 102,
         "canonical": false
       },
       "reasons": [
@@ -4949,6 +4949,35 @@
       "stats": {
         "words": 709,
         "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-07-28-digital-asset-trading-platform-uphold-cuts-17-of-global-headcount-as-cry-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-07-28-digital-asset-trading-platform-uphold-cuts-17-of-global-headcount-as-cry-charity-transparency.html",
+      "title": "Digital asset trading platform Uphold cuts 17% of global headcount as crypto...: What Donors Can Learn From Today's Global Headlines | ALI C",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting CoinDesk and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 716,
+        "numbers": 8,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
