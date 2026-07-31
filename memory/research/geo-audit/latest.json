@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T05:21:36.379Z",
+  "generatedAt": "2026-07-31T05:48:06.749Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 4798,
-        "numbers": 209,
+        "words": 4846,
+        "numbers": 211,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 103,
+        "headings": 104,
         "canonical": false
       },
       "reasons": [
@@ -5007,6 +5007,35 @@
       "stats": {
         "words": 700,
         "numbers": 9,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-07-30-us-arbitration-giant-launches-specialist-panel-for-crypto-disputes-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-07-30-us-arbitration-giant-launches-specialist-panel-for-crypto-disputes-charity-transparency.html",
+      "title": "US arbitration giant launches specialist panel for crypto disputes: What Donors Can Learn From Today's Global Headlines | ALI Charity Blog",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting Cointelegraph and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 701,
+        "numbers": 4,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
