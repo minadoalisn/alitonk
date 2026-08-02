@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T05:38:53.169Z",
+  "generatedAt": "2026-08-02T05:39:22.861Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 4891,
-        "numbers": 213,
+        "words": 4941,
+        "numbers": 215,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 105,
+        "headings": 106,
         "canonical": false
       },
       "reasons": [
@@ -5065,6 +5065,35 @@
       "stats": {
         "words": 705,
         "numbers": 6,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-08-01-u-s-sanctions-iran-linked-bitcoin-insurance-scheme-for-strait-of-hormuz--charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-08-01-u-s-sanctions-iran-linked-bitcoin-insurance-scheme-for-strait-of-hormuz--charity-transparency.html",
+      "title": "U.S. sanctions Iran-linked bitcoin insurance scheme for Strait of Hormuz ships: What Donors Can Learn From Today's Global Headlines | ALI Ch",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting CoinDesk and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 711,
+        "numbers": 4,
         "addresses": 0,
         "jsonLdBlocks": 2,
         "faqQuestions": 3,
