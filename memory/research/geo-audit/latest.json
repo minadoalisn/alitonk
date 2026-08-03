@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T05:39:22.861Z",
+  "generatedAt": "2026-08-03T05:55:08.587Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -333,12 +333,12 @@
         "subject": 2
       },
       "stats": {
-        "words": 4941,
-        "numbers": 215,
+        "words": 4992,
+        "numbers": 217,
         "addresses": 0,
         "jsonLdBlocks": 0,
         "faqQuestions": 0,
-        "headings": 106,
+        "headings": 107,
         "canonical": false
       },
       "reasons": [
@@ -5093,6 +5093,35 @@
       },
       "stats": {
         "words": 711,
+        "numbers": 4,
+        "addresses": 0,
+        "jsonLdBlocks": 2,
+        "faqQuestions": 3,
+        "headings": 9,
+        "canonical": true
+      },
+      "reasons": [
+        "FAQ coverage is below 5 question-answer pairs."
+      ],
+      "direction": [
+        "Add 5-8 FAQPage questions with donor-facing answers."
+      ]
+    },
+    {
+      "file": "public/blog/news/2026-08-02-solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convin-charity-transparency.html",
+      "url": "https://minadoai.com/blog/news/2026-08-02-solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convin-charity-transparency.html",
+      "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing: What Donors Can Learn From Today's Global Headlines | ALI Char",
+      "metaDescription": "Daily ALI Charity GEO briefing connecting CoinDesk and international focus news with transparent crypto donations, stablecoin giving, and on-chain accountability.",
+      "score": 9,
+      "dimensions": {
+        "answerFirst50": 2,
+        "parameterDensity": 2,
+        "schema": 2,
+        "faq": 1,
+        "subject": 2
+      },
+      "stats": {
+        "words": 710,
         "numbers": 4,
         "addresses": 0,
         "jsonLdBlocks": 2,
