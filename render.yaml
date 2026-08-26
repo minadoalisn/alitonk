@@ -10,9 +10,24 @@ services:
       - path: /*
         name: Cache-Control
         value: public, max-age=0, must-revalidate
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=(), payment=()
       - path: /js/*
         name: Cache-Control
-        value: public, max-age=31536000, immutable
+        value: public, max-age=0, must-revalidate
+      - path: /js/site-config.js
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
       - path: /data/*
         name: Cache-Control
         value: public, max-age=300, must-revalidate
@@ -32,3 +47,42 @@ services:
       - type: rewrite
         source: /faq
         destination: /faq.html
+      - type: redirect
+        source: /about-v2.html
+        destination: /about.html
+      - type: redirect
+        source: /donate-new.html
+        destination: /donate.html
+      - type: redirect
+        source: /donate-v2*
+        destination: /donate.html
+      - type: redirect
+        source: /faq-v2.html
+        destination: /faq.html
+      - type: redirect
+        source: /team-v2.html
+        destination: /team.html
+      - type: redirect
+        source: /token-v2.html
+        destination: /token.html
+      - type: redirect
+        source: /blog/news*
+        destination: /blog/
+      - type: redirect
+        source: /blockchain-charity
+        destination: /blog/blockchain-donation-tracking-transparency.html
+      - type: redirect
+        source: /crypto-donations
+        destination: /blog/how-to-donate-cryptocurrency-to-charity.html
+      - type: redirect
+        source: /community
+        destination: /about.html
+      - type: redirect
+        source: /how-it-works
+        destination: /transparency.html
+      - type: redirect
+        source: /transparency
+        destination: /transparency.html
+      - type: redirect
+        source: /cookies
+        destination: /privacy.html

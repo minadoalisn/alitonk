@@ -2,237 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate | ALI Charity</title>
-  <meta name="description" content="Donate crypto to ALI Charity using official public wallet addresses. Choose an asset, copy the address, send from your wallet, and keep the transaction hash.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate Crypto in Two Steps | ALI Charity</title>
+  <meta name="description" content="Choose USDT, BNB, ETH, BTC, or SOL, copy the official ALI Charity address, and donate from your own wallet without connecting it to this website.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://minadoai.com/donate.html">
-  <link rel="stylesheet" href="/css/site-polish.css">
-  <script src="/js/site-config.js"></script>
-  <style>
-    body {
-      margin: 0;
-      background: #f8fafc;
-      color: #102033;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    a { color: inherit; }
-    .page { max-width: 980px; margin: 0 auto; padding: 24px; }
-    .nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
-    .brand { font-weight: 850; text-decoration: none; }
-    .nav-links { display: flex; gap: 18px; color: #526173; font-size: 14px; }
-    .nav-links a { text-decoration: none; }
-    .hero { padding: 56px 0 28px; }
-    .eyebrow { color: #087f5b; font-size: 13px; font-weight: 800; text-transform: uppercase; }
-    h1 { max-width: 680px; margin: 12px 0 16px; font-size: clamp(38px, 7vw, 72px); line-height: 0.96; letter-spacing: 0; }
-    .lead { max-width: 680px; color: #526173; font-size: 18px; line-height: 1.7; }
-    .notice { margin-top: 22px; border: 1px solid #d9e2ec; border-radius: 8px; background: #fff; padding: 16px; color: #334155; line-height: 1.55; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 26px; }
-    .card { border: 1px solid #d9e2ec; border-radius: 8px; background: #fff; padding: 18px; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05); }
-    .card h2 { margin: 0 0 12px; font-size: 22px; }
-    .field { display: grid; gap: 8px; margin: 14px 0; }
-    label { color: #475569; font-size: 14px; font-weight: 750; }
-    select, input, textarea { width: 100%; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: #0f172a; padding: 13px 14px; font: inherit; }
-    .address-box { border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; padding: 14px; cursor: pointer; transition: border-color .15s, background .15s; }
-    .address-box:hover { border-color: #102033; background: #f1f5f9; }
-    .address-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; }
-    .address-meta { display: flex; justify-content: space-between; gap: 10px; color: #64748b; font-size: 13px; margin-bottom: 8px; }
-    code { display: block; color: #0f5132; word-break: break-all; line-height: 1.5; }
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
-    button, .button { border: 1px solid #102033; border-radius: 8px; background: #102033; color: #fff; padding: 12px 16px; font-weight: 800; cursor: pointer; text-decoration: none; }
-    .copy-small { padding: 8px 12px; font-size: 13px; }
-    .button.secondary, button.secondary { background: #fff; color: #102033; }
-    .steps { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
-    .steps li { border-left: 3px solid #21a67a; padding: 4px 0 4px 12px; color: #475569; line-height: 1.55; }
-    .small { color: #64748b; font-size: 13px; line-height: 1.55; }
-    .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); border-radius: 8px; background: #102033; color: #fff; padding: 12px 16px; opacity: 0; pointer-events: none; transition: opacity .2s; }
-    footer { margin-top: 44px; padding: 24px 0; border-top: 1px solid #d9e2ec; color: #64748b; font-size: 14px; }
-    @media (max-width: 760px) {
-      .page { padding: 18px; }
-      .nav { align-items: flex-start; gap: 12px; }
-      .nav-links { flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
-      .grid { grid-template-columns: 1fr; }
-      .hero { padding-top: 34px; }
-      .actions a, .actions button { width: 100%; text-align: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/donation.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://minadoai.com/donate.html#page",
+        "url": "https://minadoai.com/donate.html",
+        "name": "Donate Crypto in Two Steps | ALI Charity",
+        "description": "Official ALI Charity crypto donation addresses and network safety guidance.",
+        "isPartOf": { "@id": "https://minadoai.com/#website" }
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to donate crypto to ALI Charity",
+        "totalTime": "PT2M",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Choose an asset", "text": "Choose a supported asset and copy its official address." },
+          { "@type": "HowToStep", "position": 2, "name": "Send from your wallet", "text": "Confirm the network, send from your own wallet or exchange, and keep the transaction hash." }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="page">
-    <nav class="nav">
+  <a class="skip-link" href="#donation">Skip to donation options</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="/">ALI Charity</a>
-      <div class="nav-links">
-        <a href="/#projects">Projects</a>
-        <a href="/donor-safety.html">Safety</a>
-        <a href="/whitepaper.html">Whitepaper</a>
-      </div>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/donor-safety.html">Safety</a><a href="/about.html">About</a></div>
     </nav>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="eyebrow">Official donation page</div>
-        <h1>Donate in three simple steps.</h1>
-        <p class="lead">Choose the asset, copy the official address, send from your own wallet, then keep the transaction hash. Crypto transfers are irreversible, so check the network before sending.</p>
-        <div class="notice">
-          ALI Charity does not ask for your private key or seed phrase. This page does not auto-sign transactions. You stay in control of your wallet.
+  <main id="donation" class="donation-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Official donation addresses</p>
+      <h1 id="page-title">Donate crypto in two steps.</h1>
+      <p class="lede">Choose an asset, copy the official address, then send from your own wallet or exchange.</p>
+      <p class="trust-note"><strong>No wallet connection.</strong> ALI Charity never asks for your seed phrase or private key, and this website never signs a transaction.</p>
+    </section>
+
+    <div class="flow-grid">
+      <section class="donation-panel" aria-labelledby="asset-heading">
+        <p class="step-label">Step 1</p>
+        <h2 id="asset-heading">Choose an asset</h2>
+        <div id="assetOptions" class="asset-options" role="radiogroup" aria-label="Donation asset"></div>
+        <div class="address-card">
+          <div class="address-meta"><span id="addressLabel">Official address</span><strong id="networkName">Network</strong></div>
+          <code id="donationAddress">Loading official address…</code>
+          <button id="copyAddress" class="primary-action" type="button" disabled>Copy official address</button>
         </div>
+        <p id="copyStatus" class="status" role="status" aria-live="polite"></p>
       </section>
 
-      <section class="grid" aria-label="Donation form">
-        <div class="card">
-          <h2>1. Choose asset</h2>
-          <div class="field">
-            <label for="assetSelect">Donation asset</label>
-            <select id="assetSelect">
-              <option value="USDT">USDT on BNB Smart Chain</option>
-              <option value="BNB">BNB on BNB Smart Chain</option>
-              <option value="ETH">ETH on BNB Smart Chain</option>
-              <option value="BTC">BTC on Bitcoin</option>
-              <option value="SOL">SOL on Solana</option>
-            </select>
-          </div>
-          <div class="address-box" id="addressBox" role="button" tabindex="0" aria-label="Copy donation address">
-            <div class="address-meta">
-              <span id="assetLabel">USDT address</span>
-              <span id="networkLabel">BSC</span>
-            </div>
-            <div class="address-row">
-              <code id="addressText">Loading address...</code>
-              <button type="button" class="copy-small" id="copyAddressInlineBtn">Copy</button>
-            </div>
-          </div>
-          <div class="actions">
-            <button type="button" id="copyAddressBtn">Copy address</button>
-            <a class="button secondary" href="/donor-safety.html">Read safety checks</a>
-          </div>
-          <p class="small">For USDT, BNB, and ETH, use BNB Smart Chain. Sending on the wrong network can permanently lose funds.</p>
-        </div>
-
-        <div class="card">
-          <h2>2. Send and save proof</h2>
-          <ul class="steps">
-            <li>Open your wallet or exchange withdrawal page.</li>
-            <li>Paste the address copied from this page.</li>
-            <li>Confirm the asset and network match.</li>
-            <li>Send a small test transfer first if unsure.</li>
-            <li>Save the transaction hash after sending.</li>
-          </ul>
-        </div>
+      <section class="send-panel" aria-labelledby="send-heading">
+        <p class="step-label">Step 2</p>
+        <h2 id="send-heading">Send from your wallet</h2>
+        <p id="networkSafety">Confirm the asset and network before sending.</p>
+        <ol class="send-list">
+          <li>Paste the copied address into your wallet or exchange.</li>
+          <li>Compare the full address and selected network.</li>
+          <li>Send a small test transfer first if you are unsure.</li>
+          <li>Keep the transaction hash for your own records.</li>
+        </ol>
+        <a id="explorerLink" class="text-link" target="_blank" rel="noopener noreferrer">View this address on a blockchain explorer</a>
       </section>
+    </div>
 
-      <section class="card" style="margin-top:18px">
-        <h2>3. Record your donation</h2>
-        <p class="small">This helps the team review public transactions. It does not move funds and does not require wallet access.</p>
-        <div class="grid" style="margin-top:10px">
-          <div class="field">
-            <label for="amountInput">Amount sent</label>
-            <input id="amountInput" inputmode="decimal" placeholder="Example: 50">
-          </div>
-          <div class="field">
-            <label for="txHashInput">Transaction hash</label>
-            <input id="txHashInput" placeholder="Paste transaction hash">
-          </div>
-        </div>
-        <div class="field">
-          <label for="noteInput">Contact or note (optional)</label>
-          <textarea id="noteInput" rows="3" placeholder="Email, project preference, or short note"></textarea>
-        </div>
-        <div class="actions">
-          <button type="button" id="saveDonationBtn">Save locally</button>
-          <a class="button secondary" id="explorerLink" target="_blank" rel="noopener" href="https://bscscan.com/address/0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC">Open explorer</a>
-        </div>
-        <p class="small" id="savedStatus">Saved records stay in this browser for your reference.</p>
-      </section>
-    </main>
+    <details class="safety-details">
+      <summary>Safety checklist before you send</summary>
+      <ul>
+        <li>Crypto transfers are irreversible.</li>
+        <li>A wrong network or address can permanently lose funds.</li>
+        <li>Ignore anyone asking for a seed phrase, private key, remote access, or an extra “verification” payment.</li>
+      </ul>
+      <a href="/donor-safety.html">Read the complete donor-safety guide</a>
+    </details>
 
-    <footer>
-      ALI Token contract: 0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79
-    </footer>
-  </div>
+    <aside class="after-note" aria-label="After donating">
+      <h2>After donating</h2>
+      <p>Keep the transaction hash and verify it on the relevant explorer. This static website does not collect personal details or submit a claim to the team.</p>
+    </aside>
+  </main>
 
-  <div class="toast" id="toast"></div>
-
-  <script>
-    const assets = window.ALI_SITE_CONFIG.donations;
-    const explorers = {
-      USDT: 'https://bscscan.com/address/',
-      BNB: 'https://bscscan.com/address/',
-      ETH: 'https://bscscan.com/address/',
-      BTC: 'https://www.blockchain.com/explorer/addresses/btc/',
-      SOL: 'https://solscan.io/account/'
-    };
-    const assetSelect = document.getElementById('assetSelect');
-    const assetLabel = document.getElementById('assetLabel');
-    const networkLabel = document.getElementById('networkLabel');
-    const addressText = document.getElementById('addressText');
-    const addressBox = document.getElementById('addressBox');
-    const explorerLink = document.getElementById('explorerLink');
-    const toast = document.getElementById('toast');
-
-    function showToast(message) {
-      toast.textContent = message;
-      toast.style.opacity = '1';
-      setTimeout(() => { toast.style.opacity = '0'; }, 2200);
-    }
-
-    function selectedAsset() {
-      return assetSelect.value;
-    }
-
-    function renderAddress() {
-      const symbol = selectedAsset();
-      const details = assets[symbol];
-      assetLabel.textContent = symbol + ' address';
-      networkLabel.textContent = details.network;
-      addressText.textContent = details.address;
-      explorerLink.href = explorers[symbol] + details.address;
-    }
-
-    async function copyAddress() {
-      const address = assets[selectedAsset()].address;
-      try {
-        await navigator.clipboard.writeText(address);
-        showToast('Address copied');
-      } catch (error) {
-        showToast('Please copy the address manually');
-      }
-    }
-
-    function saveDonation() {
-      const record = {
-        asset: selectedAsset(),
-        network: assets[selectedAsset()].network,
-        address: assets[selectedAsset()].address,
-        amount: document.getElementById('amountInput').value.trim(),
-        txHash: document.getElementById('txHashInput').value.trim(),
-        note: document.getElementById('noteInput').value.trim(),
-        savedAt: new Date().toISOString()
-      };
-      if (!record.amount || !record.txHash) {
-        showToast('Enter amount and transaction hash');
-        return;
-      }
-      const records = JSON.parse(localStorage.getItem('aliDonationRecords') || '[]');
-      records.unshift(record);
-      localStorage.setItem('aliDonationRecords', JSON.stringify(records.slice(0, 20)));
-      document.getElementById('savedStatus').textContent = 'Saved in this browser: ' + record.asset + ' ' + record.amount;
-      showToast('Donation record saved');
-    }
-
-    assetSelect.addEventListener('change', renderAddress);
-    document.getElementById('copyAddressBtn').addEventListener('click', copyAddress);
-    document.getElementById('copyAddressInlineBtn').addEventListener('click', function(event) {
-      event.stopPropagation();
-      copyAddress();
-    });
-    addressBox.addEventListener('click', copyAddress);
-    addressBox.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        copyAddress();
-      }
-    });
-    document.getElementById('saveDonationBtn').addEventListener('click', saveDonation);
-    renderAddress();
-  </script>
+  <footer class="site-footer">
+    <p>ALI Charity publishes official addresses and public verification guidance.</p>
+    <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  </footer>
+  <script src="/js/site-config.js"></script>
+  <script src="/js/donation-flow.js"></script>
+  <script src="/js/donation-page.js"></script>
 </body>
 </html>
+

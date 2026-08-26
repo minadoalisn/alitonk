@@ -1,9 +1,9 @@
-name: Daily Main-Site Blog Promotion
+name: Weekly Quality-Gated GEO Promotion
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 2 * * *"
+    - cron: "30 2 * * 2"
 
 permissions:
   contents: write
@@ -28,6 +28,9 @@ jobs:
       - name: Install GEO/SEO research dependencies
         run: python -m pip install -r scripts/requirements-geo-seo.txt
 
+      - name: Test and build static site
+        run: npm test && npm run build
+
       - name: Run GEO/SEO research
         run: npm run geo:seo:research
 
@@ -39,10 +42,13 @@ jobs:
         env:
           BLOG_BASE_URL: https://minadoai.com
 
-      - name: Commit generated article
+      - name: Validate generated output
+        run: npm run build && npm run validate
+
+      - name: Commit qualified content and latest reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add memory/research/geo-audit/*.json memory/research/geo-audit/*.md memory/research/geo-seo/*.jsonl memory/research/geo-seo/*.md public/blog/news/*.html public/blog/news.html public/blog/sitemap.xml public/sitemap.xml
-          git diff --cached --quiet || git commit -m "Publish daily blog promotion"
+          git add -A memory/research/geo-audit memory/research/geo-seo public/blog/briefings public/sitemap.xml
+          git diff --cached --quiet || git commit -m "Publish qualified weekly GEO briefing"
           git push

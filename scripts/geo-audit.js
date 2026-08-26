@@ -65,31 +65,33 @@ function hasCompleteSubject(text) {
 function scorePage(file) {
   const html = fs.readFileSync(file, 'utf8');
   const text = stripHtml(html);
-  const first50 = text.slice(0, 50);
-  const first250 = text.slice(0, 250);
+  const first320 = text.slice(0, 320);
   const words = text.split(/\s+/).filter(Boolean);
   const numberCount = (text.match(/\b\d+(?:[.,]\d+)?%?\b/g) || []).length;
   const addressCount = (text.match(/0x[a-fA-F0-9]{40}|bc1[a-z0-9]{20,}|[1-9A-HJ-NP-Za-km-z]{32,44}/g) || []).length;
   const jsonLdCount = (html.match(/application\/ld\+json/gi) || []).length;
-  const faqCount = (html.match(/"@type"\s*:\s*"Question"/gi) || []).length;
   const headingCount = (html.match(/<h[1-3][^>]*>/gi) || []).length;
   const canonical = /rel=["']canonical["']/i.test(html);
+  const blogPosting = /"@type"\s*:\s*"BlogPosting"/i.test(html);
+  const citationCount = (html.match(/"citation"\s*:/gi) || []).length
+    + (html.match(/<a[^>]+href=["']https:\/\/(?!minadoai\.com)/gi) || []).length;
+  const dates = /"datePublished"\s*:/.test(html) && /"dateModified"\s*:/.test(html);
 
   const dimensions = {
-    answerFirst50: first50.length >= 35 && /(is|accepts|verify|donate|tracks|guide|platform|token|charity)/i.test(first250) ? 2 : 0,
-    parameterDensity: Math.min(2, Math.floor((numberCount + addressCount + headingCount) / 5)),
-    schema: Math.min(2, jsonLdCount + (canonical ? 1 : 0)),
-    faq: faqCount >= 5 ? 2 : faqCount >= 3 ? 1 : 0,
-    subject: hasCompleteSubject(text) ? 2 : 0
+    directAnswer: first320.length >= 80 && /(is|accepts|verify|donate|tracks|guide|proof|charity)/i.test(first320) ? 2 : 0,
+    canonicalMetadata: canonical && Boolean(metaDescription(html)) ? 2 : 0,
+    structuredData: jsonLdCount && (!blogPosting || dates) ? 2 : 0,
+    citations: blogPosting ? Math.min(2, citationCount) : 2,
+    explicitSubject: hasCompleteSubject(text) ? 2 : 0
   };
 
   const score = Object.values(dimensions).reduce((sum, value) => sum + value, 0);
   const reasons = [];
-  if (dimensions.answerFirst50 < 2) reasons.push('Opening copy does not answer the target query within the first 50 visible characters.');
-  if (dimensions.parameterDensity < 2) reasons.push('Low parameter density: add exact assets, chains, addresses, dates, fees, counts, or verification steps.');
-  if (dimensions.schema < 2) reasons.push('Missing or thin canonical/JSON-LD structure for AI and search parsers.');
-  if (dimensions.faq < 2) reasons.push('FAQ coverage is below 5 question-answer pairs.');
-  if (dimensions.subject < 2) reasons.push('Main subject is not explicit enough near the top; repeat ALI Charity, ALI Token, or donor safety clearly.');
+  if (dimensions.directAnswer < 2) reasons.push('Opening copy does not provide a direct, self-contained answer.');
+  if (dimensions.canonicalMetadata < 2) reasons.push('Canonical URL or meta description is missing.');
+  if (dimensions.structuredData < 2) reasons.push('Structured data is missing or an article lacks publication and modification dates.');
+  if (dimensions.citations < 2) reasons.push('Article does not expose at least two traceable citation links.');
+  if (dimensions.explicitSubject < 2) reasons.push('Main subject is not explicit near the top.');
 
   return {
     file: path.relative(ROOT, file).replace(/\\/g, '/'),
@@ -103,17 +105,17 @@ function scorePage(file) {
       numbers: numberCount,
       addresses: addressCount,
       jsonLdBlocks: jsonLdCount,
-      faqQuestions: faqCount,
+      citations: citationCount,
       headings: headingCount,
       canonical
     },
     reasons: reasons.slice(0, 3),
     direction: [
-      dimensions.answerFirst50 < 2 ? 'Rewrite the first sentence as a direct answer.' : null,
-      dimensions.parameterDensity < 2 ? 'Add concrete chain, asset, address, count, date, and risk details.' : null,
-      dimensions.schema < 2 ? 'Add WebPage/Article/Product-style JSON-LD and canonical URL.' : null,
-      dimensions.faq < 2 ? 'Add 5-8 FAQPage questions with donor-facing answers.' : null,
-      dimensions.subject < 2 ? 'Use complete subjects instead of pronouns in the opening section.' : null
+      dimensions.directAnswer < 2 ? 'Rewrite the opening as a direct answer.' : null,
+      dimensions.canonicalMetadata < 2 ? 'Add a unique canonical and specific meta description.' : null,
+      dimensions.structuredData < 2 ? 'Add valid WebPage or BlogPosting JSON-LD with dates.' : null,
+      dimensions.citations < 2 ? 'Add at least two source links and citation URLs.' : null,
+      dimensions.explicitSubject < 2 ? 'Name the subject explicitly near the top.' : null
     ].filter(Boolean)
   };
 }
@@ -129,7 +131,7 @@ function markdownReport(results) {
 
 Generated: ${new Date().toISOString()}
 
-Scoring model: 10 points across five dimensions: direct answer in first 50 visible characters, parameter density, Schema/canonical structure, FAQ coverage, and complete subject usage.
+Scoring model: 10 points across five dimensions: direct answer, canonical metadata, valid structured data and article dates, traceable citations, and explicit subject usage.
 
 ## Lowest-Scoring Pages
 
@@ -140,9 +142,9 @@ ${rows || '| - | - | No low-scoring pages found. | - | - |'}
 ## Recommended Batch Fix Pattern
 
 - Start each priority page with a direct answer sentence naming ALI Charity, ALI Token, crypto donation safety, or the page's exact purpose.
-- Replace vague claims with facts: accepted assets, BNB Smart Chain, contract address, donation address source, 13 project routes, transaction hash review, and no-return disclaimers.
-- Add or expand JSON-LD with WebPage/Article/FAQPage where appropriate.
-- Add 5-8 FAQ questions to pages that currently answer only one or two donor questions.
+- Replace vague claims with verifiable facts, dates, network details, transaction evidence, and clear limitations.
+- Add or expand WebPage or BlogPosting JSON-LD with canonical URLs and article dates.
+- Link articles to primary or authoritative sources and expose those URLs through the citation property.
 - Use complete nouns near the top: "ALI Charity", "ALI Token", "the Donate page", "the donor safety guide".
 `;
 }

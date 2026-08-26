@@ -6,13 +6,20 @@
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/js/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/js/site-config.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
 
 [[headers]]
   for = "/data/*"
@@ -43,3 +50,68 @@
   from = "/faq"
   to = "/faq.html"
   status = 200
+
+[[redirects]]
+  from = "/about-v2.html"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/donate-new.html"
+  to = "/donate.html"
+  status = 301
+
+[[redirects]]
+  from = "/donate-v2*"
+  to = "/donate.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq-v2.html"
+  to = "/faq.html"
+  status = 301
+
+[[redirects]]
+  from = "/team-v2.html"
+  to = "/team.html"
+  status = 301
+
+[[redirects]]
+  from = "/token-v2.html"
+  to = "/token.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/news*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blockchain-charity"
+  to = "/blog/blockchain-donation-tracking-transparency.html"
+  status = 301
+
+[[redirects]]
+  from = "/crypto-donations"
+  to = "/blog/how-to-donate-cryptocurrency-to-charity.html"
+  status = 301
+
+[[redirects]]
+  from = "/community"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/how-it-works"
+  to = "/transparency.html"
+  status = 301
+
+[[redirects]]
+  from = "/transparency"
+  to = "/transparency.html"
+  status = 301
+
+[[redirects]]
+  from = "/cookies"
+  to = "/privacy.html"
+  status = 301

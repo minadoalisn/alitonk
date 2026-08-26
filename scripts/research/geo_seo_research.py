@@ -14,14 +14,13 @@ import re
 import sys
 import time
 from dataclasses import asdict, dataclass
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Iterable
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
-from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -253,8 +252,8 @@ def build_gap_summary(records: list[PageSignal]) -> list[str]:
 
 def write_outputs(records: list[PageSignal], gaps: list[str], date_string: str) -> tuple[Path, Path]:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    jsonl_path = OUTPUT_DIR / f"{date_string}-geo-seo-signals.jsonl"
-    md_path = OUTPUT_DIR / f"{date_string}-geo-seo-brief.md"
+    jsonl_path = OUTPUT_DIR / "latest.jsonl"
+    md_path = OUTPUT_DIR / "latest.md"
 
     with jsonl_path.open("w", encoding="utf-8") as handle:
         for record in records:
@@ -297,7 +296,8 @@ def write_outputs(records: list[PageSignal], gaps: list[str], date_string: str) 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run ALI Charity GEO/SEO research collection.")
-    parser.add_argument("--date", default=datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d"))
+    china_standard_time = timezone(timedelta(hours=8), name="Asia/Shanghai")
+    parser.add_argument("--date", default=datetime.now(china_standard_time).strftime("%Y-%m-%d"))
     parser.add_argument("--ignore-robots", action="store_true")
     parser.add_argument("--delay", type=float, default=2.0)
     parser.add_argument("--extra-url", action="append", default=[])

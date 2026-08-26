@@ -4,8 +4,10 @@
   "description": "ALI Charity - Transparent Blockchain Donations",
   "main": "server.js",
   "scripts": {
+    "test": "node --test",
     "start": "node server.js",
-    "build": "node scripts/write-deploy-version.js",
+    "validate": "node scripts/validate-site.js",
+    "build": "node scripts/write-deploy-version.js && node scripts/generate-sitemap.js && node scripts/validate-site.js",
     "blog:promotion": "node scripts/generate-blog-promotion.js",
     "geo:audit": "node scripts/geo-audit.js",
     "geo:indexnow": "node scripts/submit-indexnow.js",
