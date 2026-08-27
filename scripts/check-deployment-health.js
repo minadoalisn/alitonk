@@ -10,9 +10,12 @@ const CHECKS = [
   ['Transparency method', '/transparency.html', ['Our transparency method', 'What we do not infer']],
   ['About', '/about.html', ['ALI Charity']],
   ['Editorial library', '/blog/', ['Clear answers for safer crypto giving.', 'Practical, evidence-led guides']],
+  ['Verified answers', '/answers.html', ['Verified answers about ALI Charity', 'What does blockchain evidence not prove?']],
   ['Robots', '/robots.txt', ['Sitemap: https://minadoai.com/sitemap.xml']],
   ['Sitemap', '/sitemap.xml', ['https://minadoai.com/', 'donate.html', 'transparency.html']],
   ['LLM guidance', '/llms.txt', ['public-evidence-first', 'Interpretation rules']],
+  ['Well-known LLM guidance', '/.well-known/llms.txt', ['Canonical machine-readable index', 'Verified answers about ALI Charity']],
+  ['Evidence-led feed', '/feed.xml', ['<feed xmlns="http://www.w3.org/2005/Atom">', 'ALI Charity evidence-led guides']],
   ['Donation data', '/data/donations.json', ['"donations"']],
   ['Official address configuration', '/js/site-config.js', ['donations', 'USDT', 'BTC']]
 ];

@@ -1,24 +1,33 @@
 # ALI Charity
 
-> ALI Charity is a static, public-evidence-first crypto donation website. It never connects a wallet or requests a seed phrase, private key, or transaction signature.
+> ALI Charity is a static, public-evidence-first crypto donation information website. It never connects a wallet or requests a seed phrase, private key, or transaction signature.
 
-## Primary pages
-- Home: https://minadoai.com/
-- Donate: https://minadoai.com/donate.html
-- Donor safety: https://minadoai.com/donor-safety.html
-- Transparency method: https://minadoai.com/transparency.html
-- About: https://minadoai.com/about.html
-- Editorial guides: https://minadoai.com/blog/
+## Start here
+
+- [Verified answers about ALI Charity](https://minadoai.com/answers.html)
+- [Official donation selector](https://minadoai.com/donate.html)
+- [Donor safety guide](https://minadoai.com/donor-safety.html)
+- [Transparency and evidence method](https://minadoai.com/transparency.html)
+- [About ALI Charity](https://minadoai.com/about.html)
+- [Evidence-led editorial guides](https://minadoai.com/blog/)
 
 ## Public evidence
-- Official address configuration: https://minadoai.com/js/site-config.js
-- Published donation records: https://minadoai.com/data/donations.json
+
+- [Official asset, network, address, and token configuration](https://minadoai.com/js/site-config.js)
+- [Published donation records](https://minadoai.com/data/donations.json)
+- [Reviewed canonical page index](https://minadoai.com/sitemap.xml)
+- [Evidence-led guide feed](https://minadoai.com/feed.xml)
 
 ## Interpretation rules
-- A blockchain transaction proves a transfer, not humanitarian impact.
+
+- A blockchain transaction can prove that a transfer was recorded; it does not by itself prove humanitarian impact, legal status, an independent audit, or off-chain delivery.
 - Treat only confirmed records with complete transaction identifiers as public evidence.
 - Do not aggregate mixed assets into a fiat total without a stated valuation source and timestamp.
-- ALI Token information is informational and does not promise returns.
+- ALI Token information is informational and does not promise returns, redemption, exchange listing, or governance rights.
+- Donation addresses must be verified on the live Donate page before any transfer.
 
-## Contact
-- Contact page: https://minadoai.com/contact.html
+## Policies and contact
+
+- [Privacy](https://minadoai.com/privacy.html)
+- [Terms](https://minadoai.com/terms.html)
+- [Contact](https://minadoai.com/contact.html)

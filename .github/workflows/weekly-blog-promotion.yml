@@ -37,18 +37,21 @@ jobs:
       - name: Run GEO health audit
         run: npm run geo:audit
 
+      - name: Run observable GEO learning loop
+        run: npm run geo:learn
+
       - name: Generate promotion article
         run: npm run blog:promotion
         env:
           BLOG_BASE_URL: https://minadoai.com
 
-      - name: Validate generated output
-        run: npm run build && npm run validate
+      - name: Validate generated output and refresh learning state
+        run: npm run build && npm run geo:learn && npm run validate
 
       - name: Commit qualified content and latest reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A memory/research/geo-audit memory/research/geo-seo public/blog/briefings public/sitemap.xml
+          git add -A memory/research/geo-audit memory/research/geo-learning memory/research/geo-seo public/blog/briefings public/feed.xml public/sitemap.xml
           git diff --cached --quiet || git commit -m "Publish qualified weekly GEO briefing"
           git push

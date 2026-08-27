@@ -1,163 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ | ALI Charity</title>
-    <meta name="description" content="Frequently asked questions about ALI Charity - 100% transparent blockchain charity platform.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-text {
-            background: linear-gradient(135deg, #10B981, #3B82F6, #8B5CF6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .faq-item.active .faq-answer { max-height: 500px; padding-top: 1rem; }
-        .faq-item.active .faq-icon { transform: rotate(180deg); }
-    </style>
-    <link rel="stylesheet" href="/css/site-polish.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALI Charity FAQ | Crypto Donation Safety and Public Proof</title>
+  <meta name="description" content="Accurate answers about ALI Charity donation addresses, supported assets and networks, wallet safety, transaction hashes, public evidence, and ALI Token limitations.">
+  <link rel="canonical" href="https://minadoai.com/faq.html">
+  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
+  <link rel="icon" href="/logo.png">
+  <link rel="stylesheet" href="/css/home.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://minadoai.com/faq.html">
+  <meta property="og:title" content="ALI Charity FAQ | Crypto Donation Safety and Public Proof">
+  <meta property="og:description" content="Accurate answers about donation safety, transaction evidence, and ALI Token limitations.">
+  <meta property="og:image" content="https://minadoai.com/og-image.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "url": "https://minadoai.com/faq.html",
+    "dateModified": "2026-08-27",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is ALI Charity?", "acceptedAnswer": { "@type": "Answer", "text": "ALI Charity is a public-information website for crypto donation routes, donor-safety guidance, and public transaction records. It does not connect to or control a donor wallet." } },
+      { "@type": "Question", "name": "What cryptocurrencies can I donate?", "acceptedAnswer": { "@type": "Answer", "text": "The live Donate page lists the currently supported assets, networks, and recipient addresses. Donors must match the asset and network exactly before sending." } },
+      { "@type": "Question", "name": "What does a transaction hash verify?", "acceptedAnswer": { "@type": "Answer", "text": "A transaction hash can help verify that a transfer was recorded on a blockchain. It does not by itself prove off-chain spending, legal status, an audit, or beneficiary impact." } },
+      { "@type": "Question", "name": "Does ALI Token guarantee rewards or returns?", "acceptedAnswer": { "@type": "Answer", "text": "No. The site does not promise token rewards, a fixed exchange rate, investment returns, redemption, exchange listing, price outcomes, or governance rights." } }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-gradient-to-br from-[#0A101F] via-[#111827] to-[#0A101F] text-white min-h-screen ali-polished ali-page">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 glass-card">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold gradient-text flex items-center gap-2">
-                    ALI Charity
-                </a>
-                <div class="hidden md:flex gap-8">
-                    <a href="index.html#expenditure" class="text-gray-400 hover:text-white transition-colors">Transparency</a>
-                    <a href="index.html#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
-                    <a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a>
-                    <a href="token.html" class="text-gray-400 hover:text-white transition-colors">Token</a>
-                    <a href="/blog/" class="text-gray-400 hover:text-white transition-colors">Blog</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="/"><img src="/logo.png" width="42" height="42" alt=""><span>ALI Charity</span></a><nav aria-label="Primary"><a href="/answers.html">Answers</a><a href="/donor-safety.html">Safety</a><a href="/transparency.html">Transparency</a><a href="/blog/">Guides</a><a class="button small" href="/donate.html">Donate</a></nav></header>
+  <main id="main" class="section prose">
+    <p class="eyebrow">Frequently asked questions · reviewed August 27, 2026</p>
+    <h1>ALI Charity FAQ</h1>
+    <p class="lede">ALI Charity answers donor questions with explicit limits. Operational details must be checked on the live Donate page, and transaction evidence must not be mistaken for proof of off-chain impact.</p>
 
-    <!-- Hero -->
-    <section class="pt-32 pb-12 px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text">FAQ</h1>
-            <p class="text-xl text-gray-400">Everything you need to know about ALI Charity</p>
-        </div>
-    </section>
+    <h2>What is ALI Charity?</h2>
+    <p>ALI Charity is a public-information website that publishes crypto donation routes, donor-safety guidance, and public transaction records. The website does not connect to or control a donor wallet. The <a href="/about.html">About page</a> explains the current operating scope.</p>
 
-    <!-- FAQ Content -->
-    <section class="max-w-3xl mx-auto px-6 pb-16">
-        <div class="space-y-4">
-            <!-- What is ALI Charity -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">What is ALI Charity?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    ALI Charity is a blockchain-based charitable platform that ensures 100% transparency in donations. Every transaction is recorded on-chain, allowing donors to track exactly how their contributions are used.
-                </div>
-            </div>
+    <h2>How do I make a crypto donation?</h2>
+    <p>Open the <a href="/donate.html">Donate page</a>, choose an asset, confirm the displayed network and recipient address, and send from your own wallet or exchange. Keep the transaction hash and inspect it on the relevant public explorer. Cryptocurrency transfers are generally irreversible.</p>
 
-            <!-- How does blockchain ensure transparency -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">How does blockchain ensure transparency?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    All donations are recorded on the Binance Smart Chain (BSC). You can verify every transaction using blockchain explorers like BscScan. No middlemen, no hidden fees, no manipulation.
-                </div>
-            </div>
+    <h2>Which cryptocurrencies and networks are supported?</h2>
+    <p>The live Donate page and <a href="/js/site-config.js">canonical site configuration</a> list the supported assets, networks, and addresses. Do not assume that two assets share a network, and do not use an address copied from a direct message or unofficial social account.</p>
 
-            <!-- What cryptocurrencies -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">What cryptocurrencies can I donate?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    We accept USDT, BTC, ETH, BNB, and SOL. All donations go to our transparent wallet address on the BSC network.
-                </div>
-            </div>
+    <h2>Does the website ask for wallet access?</h2>
+    <p>No. ALI Charity never asks for a seed phrase, private key, or transaction signature. Read the <a href="/donor-safety.html">donor-safety guide</a> before sending and stop if another site or person asks for wallet secrets in ALI Charity's name.</p>
 
-            <!-- What is ALI Token -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">What is ALI Token?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    ALI Token is our native cryptocurrency. Donors receive ALI Tokens as rewards (1 ALI = 1 USDT). Token holders get governance rights and exclusive benefits. Plus, you get bonus rewards based on donation amount!
-                </div>
-            </div>
+    <h2>What can a transaction hash prove?</h2>
+    <p>A transaction hash can help verify that a transfer was recorded on a specific network. It may show a sender, recipient, asset, amount, timestamp, and confirmation status. It does not by itself prove legal control of an address, off-chain spending, an independent audit, aid delivery, or beneficiary impact. The <a href="/transparency.html">transparency method</a> explains this boundary.</p>
 
-            <!-- Are there any fees -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">Are there any fees?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    Zero platform fees. We only charge minimal blockchain network fees (gas fees) which are inherent to all crypto transactions. 100% of your donation goes to charity.
-                </div>
-            </div>
+    <h2>Are platform fees or tax benefits guaranteed?</h2>
+    <p>No fee, tax, or legal claim should be inferred from this FAQ. Network fees depend on the blockchain and the donor's wallet or exchange. Tax treatment depends on jurisdiction and personal circumstances; donors should obtain advice from a qualified professional.</p>
 
-            <!-- How can I verify my donation -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">How can I verify my donation?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    After donating, you'll receive a unique transaction hash (TX Hash). You can paste this on BscScan.com to verify your donation on the blockchain. It's permanent and immutable.
-                </div>
-            </div>
+    <h2>Does ALI Token guarantee rewards, governance, or returns?</h2>
+    <p>No. The <a href="/token.html">ALI Token page</a> is informational. ALI Charity does not promise token rewards, a fixed exchange rate, redemption, exchange listing, investment returns, token-price outcomes, or governance rights.</p>
 
-            <!-- Bonus tiers -->
-            <div class="faq-item glass-card rounded-2xl overflow-hidden">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-lg">How do bonus rewards work?</span>
-                    <span class="faq-icon text-2xl transition-transform">▼</span>
-                </button>
-                <div class="faq-answer px-6 pb-5 text-gray-300 max-h-0 overflow-hidden transition-all">
-                    Based on your donation amount: $10-$99 gets +10% bonus, $100-$999 gets +20% bonus, $1,000+ gets +30% bonus. For example, donate $100 and receive 120 ALI tokens!
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="max-w-3xl mx-auto px-6 pb-16">
-        <div class="glass-card rounded-3xl p-8 text-center">
-            <h2 class="text-2xl font-bold mb-4">Still have questions?</h2>
-            <p class="text-gray-400 mb-6">Start donating today and experience transparent charity.</p>
-            <a href="donate.html" class="inline-block px-8 py-4 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-xl hover:opacity-90 transition-all">
-                Start Donating
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-white/10 py-8 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <p class="text-gray-400">© 2026 ALI Charity. 100% Transparent Blockchain Charity.</p>
-        </div>
-    </footer>
-
-    <script>
-        function toggleFaq(button) {
-            const item = button.closest('.faq-item');
-            const isActive = item.classList.contains('active');
-            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-            if (!isActive) item.classList.add('active');
-        }
-    </script>
+    <h2>Where can I verify published records?</h2>
+    <p>Open the <a href="/data/donations.json">published donation data</a> and confirm any complete transaction identifier on the relevant blockchain explorer. For a concise summary suitable for search and AI systems, use the <a href="/answers.html">verified answers page</a>.</p>
+  </main>
+  <footer><p>ALI Charity · Evidence before claims.</p><p><a href="/answers.html">Verified answers</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p></footer>
 </body>
 </html>

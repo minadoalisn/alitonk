@@ -1,0 +1,13 @@
+# ALI Charity
+
+> Canonical machine-readable index: https://minadoai.com/llms.txt
+
+- [Verified answers about ALI Charity](https://minadoai.com/answers.html)
+- [Official donation selector](https://minadoai.com/donate.html)
+- [Donor safety guide](https://minadoai.com/donor-safety.html)
+- [Transparency and evidence method](https://minadoai.com/transparency.html)
+- [Evidence-led guide feed](https://minadoai.com/feed.xml)
+- [Privacy](https://minadoai.com/privacy.html)
+- [Terms](https://minadoai.com/terms.html)
+
+ALI Charity never asks for a seed phrase, private key, or wallet connection. A blockchain transaction proves a recorded transfer, not off-chain impact. Verify every address and network on the live Donate page before sending.

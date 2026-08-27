@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ALI Charity evidence-led guides</title>
+  <link href="https://minadoai.com/feed.xml" rel="self"/>
+  <link href="https://minadoai.com/blog/"/>
+  <id>https://minadoai.com/</id>
+  <updated>2026-08-27T00:00:00Z</updated>
+  <entry>
+    <title>Crypto Donation Safety Checklist (2026): Verify Addresses, Avoid Scams, Keep Proof</title>
+    <link href="https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html"/>
+    <id>https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html</id>
+    <updated>2026-05-17T00:00:00Z</updated>
+    <summary>A practical 2026 checklist for safe crypto donations: confirm official URLs, verify wallet addresses, check on-chain transparency, avoid impersonation scams, and keep tax-ready proof.</summary>
+  </entry>
+</feed>

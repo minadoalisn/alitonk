@@ -3,57 +3,60 @@ Allow: /
 Disallow: /admin.html
 Disallow: /admin-login.html
 Disallow: /dashboard.html
-Disallow: /cache-buster.html
-Disallow: /clear-cache.html
 Disallow: /test-connection.html
 Disallow: /test-donate.html
 Disallow: /test-v2.html
 
-# AI Crawlers
-User-agent: GPTBot
+# ChatGPT search and user-requested retrieval
+User-agent: OAI-SearchBot
 Allow: /
-Disallow: /admin.html
-Disallow: /admin-login.html
-Disallow: /dashboard.html
-Disallow: /cache-buster.html
-Disallow: /clear-cache.html
-Disallow: /test-connection.html
-Disallow: /test-donate.html
-Disallow: /test-v2.html
 
 User-agent: ChatGPT-User
 Allow: /
-Disallow: /admin.html
-Disallow: /admin-login.html
-Disallow: /dashboard.html
-Disallow: /cache-buster.html
-Disallow: /clear-cache.html
-Disallow: /test-connection.html
-Disallow: /test-donate.html
-Disallow: /test-v2.html
 
-User-agent: Claude-Web
+# OpenAI model-training crawler; allowed by project policy
+User-agent: GPTBot
 Allow: /
-Disallow: /admin.html
-Disallow: /admin-login.html
-Disallow: /dashboard.html
-Disallow: /cache-buster.html
-Disallow: /clear-cache.html
-Disallow: /test-connection.html
-Disallow: /test-donate.html
-Disallow: /test-v2.html
 
+# Claude search and user-requested retrieval
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Anthropic model-training crawler; allowed by project policy
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity search and user-requested retrieval
 User-agent: PerplexityBot
 Allow: /
-Disallow: /admin.html
-Disallow: /admin-login.html
-Disallow: /dashboard.html
-Disallow: /cache-buster.html
-Disallow: /clear-cache.html
-Disallow: /test-connection.html
-Disallow: /test-donate.html
-Disallow: /test-v2.html
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google Search, Gemini, Bing and other discovery systems
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
 
 Sitemap: https://minadoai.com/sitemap.xml
-Sitemap: https://minadoai.com/blog/sitemap.xml
 Host: https://minadoai.com

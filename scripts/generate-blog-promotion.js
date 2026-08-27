@@ -92,7 +92,7 @@ function articleHtml({ topic, date, url }) {
   const signals = topic.sources.map(item => `<li><strong>${escapeHtml(item.source)}:</strong> ${escapeHtml(item.summary || item.title)}</li>`).join('\n');
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${escapeHtml(topic.title)} | ALI Charity</title><meta name="description" content="${escapeHtml(topic.description)}"><link rel="canonical" href="${url}"><link rel="icon" href="/logo.png"><link rel="stylesheet" href="/css/home.css">
+<title>${escapeHtml(topic.title)} | ALI Charity</title><meta name="description" content="${escapeHtml(topic.description)}"><link rel="canonical" href="${url}"><link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml"><link rel="icon" href="/logo.png"><link rel="stylesheet" href="/css/home.css">
 <meta name="ai-content-declaration" content="AI-assisted research and drafting; sources and methodology are disclosed and publication is quality-gated."><script type="application/ld+json">${JSON.stringify(schema)}</script></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="/"><img src="/logo.png" width="42" height="42" alt=""><span>ALI Charity</span></a><nav aria-label="Primary"><a href="/blog/">Guides</a><a href="/transparency.html">Transparency</a><a class="button small" href="/donate.html">Donate</a></nav></header>
 <main id="main" class="section prose"><p class="eyebrow">Evidence-led briefing · ${date}</p><h1>${escapeHtml(topic.title)}</h1><p class="lede">${escapeHtml(topic.description)}</p>

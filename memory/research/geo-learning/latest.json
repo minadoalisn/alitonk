@@ -1,0 +1,273 @@
+{
+  "generatedAt": "2026-08-27T00:00:00+08:00",
+  "score": 100,
+  "previousScore": 100,
+  "status": "stable",
+  "pageAverage": 100,
+  "discoveryScore": 100,
+  "discovery": {
+    "allSearchCrawlersAllowed": true,
+    "llmsHasMarkdownLinks": true,
+    "feedExists": true,
+    "sitemapExists": true
+  },
+  "crawlers": [
+    {
+      "agent": "OAI-SearchBot",
+      "allowed": true
+    },
+    {
+      "agent": "ChatGPT-User",
+      "allowed": true
+    },
+    {
+      "agent": "Claude-SearchBot",
+      "allowed": true
+    },
+    {
+      "agent": "Claude-User",
+      "allowed": true
+    },
+    {
+      "agent": "PerplexityBot",
+      "allowed": true
+    },
+    {
+      "agent": "Perplexity-User",
+      "allowed": true
+    },
+    {
+      "agent": "Googlebot",
+      "allowed": true
+    },
+    {
+      "agent": "Google-Extended",
+      "allowed": true
+    },
+    {
+      "agent": "Bingbot",
+      "allowed": true
+    }
+  ],
+  "weakestPage": {
+    "path": "/",
+    "score": 100,
+    "missingChecks": []
+  },
+  "nextExperiment": "Review the oldest authoritative page for factual freshness; do not publish without source evidence.",
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://minadoai.com/",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 441,
+      "internalLinks": 26
+    },
+    {
+      "path": "/answers.html",
+      "url": "https://minadoai.com/answers.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 618,
+      "internalLinks": 23
+    },
+    {
+      "path": "/donate.html",
+      "url": "https://minadoai.com/donate.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 273,
+      "internalLinks": 10
+    },
+    {
+      "path": "/donor-safety.html",
+      "url": "https://minadoai.com/donor-safety.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 666,
+      "internalLinks": 8
+    },
+    {
+      "path": "/transparency.html",
+      "url": "https://minadoai.com/transparency.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 255,
+      "internalLinks": 14
+    },
+    {
+      "path": "/about.html",
+      "url": "https://minadoai.com/about.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 503,
+      "internalLinks": 13
+    },
+    {
+      "path": "/faq.html",
+      "url": "https://minadoai.com/faq.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 430,
+      "internalLinks": 18
+    },
+    {
+      "path": "/token.html",
+      "url": "https://minadoai.com/token.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 267,
+      "internalLinks": 11
+    },
+    {
+      "path": "/blog/",
+      "url": "https://minadoai.com/blog/",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 266,
+      "internalLinks": 16
+    },
+    {
+      "path": "/blog/crypto-donation-safety-checklist-2026.html",
+      "url": "https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 459,
+      "internalLinks": 10
+    },
+    {
+      "path": "/contact.html",
+      "url": "https://minadoai.com/contact.html",
+      "checks": {
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "openGraph": true,
+        "structuredData": true,
+        "singleH1": true,
+        "internalLinks": true,
+        "contentDepth": true
+      },
+      "score": 100,
+      "wordCount": 259,
+      "internalLinks": 10
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-08-27",
+      "score": 84
+    },
+    {
+      "date": "2026-08-27",
+      "score": 92
+    },
+    {
+      "date": "2026-08-27",
+      "score": 97
+    },
+    {
+      "date": "2026-08-27",
+      "score": 100
+    },
+    {
+      "date": "2026-08-27",
+      "score": 100
+    },
+    {
+      "date": "2026-08-27",
+      "score": 100
+    }
+  ]
+}
