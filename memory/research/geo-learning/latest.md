@@ -1,6 +1,6 @@
 # ALI Charity GEO Learning Loop
 
-Generated: 2026-08-27T00:00:00+08:00
+Generated: 2026-09-01T00:00:00+08:00
 
 - Readiness score: **100/100** (stable)
 - Reviewed page average: **100/100**

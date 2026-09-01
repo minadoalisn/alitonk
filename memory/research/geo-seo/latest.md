@@ -1,4 +1,4 @@
-# ALI Charity GEO/SEO Research Brief - 2026-08-26
+# ALI Charity GEO/SEO Research Brief - 2026-09-01
 
 ## Scope
 
@@ -8,9 +8,16 @@
 
 ## Content Gaps
 
+- Add concise FAQ/schema answers to https://minadoai.com/.
 - Add concise FAQ/schema answers to https://minadoai.com/blog/.
 - Add concise FAQ/schema answers to https://minadoai.com/promotion.html.
+- Expand llms.txt entity coverage for AI answer engines.
 - Add concise FAQ/schema answers to https://minadoai.com/dex-launch.html.
+- Create or strengthen owned content for 'crypto charity'.
+- Create or strengthen owned content for 'blockchain charity'.
+- Create or strengthen owned content for 'transparent giving'.
+- Create or strengthen owned content for 'stablecoin donations'.
+- Create or strengthen owned content for 'web3 philanthropy'.
 - Create or strengthen owned content for 'on-chain donation tracking'.
 
 ## Page Signals
@@ -19,20 +26,20 @@
 
 - Status: 200
 - Fetcher: urllib
-- Title: ALI Charity | Simple Crypto Donations With Public Records
-- Matched keywords: crypto charity, blockchain charity, crypto donations, humanitarian aid, ALI Token
-- Schema types: Answer, BreadcrumbList, BroadcastEvent, BroadcastService, ContactPoint, DonateAction, FAQPage, HowTo, HowToStep, HowToSupply, JobPosting, ListItem, MonetaryAmount, NGO, NonprofitOrganization, Organization, Place, PostalAddress, QuantitativeValue, Question, SearchAction, Thing, VirtualLocation, WebSite
-- H2 topics: No wallet connection required on this site., Active Charity Projects, 🎉 Successful Donation Cases, Meet the ALI Charity Team, Recent Expenditure
+- Title: ALI Charity | Transparent Crypto Donations With Public Proof
+- Matched keywords: crypto donations
+- Schema types: DonateAction, Organization, WebPage, WebSite
+- H2 topics: Donate in two steps., Choose the kind of help you want to support., Show records, not promotional counters., Useful guidance before urgency., Choose an asset. Copy one official address.
 - Error: none
 
 ### https://minadoai.com/blog/
 
 - Status: 200
 - Fetcher: urllib
-- Title: ALI Charity Blog - Transparent Blockchain Philanthropy
-- Matched keywords: blockchain charity, transparent giving, crypto donations, humanitarian aid, ALI Token
-- Schema types: none
-- H2 topics: Featured Guides, Support Verified Causes Today
+- Title: Crypto Donation Guides | ALI Charity
+- Matched keywords: crypto donations
+- Schema types: CollectionPage, WebPage, WebSite
+- H2 topics: Practical, evidence-led guides
 - Error: none
 
 ### https://minadoai.com/promotion.html
@@ -50,7 +57,7 @@
 - Status: 200
 - Fetcher: urllib
 - Title: n/a
-- Matched keywords: blockchain charity, transparent giving, crypto donations, stablecoin donations, humanitarian aid, web3 philanthropy, ALI Token
+- Matched keywords: ALI Token
 - Schema types: none
 - H2 topics: none
 - Error: none
@@ -98,9 +105,9 @@
 ### https://www.unhcr.org/
 
 - Status: n/a
-- Fetcher: error
+- Fetcher: robots
 - Title: n/a
 - Matched keywords: none
 - Schema types: none
 - H2 topics: none
-- Error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>
+- Error: Blocked by robots.txt
