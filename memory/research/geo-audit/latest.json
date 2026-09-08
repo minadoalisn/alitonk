@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T07:55:22.322Z",
+  "generatedAt": "2026-09-08T07:21:37.123Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -664,7 +664,7 @@
         "explicitSubject": 2
       },
       "stats": {
-        "words": 676,
+        "words": 755,
         "numbers": 21,
         "addresses": 2,
         "jsonLdBlocks": 0,
@@ -1061,6 +1061,31 @@
         "jsonLdBlocks": 2,
         "citations": 0,
         "headings": 23,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blog/briefings/2026-09-01-somalia-humanitarian-aid-cuts-leave-millions-of-children-vulnerable-to-h-transparent-giving.html",
+      "url": "https://minadoai.com/blog/briefings/2026-09-01-somalia-humanitarian-aid-cuts-leave-millions-of-children-vulnerable-to-h-transparent-giving.html",
+      "title": "Transparent giving under pressure: Somalia: Humanitarian aid cuts leave millions of children vulnerable to hunger | ALI Charity",
+      "metaDescription": "An evidence-led ALI Charity briefing using independent sources to explain what donors can verify before making a crypto donation.",
+      "score": 10,
+      "dimensions": {
+        "directAnswer": 2,
+        "canonicalMetadata": 2,
+        "structuredData": 2,
+        "citations": 2,
+        "explicitSubject": 2
+      },
+      "stats": {
+        "words": 364,
+        "numbers": 7,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "citations": 4,
+        "headings": 6,
         "canonical": true
       },
       "reasons": [],
