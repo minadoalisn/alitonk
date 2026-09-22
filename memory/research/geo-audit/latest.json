@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T07:56:25.524Z",
+  "generatedAt": "2026-09-22T07:51:17.032Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -1110,6 +1110,31 @@
         "addresses": 0,
         "jsonLdBlocks": 1,
         "citations": 4,
+        "headings": 6,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blog/briefings/2026-09-15-donald-trump-jr-and-bettina-trump-say-putin-ally-paid-for-some-wedding-f-transparent-giving.html",
+      "url": "https://minadoai.com/blog/briefings/2026-09-15-donald-trump-jr-and-bettina-trump-say-putin-ally-paid-for-some-wedding-f-transparent-giving.html",
+      "title": "Transparent giving under pressure: Donald Trump Jr and Bettina Trump say Putin ally paid for some wedding festivities as a 'gift' | ALI Char",
+      "metaDescription": "An evidence-led ALI Charity briefing using independent sources to explain what donors can verify before making a crypto donation.",
+      "score": 10,
+      "dimensions": {
+        "directAnswer": 2,
+        "canonicalMetadata": 2,
+        "structuredData": 2,
+        "citations": 2,
+        "explicitSubject": 2
+      },
+      "stats": {
+        "words": 365,
+        "numbers": 4,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "citations": 3,
         "headings": 6,
         "canonical": true
       },
