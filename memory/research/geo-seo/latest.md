@@ -1,4 +1,4 @@
-# ALI Charity GEO/SEO Research Brief - 2026-09-22
+# ALI Charity GEO/SEO Research Brief - 2026-09-29
 
 ## Scope
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:51:17.032Z",
+  "generatedAt": "2026-09-29T08:49:46.162Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -1132,6 +1132,31 @@
       "stats": {
         "words": 365,
         "numbers": 4,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "citations": 3,
+        "headings": 6,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blog/briefings/2026-09-22-airlines-criticise-air-traffic-control-as-second-glitch-causes-more-disr-transparent-giving.html",
+      "url": "https://minadoai.com/blog/briefings/2026-09-22-airlines-criticise-air-traffic-control-as-second-glitch-causes-more-disr-transparent-giving.html",
+      "title": "Transparent giving under pressure: Airlines criticise air traffic control as second glitch causes more disruption in UK | ALI Charity",
+      "metaDescription": "An evidence-led ALI Charity briefing using independent sources to explain what donors can verify before making a crypto donation.",
+      "score": 10,
+      "dimensions": {
+        "directAnswer": 2,
+        "canonicalMetadata": 2,
+        "structuredData": 2,
+        "citations": 2,
+        "explicitSubject": 2
+      },
+      "stats": {
+        "words": 356,
+        "numbers": 3,
         "addresses": 0,
         "jsonLdBlocks": 1,
         "citations": 3,
