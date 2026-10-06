@@ -1,4 +1,4 @@
-# ALI Charity GEO/SEO Research Brief - 2026-09-29
+# ALI Charity GEO/SEO Research Brief - 2026-10-06
 
 ## Scope
 
@@ -84,13 +84,13 @@
 
 ### https://www.cafonline.org/about-us/publications
 
-- Status: 200
-- Fetcher: urllib
-- Title: Research | CAF
+- Status: n/a
+- Fetcher: robots
+- Title: n/a
 - Matched keywords: none
-- Schema types: ContactPoint, Organization, PostalAddress
-- H2 topics: EXPLORE WHY BETTER GIVING STARTS HERE, Welcome to your refreshed cafonline.org !
-- Error: none
+- Schema types: none
+- H2 topics: none
+- Error: Blocked by robots.txt
 
 ### https://www.wfp.org/
 
