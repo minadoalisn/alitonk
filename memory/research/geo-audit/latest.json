@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:11:57.871Z",
+  "generatedAt": "2026-10-13T09:37:58.410Z",
   "pages": [
     {
       "file": "public/google6f5c8e7b3f5f8c1a.html",
@@ -1182,6 +1182,31 @@
       "stats": {
         "words": 332,
         "numbers": 3,
+        "addresses": 0,
+        "jsonLdBlocks": 1,
+        "citations": 3,
+        "headings": 6,
+        "canonical": true
+      },
+      "reasons": [],
+      "direction": []
+    },
+    {
+      "file": "public/blog/briefings/2026-10-06-tigray-rebel-groups-forcibly-recruiting-boys-as-young-as-15-as-fighting--transparent-giving.html",
+      "url": "https://minadoai.com/blog/briefings/2026-10-06-tigray-rebel-groups-forcibly-recruiting-boys-as-young-as-15-as-fighting--transparent-giving.html",
+      "title": "Transparent giving under pressure: Tigray rebel groups ‘forcibly recruiting boys as young as 15’ as fighting spreads | ALI Charity",
+      "metaDescription": "An evidence-led ALI Charity briefing using independent sources to explain what donors can verify before making a crypto donation.",
+      "score": 10,
+      "dimensions": {
+        "directAnswer": 2,
+        "canonicalMetadata": 2,
+        "structuredData": 2,
+        "citations": 2,
+        "explicitSubject": 2
+      },
+      "stats": {
+        "words": 344,
+        "numbers": 6,
         "addresses": 0,
         "jsonLdBlocks": 1,
         "citations": 3,
