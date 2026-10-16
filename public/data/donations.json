@@ -6,17 +6,42 @@
       "currency": "USDT",
       "amount": "0.3",
       "timestamp": "2026-04-10T10:00:00Z",
-      "status": "confirmed",
-      "projectId": "proj_general"
+      "status": "unverified",
+      "projectId": "proj_general",
+      "previouslyReportedStatus": "confirmed",
+      "verification": {
+        "status": "unverified",
+        "reviewedAt": "2026-10-16T01:40:46.561Z",
+        "sourceUrl": "https://minadoai.com/data/donations.json",
+        "sourcePublishedAt": null,
+        "verifiedTransactionAt": null,
+        "reason": "The truncated transaction hash cannot identify a transaction for independent review. The published entry does not specify a network or recipient. Its amount and timestamp are retained as unverified source claims, not proof of receipt.",
+        "scope": "Review of the published entry only; no on-chain receipt, token issuance, off-chain spending, or beneficiary impact has been verified. Unknown dates are null."
+      }
     }
   ],
   "stats": {
-    "totalDonations": 1,
-    "confirmedDonations": 1,
-    "pendingDonations": 0,
-    "rejectedDonations": 0,
-    "totalAmount": 0.3,
-    "pendingAmount": 0,
-    "aliTokensIssued": 0.3
+    "totalDonations": null,
+    "confirmedDonations": null,
+    "pendingDonations": null,
+    "rejectedDonations": null,
+    "totalAmount": null,
+    "pendingAmount": null,
+    "aliTokensIssued": null
+  },
+  "statisticsStatus": "unverified",
+  "statisticsNote": "Null means unknown, not zero. No verified donation totals or token issuance totals are currently published in this file. Address copies, button clicks, and submitted transaction hashes are not proof of receipt. Any future verified totals must identify the currency, network, reporting period, and duplicate-transaction handling; different currencies must not be added together.",
+  "previouslyReportedStats": {
+    "status": "unverified",
+    "note": "Historical source claims retained for traceability, not verified donation or token issuance totals. Do not use these values as a production baseline.",
+    "values": {
+      "totalDonations": 1,
+      "confirmedDonations": 1,
+      "pendingDonations": 0,
+      "rejectedDonations": 0,
+      "totalAmount": 0.3,
+      "pendingAmount": 0,
+      "aliTokensIssued": 0.3
+    }
   }
 }
