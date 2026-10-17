@@ -43,3 +43,17 @@ test('homepage has no synthetic counters or unsupported financial claims', () =>
   assert.match(html, /id="verifiedRecords"/);
   assert.doesNotMatch(html, /<script(?![^>]*(?:\bsrc=|type="application\/ld\+json"))/);
 });
+
+test('homepage explains the evidence gate and loads canonical routing before the record summary', () => {
+  const html = read('index.html');
+  const configIndex = html.indexOf('<script src="/js/site-config.js">');
+  assert.ok(configIndex > 0 && configIndex < html.indexOf('<script src="/js/public-records.js">'));
+  assert.match(html, /complete transaction evidence/);
+  assert.match(html, /reporting period/);
+  assert.match(html, /Unknown does not mean zero/);
+  const script = read('js/home.js');
+  assert.match(script, /ALI_SITE_CONFIG/);
+  assert.match(script, /data\.reportingPeriod/);
+  assert.match(script, /Actual donation totals are unknown/);
+  assert.doesNotMatch(script, /verified public donation record/);
+});

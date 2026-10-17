@@ -16,7 +16,7 @@
     "Bingbot"
   ],
   "pages": [
-    { "path": "/", "lastModified": "2026-08-27", "priority": "1.0", "changeFrequency": "weekly" },
+    { "path": "/", "lastModified": "2026-10-17", "priority": "1.0", "changeFrequency": "weekly" },
     { "path": "/answers.html", "lastModified": "2026-08-27", "priority": "0.95", "changeFrequency": "weekly" },
     { "path": "/donate.html", "lastModified": "2026-10-15", "priority": "0.9", "changeFrequency": "weekly" },
     { "path": "/donor-safety.html", "lastModified": "2026-08-26", "priority": "0.9", "changeFrequency": "monthly" },

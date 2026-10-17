@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 const { summarizeVerifiedRecords } = require('../public/js/public-records');
 
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../public/data/donations.json'), 'utf8'));
@@ -49,5 +50,8 @@ test('previous statistics are retained only as explicitly unverified historical 
 });
 
 test('the homepage consumer excludes the retained unverified record', () => {
-  assert.deepEqual(summarizeVerifiedRecords(data.donations), { count: 0, amounts: {}, records: [] });
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../public/js/site-config.js'), 'utf8'), context);
+  const period = { start: '2026-04-01T00:00:00Z', end: '2026-05-01T00:00:00Z' };
+  assert.deepEqual(summarizeVerifiedRecords(data.donations, context.window.ALI_SITE_CONFIG.donations, period), { count: 0, amounts: {}, records: [] });
 });
