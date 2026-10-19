@@ -1,15 +1,17 @@
 name: Weekly Quality-Gated GEO Promotion
 
+# Paused on 2026-10-19 at the owner's request; daily operations are separate.
+# Do not restore scheduled publishing without renewed owner approval.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 2 * * 2"
 
 permissions:
   contents: write
 
 jobs:
   publish:
+    # Keep manual dispatch from publishing while this legacy workflow is paused.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
