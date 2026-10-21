@@ -4,6 +4,9 @@
     "baseUrl": "https://minadoai.com",
     "description": "A public-evidence-first crypto donation information platform."
   },
+  "feed": {
+    "lastModified": "2026-08-27"
+  },
   "aiSearchCrawlers": [
     "OAI-SearchBot",
     "ChatGPT-User",

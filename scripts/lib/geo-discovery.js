@@ -94,9 +94,23 @@ function crawlerAllowed(robots, agent) {
   return Boolean(group) && !/^Disallow:\s*\/?\s*$/im.test(group);
 }
 
-function renderFeed(manifest, items, generatedAt) {
+function feedDate(value, field) {
+  const timestamp = typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? Date.parse(`${value}T00:00:00Z`) : NaN;
+  if (!Number.isFinite(timestamp) || new Date(timestamp).toISOString().slice(0, 10) !== value) {
+    throw new Error(`${field} must be a valid YYYY-MM-DD date`);
+  }
+  return value;
+}
+
+function renderFeed(manifest, items) {
   const site = manifest.site;
-  const updated = `${generatedAt}T00:00:00Z`;
+  // RFC 4287 section 4.2.15: significant content changes, not deployment time.
+  // Advance feed.lastModified for metadata or membership changes (including removals).
+  // Entry revisions use their own lastModified; unrelated page edits do not refresh this feed.
+  const dates = [feedDate(manifest.feed?.lastModified, 'feed.lastModified'),
+    ...items.map(item => feedDate(item.updated, 'entry.updated'))];
+  const updated = `${dates.sort().at(-1)}T00:00:00Z`;
   const entries = items.map(item => `  <entry>\n    <title>${escapeXml(item.title)}</title>\n    <link href="${escapeXml(item.url)}"/>\n    <id>${escapeXml(item.url)}</id>\n    <updated>${item.updated}T00:00:00Z</updated>\n    <summary>${escapeXml(item.description)}</summary>\n  </entry>`).join('\n');
   return `<?xml version="1.0" encoding="utf-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom">\n  <title>${escapeXml(site.name)} evidence-led guides</title>\n  <link href="${escapeXml(pageUrl(site.baseUrl, '/feed.xml'))}" rel="self"/>\n  <link href="${escapeXml(pageUrl(site.baseUrl, '/blog/'))}"/>\n  <id>${escapeXml(pageUrl(site.baseUrl, '/'))}</id>\n  <updated>${updated}</updated>\n${entries}\n</feed>\n`;
 }

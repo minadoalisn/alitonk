@@ -5,7 +5,6 @@ const { fileForPage, metaContent, pageUrl, renderFeed, tagText } = require('./li
 
 const root = path.join(__dirname, '..');
 const publicDir = path.join(root, 'public');
-const generatedAt = process.env.GEO_RUN_DATE || new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai' }).format(new Date());
 
 function itemFor(page) {
   const file = fileForPage(publicDir, page.path);
@@ -20,5 +19,5 @@ function itemFor(page) {
 }
 
 const items = manifest.pages.filter(page => page.feed).map(itemFor).filter(item => item && item.title && item.description);
-fs.writeFileSync(path.join(publicDir, 'feed.xml'), renderFeed(manifest, items, generatedAt));
+fs.writeFileSync(path.join(publicDir, 'feed.xml'), renderFeed(manifest, items));
 console.log(`Generated Atom feed with ${items.length} reviewed entries.`);
