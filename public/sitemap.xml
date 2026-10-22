@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://minadoai.com/</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://minadoai.com/answers.html</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://minadoai.com/donate.html</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://minadoai.com/donate.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://minadoai.com/donor-safety.html</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://minadoai.com/transparency.html</loc><lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://minadoai.com/about.html</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -11,11 +11,60 @@
   <url><loc>https://minadoai.com/blog/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://minadoai.com/contact.html</loc><lastmod>2026-08-26</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-09-01-somalia-humanitarian-aid-cuts-leave-millions-of-children-vulnerable-to-h-transparent-giving.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-09-08-somalia-humanitarian-aid-cuts-leave-millions-of-children-vulnerable-to-h-transparent-giving.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-09-15-donald-trump-jr-and-bettina-trump-say-putin-ally-paid-for-some-wedding-f-transparent-giving.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-09-22-airlines-criticise-air-traffic-control-as-second-glitch-causes-more-disr-transparent-giving.html</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-09-29-are-trump-s-us-government-funded-ads-illegal-transparent-giving.html</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-10-06-tigray-rebel-groups-forcibly-recruiting-boys-as-young-as-15-as-fighting--transparent-giving.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://minadoai.com/blog/briefings/2026-10-13-amid-heartache-of-nepal-flooding-disaster-fear-remains-transparent-giving.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://minadoai.com/giving-tuesday.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://minadoai.com/ali-token-economics.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/ali-token-use-cases.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/benefits-of-crypto-donations-nonprofits.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/best-crypto-charity-platforms-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/best-crypto-charity-platforms.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/best-transparent-charity-platform.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/blockchain-charity-donation-benefits.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/blockchain-charity-tax-benefits.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/blockchain-revolutionizing-humanitarian-aid-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/blockchain-transparency-revolution.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/charity-transparency-crisis.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/crypto-donation-guide-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/crypto-philanthropy-guide-for-beginners.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/dao-governance.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/dex-launch.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/future-of-giving-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/global-crypto-charity.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/growth.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/how-to-donate-cryptocurrency-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/how-to-donate-cryptocurrency-to-charity-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/humanitarian-aid-guide-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/promotion.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/sudan-humanitarian-crisis-blockchain-aid.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/team.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/web3-philanthropy-future.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/whitepaper.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/why-donate-cryptocurrency.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/why-donate-to-blockchain-charity.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://minadoai.com/privacy.html</loc><lastmod>2026-10-22</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://minadoai.com/terms.html</loc><lastmod>2026-10-22</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://minadoai.com/blog/ali-token-dex-launch-preparation.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/ali-token-economics-guide.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/ali-token-incentivizing-charitable-giving.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/best-crypto-charity-donate-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/best-cryptocurrency-charity-platforms-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/blockchain-charity-transparency-revolution-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/blockchain-donation-tracking-transparency.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/crypto-donation-platform-2026-guide.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/cryptocurrency-donation-tax-benefits-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/decentralized-charity-platform-guide.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/global-cryptocurrency-charity-worldwide.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/how-blockchain-enables-transparent-charity.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/how-to-donate-cryptocurrency-guide-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/how-to-donate-cryptocurrency-to-charity.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/the-future-of-web3-philanthropy.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/web3-philanthropy-future-2026.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/why-i-built-ali-charity.html</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-09-01-somalia-humanitarian-aid-cuts-leave-millions-of-children-vulnerable-to-h-transparent-giving.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-09-08-somalia-humanitarian-aid-cuts-leave-millions-of-children-vulnerable-to-h-transparent-giving.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-09-15-donald-trump-jr-and-bettina-trump-say-putin-ally-paid-for-some-wedding-f-transparent-giving.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-09-22-airlines-criticise-air-traffic-control-as-second-glitch-causes-more-disr-transparent-giving.html</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-09-29-are-trump-s-us-government-funded-ads-illegal-transparent-giving.html</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-10-06-tigray-rebel-groups-forcibly-recruiting-boys-as-young-as-15-as-fighting--transparent-giving.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://minadoai.com/blog/briefings/2026-10-13-amid-heartache-of-nepal-flooding-disaster-fear-remains-transparent-giving.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
