@@ -19,16 +19,78 @@
     "Bingbot"
   ],
   "pages": [
-    { "path": "/", "lastModified": "2026-10-17", "priority": "1.0", "changeFrequency": "weekly" },
-    { "path": "/answers.html", "lastModified": "2026-08-27", "priority": "0.95", "changeFrequency": "weekly" },
-    { "path": "/donate.html", "lastModified": "2026-10-15", "priority": "0.9", "changeFrequency": "weekly" },
-    { "path": "/donor-safety.html", "lastModified": "2026-08-26", "priority": "0.9", "changeFrequency": "monthly" },
-    { "path": "/transparency.html", "lastModified": "2026-10-20", "priority": "0.9", "changeFrequency": "monthly" },
-    { "path": "/about.html", "lastModified": "2026-08-26", "priority": "0.8", "changeFrequency": "monthly" },
-    { "path": "/faq.html", "lastModified": "2026-08-27", "priority": "0.8", "changeFrequency": "monthly" },
-    { "path": "/token.html", "lastModified": "2026-08-26", "priority": "0.7", "changeFrequency": "monthly" },
-    { "path": "/blog/", "lastModified": "2026-08-27", "priority": "0.8", "changeFrequency": "weekly" },
-    { "path": "/blog/crypto-donation-safety-checklist-2026.html", "lastModified": "2026-05-17", "priority": "0.75", "changeFrequency": "monthly", "feed": true },
-    { "path": "/contact.html", "lastModified": "2026-08-26", "priority": "0.4", "changeFrequency": "yearly" }
+    {
+      "path": "/",
+      "lastModified": "2026-10-17",
+      "priority": "1.0",
+      "changeFrequency": "weekly"
+    },
+    {
+      "path": "/answers.html",
+      "lastModified": "2026-08-27",
+      "priority": "0.95",
+      "changeFrequency": "weekly"
+    },
+    {
+      "path": "/donate.html",
+      "lastModified": "2026-10-22",
+      "priority": "0.9",
+      "changeFrequency": "weekly"
+    },
+    {
+      "path": "/giving-tuesday.html",
+      "lastModified": "2026-10-22",
+      "priority": "0.95",
+      "changeFrequency": "weekly"
+    },
+    {
+      "path": "/donor-safety.html",
+      "lastModified": "2026-08-26",
+      "priority": "0.9",
+      "changeFrequency": "monthly"
+    },
+    {
+      "path": "/transparency.html",
+      "lastModified": "2026-10-20",
+      "priority": "0.9",
+      "changeFrequency": "monthly"
+    },
+    {
+      "path": "/about.html",
+      "lastModified": "2026-08-26",
+      "priority": "0.8",
+      "changeFrequency": "monthly"
+    },
+    {
+      "path": "/faq.html",
+      "lastModified": "2026-08-27",
+      "priority": "0.8",
+      "changeFrequency": "monthly"
+    },
+    {
+      "path": "/token.html",
+      "lastModified": "2026-08-26",
+      "priority": "0.7",
+      "changeFrequency": "monthly"
+    },
+    {
+      "path": "/blog/",
+      "lastModified": "2026-08-27",
+      "priority": "0.8",
+      "changeFrequency": "weekly"
+    },
+    {
+      "path": "/blog/crypto-donation-safety-checklist-2026.html",
+      "lastModified": "2026-05-17",
+      "priority": "0.75",
+      "changeFrequency": "monthly",
+      "feed": true
+    },
+    {
+      "path": "/contact.html",
+      "lastModified": "2026-08-26",
+      "priority": "0.4",
+      "changeFrequency": "yearly"
+    }
   ]
 }
