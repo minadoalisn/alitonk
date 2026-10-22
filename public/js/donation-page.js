@@ -6,8 +6,24 @@
   const copyButton = document.querySelector('#copyAddress');
   const status = document.querySelector('#copyStatus');
   let selected = new URLSearchParams(window.location.search).get('asset') || 'USDT';
+  let copyInProgress = false;
+  let copyResetTimer;
+
+  function clearCopyFeedback() {
+    window.clearTimeout(copyResetTimer);
+    copyResetTimer = undefined;
+    copyButton.textContent = 'Copy official address';
+    status.textContent = '';
+  }
+
+  function setCopyPending(pending) {
+    copyInProgress = pending;
+    copyButton.disabled = pending;
+    options.querySelectorAll('[data-asset]').forEach(button => { button.disabled = pending; });
+  }
 
   function setUnavailable(message) {
+    clearCopyFeedback();
     document.querySelector('#donationAddress').textContent = 'Address unavailable';
     document.querySelector('#networkSafety').textContent = message;
     copyButton.disabled = true;
@@ -15,6 +31,8 @@
   }
 
   function render(symbol) {
+    if (copyInProgress) return;
+    clearCopyFeedback();
     try {
       const view = flow.getDonationView(config, symbol);
       selected = view.symbol;
@@ -32,20 +50,31 @@
   }
 
   async function copyAddress() {
-    let address;
-    try { address = flow.getDonationView(config, selected).address; }
+    if (copyInProgress) return;
+    let view;
+    try { view = flow.getDonationView(config, selected); }
     catch { setUnavailable('Official donation address is unavailable.'); return; }
+    clearCopyFeedback();
+    setCopyPending(true);
+    copyButton.textContent = 'Copying...';
+    status.textContent = `Copying ${view.symbol} address on ${view.network}...`;
     try {
-      await navigator.clipboard.writeText(address);
-      status.textContent = 'Official address copied.';
+      await navigator.clipboard.writeText(view.address);
+      status.textContent = `${view.symbol} address on ${view.network} copied.`;
       copyButton.textContent = 'Copied';
-      window.setTimeout(() => { copyButton.textContent = 'Copy official address'; }, 1800);
+      copyResetTimer = window.setTimeout(() => {
+        copyButton.textContent = 'Copy official address';
+        copyResetTimer = undefined;
+      }, 1800);
     } catch {
       const range = document.createRange();
       range.selectNodeContents(document.querySelector('#donationAddress'));
       window.getSelection().removeAllRanges();
       window.getSelection().addRange(range);
+      copyButton.textContent = 'Copy official address';
       status.textContent = 'Address selected. Use your browser copy command.';
+    } finally {
+      setCopyPending(false);
     }
   }
 
