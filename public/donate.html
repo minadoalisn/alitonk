@@ -43,11 +43,11 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Is it safe to donate crypto to ALI Charity?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — there is nothing to connect and nothing to sign on our site. You send from your own wallet; we never ask for your seed phrase or private key." } },
-      { "@type": "Question", "name": "Which cryptocurrencies do you accept?", "acceptedAnswer": { "@type": "Answer", "text": "USDT, BNB, ETH, BTC and SOL, each with one official address and network." } },
-      { "@type": "Question", "name": "How do I verify my donation arrived?", "acceptedAnswer": { "@type": "Answer", "text": "Paste your transaction hash into the blockchain explorer for that asset to confirm the transfer to our published address." } },
-      { "@type": "Question", "name": "Is my crypto donation tax-deductible?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your jurisdiction. In the US the IRS treats donated crypto as property. We are not tax advisors." } },
-      { "@type": "Question", "name": "What happens after I donate?", "acceptedAnswer": { "@type": "Answer", "text": "Your transfer appears in public records with an explicit verification status. Unverified stays unverified; unknown stays unknown, not zero." } }
+      { "@type": "Question", "name": "Is it safe to donate crypto to ALI Charity?", "acceptedAnswer": { "@type": "Answer", "text": "Not connecting a wallet is not a safety guarantee. This site does not request wallet access, signatures, seed phrases or private keys. Transfers can still be irreversible or sent to the wrong recipient or network. If you cannot verify the recipient and intended use, do not send." } },
+      { "@type": "Question", "name": "Which cryptocurrencies do you accept?", "acceptedAnswer": { "@type": "Answer", "text": "Published options are USDT, BNB and ETH on BNB Smart Chain (BSC), BTC on Bitcoin, and SOL on Solana. ETH here is not Ethereum mainnet. Check the selected asset and network on the Donate page before sending." } },
+      { "@type": "Question", "name": "How do I verify my donation arrived?", "acceptedAnswer": { "@type": "Answer", "text": "Select the asset on the Donate page and use its network-specific explorer link. BscScan covers this site's BSC options (USDT, BNB and ETH); Bitcoin and Solana use their own explorers. Check the transaction's success and confirmation status, recipient, asset or token, amount and network. A hash alone does not establish receipt or charitable use." } },
+      { "@type": "Question", "name": "Is my crypto donation tax-deductible?", "acceptedAnswer": { "@type": "Answer", "text": "ALI Charity's eligibility to receive tax-deductible contributions is unverified; supporting registration evidence has not been published here. Do not assume a deduction. US donors should check IRS qualified-organization rules and the organization's eligibility; other jurisdictions have different rules. Consult a qualified tax adviser." } },
+      { "@type": "Question", "name": "What happens after I donate?", "acceptedAnswer": { "@type": "Answer", "text": "This static site does not automatically record transfers, verify receipt or issue a tax receipt. A transfer may be absent from the published records. Unverified entries remain unverified; unknown totals remain unknown, not zero. Review our transparency method." } }
     ]
   }
   </script>
@@ -121,25 +121,29 @@
       <h2 id="faq-heading">Donation FAQ</h2>
       <details class="safety-details">
         <summary>Is it safe to donate crypto to ALI Charity?</summary>
-        <p>Yes — because there is nothing to connect and nothing to sign on our site. You send from your own wallet. We never ask for your seed phrase or private key, and this website never signs a transaction.</p>
+        <p>Not connecting a wallet is not a safety guarantee. This site does not request wallet access, signatures, seed phrases or private keys. Transfers can still be irreversible or sent to the wrong recipient or network. If you cannot verify the recipient and intended use, do not send.</p>
       </details>
       <details class="safety-details">
         <summary>Which cryptocurrencies do you accept?</summary>
-        <p>USDT, BNB, ETH, BTC and SOL. Each has one official address and network, shown in Step 1 above when you choose an asset.</p>
+        <p>Published options are USDT, BNB and ETH on BNB Smart Chain (BSC), BTC on Bitcoin, and SOL on Solana. ETH here is not Ethereum mainnet. Check the selected asset and network on the <a href="#donation">Donate page</a> before sending.</p>
       </details>
       <details class="safety-details">
         <summary>How do I verify my donation arrived?</summary>
-        <p>Keep your transaction hash and paste it into the blockchain explorer for that asset — Etherscan, BscScan, Solscan or blockchain.com — to confirm the transfer to our published address.</p>
+        <p>Select the asset on the <a href="#donation">Donate page</a> and use its network-specific explorer link. BscScan covers this site's BSC options (USDT, BNB and ETH); Bitcoin and Solana use their own explorers. Check the transaction's success and confirmation status, recipient, asset or token, amount and network. A hash alone does not establish receipt or charitable use.</p>
       </details>
       <details class="safety-details">
         <summary>Is my crypto donation tax-deductible?</summary>
-        <p>It depends on where you live. In the United States, the IRS treats donated cryptocurrency as property, which can make donating appreciated crypto tax-efficient. Rules vary by jurisdiction and we are not tax advisors — talk to yours.</p>
+        <p>ALI Charity's eligibility to receive tax-deductible contributions is unverified; supporting registration evidence has not been published here. Do not assume a deduction. US donors should check <a href="https://www.irs.gov/publications/p526">IRS qualified-organization rules</a> and <a href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search">the organization's eligibility</a>; other jurisdictions have different rules. Consult a qualified tax adviser.</p>
       </details>
       <details class="safety-details">
         <summary>What happens after I donate?</summary>
-        <p>Your transfer appears in our public records with an explicit verification status. We do not inflate totals: unverified entries stay marked unverified, and unknown amounts stay unknown — not zero. See our <a href="/transparency.html">transparency method</a>.</p>
+        <p>This static site does not automatically record transfers, verify receipt or issue a tax receipt. A transfer may be absent from the published records. Unverified entries remain unverified; unknown totals remain unknown, not zero. Review our <a href="/transparency.html">transparency method</a>.</p>
       </details>
     </section>
+    <aside class="after-note" aria-label="Guidance sources and review">
+      <p>Guidance checked: <time datetime="2026-10-23">23 October 2026</time>. Method: automated comparison with the <a href="/js/site-config.js">published configuration</a>, <a href="/data/donations.json">records</a> and the linked IRS sources. This is a content-consistency check, not an on-chain audit or verification of legal status.</p>
+      <p>Source publication dates: unknown. IRS Publication 526 is the 2025 edition; check current requirements before making a tax decision. Site configuration and record status were observed on the guidance-check date.</p>
+    </aside>
   </main>
 
   <footer class="site-footer">
