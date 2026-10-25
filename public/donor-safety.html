@@ -80,6 +80,7 @@
         .label { color: #9fb0c6; }
         .value { font-weight: 900; text-align: right; }
         section { padding: 28px 0; }
+        #full-address-verification { scroll-margin-top: 80px; }
         .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
         .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
         .card p, .card li { color: #c4d0df; }
@@ -90,6 +91,7 @@
         .topic { display: inline-flex; margin: 0 8px 8px 0; border: 1px solid rgba(148, 163, 184, 0.24); background: rgba(148, 163, 184, 0.08); color: #dce8f6; border-radius: 999px; padding: 6px 10px; font-size: 0.88rem; }
         footer { color: #8fa2b8; border-top: 1px solid rgba(148, 163, 184, 0.18); padding: 30px 0; margin-top: 24px; }
         @media (max-width: 860px) {
+            #full-address-verification { scroll-margin-top: 180px; }
             .hero, .grid, .two-col { grid-template-columns: 1fr; }
             nav { align-items: flex-start; flex-direction: column; }
             .address-row { grid-template-columns: 1fr; }
@@ -103,7 +105,7 @@
       "name": "Crypto Donor Safety Guide",
       "description": "A donor-safety guide for verifying ALI Charity crypto donation addresses, networks, token contract details, and transaction proof.",
       "url": "https://minadoai.com/donor-safety.html",
-      "dateModified": "2026-08-15",
+      "dateModified": "2026-10-25",
       "author": {
         "@type": "Organization",
         "name": "ALI Charity Operations",
@@ -131,7 +133,7 @@
           "name": "How should I verify an ALI Charity crypto donation address?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use https://minadoai.com, open the official Donate page, confirm the asset and network, compare the first and last characters of the address, and keep the transaction hash after sending."
+            "text": "Open the official Donate page, confirm the asset and network, and compare the entire recipient address in your wallet with the address on that page, including every middle character. Matching only the first and last characters is not enough. Never copy a recipient from transaction history. Stop if the source, address or network is uncertain."
           }
         },
         {
@@ -221,14 +223,24 @@
                     <p>Type <strong>minadoai.com</strong> directly, avoid shortened links, and ignore private messages that claim a new donation address.</p>
                 </article>
                 <article class="card">
-                    <h3>2. Confirm the chain</h3>
+                    <h3>2. Confirm the chain and address</h3>
                     <p>USDT, ETH, and BNB donations use the BNB Smart Chain address shown on the official Donate page. BTC and SOL use separate native addresses.</p>
+                    <p>Before sending, follow the <a href="#full-address-verification">full-address check below</a>.</p>
                 </article>
                 <article class="card">
                     <h3>3. Keep the proof</h3>
                     <p>Save the transaction hash, amount, asset, recipient address, timestamp, and a copy of the donation page used at the time of transfer.</p>
                 </article>
             </div>
+        </section>
+
+        <section id="full-address-verification" aria-labelledby="full-address-heading">
+            <h2 id="full-address-heading">Check the whole address, not just the ends</h2>
+            <div class="card warning">
+                <p id="full-address-answer">Open the <a href="/donate.html">official Donate page</a>, confirm the asset and network, and compare the entire recipient address in your wallet with the address on that page, including every middle character. Matching only the first and last characters is not enough. Never copy a recipient from transaction history. Stop if the source, address or network is uncertain.</p>
+                <p>An exact address match only checks consistency with this site's published instructions. It does not verify who controls the wallet or prove a charitable use of funds.</p>
+            </div>
+            <p class="provenance">Address-check guidance checked: <time datetime="2026-10-25">October 25, 2026</time>. Sources: <a href="https://support.metamask.io/zh-cn/stay-safe/protect-yourself/wallet-and-hardware/address-poisoning-scams/" target="_blank" rel="noopener">MetaMask: address-poisoning scams</a> and <a href="https://info.etherscan.com/what-is-address-poisoning/" target="_blank" rel="noopener">Etherscan: address poisoning</a>. MetaMask publication date: unknown; Etherscan published: January 15, 2024. Both sources accessed October 25, 2026. This guidance concerns an ongoing risk, not a reported ALI Charity incident; this scoped content check is not an on-chain audit.</p>
         </section>
 
         <section>
