@@ -23,11 +23,13 @@ test('campaign verification links remain normal linked text inside paragraphs', 
   assert.ok(faq);
   const paragraphs = [...faq[1].matchAll(/<p>([\s\S]*?)<\/p>/g)].map(match => match[1]);
   const links = [...paragraphs.join('').matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)];
-  assert.equal(links.length, 5);
+  assert.equal(links.length, 7);
   assert.deepEqual([...new Set(links.map(match => match[1]))].sort(), [
     '/donate.html#donation',
     '/transparency.html',
+    'https://www.govinfo.gov/content/pkg/FR-2026-10-23/html/2026-21706.htm',
     'https://www.irs.gov/charities-non-profits/tax-exempt-organization-search',
-    'https://www.irs.gov/publications/p526'
+    'https://www.irs.gov/publications/p526',
+    'https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html'
   ].sort());
 });

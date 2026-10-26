@@ -22,9 +22,9 @@ function guidance(name) {
 }
 
 for (const name of ['donate.html', 'giving-tuesday.html']) {
-  test(`${name}: structured answers match all five visible answers`, () => {
+  test(`${name}: structured answers match all published visible answers`, () => {
     const { visible, faq } = guidance(name);
-    assert.equal(visible.size, 5);
+    assert.equal(visible.size, name === 'giving-tuesday.html' ? 6 : 5);
     assert.equal(faq.mainEntity.length, visible.size);
     for (const question of faq.mainEntity) {
       assert.equal(question.acceptedAnswer.text, visible.get(question.name), question.name);
@@ -87,14 +87,44 @@ test('campaign keeps a sourced event date without unsupported financial momentum
   }
 });
 
-test('guidance review dates match the changed pages in the discovery manifest', () => {
+test('the discovery manifest uses the latest scoped guidance review date', () => {
   const manifest = require('../config/geo-authority.json');
   for (const name of ['donate.html', 'giving-tuesday.html']) {
     const html = read(name);
     const reviewed = html.match(/Guidance checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
     assert.ok(reviewed, `${name}: missing scoped review date`);
-    assert.equal(manifest.pages.find(page => page.path === `/${name}`).lastModified, reviewed[1]);
+    const regulatoryReview = html.match(/Regulatory note checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
+    const latestReview = [reviewed[1], regulatoryReview?.[1]].filter(Boolean).sort().at(-1);
+    assert.equal(manifest.pages.find(page => page.path === `/${name}`).lastModified, latestReview);
     assert.match(html, /content-consistency check, not an on-chain audit/);
     assert.match(html, /Source publication dates: unknown/);
   }
+});
+
+test('the retained stablecoin FAQ distinguishes rule publication from donation safety and approval', () => {
+  const { html, visible } = guidance('giving-tuesday.html');
+  const answer = visible.get('Is USDT safe to donate under U.S. regulation?');
+  assert.ok(answer, 'Preserve the newly published question');
+  assert.match(answer, /^Not by itself\./);
+  assert.match(answer, /October 21, 2026/);
+  assert.match(answer, /effective January 18, 2027/);
+  assert.match(answer, /after GivingTuesday 2026/);
+  assert.match(answer, /issuers within the OCC's jurisdiction/);
+  assert.match(answer, /not a safety guarantee for this donation/);
+  assert.match(answer, /USDT's regulatory status and the status of the exact token on your selected network remain unverified here/);
+  assert.match(answer, /Do not infer approval of ALI Charity or tax deductibility/);
+  assert.match(answer, /if you cannot, do not send/);
+  assert.doesNotMatch(html, /first Giving Tuesday under a finalized federal stablecoin rulebook/);
+});
+
+test('the regulatory note has primary sources and separates publication, effective and review dates', () => {
+  const html = read('giving-tuesday.html');
+  assert.ok(html.includes('href="https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html"'), 'Missing OCC bulletin');
+  assert.ok(html.includes('href="https://www.govinfo.gov/content/pkg/FR-2026-10-23/html/2026-21706.htm"'), 'Missing official Federal Register text');
+  assert.match(html, /OCC announcement: October 21, 2026/);
+  assert.match(html, /Federal Register publication: October 23, 2026/);
+  assert.match(html, /Rule effective date: January 18, 2027/);
+  assert.match(html, /Regulatory note checked: <time datetime="2026-10-26">/);
+  assert.match(html, /Guidance checked: <time datetime="2026-10-23">/);
+  assert.match(html, /not an issuer-approval check or legal advice/);
 });
