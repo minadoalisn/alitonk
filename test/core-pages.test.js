@@ -44,6 +44,20 @@ test('homepage has no synthetic counters or unsupported financial claims', () =>
   assert.doesNotMatch(html, /<script(?![^>]*(?:\bsrc=|type="application\/ld\+json"))/);
 });
 
+test('donor safety navigation opens the canonical transparency method', () => {
+  const html = read('donor-safety.html');
+  const header = html.match(/<header\b[^>]*>([\s\S]*?)<\/header>/);
+  assert.ok(header, 'The safety page must expose its navigation');
+  const links = [...header[1].matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>\s*Transparency\s*<\/a>/g)];
+  assert.equal(links.length, 1, 'Expected one clearly labelled Transparency entry');
+  assert.equal(links[0][1], '/transparency.html', 'Transparency must not point to a missing homepage fragment');
+  const target = read(links[0][1].slice(1));
+  assert.match(target, /rel="canonical" href="https:\/\/minadoai\.com\/transparency\.html"/);
+  assert.match(target, /<h1>Our transparency method<\/h1>/);
+  assert.match(target, /id="record-status-title"/);
+  assert.match(target, /href="\/donate\.html"/);
+});
+
 test('homepage explains the evidence gate and loads canonical routing before the record summary', () => {
   const html = read('index.html');
   const configIndex = html.indexOf('<script src="/js/site-config.js">');

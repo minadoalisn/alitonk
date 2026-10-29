@@ -40,12 +40,15 @@ test('address guidance cites official sources without inventing dates or an audi
   assert.match(html, /not an on-chain audit/);
 });
 
-test('only the scoped address review and changed-page dates advance together', () => {
+test('page modification metadata stays consistent without refreshing scoped factual reviews', () => {
   const checked = html.match(/Address-check guidance checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
   assert.ok(checked, 'Missing scoped address guidance review date');
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'config/geo-authority.json'), 'utf8'));
-  assert.equal(manifest.pages.find(page => page.path === '/donor-safety.html').lastModified, checked[1]);
-  assert.equal(schema.find(node => node['@type'] === 'WebPage').dateModified, checked[1]);
+  const modified = schema.find(node => node['@type'] === 'WebPage').dateModified;
+  assert.match(modified, /^\d{4}-\d{2}-\d{2}$/);
+  assert.equal(manifest.pages.find(page => page.path === '/donor-safety.html').lastModified, modified);
+  assert.ok(modified >= checked[1], 'A page edit cannot predate its scoped factual review');
+  assert.equal(checked[1], '2026-10-25', 'A navigation fix must not claim a new address-guidance review');
   assert.match(html, /<strong>Last reviewed:<\/strong> August 15, 2026/);
   assert.match(html, /All three were accessed August 15, 2026/);
 });
