@@ -49,14 +49,63 @@ test('scoped address review has primary sources, dates and explicit limits', () 
   assert.match(html, /Other sections were not re-reviewed/);
 });
 
-test('only the changed checklist receives the new modification date', () => {
+test('the checklist modification date follows its latest scoped review', () => {
   const article = schema.find(node => node['@type'] === 'Article');
   const checked = html.match(/Address-check guidance reviewed: <time datetime="(\d{4}-\d{2}-\d{2})">/);
   assert.ok(checked, 'Missing the visible scoped review date');
+  const reviewDates = [...html.matchAll(/guidance reviewed: <time datetime="(\d{4}-\d{2}-\d{2})">/g)]
+    .map(match => match[1]).sort();
   assert.equal(article.datePublished, '2026-05-17');
-  assert.equal(article.dateModified, checked[1]);
+  assert.equal(checked[1], '2026-10-30', 'Do not refresh an unchanged address review');
+  assert.equal(article.dateModified, reviewDates.at(-1));
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'config/geo-authority.json'), 'utf8'));
-  assert.equal(manifest.pages.find(page => page.path === pagePath).lastModified, checked[1]);
+  assert.equal(manifest.pages.find(page => page.path === pagePath).lastModified, article.dateModified);
   assert.equal(manifest.pages.find(page => page.path === '/donor-safety.html').lastModified, '2026-10-29');
   assert.equal(manifest.feed.lastModified, '2026-08-27', 'An article edit is not a new collection review');
+});
+
+test('the checklist does not describe a transaction hash as a donation receipt', () => {
+  assert.doesNotMatch(html, /keep the transaction hash as your receipt/i);
+  assert.doesNotMatch(html, /tax-ready proof/i);
+  const answer = schema.find(node => node['@type'] === 'FAQPage').mainEntity
+    .find(question => question.name === 'What proof should I keep after donating crypto?').acceptedAnswer.text;
+  assert.match(answer, /A hash alone does not prove receipt/);
+  assert.match(answer, /lookup reference, not a donation receipt/);
+  assert.match(answer, /does not establish charitable use, impact or tax eligibility/);
+});
+
+test('every retained structured answer is also visible under its question', () => {
+  const visible = [...html.matchAll(/<h2(?:\s[^>]*)?>([^<]+)<\/h2>\s*<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/g)]
+    .map(match => [plain(match[1]).replace(/^\d+\.\s*/, ''), plain(match[2])]);
+  for (const question of schema.find(node => node['@type'] === 'FAQPage').mainEntity) {
+    const paragraph = visible.find(([heading]) => heading === question.name);
+    assert.ok(paragraph, `No visible answer for ${question.name}`);
+    assert.equal(paragraph[1], question.acceptedAnswer.text);
+  }
+});
+
+test('record-keeping guidance preserves evidence and separates it from confirmed donations', () => {
+  const section = html.match(/<h2 id="proof-records">([\s\S]*?)<h2>/);
+  assert.ok(section, 'Missing the record-keeping section');
+  for (const field of ['full transaction hash', 'explorer URL', 'sender and recipient addresses', 'asset or token', 'exact amount', 'network', 'timestamp', 'status']) {
+    assert.ok(section[1].includes(field), `Missing evidence field: ${field}`);
+  }
+  assert.match(section[1], /Pending or failed transfers are not confirmed donations/);
+  assert.match(section[1], /does not automatically record transfers, verify receipt or issue a tax receipt/);
+  assert.match(section[1], /Unknown totals remain unknown, not zero/);
+  assert.match(section[1], /href="\/donate\.html"/);
+  assert.match(section[1], /href="\/transparency\.html"/);
+  assert.match(section[1], /Save a dated copy of the donation page for your private records/);
+});
+
+test('record-keeping review has primary sources, jurisdiction limits and a separate date', () => {
+  assert.match(html, /Record-keeping guidance reviewed: <time datetime="2026-10-31">/);
+  assert.match(html, /href="https:\/\/ethereum\.org\/developers\/docs\/transactions\/"/);
+  assert.match(html, /href="https:\/\/www\.irs\.gov\/charities-non-profits\/charitable-organizations\/charitable-contributions-written-acknowledgments"/);
+  assert.match(html, /Ethereum page last updated October 7, 2026/);
+  assert.match(html, /Original publication dates: unknown/);
+  assert.match(html, /Both sources accessed October 31, 2026/);
+  assert.match(html, /eligibility to receive tax-deductible contributions remains unverified/);
+  assert.match(html, /US-specific acknowledgment requirements are not a global rule/);
+  assert.match(html, /not a verification of any donation or legal status/);
 });
