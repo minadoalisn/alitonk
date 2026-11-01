@@ -33,6 +33,11 @@
       ],
       "permanent": true,
       "source": "/(.*)"
+    },
+    {
+      "destination": "/",
+      "permanent": true,
+      "source": "/index.html"
     }
   ]
 }
