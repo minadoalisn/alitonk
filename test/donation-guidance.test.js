@@ -18,8 +18,33 @@ function guidance(name) {
     .flatMap(match => { const data = JSON.parse(match[1]); return data['@graph'] || [data]; });
   const faq = nodes.find(node => node['@type'] === 'FAQPage');
   assert.ok(faq, `${name}: missing FAQ schema`);
-  return { html, visible, faq };
+  return { html, visible, faq, nodes };
 }
+
+test('Donate rules out even a test transfer if the site or transfer details are uncertain', () => {
+  const { html } = guidance('donate.html');
+  const list = html.match(/<ol class="send-list">([\s\S]*?)<\/ol>/);
+  assert.ok(list, 'The warning must be visible in the sending instructions');
+  const steps = [...list[1].matchAll(/<li>([\s\S]*?)<\/li>/g)].map(match => plain(match[1]));
+  assert.doesNotMatch(steps.join(' '), /small test transfer first if (?:you are )?unsure/i);
+  const source = steps.findIndex(s => /minadoai\.com/.test(s) && /not from transaction history/i.test(s));
+  const route = steps.findIndex(s => /asset and network/i.test(s) && /full recipient address/i.test(s) && /middle characters/i.test(s));
+  const stop = steps.findIndex(s => /uncertain, do not send, even as a test/i.test(s));
+  const optional = steps.findIndex(s => /only consider a small test transfer after all checks match/i.test(s));
+  assert.ok(source >= 0 && route > source && stop > route && optional >= stop,
+    'Verify the source and route, stop on uncertainty, and only then describe an optional test');
+  assert.match(list[1], /href="\/donor-safety\.html#full-address-verification"/);
+  assert.match(read('donor-safety.html'), /id="full-address-verification"/);
+});
+
+test('Donate publishes the same sending instructions to readers and HowTo consumers', () => {
+  const { html, nodes } = guidance('donate.html');
+  const visible = html.match(/<ol class="send-list">([\s\S]*?)<\/ol>/);
+  assert.ok(visible);
+  const instructions = [...visible[1].matchAll(/<li>([\s\S]*?)<\/li>/g)].map(m => plain(m[1])).join(' ');
+  const sendStep = nodes.find(node => node['@type'] === 'HowTo').step.find(step => step.position === 2);
+  assert.equal(sendStep.text, instructions);
+});
 
 for (const name of ['donate.html', 'giving-tuesday.html']) {
   test(`${name}: structured answers match all published visible answers`, () => {
@@ -94,7 +119,9 @@ test('the discovery manifest uses the latest scoped guidance review date', () =>
     const reviewed = html.match(/Guidance checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
     assert.ok(reviewed, `${name}: missing scoped review date`);
     const regulatoryReview = html.match(/Regulatory note checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
-    const latestReview = [reviewed[1], regulatoryReview?.[1]].filter(Boolean).sort().at(-1);
+    const transferReview = html.match(/Pre-transfer guidance checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
+    if (name === 'donate.html') assert.ok(transferReview, 'Date the transfer instructions separately from the FAQ review');
+    const latestReview = [reviewed[1], regulatoryReview?.[1], transferReview?.[1]].filter(Boolean).sort().at(-1);
     assert.equal(manifest.pages.find(page => page.path === `/${name}`).lastModified, latestReview);
     assert.match(html, /content-consistency check, not an on-chain audit/);
     assert.match(html, /Source publication dates: unknown/);

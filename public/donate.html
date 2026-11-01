@@ -32,7 +32,7 @@
         "totalTime": "PT2M",
         "step": [
           { "@type": "HowToStep", "position": 1, "name": "Choose an asset", "text": "Choose a supported asset and copy its official address." },
-          { "@type": "HowToStep", "position": 2, "name": "Send from your wallet", "text": "Confirm the network, send from your own wallet or exchange, and keep the transaction hash." }
+          { "@type": "HowToStep", "position": 2, "name": "Send from your wallet", "text": "Check that you are on minadoai.com. Paste the address from this page into your wallet or exchange, not from transaction history. Match the asset and network to your selection on this page. Compare the full recipient address in your wallet, including the middle characters. If any check is uncertain, do not send, even as a test. Only consider a small test transfer after all checks match. If you send, keep the transaction hash for your records. A successful test alone does not prove who controls the address or how funds will be used." }
         ]
       }
     ]
@@ -94,10 +94,10 @@
         <h2 id="send-heading">Send from your wallet</h2>
         <p id="networkSafety">Confirm the asset and network before sending.</p>
         <ol class="send-list">
-          <li>Paste the copied address into your wallet or exchange.</li>
-          <li>Compare the full address and selected network.</li>
-          <li>Send a small test transfer first if you are unsure.</li>
-          <li>Keep the transaction hash for your own records.</li>
+          <li>Check that you are on minadoai.com. Paste the address from this page into your wallet or exchange, not from transaction history.</li>
+          <li>Match the asset and network to your selection on this page. Compare the <a href="/donor-safety.html#full-address-verification">full recipient address</a> in your wallet, including the middle characters.</li>
+          <li><strong>If any check is uncertain, do not send, even as a test.</strong> Only consider a small test transfer after all checks match.</li>
+          <li>If you send, keep the transaction hash for your records. A successful test alone does not prove who controls the address or how funds will be used.</li>
         </ol>
         <a id="explorerLink" class="text-link" target="_blank" rel="noopener noreferrer">View this address on a blockchain explorer</a>
       </section>
@@ -143,6 +143,7 @@
     <aside class="after-note" aria-label="Guidance sources and review">
       <p>Guidance checked: <time datetime="2026-10-23">23 October 2026</time>. Method: automated comparison with the <a href="/js/site-config.js">published configuration</a>, <a href="/data/donations.json">records</a> and the linked IRS sources. This is a content-consistency check, not an on-chain audit or verification of legal status.</p>
       <p>Source publication dates: unknown. IRS Publication 526 is the 2025 edition; check current requirements before making a tax decision. Site configuration and record status were observed on the guidance-check date.</p>
+      <p>Pre-transfer guidance checked: <time datetime="2026-11-01">1 November 2026</time>. Sources: <a href="https://support.metamask.io/stay-safe/protect-yourself/wallet-and-hardware/address-poisoning-scams/">MetaMask on look-alike addresses</a> and <a href="https://help.coinbase.com/en/wallet/sending-and-receiving/what-happens-if-i-use-the-wrong-coinbase-wallet-address">Coinbase Wallet on wrong addresses</a>. This check covers the instructions only; it does not verify wallet ownership or any transfer.</p>
     </aside>
   </main>
 
