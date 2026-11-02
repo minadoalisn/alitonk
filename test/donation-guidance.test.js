@@ -112,6 +112,23 @@ test('campaign keeps a sourced event date without unsupported financial momentum
   }
 });
 
+test('GivingTuesday tells donors to stop before any test transfer if a check fails', () => {
+  const html = read('giving-tuesday.html');
+  const steps = html.match(/<section\b[^>]*aria-labelledby="how-title"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+  const step = steps?.match(/<h3>2\.[^<]*<\/h3>\s*<p>([\s\S]*?)<\/p>/)?.[1];
+  assert.ok(step, 'Check the instructions at the point of sending, not only the FAQ');
+  const text = plain(step);
+  assert.doesNotMatch(text, /send a small test transfer first if you are unsure/i);
+  assert.match(text, /minadoai\.com/i);
+  assert.match(text, /asset and network/i);
+  assert.match(text, /full recipient address/i);
+  assert.match(text, /middle characters/i);
+  assert.match(text, /if\b[^.]*\b(uncertain|unsure|cannot verify)\b[^.]*\b(do not send|stop)\b/i);
+  assert.match(text, /do not send[^.]*even (?:a small )?test transfer/i);
+  assert.match(step, /href="\/donor-safety\.html#full-address-verification"/);
+  assert.match(read('donor-safety.html'), /id="full-address-verification"/);
+});
+
 test('the discovery manifest uses the latest scoped guidance review date', () => {
   const manifest = require('../config/geo-authority.json');
   for (const name of ['donate.html', 'giving-tuesday.html']) {
@@ -120,9 +137,12 @@ test('the discovery manifest uses the latest scoped guidance review date', () =>
     assert.ok(reviewed, `${name}: missing scoped review date`);
     const regulatoryReview = html.match(/Regulatory note checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
     const transferReview = html.match(/Pre-transfer guidance checked: <time datetime="(\d{4}-\d{2}-\d{2})">/);
-    if (name === 'donate.html') assert.ok(transferReview, 'Date the transfer instructions separately from the FAQ review');
+    assert.ok(transferReview, name + ': date the transfer instructions separately from the FAQ review');
     const latestReview = [reviewed[1], regulatoryReview?.[1], transferReview?.[1]].filter(Boolean).sort().at(-1);
     assert.equal(manifest.pages.find(page => page.path === `/${name}`).lastModified, latestReview);
+    if (name === 'giving-tuesday.html') {
+      assert.equal(guidance(name).nodes.find(node => node['@type'] === 'WebPage').dateModified, latestReview);
+    }
     assert.match(html, /content-consistency check, not an on-chain audit/);
     assert.match(html, /Source publication dates: unknown/);
   }
