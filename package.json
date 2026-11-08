@@ -1,13 +1,13 @@
 {
   "name": "ali-charity",
   "version": "1.0.0",
-  "description": "ALI Charity - Transparent Blockchain Donations",
+  "description": "ALI Charity - transparent crypto donation information site (static, deployed on Vercel)",
   "main": "server.js",
   "scripts": {
     "test": "node --test",
     "start": "node server.js",
     "validate": "node scripts/validate-site.js",
-    "build": "node scripts/write-deploy-version.js && node scripts/mark-unreviewed-noindex.js && node scripts/generate-sitemap.js && node scripts/generate-feed.js && node scripts/validate-site.js",
+    "build": "node scripts/write-deploy-version.js && node scripts/generate-qr.js && node scripts/apply-layout.js && node scripts/mark-unreviewed-noindex.js && node scripts/generate-sitemap.js && node scripts/generate-feed.js && node scripts/generate-llms-full.js && node scripts/validate-site.js",
     "blog:promotion": "node scripts/generate-blog-promotion.js",
     "geo:audit": "node scripts/geo-audit.js",
     "geo:learn": "node scripts/geo-learning-loop.js",
@@ -15,9 +15,14 @@
     "geo:seo:research": "python scripts/research/geo_seo_research.py",
     "memory:save": "node scripts/save-project-memory.js",
     "deploy:check": "node scripts/check-deployment-health.js",
-    "traffic:report": "node scripts/report-traffic.js"
+    "traffic:report": "node scripts/report-traffic.js",
+    "vercel:config": "node scripts/write-vercel-config.js",
+    "layout": "node scripts/apply-layout.js"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
   }
 }

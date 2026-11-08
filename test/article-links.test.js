@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const publicDir = path.join(__dirname, '..', 'public');
-const css = fs.readFileSync(path.join(publicDir, 'css', 'home.css'), 'utf8');
+const css = fs.readFileSync(path.join(publicDir, 'css', 'site.css'), 'utf8');
 
 test('article card styling is scoped to direct links, not inline evidence links', () => {
   assert.doesNotMatch(css, /\.article-list\s+a\s*\{/,

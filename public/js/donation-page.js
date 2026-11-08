@@ -25,6 +25,8 @@
   function setUnavailable(message) {
     clearCopyFeedback();
     document.querySelector('#donationAddress').textContent = 'Address unavailable';
+    document.querySelector('#addressGroups').textContent = '';
+    document.querySelector('#addressQr').hidden = true;
     document.querySelector('#networkSafety').textContent = message;
     copyButton.disabled = true;
     status.textContent = message;
@@ -39,11 +41,20 @@
       document.querySelector('#networkName').textContent = view.network;
       document.querySelector('#addressLabel').textContent = `${view.symbol} official address`;
       document.querySelector('#donationAddress').textContent = view.address;
+      // Groups of four make a full, character-by-character comparison easier.
+      document.querySelector('#addressGroups').textContent = view.address.match(/.{1,4}/g).join(' ');
+      const qr = document.querySelector('#addressQr');
+      qr.src = `/assets/qr/${view.network.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.svg`;
+      qr.alt = `QR code for the official ${view.symbol} address on ${view.network}`;
+      qr.hidden = false;
       document.querySelector('#networkSafety').textContent = view.safetyText;
       document.querySelector('#explorerLink').href = view.explorerUrl;
       options.querySelectorAll('[data-asset]').forEach(button => button.setAttribute('aria-checked', String(button.dataset.asset === selected)));
       copyButton.disabled = false;
       status.textContent = '';
+      if (window.history && typeof window.history.replaceState === 'function') {
+        window.history.replaceState(null, '', `?asset=${view.symbol}#donation`);
+      }
     } catch {
       setUnavailable('Official donation configuration could not be loaded. Do not send funds until it is available.');
     }

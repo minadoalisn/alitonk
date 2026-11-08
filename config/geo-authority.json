@@ -16,12 +16,17 @@
     "Perplexity-User",
     "Googlebot",
     "Google-Extended",
-    "Bingbot"
+    "Bingbot",
+    "Applebot-Extended",
+    "Meta-ExternalAgent",
+    "DuckAssistBot",
+    "MistralAI-User",
+    "Amazonbot"
   ],
   "pages": [
     {
       "path": "/",
-      "lastModified": "2026-10-17",
+      "lastModified": "2026-11-08",
       "priority": "1.0",
       "changeFrequency": "weekly"
     },
@@ -57,7 +62,7 @@
     },
     {
       "path": "/about.html",
-      "lastModified": "2026-08-26",
+      "lastModified": "2026-11-08",
       "priority": "0.8",
       "changeFrequency": "monthly"
     },
@@ -69,13 +74,13 @@
     },
     {
       "path": "/token.html",
-      "lastModified": "2026-08-26",
+      "lastModified": "2026-11-08",
       "priority": "0.7",
       "changeFrequency": "monthly"
     },
     {
       "path": "/blog/",
-      "lastModified": "2026-08-27",
+      "lastModified": "2026-11-08",
       "priority": "0.8",
       "changeFrequency": "weekly"
     },
@@ -88,26 +93,41 @@
     },
     {
       "path": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
-      "lastModified": "2026-04-08",
-      "priority": "0.75",
-      "changeFrequency": "monthly"
+      "lastModified": "2026-11-08",
+      "priority": "0.8",
+      "changeFrequency": "monthly",
+      "feed": true
     },
     {
       "path": "/blog/crypto-donation-platform-2026-guide.html",
-      "lastModified": "2026-04-08",
-      "priority": "0.75",
-      "changeFrequency": "monthly"
+      "lastModified": "2026-11-08",
+      "priority": "0.8",
+      "changeFrequency": "monthly",
+      "feed": true
     },
     {
       "path": "/blog/blockchain-donation-tracking-transparency.html",
-      "lastModified": "2026-04-08",
-      "priority": "0.75",
-      "changeFrequency": "monthly"
+      "lastModified": "2026-11-08",
+      "priority": "0.8",
+      "changeFrequency": "monthly",
+      "feed": true
     },
     {
       "path": "/contact.html",
-      "lastModified": "2026-08-26",
+      "lastModified": "2026-11-08",
       "priority": "0.4",
+      "changeFrequency": "yearly"
+    },
+    {
+      "path": "/zh/",
+      "lastModified": "2026-11-08",
+      "priority": "0.7",
+      "changeFrequency": "monthly"
+    },
+    {
+      "path": "/privacy.html",
+      "lastModified": "2026-11-08",
+      "priority": "0.3",
       "changeFrequency": "yearly"
     }
   ]

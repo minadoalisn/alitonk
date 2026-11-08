@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- layout:head -->
+  <meta name="theme-color" content="#102033" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+  <!-- /layout:head -->
   <title>Crypto Giving Tuesday 2026 | ALI Charity</title>
   <meta name="description" content="This Giving Tuesday (Dec 1), donate USDT, BTC, ETH, BNB or SOL to ALI Charity and verify your gift on-chain. Public addresses. No wallet connection. We never ask for your seed phrase.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="theme-color" content="#102033">
   <link rel="canonical" href="https://minadoai.com/giving-tuesday.html">
-  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
-  <link rel="icon" href="/logo.png">
-  <link rel="stylesheet" href="/css/home.css">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://minadoai.com/giving-tuesday.html">
   <meta property="og:title" content="Crypto Giving Tuesday 2026 — Donate Crypto You Can Verify | ALI Charity">
@@ -70,19 +75,16 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <!-- layout:header -->
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/">ALI Charity</a>
-      <div class="nav-links">
-        <a href="/#projects">Projects</a>
-        <a href="/#proof">Public proof</a>
-        <a href="/donor-safety.html">Safety</a>
-        <a href="/answers.html">Answers</a>
-        <a href="/blog/">Blog</a>
-      </div>
+      <a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt=""><span>ALI Charity</span></a>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/transparency.html">Transparency</a><a href="/donor-safety.html">Safety</a><a href="/answers.html">Answers</a><a href="/blog/">Guides</a></div>
       <a class="nav-action" href="/donate.html#donation">Donate crypto</a>
+      <details class="nav-menu"><summary aria-label="Menu"><span></span></summary><div class="nav-menu-panel"><a href="/#projects">Project routes</a><a href="/transparency.html">Transparency method</a><a href="/donor-safety.html">Donor safety</a><a href="/answers.html">Verified answers</a><a href="/blog/">Donor guides</a><a href="/about.html">About</a><a href="/token.html">ALI Token</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a><a class="menu-donate" href="/donate.html#donation">Donate crypto</a></div></details>
     </nav>
   </header>
+  <!-- /layout:header -->
 
   <main id="main">
     <section class="hero section-shell">
@@ -163,6 +165,19 @@
     </aside>
   </main>
 
-  <footer class="site-footer"><div><a class="brand" href="/">ALI Charity</a><p>Transparent donation information and public verification guidance.</p></div><nav aria-label="Footer navigation"><a href="/answers.html">Verified answers</a><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/promotion.html">Promotion</a></nav><p>© <span id="year">2026</span> ALI Charity.</p></footer>
+  <!-- layout:footer -->
+  <footer class="site-footer">
+    <div><a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt="" loading="lazy"><span>ALI Charity</span></a><p>Official crypto donation addresses, donor-safety guidance and public records — without ever connecting to your wallet.</p></div>
+    <nav aria-labelledby="footer-give"><h2 id="footer-give">Give</h2><ul><li><a href="/donate.html">Donate crypto</a></li><li><a href="/donor-safety.html">Verify addresses</a></li><li><a href="/giving-tuesday.html">Crypto Giving Tuesday</a></li><li><a href="/data/donations.json">Public donation data</a></li></ul></nav>
+    <nav aria-labelledby="footer-learn"><h2 id="footer-learn">Learn</h2><ul><li><a href="/answers.html">Verified answers</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/blog/">Donor guides</a></li><li><a href="/transparency.html">Transparency method</a></li></ul></nav>
+    <nav aria-labelledby="footer-org"><h2 id="footer-org">Organization</h2><ul><li><a href="/about.html">About</a></li><li><a href="/token.html">ALI Token</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></li><li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文简介</a></li></ul></nav>
+    <p class="footer-note"><span>© <span id="year">2026</span> ALI Charity. We never ask for a seed phrase, private key or wallet connection.</span><span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/feed.xml">Feed</a></span></p>
+  </footer>
+  <!-- /layout:footer -->
+  <!-- layout:analytics -->
+  <script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <!-- /layout:analytics -->
 </body>
 </html>

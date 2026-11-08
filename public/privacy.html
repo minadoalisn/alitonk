@@ -1,223 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="robots" content="noindex, nofollow, noarchive">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#0A101F">
-    <meta name="description" content="ALI Charity Privacy Policy - Learn how we collect, use, and protect your personal information. Blockchain-based transparent charity platform.">
-    <title>Privacy Policy - ALI Charity</title>
-    <link rel="canonical" href="https://minadoai.com/privacy.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        bgDark: '#0A101F',
-                        bgLight: '#1a1a2e',
-                        primary: '#60a5fa',
-                        cta: '#f97316',
-                        textSecondary: '#94a3b8',
-                        borderColor: 'rgba(255,255,255,0.1)',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        * { font-family: 'Inter', system-ui, sans-serif; }
-        html { scroll-behavior: smooth; }
-        body { background: #0A101F; color: #e2e8f0; min-height: 100vh; }
-        .text-gradient { background: linear-gradient(135deg, #60a5fa, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        a { color: #60a5fa; }
-        a:hover { text-decoration: underline; }
-        .legal-content h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #fff; }
-        .legal-content h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #e2e8f0; }
-        .legal-content p { margin-bottom: 1rem; line-height: 1.75; color: #94a3b8; }
-        .legal-content ul { margin-bottom: 1rem; padding-left: 1.5rem; color: #94a3b8; line-height: 1.75; }
-        .legal-content ul li { margin-bottom: 0.5rem; }
-        .legal-content strong { color: #e2e8f0; }
-        .last-updated { color: #60a5fa; font-size: 0.875rem; }
-        .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); opacity: 0; pointer-events: none; transition: opacity 0.3s; z-index: 999; }
-        .nav-overlay.show { opacity: 1; pointer-events: auto; }
-        #navLinks { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
-        #navLinks a { color: #94a3b8; transition: color 0.2s; padding: 0.25rem 0.5rem; border-radius: 0.25rem; }
-        #navLinks a:hover { color: #60a5fa; text-decoration: none; }
-        @media (max-width: 768px) {
-            #navLinks { display: none; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: #1a1a2e; padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); z-index: 1000; }
-            #navLinks.show { display: flex; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- layout:head -->
+  <meta name="theme-color" content="#102033" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+  <!-- /layout:head -->
+  <title>Privacy Policy | ALI Charity</title>
+  <meta name="description" content="How the ALI Charity website handles data: no wallet connection, no advertising cookies, cookieless aggregate analytics, hosting logs, and what public blockchains reveal.">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <link rel="canonical" href="https://minadoai.com/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ALI Charity">
+  <meta property="og:url" content="https://minadoai.com/privacy.html">
+  <meta property="og:title" content="Privacy Policy | ALI Charity">
+  <meta property="og:description" content="No wallet connection, no advertising cookies, cookieless aggregate analytics.">
+  <meta property="og:image" content="https://minadoai.com/og-image.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"https://minadoai.com/privacy.html#page","name":"Privacy Policy","url":"https://minadoai.com/privacy.html","inLanguage":"en","dateModified":"2026-11-08","isPartOf":{"@id":"https://minadoai.com/#website"},"publisher":{"@id":"https://minadoai.com/#organization"}}
+  </script>
 </head>
 <body>
-    <nav class="fixed top-0 left-0 right-0 z-[1000] bg-bgDark/95 backdrop-blur-xl py-4">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-gradient font-display">ALI Charity</a>
-            <button class="md:hidden text-slate-50 text-2xl" id="menuToggle" aria-label="Toggle menu">☰</button>
-            <ul class="hidden md:flex gap-5" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="token.html">Token</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- layout:header -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt=""><span>ALI Charity</span></a>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/transparency.html">Transparency</a><a href="/donor-safety.html">Safety</a><a href="/answers.html">Answers</a><a href="/blog/">Guides</a></div>
+      <a class="nav-action" href="/donate.html#donation">Donate crypto</a>
+      <details class="nav-menu"><summary aria-label="Menu"><span></span></summary><div class="nav-menu-panel"><a href="/#projects">Project routes</a><a href="/transparency.html">Transparency method</a><a href="/donor-safety.html">Donor safety</a><a href="/answers.html">Verified answers</a><a href="/blog/">Donor guides</a><a href="/about.html">About</a><a href="/token.html">ALI Token</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a><a class="menu-donate" href="/donate.html#donation">Donate crypto</a></div></details>
     </nav>
-    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+  <!-- /layout:header -->
 
-    <main class="pt-28 pb-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-4">Privacy Policy</h1>
-                <p class="last-updated">Last Updated: September 4, 2026</p>
-            </div>
+  <main id="main" class="prose">
+    <ol class="breadcrumb"><li><a href="/">Home</a></li><li aria-current="page">Privacy</li></ol>
+    <h1>Privacy Policy</h1>
+    <p class="article-meta"><span>Last updated: <time datetime="2026-11-08">November 8, 2026</time></span><span>Applies to: minadoai.com</span></p>
 
-            <div class="legal-content bg-bgLight rounded-2xl p-8 md:p-12 border border-borderColor">
-                <p>ALI Charity ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://minadoai.com">https://minadoai.com</a> (the "Site") and use our blockchain-based charity services.</p>
+    <div class="answer-box"><h2>Summary</h2><p>This is a static information website. It never connects to your wallet, never asks for a seed phrase or private key, sets no advertising cookies and does not sell personal data. Aggregate, cookieless analytics help us measure page performance and which pages are useful.</p></div>
 
-                <h2>1. Information We Collect</h2>
+    <h2>1. What this website does not collect</h2>
+    <ul>
+      <li>No wallet connection, signatures, seed phrases or private keys — the site has no wallet integration.</li>
+      <li>No account registration, donation forms or payment card data.</li>
+      <li>No advertising cookies or cross-site advertising trackers.</li>
+    </ul>
 
-                <h3>1.1 Blockchain & Wallet Information</h3>
-                <p>When you interact with our platform, the following information may be automatically collected from the blockchain:</p>
-                <ul>
-                    <li>Wallet address (public blockchain address)</li>
-                    <li>Transaction history and donation records on the Binance Smart Chain (BSC)</li>
-                    <li>Transaction amounts and timestamps</li>
-                    <li>Smart contract interactions with our ALI Token contract</li>
-                </ul>
-                <p><strong>Note:</strong> Blockchain transactions are publicly visible by nature. We cannot control how third parties use publicly available blockchain data.</p>
+    <h2>2. Data processed when you visit</h2>
+    <h3>Hosting logs</h3>
+    <p>The site is hosted on Vercel. Like any web host, Vercel processes technical request data (IP address, user agent, requested URL, time) to deliver pages, protect against abuse and diagnose errors.</p>
+    <h3>Aggregate analytics</h3>
+    <p>We use <a href="https://vercel.com/docs/analytics/privacy-policy" rel="noopener">Vercel Web Analytics</a> and <a href="https://vercel.com/docs/speed-insights/privacy-policy" rel="noopener">Vercel Speed Insights</a>, which do not use cookies and report aggregated page views and performance metrics. We also use a GEOInflow script (served from geoinflow-iota.vercel.app) to understand aggregate referral sources, including visits from AI search assistants. We use this information only to improve content and performance.</p>
+    <h3>Local browser checks</h3>
+    <p>Pages read the public donation-address configuration and the public records file from this domain. Copying an address uses your browser's clipboard locally; nothing about the copy is sent to us.</p>
 
-                <h3>1.2 Information You Provide</h3>
-                <ul>
-                    <li>Wallet connection data when you use our Connect Wallet feature</li>
-                    <li>Contact information if you reach out to us via email or forms</li>
-                    <li>Any information you voluntarily submit in connection with donations or community participation</li>
-                </ul>
+    <h2>3. Information you send us</h2>
+    <p>If you email <a href="mailto:contact@minadoai.com">contact@minadoai.com</a>, we receive your email address and message and use them only to reply and keep a record of the request. Do not send wallet secrets or unnecessary personal information.</p>
 
-                <h3>1.3 Automatically Collected Information</h3>
-                <ul>
-                    <li>IP address and browser type</li>
-                    <li>Pages visited and time spent on site</li>
-                    <li>Referring website or source</li>
-                    <li>Device information</li>
-                </ul>
+    <h2>4. Public blockchain data</h2>
+    <p>Crypto transfers are recorded on public blockchains by design. Anyone can see the sending address, receiving address, amount and time of a transfer on an explorer. ALI Charity cannot hide, edit or delete that data, and it may publish transaction identifiers in its <a href="/data/donations.json">public records file</a> under the <a href="/transparency.html">transparency method</a>.</p>
 
-                <h2>2. How We Use Your Information</h2>
-                <ul>
-                    <li>Process and record your cryptocurrency donations on-chain</li>
-                    <li>Issue ALI Tokens as donation rewards</li>
-                    <li>Display transparent donation records and project funding progress</li>
-                    <li>Communicate with you about your donations or platform updates</li>
-                    <li>Improve our website and user experience</li>
-                    <li>Comply with legal obligations</li>
-                </ul>
+    <h2>5. Sharing</h2>
+    <p>We do not sell or rent personal information. Data is shared only with the service providers described above to operate the site, or where required by law.</p>
 
-                <h2>3. Blockchain Transparency</h2>
-                <p>Our platform is built on the principle of full transparency. All donations are recorded on the Binance Smart Chain (BSC) and are publicly verifiable at <a href="https://bscscan.com" target="_blank">BScScan</a>. The following contract addresses are used:</p>
-                <ul>
-                    <li><strong>ALI Token Contract:</strong> <code class="bg-bgDark px-2 py-1 rounded text-green-400 text-sm break-all">0x4de5F4ac5daC9667eD38A09B908B6Ee7D6E06E79</code></li>
-                    <li><strong>Donation Treasury:</strong> <code class="bg-bgDark px-2 py-1 rounded text-green-400 text-sm break-all">0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC</code></li>
-                </ul>
+    <h2>6. Retention</h2>
+    <p>Hosting and analytics data are retained according to the providers' policies. Email correspondence is kept only as long as needed to handle the request and any follow-up.</p>
 
-                <h2>4. Data Sharing & Disclosure</h2>
-                <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. We may share information:</p>
-                <ul>
-                    <li>With our charity project partners (only donation amounts and project allocation, not personal identity unless voluntarily provided)</li>
-                    <li>With blockchain analytics providers for transaction verification</li>
-                    <li>When required by law, court order, or governmental authority</li>
-                    <li>To protect our rights, privacy, safety, or property</li>
-                </ul>
+    <h2>7. Your rights</h2>
+    <p>Depending on where you live, you may have rights to access, correct, delete or object to processing of your personal information. Contact <a href="mailto:contact@minadoai.com">contact@minadoai.com</a> to make a request.</p>
 
-                <h2>5. Data Security</h2>
-                <p>We implement appropriate technical and organizational measures to protect your information, including:</p>
-                <ul>
-                    <li>Secure HTTPS encryption for all data transmission</li>
-                    <li>Access controls and secure storage practices</li>
-                </ul>
-                <p><strong>Smart contract audit status: unverified.</strong> No independent smart contract audit report is linked from this policy. The <a href="about.html">About page explains the limits of the evidence currently provided</a>. Blockchain explorer visibility alone does not establish that a security audit has been completed.</p>
-                <p>However, no internet transmission or blockchain transaction is 100% secure. We cannot guarantee absolute security.</p>
+    <h2>8. Children</h2>
+    <p>This website is not directed at children under 18, and we do not knowingly collect their personal information.</p>
 
-                <h2>6. Cookies & Tracking</h2>
-                <p>We do not currently load Google Analytics or Google Ads conversion tracking on the public site.</p>
-                <ul>
-                    <li>Cookies may be used only where required for essential site functionality.</li>
-                    <li>At the time of this update, the site's own code does not set advertising or analytics cookies.</li>
-                </ul>
-                <p>If analytics or advertising tracking is enabled later, we will update this policy before collection begins. You can control cookies through your browser settings; disabling essential cookies may affect some site functionality.</p>
+    <h2>9. Changes</h2>
+    <p>We will update this page, including the date above, before changing what data the site collects.</p>
+  </main>
 
-                <h2>7. Third-Party Services</h2>
-                <p>Our platform integrates with:</p>
-                <ul>
-                    <li><strong>Binance Smart Chain (BSC)</strong> - blockchain transactions</li>
-                    <li><strong>MetaMask & Web3 Wallets</strong> - wallet connection</li>
-                    <li><strong>CoinGecko API</strong> - cryptocurrency price data</li>
-                    <li><strong>Binance API</strong> - market data</li>
-                </ul>
-                <p>These services have their own privacy policies. We encourage you to review them.</p>
-
-                <h2>8. Your Rights</h2>
-                <p>Depending on your jurisdiction, you may have the right to:</p>
-                <ul>
-                    <li>Access your personal information</li>
-                    <li>Correct inaccurate data</li>
-                    <li>Request deletion of your data (where applicable)</li>
-                    <li>Object to certain processing activities</li>
-                    <li>Data portability</li>
-                </ul>
-                <p>To exercise any of these rights, contact us at the email below.</p>
-
-                <h2>9. Children's Privacy</h2>
-                <p>Our platform is not intended for individuals under the age of 18. We do not knowingly collect information from minors.</p>
-
-                <h2>10. International Transfers</h2>
-                <p>Our platform is accessible globally. If you are accessing from outside your country, you consent to the transfer of your information to and processing in countries that may have different data protection laws.</p>
-
-                <h2>11. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify users of significant changes by posting the updated policy on this page with a revised "Last Updated" date.</p>
-
-                <h2>12. Contact Us</h2>
-                <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
-                <ul>
-                    <li><strong>Email:</strong> privacy@minadoai.com</li>
-                    <li><strong>Website:</strong> <a href="https://minadoai.com">https://minadoai.com</a></li>
-                    <li><strong>Blockchain:</strong> All donations and transactions are publicly verifiable on BSC</li>
-                </ul>
-
-                <div class="mt-12 pt-8 border-t border-borderColor text-center text-sm text-textSecondary">
-                    <p>ALI Charity — 100% Transparent Blockchain Charity Platform</p>
-                    <p class="mt-2"><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a> · <a href="donate.html">Donate</a></p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="text-center text-textSecondary text-sm py-8 px-6 border-t border-borderColor">
-        <p>© 2026 ALI Charity. All donations are fully transparent on-chain.</p>
-        <p class="mt-2">
-            <a href="index.html" class="text-primary hover:underline">ALI Charity</a> •
-            <a href="https://alicharity.blog" class="text-primary hover:underline" target="_blank">Blog</a>
-        </p>
-    </footer>
-
-    <script>
-        document.getElementById('menuToggle').addEventListener('click', () => {
-            document.getElementById('navLinks').classList.toggle('show');
-            document.getElementById('navOverlay').classList.toggle('show');
-        });
-        document.getElementById('navOverlay').addEventListener('click', () => {
-            document.getElementById('navLinks').classList.remove('show');
-            document.getElementById('navOverlay').classList.remove('show');
-        });
-    </script>
+  <!-- layout:footer -->
+  <footer class="site-footer">
+    <div><a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt="" loading="lazy"><span>ALI Charity</span></a><p>Official crypto donation addresses, donor-safety guidance and public records — without ever connecting to your wallet.</p></div>
+    <nav aria-labelledby="footer-give"><h2 id="footer-give">Give</h2><ul><li><a href="/donate.html">Donate crypto</a></li><li><a href="/donor-safety.html">Verify addresses</a></li><li><a href="/giving-tuesday.html">Crypto Giving Tuesday</a></li><li><a href="/data/donations.json">Public donation data</a></li></ul></nav>
+    <nav aria-labelledby="footer-learn"><h2 id="footer-learn">Learn</h2><ul><li><a href="/answers.html">Verified answers</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/blog/">Donor guides</a></li><li><a href="/transparency.html">Transparency method</a></li></ul></nav>
+    <nav aria-labelledby="footer-org"><h2 id="footer-org">Organization</h2><ul><li><a href="/about.html">About</a></li><li><a href="/token.html">ALI Token</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></li><li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文简介</a></li></ul></nav>
+    <p class="footer-note"><span>© <span id="year">2026</span> ALI Charity. We never ask for a seed phrase, private key or wallet connection.</span><span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/feed.xml">Feed</a></span></p>
+  </footer>
+  <!-- /layout:footer -->
+  <!-- layout:analytics -->
+  <script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <!-- /layout:analytics -->
 </body>
 </html>

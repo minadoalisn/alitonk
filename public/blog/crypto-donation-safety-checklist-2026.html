@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- layout:head -->
+  <meta name="theme-color" content="#102033" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+  <!-- /layout:head -->
 
     <title>Crypto Donation Safety Checklist (2026) | ALI Charity</title>
     <meta name="description" content="A crypto donation checklist: verify the full address and network, avoid scams, and distinguish transaction records from receipts and verified charitable use.">
@@ -21,8 +30,6 @@
     <meta name="twitter:title" content="Crypto Donation Safety Checklist (2026)">
     <meta name="twitter:description" content="Verify donation addresses, avoid scams, and keep proof for transparent giving.">
     <meta name="twitter:image" content="https://minadoai.com/blog/assets/daily-crypto-aid-briefing.jpg">
-    <link rel="stylesheet" href="/css/blog-index.css">
-    <link rel="stylesheet" href="/css/site-polish.css">
 
     <script type="application/ld+json">
     {
@@ -68,18 +75,27 @@
     }
     </script>
 </head>
-<body class="ali-polished ali-page ali-blog">
+<body>
 
-<header>
-    <h1>Crypto Donation Safety Checklist (2026)</h1>
-    <p class="subtitle">Verify addresses, avoid impersonation scams, and keep proof before sending an irreversible crypto donation.</p>
-    <nav class="breadcrumb">
-        <a href="/">Home</a> / <a href="/blog/">Blog</a> / Donor Safety
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- layout:header -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt=""><span>ALI Charity</span></a>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/transparency.html">Transparency</a><a href="/donor-safety.html">Safety</a><a href="/answers.html">Answers</a><a href="/blog/" aria-current="page">Guides</a></div>
+      <a class="nav-action" href="/donate.html#donation">Donate crypto</a>
+      <details class="nav-menu"><summary aria-label="Menu"><span></span></summary><div class="nav-menu-panel"><a href="/#projects">Project routes</a><a href="/transparency.html">Transparency method</a><a href="/donor-safety.html">Donor safety</a><a href="/answers.html">Verified answers</a><a href="/blog/" aria-current="page">Donor guides</a><a href="/about.html">About</a><a href="/token.html">ALI Token</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a><a class="menu-donate" href="/donate.html#donation">Donate crypto</a></div></details>
     </nav>
-</header>
+  </header>
+  <!-- /layout:header -->
 
-<main class="container">
-    <article class="intro">
+<main id="main" class="prose">
+    <article>
+        <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Guides</a></li><li aria-current="page">Donor safety</li></ol>
+        <p class="eyebrow">Donor safety guide</p>
+        <h1>Crypto Donation Safety Checklist (2026)</h1>
+        <p class="lede">Verify addresses, avoid impersonation scams, and keep proof before sending an irreversible crypto donation.</p>
+        <p class="article-meta"><span>Published <time datetime="2026-05-17">May 17, 2026</time></span><span>Updated <time datetime="2026-10-31">October 31, 2026</time></span><span>By ALI Charity Operations</span></p>
         <figure class="article-figure">
             <picture>
                 <source media="(max-width: 700px)" srcset="/blog/assets/daily-crypto-aid-briefing-sm.jpg">
@@ -89,7 +105,7 @@
 
         <p>Crypto donations can be fast and borderless, but they are also irreversible. A safe donation workflow is simple: verify the official source, verify the address, verify the chain, and keep a clean record.</p>
 
-        <div class="copy-box">
+        <div class="answer-box">
             <h2>Quick Answer</h2>
             <p>Start on the live official Donate page. Check the asset and network, then compare the complete recipient address in your wallet with that page, including the middle characters. Do not copy from transaction history. Stop if the source, recipient or network is uncertain; a small test transfer does not replace verification.</p>
         </div>
@@ -137,11 +153,10 @@
             <li>Recovery scams that claim your lost crypto has been traced and ask for fees to release it.</li>
         </ul>
 
-        <div class="cta">
+        <div class="card cta">
             <h2>Donate with verification built in</h2>
             <p>ALI Charity publishes donor pages and encourages on-chain verification for every donation.</p>
-            <a href="/donate.html" class="btn">Go to Donate</a>
-            <a href="/promotion.html" class="btn">Share the Transparency Kit</a>
+            <div class="actions"><a href="/donate.html" class="button primary">Go to the Donate page</a><a href="/donor-safety.html" class="button secondary">Open the donor-safety guide</a></div>
         </div>
 
         <h2>Trusted references</h2>
@@ -161,10 +176,20 @@
     </article>
 </main>
 
-<footer>
-    <p>&copy; 2026 ALI Charity. Donor safety, public records, and transparent crypto giving.</p>
-    <p><a href="/blog/">Blog</a> | <a href="/donate.html">Donate</a> | <a href="/promotion.html">Promotion Kit</a></p>
-</footer>
+<!-- layout:footer -->
+  <footer class="site-footer">
+    <div><a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt="" loading="lazy"><span>ALI Charity</span></a><p>Official crypto donation addresses, donor-safety guidance and public records — without ever connecting to your wallet.</p></div>
+    <nav aria-labelledby="footer-give"><h2 id="footer-give">Give</h2><ul><li><a href="/donate.html">Donate crypto</a></li><li><a href="/donor-safety.html">Verify addresses</a></li><li><a href="/giving-tuesday.html">Crypto Giving Tuesday</a></li><li><a href="/data/donations.json">Public donation data</a></li></ul></nav>
+    <nav aria-labelledby="footer-learn"><h2 id="footer-learn">Learn</h2><ul><li><a href="/answers.html">Verified answers</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/blog/">Donor guides</a></li><li><a href="/transparency.html">Transparency method</a></li></ul></nav>
+    <nav aria-labelledby="footer-org"><h2 id="footer-org">Organization</h2><ul><li><a href="/about.html">About</a></li><li><a href="/token.html">ALI Token</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></li><li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文简介</a></li></ul></nav>
+    <p class="footer-note"><span>© <span id="year">2026</span> ALI Charity. We never ask for a seed phrase, private key or wallet connection.</span><span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/feed.xml">Feed</a></span></p>
+  </footer>
+  <!-- /layout:footer -->
 
+  <!-- layout:analytics -->
+  <script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <!-- /layout:analytics -->
 </body>
 </html>

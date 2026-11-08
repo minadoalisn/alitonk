@@ -1,7 +1,392 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.minadoai.com"
+        }
+      ],
+      "destination": "https://minadoai.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about-v2.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-new.html",
+      "destination": "/donate.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-v2.html",
+      "destination": "/donate.html",
+      "permanent": true
+    },
+    {
+      "source": "/faq-v2.html",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/team-v2.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/token-v2.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/team.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-i-built-ali-charity.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/community",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/cookies",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/growth.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/promotion.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blockchain-charity",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/crypto-donations",
+      "destination": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/ali-token-economics.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/ali-token-use-cases.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/dao-governance.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/dex-launch.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/whitepaper.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ali-token-dex-launch-preparation.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ali-token-economics-guide.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ali-token-incentivizing-charitable-giving.html",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/crypto-donation-guide-2026.html",
+      "destination": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-donate-cryptocurrency-2026.html",
+      "destination": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-donate-cryptocurrency-to-charity-2026.html",
+      "destination": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/crypto-philanthropy-guide-for-beginners.html",
+      "destination": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-donate-cryptocurrency-to-charity.html",
+      "destination": "/blog/how-to-donate-cryptocurrency-guide-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-crypto-charity-platforms-2026.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-crypto-charity-platforms.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-transparent-charity-platform.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/global-crypto-charity.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-crypto-charity-donate-2026.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-cryptocurrency-charity-platforms-2026.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/decentralized-charity-platform-guide.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/global-cryptocurrency-charity-worldwide.html",
+      "destination": "/blog/crypto-donation-platform-2026-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blockchain-transparency-revolution.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/charity-transparency-crisis.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blockchain-charity-donation-benefits.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/benefits-of-crypto-donations-nonprofits.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/why-donate-cryptocurrency.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/why-donate-to-blockchain-charity.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/web3-philanthropy-future.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/future-of-giving-2026.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blockchain-charity-transparency-revolution-2026.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-blockchain-enables-transparent-charity.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-future-of-web3-philanthropy.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/web3-philanthropy-future-2026.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/crypto-philanthropy-trends-2026-stablecoin-aid-transparent-giving.html",
+      "destination": "/blog/blockchain-donation-tracking-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blockchain-charity-tax-benefits.html",
+      "destination": "/answers.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cryptocurrency-donation-tax-benefits-2026.html",
+      "destination": "/answers.html",
+      "permanent": true
+    },
+    {
+      "source": "/humanitarian-aid-guide-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sudan-humanitarian-crisis-blockchain-aid.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blockchain-revolutionizing-humanitarian-aid-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/donate-v2:rest*",
+      "destination": "/donate.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/news/:rest*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/news.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/briefings/:rest*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate",
+      "destination": "/donate.html",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/token",
+      "destination": "/token.html",
+      "permanent": true
+    },
+    {
+      "source": "/transparency",
+      "destination": "/transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/answers",
+      "destination": "/answers.html",
+      "permanent": true
+    },
+    {
+      "source": "/safety",
+      "destination": "/donor-safety.html",
+      "permanent": true
+    },
+    {
+      "source": "/donor-safety",
+      "destination": "/donor-safety.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/zh",
+      "destination": "/zh/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
+      "source": "/(.*)",
       "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' https://geoinflow-iota.vercel.app https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://geoinflow-iota.vercel.app https://vitals.vercel-insights.com https://va.vercel-scripts.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+        },
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
@@ -16,28 +401,94 @@
         },
         {
           "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=(), payment=()"
-        }
-      ],
-      "source": "/(.*)"
-    }
-  ],
-  "redirects": [
-    {
-      "destination": "https://minadoai.com/$1",
-      "has": [
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()"
+        },
         {
-          "type": "host",
-          "value": "www.minadoai.com"
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
         }
-      ],
-      "permanent": true,
-      "source": "/(.*)"
+      ]
     },
     {
-      "destination": "/",
-      "permanent": true,
-      "source": "/index.html"
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/blog/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(logo.png|og-image.jpg|icons.svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/js/site-config.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(llms.txt|llms-full.txt|robots.txt|sitemap.xml|feed.xml)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/llms(.*).txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     }
   ]
 }

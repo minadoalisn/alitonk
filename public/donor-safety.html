@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- layout:head -->
+  <meta name="theme-color" content="#102033" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+  <!-- /layout:head -->
     <title>Crypto Donor Safety Guide | ALI Charity</title>
     <meta name="description" content="Verify ALI Charity crypto donation addresses, BNB Smart Chain contract details, transaction hashes, and donor records before sending irreversible funds.">
     <meta name="keywords" content="ALI Charity donor safety, crypto donation verification, BNB Chain charity donation, verify donation address, blockchain charity safety, stablecoin donor safety">
@@ -18,86 +27,6 @@
     <meta name="twitter:title" content="Crypto Donor Safety Guide">
     <meta name="twitter:description" content="Verify ALI Charity donation addresses and on-chain proof before sending crypto.">
     <meta name="twitter:image" content="https://minadoai.com/og-image.jpg">
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            background: #07111d;
-            color: #eef6ff;
-            line-height: 1.6;
-        }
-        a { color: inherit; }
-        .shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            background: rgba(7, 17, 29, 0.94);
-            border-bottom: 1px solid rgba(148, 163, 184, 0.18);
-            backdrop-filter: blur(12px);
-        }
-        nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 0; }
-        .brand { font-weight: 900; text-decoration: none; }
-        .nav-links { display: flex; gap: 14px; flex-wrap: wrap; color: #b8c7d9; font-size: 0.94rem; }
-        .hero {
-            padding: 72px 0 36px;
-            display: grid;
-            grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
-            gap: 28px;
-            align-items: start;
-        }
-        .kicker { color: #7dd3fc; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; }
-        h1 { font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.04; margin: 12px 0 18px; letter-spacing: 0; }
-        h2 { font-size: clamp(1.35rem, 3vw, 2rem); margin: 0 0 14px; }
-        h3 { margin: 0 0 8px; font-size: 1.05rem; }
-        .lead { color: #c6d3e3; font-size: clamp(1.05rem, 2vw, 1.22rem); max-width: 68ch; }
-        .provenance { color: #93a8bf; font-size: 0.9rem; max-width: 76ch; }
-        .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 46px;
-            border-radius: 8px;
-            padding: 0 18px;
-            text-decoration: none;
-            font-weight: 850;
-            border: 1px solid rgba(125, 211, 252, 0.32);
-            background: rgba(56, 189, 248, 0.12);
-            color: #e0f2fe;
-        }
-        .btn.primary { background: #f59e0b; border-color: #f59e0b; color: #111827; }
-        .panel, .card, .address-row {
-            background: #101b2c;
-            border: 1px solid rgba(148, 163, 184, 0.22);
-            border-radius: 8px;
-        }
-        .panel, .card { padding: 22px; }
-        .signal-list { display: grid; gap: 12px; }
-        .signal { display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px solid rgba(148, 163, 184, 0.16); padding-bottom: 11px; }
-        .signal:last-child { border-bottom: 0; padding-bottom: 0; }
-        .label { color: #9fb0c6; }
-        .value { font-weight: 900; text-align: right; }
-        section { padding: 28px 0; }
-        #full-address-verification { scroll-margin-top: 80px; }
-        .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-        .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
-        .card p, .card li { color: #c4d0df; }
-        .address-list { display: grid; gap: 10px; }
-        .address-row { padding: 14px; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 12px; align-items: start; }
-        code { color: #86efac; word-break: break-all; }
-        .warning { border-color: rgba(245, 158, 11, 0.45); background: rgba(245, 158, 11, 0.08); }
-        .topic { display: inline-flex; margin: 0 8px 8px 0; border: 1px solid rgba(148, 163, 184, 0.24); background: rgba(148, 163, 184, 0.08); color: #dce8f6; border-radius: 999px; padding: 6px 10px; font-size: 0.88rem; }
-        footer { color: #8fa2b8; border-top: 1px solid rgba(148, 163, 184, 0.18); padding: 30px 0; margin-top: 24px; }
-        @media (max-width: 860px) {
-            #full-address-verification { scroll-margin-top: 180px; }
-            .hero, .grid, .two-col { grid-template-columns: 1fr; }
-            nav { align-items: flex-start; flex-direction: column; }
-            .address-row { grid-template-columns: 1fr; }
-        }
-    </style>
-    <link rel="stylesheet" href="/css/site-polish.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -156,30 +85,29 @@
     }
     </script>
 </head>
-<body class="ali-polished ali-page">
-    <header>
-        <nav class="shell">
-            <a class="brand" href="/">ALI Charity</a>
-            <div class="nav-links">
-                <a href="/donate.html">Donate</a>
-                <a href="/transparency.html">Transparency</a>
-                <a href="/token.html">Token</a>
-                <a href="/blog/">Blog</a>
-                <a href="/promotion.html">Promotion</a>
-            </div>
-        </nav>
-    </header>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+    <!-- layout:header -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt=""><span>ALI Charity</span></a>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/transparency.html">Transparency</a><a href="/donor-safety.html" aria-current="page">Safety</a><a href="/answers.html">Answers</a><a href="/blog/">Guides</a></div>
+      <a class="nav-action" href="/donate.html#donation">Donate crypto</a>
+      <details class="nav-menu"><summary aria-label="Menu"><span></span></summary><div class="nav-menu-panel"><a href="/#projects">Project routes</a><a href="/transparency.html">Transparency method</a><a href="/donor-safety.html" aria-current="page">Donor safety</a><a href="/answers.html">Verified answers</a><a href="/blog/">Donor guides</a><a href="/about.html">About</a><a href="/token.html">ALI Token</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a><a class="menu-donate" href="/donate.html#donation">Donate crypto</a></div></details>
+    </nav>
+  </header>
+  <!-- /layout:header -->
 
-    <main class="shell">
-        <section class="hero">
+    <main id="main" class="page">
+        <section class="page-hero safety-hero">
             <div>
                 <p class="kicker">Donor safety for irreversible crypto transfers</p>
                 <h1>Verify the site, chain, address, and proof before donating.</h1>
                 <p class="lead">ALI Charity donors should use official pages, public explorer records, and saved transaction hashes. This guide keeps the safety workflow clear for BNB Smart Chain, stablecoin, Bitcoin, and Solana donors.</p>
                 <p class="provenance"><strong>Last reviewed:</strong> August 15, 2026 · <strong>Maintained by:</strong> ALI Charity Operations · <strong>Method:</strong> address data is loaded from the site's canonical configuration; safety statements are checked against public explorer behavior and official consumer-protection guidance. AI-assisted maintenance is disclosed, and factual claims require source review.</p>
                 <div class="actions">
-                    <a class="btn primary" href="/donate.html">Open Donate Page</a>
-                    <a class="btn" href="/blog/crypto-donation-safety-checklist-2026.html">Read Full Checklist</a>
+                    <a class="button primary" href="/donate.html">Open Donate Page</a>
+                    <a class="button secondary" href="/blog/crypto-donation-safety-checklist-2026.html">Read Full Checklist</a>
                 </div>
             </div>
             <aside class="panel">
@@ -317,42 +245,22 @@
         </section>
     </main>
 
-    <footer>
-        <div class="shell">
-            <p>ALI Charity donor safety guide. Verify official pages, avoid private-message address changes, and keep transaction proof.</p>
-        </div>
-    </footer>
+    <!-- layout:footer -->
+  <footer class="site-footer">
+    <div><a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt="" loading="lazy"><span>ALI Charity</span></a><p>Official crypto donation addresses, donor-safety guidance and public records — without ever connecting to your wallet.</p></div>
+    <nav aria-labelledby="footer-give"><h2 id="footer-give">Give</h2><ul><li><a href="/donate.html">Donate crypto</a></li><li><a href="/donor-safety.html">Verify addresses</a></li><li><a href="/giving-tuesday.html">Crypto Giving Tuesday</a></li><li><a href="/data/donations.json">Public donation data</a></li></ul></nav>
+    <nav aria-labelledby="footer-learn"><h2 id="footer-learn">Learn</h2><ul><li><a href="/answers.html">Verified answers</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/blog/">Donor guides</a></li><li><a href="/transparency.html">Transparency method</a></li></ul></nav>
+    <nav aria-labelledby="footer-org"><h2 id="footer-org">Organization</h2><ul><li><a href="/about.html">About</a></li><li><a href="/token.html">ALI Token</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></li><li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文简介</a></li></ul></nav>
+    <p class="footer-note"><span>© <span id="year">2026</span> ALI Charity. We never ask for a seed phrase, private key or wallet connection.</span><span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/feed.xml">Feed</a></span></p>
+  </footer>
+  <!-- /layout:footer -->
 
     <script src="/js/site-config.js"></script>
-    <script>
-        const addressList = document.getElementById('addressList');
-        const config = window.ALI_SITE_CONFIG;
-
-        function renderAddressSnapshot() {
-            if (!config || !config.donations || !config.token) {
-                addressList.innerHTML = '<p class="label">Official address data could not be loaded. Use the Donate page before sending funds.</p>';
-                return;
-            }
-
-            const donationRows = Object.entries(config.donations)
-                .map(([asset, item]) => `
-                    <div class="address-row">
-                        <strong>${asset} / ${item.network}</strong>
-                        <code>${item.address}</code>
-                    </div>
-                `)
-                .join('');
-
-            addressList.innerHTML = `
-                <div class="address-row">
-                    <strong>${config.token.symbol} contract / ${config.token.network}</strong>
-                    <code>${config.token.contractAddress}</code>
-                </div>
-                ${donationRows}
-            `;
-        }
-
-        renderAddressSnapshot();
-    </script>
+    <script src="/js/address-snapshot.js"></script>
+  <!-- layout:analytics -->
+  <script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <!-- /layout:analytics -->
 </body>
 </html>

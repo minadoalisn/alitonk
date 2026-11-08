@@ -3,19 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ALI Charity | Transparent Crypto Donations With Public Proof</title>
-  <meta name="description" content="ALI Charity publishes official crypto donation addresses, donor-safety guidance, public blockchain records, and humanitarian project information without connecting to your wallet.">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="theme-color" content="#102033">
-  <link rel="canonical" href="https://minadoai.com/">
+  <!-- layout:head -->
+  <meta name="theme-color" content="#102033" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
   <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
-  <link rel="icon" href="/logo.png">
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+  <!-- /layout:head -->
+  <title>ALI Charity | Transparent Crypto Donations With Public Proof</title>
+  <meta name="description" content="Donate USDT, BNB, ETH, BTC or SOL from your own wallet. ALI Charity publishes official addresses, donor-safety guidance and public blockchain records — and never connects to your wallet.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://minadoai.com/">
+  <link rel="alternate" hreflang="en" href="https://minadoai.com/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://minadoai.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://minadoai.com/">
+  <link rel="preload" as="image" href="/assets/images/hero-global-aid-blockchain.webp" imagesrcset="/assets/images/hero-global-aid-blockchain-sm.webp 760w, /assets/images/hero-global-aid-blockchain.webp 1400w" imagesizes="(max-width: 980px) 100vw, 640px" type="image/webp">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ALI Charity">
   <meta property="og:url" content="https://minadoai.com/">
   <meta property="og:title" content="ALI Charity | Transparent Crypto Donations With Public Proof">
-  <meta property="og:description" content="Official donation addresses, donor-safety guidance, and public blockchain records for humanitarian giving.">
+  <meta property="og:description" content="Official donation addresses, donor-safety guidance and public blockchain records for humanitarian giving.">
   <meta property="og:image" content="https://minadoai.com/og-image.jpg">
+  <meta property="og:image:width" content="1400">
+  <meta property="og:image:height" content="788">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ALI Charity | Transparent Crypto Donations">
   <meta name="twitter:description" content="Donate from your own wallet and keep the proof public.">
@@ -29,8 +43,13 @@
         "@id": "https://minadoai.com/#organization",
         "name": "ALI Charity",
         "url": "https://minadoai.com/",
-        "logo": "https://minadoai.com/logo.png",
-        "description": "A public-information platform for transparent crypto donations and humanitarian project routes."
+        "logo": { "@type": "ImageObject", "url": "https://minadoai.com/logo.png", "width": 512, "height": 512 },
+        "image": "https://minadoai.com/og-image.jpg",
+        "email": "contact@minadoai.com",
+        "description": "A public-information platform that publishes official crypto donation addresses, donor-safety guidance and public transaction records for humanitarian project routes. It never connects to a donor's wallet.",
+        "publishingPrinciples": "https://minadoai.com/transparency.html",
+        "knowsAbout": ["Cryptocurrency donations", "Crypto donation safety", "Blockchain transaction verification", "Humanitarian aid transparency", "Address poisoning scams"],
+        "contactPoint": { "@type": "ContactPoint", "contactType": "donor support", "email": "contact@minadoai.com", "availableLanguage": ["English", "Chinese"] }
       },
       {
         "@type": "WebSite",
@@ -38,7 +57,7 @@
         "url": "https://minadoai.com/",
         "name": "ALI Charity",
         "publisher": { "@id": "https://minadoai.com/#organization" },
-        "inLanguage": "en"
+        "inLanguage": ["en", "zh-Hans"]
       },
       {
         "@type": "WebPage",
@@ -46,12 +65,26 @@
         "url": "https://minadoai.com/",
         "name": "ALI Charity | Transparent Crypto Donations With Public Proof",
         "isPartOf": { "@id": "https://minadoai.com/#website" },
-        "about": { "@id": "https://minadoai.com/#organization" }
+        "about": { "@id": "https://minadoai.com/#organization" },
+        "primaryImageOfPage": "https://minadoai.com/og-image.jpg",
+        "dateModified": "2026-11-08",
+        "inLanguage": "en"
       },
       {
         "@type": "DonateAction",
         "name": "Donate cryptocurrency to an ALI Charity project route",
-        "target": "https://minadoai.com/donate.html"
+        "target": "https://minadoai.com/donate.html",
+        "recipient": { "@id": "https://minadoai.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://minadoai.com/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is ALI Charity?", "acceptedAnswer": { "@type": "Answer", "text": "ALI Charity is a static information website at minadoai.com that publishes official crypto donation addresses, donor-safety guidance and public transaction records for humanitarian project routes. It never connects to a donor's wallet." } },
+          { "@type": "Question", "name": "Which cryptocurrencies can I donate?", "acceptedAnswer": { "@type": "Answer", "text": "USDT, BNB and ETH on BNB Smart Chain (BSC), BTC on the Bitcoin network, and SOL on Solana. Each asset must be sent only on the network shown on the official Donate page." } },
+          { "@type": "Question", "name": "Does ALI Charity need access to my wallet?", "acceptedAnswer": { "@type": "Answer", "text": "No. You send from your own wallet or exchange. ALI Charity never asks for a wallet connection, a transaction signature, a seed phrase or a private key." } },
+          { "@type": "Question", "name": "Are donations to ALI Charity tax-deductible?", "acceptedAnswer": { "@type": "Answer", "text": "ALI Charity's tax-deductible status is unverified: no registration evidence is published and the site does not issue tax receipts." } }
+        ]
       }
     ]
   }
@@ -59,46 +92,56 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <!-- layout:header -->
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/">ALI Charity</a>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#proof">Public proof</a>
-        <a href="/donor-safety.html">Safety</a>
-        <a href="/answers.html">Answers</a>
-        <a href="/blog/">Blog</a>
-      </div>
+      <a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt=""><span>ALI Charity</span></a>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/transparency.html">Transparency</a><a href="/donor-safety.html">Safety</a><a href="/answers.html">Answers</a><a href="/blog/">Guides</a></div>
       <a class="nav-action" href="/donate.html#donation">Donate crypto</a>
+      <details class="nav-menu"><summary aria-label="Menu"><span></span></summary><div class="nav-menu-panel"><a href="/#projects">Project routes</a><a href="/transparency.html">Transparency method</a><a href="/donor-safety.html">Donor safety</a><a href="/answers.html">Verified answers</a><a href="/blog/">Donor guides</a><a href="/about.html">About</a><a href="/token.html">ALI Token</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a><a class="menu-donate" href="/donate.html#donation">Donate crypto</a></div></details>
     </nav>
   </header>
+  <!-- /layout:header -->
 
   <main id="main">
     <section class="hero section-shell">
       <div class="hero-copy">
         <p class="eyebrow">Transparent crypto donations</p>
         <h1>Help people.<br>Keep the proof public.</h1>
-        <p class="hero-lede">ALI Charity publishes official donation addresses, public records, and donor-safety guidance for humanitarian project routes.</p>
+        <p class="hero-lede">ALI Charity publishes official donation addresses, public records and donor-safety guidance for humanitarian project routes. You give from your own wallet; the record stays on a public blockchain.</p>
         <div class="actions"><a class="button primary" href="/donate.html#donation">Donate crypto</a><a class="button secondary" href="/donor-safety.html">Verify official addresses</a></div>
+        <ul class="asset-chips" aria-label="Donate a specific asset">
+          <li><a href="/donate.html?asset=USDT#donation">USDT <small>BSC</small></a></li>
+          <li><a href="/donate.html?asset=BNB#donation">BNB <small>BSC</small></a></li>
+          <li><a href="/donate.html?asset=ETH#donation">ETH <small>BSC</small></a></li>
+          <li><a href="/donate.html?asset=BTC#donation">BTC <small>Bitcoin</small></a></li>
+          <li><a href="/donate.html?asset=SOL#donation">SOL <small>Solana</small></a></li>
+        </ul>
         <p class="trust-line"><strong>No wallet connection.</strong> We never ask for a seed phrase or private key.</p>
       </div>
-      <figure class="hero-media"><img src="/assets/images/hero-global-aid-blockchain.jpg" width="1400" height="788" alt="People reviewing public aid records" fetchpriority="high"><figcaption>Public records help donors verify where a transfer was sent.</figcaption></figure>
-    </section>
-    <section class="final-cta section-shell" aria-labelledby="giving-tuesday-title">
-      <div>
-        <p class="eyebrow">Crypto Giving Tuesday · December 1</p>
-        <h2 id="giving-tuesday-title">Give crypto you can verify.</h2>
-        <p>Public donation addresses, verifiable on-chain. No wallet connection — we never ask for your seed phrase.</p>
-      </div>
-      <a class="button light" href="/giving-tuesday.html">How giving works</a>
+      <figure class="hero-media">
+        <picture>
+          <source type="image/webp" srcset="/assets/images/hero-global-aid-blockchain-sm.webp 760w, /assets/images/hero-global-aid-blockchain.webp 1400w" sizes="(max-width: 980px) 100vw, 640px">
+          <img src="/assets/images/hero-global-aid-blockchain.jpg" srcset="/assets/images/hero-global-aid-blockchain-sm.jpg 760w, /assets/images/hero-global-aid-blockchain.jpg 1400w" sizes="(max-width: 980px) 100vw, 640px" width="1400" height="788" alt="People reviewing public aid records" fetchpriority="high" decoding="async">
+        </picture>
+        <figcaption>Public records help donors verify where a transfer was sent.</figcaption>
+      </figure>
     </section>
 
+    <section class="section-shell" aria-label="Trust commitments">
+      <ul class="trust-strip">
+        <li><strong>Your wallet, your signature</strong><span>No connection, no signing requests</span></li>
+        <li><strong>One official source</strong><span>Addresses only on minadoai.com</span></li>
+        <li><strong>Public proof</strong><span>Every transfer has a verifiable hash</span></li>
+        <li><strong>No unsupported numbers</strong><span>Unknown does not mean zero</span></li>
+      </ul>
+    </section>
 
     <section class="process section-shell" aria-labelledby="process-title">
       <div class="section-heading"><p class="eyebrow">A shorter path</p><h2 id="process-title">Donate in two steps.</h2><p>The transfer happens in your own wallet or exchange. This website only publishes official addresses and verification guidance.</p></div>
       <div class="step-grid">
-        <article><span>1</span><h3>Choose and copy</h3><p>Select USDT, BNB, ETH, BTC, or SOL. The page shows the exact network and official address.</p></article>
-        <article><span>2</span><h3>Send and keep proof</h3><p>Send from your wallet, keep the transaction hash, and verify it on the relevant blockchain explorer.</p></article>
+        <article><span>1</span><h3>Choose and copy</h3><p>Select USDT, BNB, ETH, BTC or SOL. The page shows the exact network, the official address in easy-to-compare groups, and a QR code.</p></article>
+        <article><span>2</span><h3>Send and keep proof</h3><p>Send from your wallet, keep the transaction hash, and verify it on the network's public explorer.</p></article>
       </div>
       <a class="text-link" href="/donate.html#donation">Open the official donation selector</a>
     </section>
@@ -106,12 +149,12 @@
     <section id="projects" class="projects section-shell" aria-labelledby="projects-title">
       <div class="section-heading"><p class="eyebrow">Humanitarian routes</p><h2 id="projects-title">Choose the kind of help you want to support.</h2><p>Project routes describe intended areas of support. They do not display raised or spent amounts unless a public record supports the claim.</p></div>
       <div class="project-grid">
-        <article><img src="/assets/images/projects/war-zone-aid.jpg" width="640" height="420" alt="Emergency supplies prepared for conflict-affected communities" loading="lazy"><h3>War-zone aid</h3><p>Emergency food, water, shelter, and medical support for conflict-affected communities.</p></article>
-        <article><img src="/assets/images/projects/earthquake-relief.jpg" width="640" height="420" alt="Emergency earthquake relief supplies" loading="lazy"><h3>Disaster relief</h3><p>Rapid response and recovery support following earthquakes and other disasters.</p></article>
-        <article><img src="/assets/images/projects/children-education.jpg" width="640" height="420" alt="Education materials for children" loading="lazy"><h3>Children and education</h3><p>Learning materials, safe access to education, and protection for vulnerable children.</p></article>
-        <article><img src="/assets/images/projects/medical-infrastructure.jpg" width="640" height="420" alt="Medical equipment prepared for community care" loading="lazy"><h3>Health and medical care</h3><p>Medical supplies, public-health capacity, hospice care, and community clinics.</p></article>
-        <article><img src="/assets/images/projects/clean-water.jpg" width="640" height="420" alt="Clean water access project" loading="lazy"><h3>Water and sanitation</h3><p>Clean water access, sanitation, and hygiene support for underserved communities.</p></article>
-        <article><img src="/assets/images/projects/stray-animal-support.jpg" width="640" height="420" alt="Animal welfare volunteers caring for a rescued animal" loading="lazy"><h3>Animal welfare</h3><p>Rescue, rehabilitation, and welfare support for abandoned animals.</p></article>
+        <article><picture><source type="image/webp" srcset="/assets/images/projects/war-zone-aid.webp"><img src="/assets/images/projects/war-zone-aid.jpg" width="640" height="420" alt="Emergency supplies prepared for conflict-affected communities" loading="lazy" decoding="async"></picture><h3>War-zone aid</h3><p>Emergency food, water, shelter and medical support for conflict-affected communities.</p></article>
+        <article><picture><source type="image/webp" srcset="/assets/images/projects/earthquake-relief.webp"><img src="/assets/images/projects/earthquake-relief.jpg" width="640" height="420" alt="Emergency earthquake relief supplies" loading="lazy" decoding="async"></picture><h3>Disaster relief</h3><p>Rapid response and recovery support following earthquakes and other disasters.</p></article>
+        <article><picture><source type="image/webp" srcset="/assets/images/projects/children-education.webp"><img src="/assets/images/projects/children-education.jpg" width="640" height="420" alt="Education materials for children" loading="lazy" decoding="async"></picture><h3>Children and education</h3><p>Learning materials, safe access to education and protection for vulnerable children.</p></article>
+        <article><picture><source type="image/webp" srcset="/assets/images/projects/medical-infrastructure.webp"><img src="/assets/images/projects/medical-infrastructure.jpg" width="640" height="420" alt="Medical equipment prepared for community care" loading="lazy" decoding="async"></picture><h3>Health and medical care</h3><p>Medical supplies, public-health capacity, hospice care and community clinics.</p></article>
+        <article><picture><source type="image/webp" srcset="/assets/images/projects/clean-water.webp"><img src="/assets/images/projects/clean-water.jpg" width="640" height="420" alt="Clean water access project" loading="lazy" decoding="async"></picture><h3>Water and sanitation</h3><p>Clean water access, sanitation and hygiene support for underserved communities.</p></article>
+        <article><picture><source type="image/webp" srcset="/assets/images/projects/stray-animal-support.webp"><img src="/assets/images/projects/stray-animal-support.jpg" width="640" height="420" alt="Animal welfare volunteers caring for a rescued animal" loading="lazy" decoding="async"></picture><h3>Animal welfare</h3><p>Rescue, rehabilitation and welfare support for abandoned animals.</p></article>
       </div>
       <a class="button primary compact" href="/donate.html#donation">Donate to a project route</a>
     </section>
@@ -122,22 +165,51 @@
     </section>
 
     <section class="editorial section-shell" aria-labelledby="editorial-title">
-      <div class="section-heading"><p class="eyebrow">Donor education</p><h2 id="editorial-title">Useful guidance before urgency.</h2><p>Evergreen guides explain crypto donation safety, public verification, and humanitarian giving without promising returns.</p></div>
+      <div class="section-heading"><p class="eyebrow">Donor education</p><h2 id="editorial-title">Useful guidance before urgency.</h2><p>Evergreen guides explain crypto donation safety, public verification and humanitarian giving without promising returns.</p></div>
       <div class="article-list">
-        <a href="/blog/crypto-donation-safety-checklist-2026.html"><span>Safety guide</span><strong>Crypto donation safety checklist</strong><p>How to verify an address, network, and transaction before and after sending.</p></a>
-        <a href="/answers.html"><span>Canonical facts</span><strong>Verified answers about ALI Charity</strong><p>Direct answers with explicit boundaries for wallet access, transaction evidence, and ALI Token.</p></a>
-        <a href="/transparency.html"><span>Transparency method</span><strong>What public proof can establish</strong><p>The rules used to separate transaction facts from off-chain delivery and impact claims.</p></a>
+        <a href="/blog/crypto-donation-safety-checklist-2026.html"><span>Safety guide</span><strong>Crypto donation safety checklist</strong><p>How to verify an address, network and transaction before and after sending.</p></a>
+        <a href="/blog/how-to-donate-cryptocurrency-guide-2026.html"><span>How-to</span><strong>How to donate cryptocurrency to charity</strong><p>Seven steps from choosing an asset to verifying your transaction hash.</p></a>
+        <a href="/blog/blockchain-donation-tracking-transparency.html"><span>Explainer</span><strong>What on-chain records prove</strong><p>The three layers of donation evidence — and where the blockchain stops.</p></a>
       </div>
       <a class="text-link" href="/blog/">Browse all donor guidance</a>
     </section>
 
-    <section class="final-cta section-shell"><div><p class="eyebrow">Ready when you are</p><h2>Choose an asset. Copy one official address.</h2><p>Take your time, verify the network, and send a small test transfer if you are unsure.</p></div><a class="button light" href="/donate.html#donation">Open donation options</a></section>
+    <section class="home-faq section-shell" aria-labelledby="home-faq-title">
+      <div class="section-heading"><p class="eyebrow">Quick answers</p><h2 id="home-faq-title">Before you give.</h2></div>
+      <div class="faq-list">
+        <details class="faq"><summary>What is ALI Charity?</summary><div><p>ALI Charity is a static information website at minadoai.com that publishes official crypto donation addresses, donor-safety guidance and public transaction records for humanitarian project routes. It never connects to a donor's wallet.</p></div></details>
+        <details class="faq"><summary>Which cryptocurrencies can I donate?</summary><div><p>USDT, BNB and ETH on BNB Smart Chain (BSC), BTC on the Bitcoin network, and SOL on Solana. Each asset must be sent only on the network shown on the official <a href="/donate.html">Donate page</a>.</p></div></details>
+        <details class="faq"><summary>Does ALI Charity need access to my wallet?</summary><div><p>No. You send from your own wallet or exchange. ALI Charity never asks for a wallet connection, a transaction signature, a seed phrase or a private key.</p></div></details>
+        <details class="faq"><summary>Are donations to ALI Charity tax-deductible?</summary><div><p>ALI Charity's tax-deductible status is unverified: no registration evidence is published and the site does not issue tax receipts. More in <a href="/answers.html">verified answers</a>.</p></div></details>
+      </div>
+    </section>
+
+    <section class="final-cta section-shell" aria-labelledby="giving-tuesday-title">
+      <div>
+        <p class="eyebrow">Crypto Giving Tuesday · December 1, 2026</p>
+        <h2 id="giving-tuesday-title">Give crypto you can verify.</h2>
+        <p>Choose an asset, copy one official address, and take your time to verify the network before you send.</p>
+      </div>
+      <div class="actions"><a class="button light" href="/donate.html#donation">Open donation options</a><a class="button light" href="/giving-tuesday.html">How Giving Tuesday works</a></div>
+    </section>
   </main>
 
-  <a class="mobile-donate" href="/donate.html#donation">Donate crypto</a>
-  <footer class="site-footer"><div><a class="brand" href="/">ALI Charity</a><p>Transparent donation information and public verification guidance.</p></div><nav aria-label="Footer navigation"><a href="/answers.html">Verified answers</a><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/promotion.html">Promotion</a></nav><p>© <span id="year">2026</span> ALI Charity.</p></footer>
+  <!-- layout:footer -->
+  <footer class="site-footer">
+    <div><a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt="" loading="lazy"><span>ALI Charity</span></a><p>Official crypto donation addresses, donor-safety guidance and public records — without ever connecting to your wallet.</p></div>
+    <nav aria-labelledby="footer-give"><h2 id="footer-give">Give</h2><ul><li><a href="/donate.html">Donate crypto</a></li><li><a href="/donor-safety.html">Verify addresses</a></li><li><a href="/giving-tuesday.html">Crypto Giving Tuesday</a></li><li><a href="/data/donations.json">Public donation data</a></li></ul></nav>
+    <nav aria-labelledby="footer-learn"><h2 id="footer-learn">Learn</h2><ul><li><a href="/answers.html">Verified answers</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/blog/">Donor guides</a></li><li><a href="/transparency.html">Transparency method</a></li></ul></nav>
+    <nav aria-labelledby="footer-org"><h2 id="footer-org">Organization</h2><ul><li><a href="/about.html">About</a></li><li><a href="/token.html">ALI Token</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></li><li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文简介</a></li></ul></nav>
+    <p class="footer-note"><span>© <span id="year">2026</span> ALI Charity. We never ask for a seed phrase, private key or wallet connection.</span><span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/feed.xml">Feed</a></span></p>
+  </footer>
+  <!-- /layout:footer -->
   <script src="/js/site-config.js"></script>
   <script src="/js/public-records.js"></script>
   <script src="/js/home.js"></script>
+  <!-- layout:analytics -->
+  <script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <!-- /layout:analytics -->
 </body>
 </html>

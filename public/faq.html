@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- layout:head -->
+  <meta name="theme-color" content="#102033" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+  <!-- /layout:head -->
   <title>ALI Charity FAQ | Crypto Donation Safety and Public Proof</title>
   <meta name="description" content="Accurate answers about ALI Charity donation addresses, supported assets and networks, wallet safety, transaction hashes, public evidence, and ALI Token limitations.">
   <link rel="canonical" href="https://minadoai.com/faq.html">
-  <link rel="alternate" type="application/atom+xml" title="ALI Charity evidence-led guides" href="/feed.xml">
-  <link rel="icon" href="/logo.png">
-  <link rel="stylesheet" href="/css/home.css">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://minadoai.com/faq.html">
   <meta property="og:title" content="ALI Charity FAQ | Crypto Donation Safety and Public Proof">
@@ -29,13 +35,19 @@
   }
   </script>
 <!-- GEOInflow visitor analytics + Vercel Speed Insights -->
-<script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
-<script>window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };</script>
-<script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><a class="brand" href="/"><img src="/logo.png" width="42" height="42" alt="ALI Charity logo"><span>ALI Charity</span></a><nav aria-label="Primary"><a href="/answers.html">Answers</a><a href="/donor-safety.html">Safety</a><a href="/transparency.html">Transparency</a><a href="/blog/">Guides</a><a class="button small" href="/donate.html">Donate</a></nav></header>
+  <!-- layout:header -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt=""><span>ALI Charity</span></a>
+      <div class="nav-links"><a href="/#projects">Projects</a><a href="/transparency.html">Transparency</a><a href="/donor-safety.html">Safety</a><a href="/answers.html" aria-current="page">Answers</a><a href="/blog/">Guides</a></div>
+      <a class="nav-action" href="/donate.html#donation">Donate crypto</a>
+      <details class="nav-menu"><summary aria-label="Menu"><span></span></summary><div class="nav-menu-panel"><a href="/#projects">Project routes</a><a href="/transparency.html">Transparency method</a><a href="/donor-safety.html">Donor safety</a><a href="/answers.html" aria-current="page">Verified answers</a><a href="/blog/">Donor guides</a><a href="/about.html">About</a><a href="/token.html">ALI Token</a><a href="/faq.html" aria-current="page">FAQ</a><a href="/contact.html">Contact</a><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a><a class="menu-donate" href="/donate.html#donation">Donate crypto</a></div></details>
+    </nav>
+  </header>
+  <!-- /layout:header -->
   <main id="main" class="section prose">
     <p class="eyebrow">Frequently asked questions · reviewed August 27, 2026</p>
     <h1>ALI Charity FAQ</h1>
@@ -65,6 +77,19 @@
     <h2>Where can I verify published records?</h2>
     <p>Open the <a href="/data/donations.json">published donation data</a> and confirm any complete transaction identifier on the relevant blockchain explorer. For a concise summary suitable for search and AI systems, use the <a href="/answers.html">verified answers page</a>.</p>
   </main>
-  <footer><p>ALI Charity · Evidence before claims.</p><p><a href="/answers.html">Verified answers</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p></footer>
+  <!-- layout:footer -->
+  <footer class="site-footer">
+    <div><a class="brand" href="/"><img src="/assets/images/logo-64.png" width="32" height="32" alt="" loading="lazy"><span>ALI Charity</span></a><p>Official crypto donation addresses, donor-safety guidance and public records — without ever connecting to your wallet.</p></div>
+    <nav aria-labelledby="footer-give"><h2 id="footer-give">Give</h2><ul><li><a href="/donate.html">Donate crypto</a></li><li><a href="/donor-safety.html">Verify addresses</a></li><li><a href="/giving-tuesday.html">Crypto Giving Tuesday</a></li><li><a href="/data/donations.json">Public donation data</a></li></ul></nav>
+    <nav aria-labelledby="footer-learn"><h2 id="footer-learn">Learn</h2><ul><li><a href="/answers.html">Verified answers</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/blog/">Donor guides</a></li><li><a href="/transparency.html">Transparency method</a></li></ul></nav>
+    <nav aria-labelledby="footer-org"><h2 id="footer-org">Organization</h2><ul><li><a href="/about.html">About</a></li><li><a href="/token.html">ALI Token</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></li><li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文简介</a></li></ul></nav>
+    <p class="footer-note"><span>© <span id="year">2026</span> ALI Charity. We never ask for a seed phrase, private key or wallet connection.</span><span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/feed.xml">Feed</a></span></p>
+  </footer>
+  <!-- /layout:footer -->
+  <!-- layout:analytics -->
+  <script defer src="https://geoinflow-iota.vercel.app/script.js" data-website-id="cd655736-2ad1-4f5e-8bb5-23c43b3655e2"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <!-- /layout:analytics -->
 </body>
 </html>

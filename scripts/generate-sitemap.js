@@ -12,6 +12,8 @@ function briefingPages() {
     .filter(name => name.endsWith('.html'))
     .map(name => {
       const html = fs.readFileSync(path.join(briefingsDir, name), 'utf8');
+      // Unreviewed briefings carry noindex and stay out of the sitemap.
+      if (/<meta\s+name=["']robots["'][^>]*noindex/i.test(html)) return null;
       const date = (html.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"/) || [])[1];
       return date ? { path: `/blog/briefings/${name}`, lastModified: date, priority: '0.65', changeFrequency: 'monthly' } : null;
     })

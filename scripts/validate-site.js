@@ -1,27 +1,13 @@
 const path = require('node:path');
 const { validateSite } = require('./lib/site-validation');
 
-const redirects = {
-  '/about': '/about.html',
-  '/contact': '/contact.html',
-  '/donate': '/donate.html',
-  '/faq': '/faq.html',
-  '/token': '/token.html',
-  '/blog': '/blog/',
-  '/blog/news.html': '/blog/',
-  '/blockchain-charity': '/blog/blockchain-donation-tracking-transparency.html',
-  '/crypto-donations': '/blog/how-to-donate-cryptocurrency-to-charity.html',
-  '/community': '/about.html',
-  '/how-it-works': '/transparency.html',
-  '/transparency': '/transparency.html',
-  '/cookies': '/privacy.html',
-  '/about-v2.html': '/about.html',
-  '/donate-new.html': '/donate.html',
-  '/donate-v2.html': '/donate.html',
-  '/faq-v2.html': '/faq.html',
-  '/team-v2.html': '/team.html',
-  '/token-v2.html': '/token.html'
-};
+const { config } = require('./write-vercel-config');
+
+// Redirect sources come from the same config Vercel deploys, so links to
+// retired URLs validate only while a redirect for them actually exists.
+const redirects = Object.fromEntries(config.redirects
+  .filter(rule => !rule.has && !rule.source.includes(':'))
+  .map(rule => [rule.source.replace(/\/$/, '') || '/', rule.destination]));
 
 const publicDir = path.join(__dirname, '..', 'public');
 const result = validateSite(publicDir, redirects);

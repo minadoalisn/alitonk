@@ -1,62 +1,85 @@
+# ALI Charity — https://minadoai.com
+# Public information site. Search engines and AI assistants are welcome to read,
+# cite and link to every public page. Machine-readable summaries:
+#   https://minadoai.com/llms.txt  ·  https://minadoai.com/llms-full.txt
+
 User-agent: *
 Allow: /
-Disallow: /admin.html
-Disallow: /admin-login.html
-Disallow: /dashboard.html
-Disallow: /test-connection.html
-Disallow: /test-donate.html
-Disallow: /test-v2.html
 
-# ChatGPT search and user-requested retrieval
+# OpenAI: ChatGPT search, user-requested retrieval, model training (allowed by project policy)
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-# OpenAI model-training crawler; allowed by project policy
 User-agent: GPTBot
 Allow: /
 
-# Claude search and user-requested retrieval
+# Anthropic: Claude search, user-requested retrieval, model training (allowed by project policy)
 User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: Claude-User
 Allow: /
 
-# Anthropic model-training crawler; allowed by project policy
 User-agent: ClaudeBot
 Allow: /
 
-# Perplexity search and user-requested retrieval
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Perplexity-User
 Allow: /
 
-# Google Search, Gemini, Bing and other discovery systems
+# Google Search and Gemini
 User-agent: Googlebot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
+# Microsoft Bing and Copilot
 User-agent: Bingbot
 Allow: /
 
+# Apple Search and Apple Intelligence
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# DuckDuckGo AI answers
+User-agent: DuckAssistBot
+Allow: /
+
+# Mistral Le Chat
+User-agent: MistralAI-User
+Allow: /
+
+# Amazon / Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl (used by many open models)
 User-agent: CCBot
 Allow: /
 
+# ByteDance (Doubao)
 User-agent: Bytespider
 Allow: /
 
+# Baidu (ERNIE) and Yandex
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
 Sitemap: https://minadoai.com/sitemap.xml
-Host: https://minadoai.com

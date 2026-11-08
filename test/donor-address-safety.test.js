@@ -54,6 +54,9 @@ test('page modification metadata stays consistent without refreshing scoped fact
 });
 
 test('the new verification anchor leaves room for the sticky navigation', () => {
-  assert.match(html, /#full-address-verification\s*\{\s*scroll-margin-top:\s*80px;\s*\}/);
-  assert.match(html, /@media\s*\(max-width:\s*860px\)[\s\S]*#full-address-verification\s*\{\s*scroll-margin-top:\s*180px;\s*\}/);
+  // The rule lives in the shared stylesheet the page loads.
+  assert.match(html, /<link rel="stylesheet" href="\/css\/site\.css">/);
+  const css = fs.readFileSync(path.join(root, 'public', 'css', 'site.css'), 'utf8');
+  assert.match(css, /#full-address-verification\s*\{\s*scroll-margin-top:\s*80px;\s*\}/);
+  assert.match(css, /@media\s*\(max-width:\s*860px\)[\s\S]*#full-address-verification\s*\{\s*scroll-margin-top:\s*180px;\s*\}/);
 });

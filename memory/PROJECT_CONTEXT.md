@@ -1,11 +1,11 @@
 # ALI Charity Project Context
 
-Last updated: 2026-05-06
+Last updated: 2026-11-08
 
 ## Core Properties
 
 - Main site: https://minadoai.com
-- Main site deployment: Render.com
+- Main site deployment: Vercel (configured by vercel.json, generated from scripts/write-vercel-config.js)
 - Main repository: https://github.com/minadoalisn/alitonk
 - Primary promotion hub: https://minadoai.com/blog/
 - Legacy blog site, paused: https://alicharity.blog
@@ -24,17 +24,14 @@ Last updated: 2026-05-06
 
 ## Deployment Configuration
 
-- Render static config: render.yaml
-- Netlify config: netlify.toml
-- Local static server: server.js
-- Build command: npm run build
-- Start command: npm start
+- Host: Vercel. `vercel.json` holds redirects for every retired URL, security headers (CSP, HSTS) and cache rules. Edit `scripts/write-vercel-config.js`, then run `npm run vercel:config`; a test fails if the two drift.
+- Build command: npm run build (QR codes, shared layout, noindex policy, sitemap, feed, llms-full.txt, validation)
 - Static publish directory: public
-- ALI Charity server IP: 43.160.238.228
-- ALI Charity server SSH user: ubuntu
-- ALI Charity server SSH port: 22
-- Local SSH identity path, if configured: ~/.ssh/alitonk_key
-- Do not store server private keys in this repository or memory file.
+- Local static server: server.js (npm start)
+- Render and Netlify configs were removed on 2026-11-08.
+- Shared layout: every page keeps `<!-- layout:head|header|footer|analytics -->` markers filled by scripts/apply-layout.js. Change navigation or footer there, never per page.
+- Single stylesheet: public/css/site.css (light + dark tokens). Donate page adds public/css/donation.css.
+- Do not store server addresses, SSH users or private keys in this repository.
 
 ## Automation
 
@@ -336,3 +333,12 @@ Last updated: 2026-05-06
 - address: 0xbd00c3d12dB5840A403D2880039Cb1c86155F8cC
 - address: bc1p6tc7jxjgtzdm2rf9vmxjjkkghz3kgfplmm93yll9km90kjmxuw0shcs4cq
 - address: HT98k9x4WEQMNbFzrLrJkfjF9ytE116UengPf7NWDweT
+
+## 2026-11-08 overhaul
+
+- Retired ~45 duplicate or unsupported-claim pages and all 7 auto-generated briefings (they paired unrelated headlines); each old URL 301-redirects to the closest reviewed page.
+- Rewrote the three April guides, About, Token, Contact, Privacy, Blog hub and homepage; added /zh/ Chinese overview with hreflang.
+- Donate page: QR code per network (generated from site-config.js), address shown in groups of four, shareable ?asset= links.
+- GEO: curated llms.txt, generated llms-full.txt, expanded AI crawler allow-list, Organization/FAQ/HowTo/Breadcrumb schema.
+- Briefing generator now requires humanitarian relevance, corroborating sources about the same story, and publishes noindex until a person reviews it.
+- OPEN ITEM for the owner: terms.html still promises 1 ALI = 1 USDT, profit-sharing dividends and bonus token tiers, contradicting token.html. Kept noindex; needs owner/legal rewrite.

@@ -79,6 +79,8 @@ function validateSite(publicDir, redirects = {}) {
     }
     for (const reference of extractAttributes(html)) {
       if (!reference || reference.startsWith('#') || isExternal(reference)) continue;
+      // Vercel platform routes (Speed Insights, Web Analytics) exist only at the edge.
+      if (reference.startsWith('/_vercel/')) continue;
       if (redirectMatches(reference, redirects)) continue;
       const candidates = candidatesFor(reference, file);
       if (candidates === null) {
