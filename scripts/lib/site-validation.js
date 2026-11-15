@@ -79,6 +79,8 @@ function validateSite(publicDir, redirects = {}) {
     }
     for (const reference of extractAttributes(html)) {
       if (!reference || reference.startsWith('#') || isExternal(reference)) continue;
+      // Vercel serves /_vercel/* paths (e.g. Speed Insights) at runtime; they are not files in public/.
+      if (reference.startsWith('/_vercel/')) continue;
       if (redirectMatches(reference, redirects)) continue;
       const candidates = candidatesFor(reference, file);
       if (candidates === null) {
