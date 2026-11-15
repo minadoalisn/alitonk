@@ -1,0 +1,12 @@
+# ALI Charity — AI discovery
+# https://minadoai.com
+
+Site: ALI Charity (minadoai.com)
+Summary: Transparent crypto donations with public proof. ALI Charity publishes official crypto donation addresses, donor-safety guidance, public blockchain records, and humanitarian project information without connecting to your wallet.
+
+Machine-readable index: https://minadoai.com/llms.txt
+Summary (JSON): https://minadoai.com/ai/summary.json
+FAQ (JSON): https://minadoai.com/ai/faq.json
+Services (JSON): https://minadoai.com/ai/service.json
+
+Safety: ALI Charity never connects a wallet and never asks for a seed phrase, private key, or transaction signature. A blockchain transaction proves a recorded transfer, not off-chain impact. Verify every address and network on the live Donate page (https://minadoai.com/donate.html) before sending.
