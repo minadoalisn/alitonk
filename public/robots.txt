@@ -7,6 +7,7 @@ Disallow: /test-connection.html
 Disallow: /test-donate.html
 Disallow: /test-v2.html
 
+# Search-only crawler policy (updated 2026-11-16): retrieval bots allowed, model-training crawlers blocked.
 # ChatGPT search and user-requested retrieval
 User-agent: OAI-SearchBot
 Allow: /
@@ -14,9 +15,9 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-# OpenAI model-training crawler; allowed by project policy
+# OpenAI model-training crawler - blocked
 User-agent: GPTBot
-Allow: /
+Disallow: /
 
 # Claude search and user-requested retrieval
 User-agent: Claude-SearchBot
@@ -25,9 +26,12 @@ Allow: /
 User-agent: Claude-User
 Allow: /
 
-# Anthropic model-training crawler; allowed by project policy
+# Anthropic model-training crawlers - blocked
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
 
 # Perplexity search and user-requested retrieval
 User-agent: PerplexityBot
@@ -40,8 +44,9 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
+# Google model-training crawler - blocked
 User-agent: Google-Extended
-Allow: /
+Disallow: /
 
 User-agent: Bingbot
 Allow: /
@@ -49,12 +54,15 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+# Applebot-Extended is a product token with no crawler of its own; kept allowed.
 User-agent: Applebot-Extended
 Allow: /
 
+# Common Crawl training corpus - blocked
 User-agent: CCBot
-Allow: /
+Disallow: /
 
+# ByteDance crawler - kept allowed per 06:14 decision (not in aaron search-only block list).
 User-agent: Bytespider
 Allow: /
 
