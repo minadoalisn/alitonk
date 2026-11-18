@@ -1,6 +1,6 @@
 # ALI Charity
 
-> Last updated: 2026-11-15
+> Last updated: 2026-11-19
 
 > ALI Charity is a static, public-evidence-first crypto donation information website. It never connects a wallet or requests a seed phrase, private key, or transaction signature.
 
