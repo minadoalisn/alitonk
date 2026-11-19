@@ -67,4 +67,5 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://minadoai.com/sitemap.xml
+# AI discovery index: https://minadoai.com/llms.txt
 Host: https://minadoai.com

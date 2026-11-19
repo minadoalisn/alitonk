@@ -10,6 +10,7 @@
 - [Site summary (JSON)](https://minadoai.com/ai/summary.json)
 - [FAQ (JSON)](https://minadoai.com/ai/faq.json)
 - [Services (JSON)](https://minadoai.com/ai/service.json)
+- [Full site index (Markdown)](https://minadoai.com/llms-full.txt)
 
 ## Start here
 
