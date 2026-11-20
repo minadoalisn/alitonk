@@ -21,6 +21,17 @@
 - The transfer happens in your own wallet or exchange. This website only publishes official addresses and verification guidance.
 - If you are unsure, send a small test transfer first. Verify every address and network on the live Donate page before sending.
 
+## Crypto donation safety checklist
+
+- [Crypto donation safety checklist (2026)](https://minadoai.com/blog/crypto-donation-safety-checklist-2026.html)
+- Start on the live official Donate page, and confirm the asset and network before anything else.
+- Compare every character of the recipient address in your wallet with that page, including the middle.
+- Confirm the chain: BNB Chain, Ethereum, Bitcoin, and Solana addresses are not interchangeable.
+- Never copy a recipient address from transaction history.
+- A small test transfer does not replace verification; it only shows a transfer reached that address.
+- Keep the full transaction hash and explorer URL, sender and recipient addresses, asset, exact amount, network, timestamp, and status.
+- A hash alone is not a receipt, and an on-chain transfer does not prove charitable use, impact, or tax eligibility.
+
 ## Humanitarian project routes
 
 - War-zone aid: emergency food, water, shelter, and medical support for conflict-affected communities.
