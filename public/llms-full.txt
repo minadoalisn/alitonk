@@ -1,6 +1,6 @@
 # ALI Charity
 
-> ALI Charity is a static, public-evidence-first crypto donation information website. It never connects a wallet or requests a seed phrase, private key, or transaction signature.
+> ALI Charity publishes official crypto donation addresses, donor-safety guidance, public blockchain records, and humanitarian project information without connecting to your wallet. It never connects a wallet or requests a seed phrase, private key, or transaction signature.
 
 ## Start here
 
